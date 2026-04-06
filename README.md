@@ -1,13 +1,13 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=100&lines=Hey+%E2%9C%A6+I'm+Mukunda+Rao+Katta;ML+Engineer+%7C+Full+Stack+Dev+%7C+AI+Builder" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=4000&pause=1000&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Hey+%E2%9C%A6+I'm+Mukunda+Rao+Katta;ML+Engineer+%7C+Full+Stack+Dev+%7C+AI+Builder" alt="Typing SVG" />
 
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-1a1a1a?style=for-the-badge&logo=linkedin&logoColor=D4A853)](https://www.linkedin.com/in/mukunda-k-728155220/)
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
 [![GitHub](https://img.shields.io/badge/GitHub-1a1a1a?style=for-the-badge&logo=github&logoColor=D4A853)](https://github.com/MukundaKatta)
-[![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukundaraokatta@gmail.com)
+[![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukund.r1729@gmail.com)
 
 </div>
 
@@ -130,20 +130,34 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=MukundaKatta&show_icons=true&theme=github_dark&hide_border=true&count_private=true&title_color=D4A853&icon_color=D4A853&text_color=c9d1d9&ring_color=D4A853" height="170" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MukundaKatta&layout=compact&theme=github_dark&hide_border=true&title_color=D4A853&text_color=c9d1d9" height="170" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=MukundaKatta&show_icons=true&bg_color=0d1117&title_color=D4A853&icon_color=D4A853&text_color=c9d1d9&hide_border=true&count_private=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=MukundaKatta&show_icons=true&bg_color=0d1117&title_color=D4A853&icon_color=D4A853&text_color=c9d1d9&hide_border=true&count_private=true" height="180" />
+</picture>
+&nbsp;&nbsp;
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=MukundaKatta&layout=compact&bg_color=0d1117&title_color=D4A853&text_color=c9d1d9&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MukundaKatta&layout=compact&bg_color=0d1117&title_color=D4A853&text_color=c9d1d9&hide_border=true" height="180" />
+</picture>
 
 </div>
 
+<br/>
+
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=MukundaKatta&theme=github-dark-blue&hide_border=true&ring=D4A853&fire=D4A853&currStreakLabel=D4A853&sideLabels=D4A853&dates=555555" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=MukundaKatta&background=0d1117&ring=D4A853&fire=D4A853&currStreakLabel=D4A853&sideLabels=D4A853&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=555555&hide_border=true" />
+  <img src="https://streak-stats.demolab.com?user=MukundaKatta&background=0d1117&ring=D4A853&fire=D4A853&currStreakLabel=D4A853&sideLabels=D4A853&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=555555&hide_border=true" />
+</picture>
 
 </div>
 
+<br/>
+
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=MukundaKatta&theme=github-dark&hide_border=true&area=true&color=D4A853&line=D4A853&point=D4A853&area_color=D4A85320" width="95%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=MukundaKatta&bg_color=0d1117&color=D4A853&line=D4A853&point=D4A853&area_color=D4A853&area=true&hide_border=true" width="95%" />
 
 </div>
 
@@ -154,6 +168,8 @@
 **Open to remote roles** — ML Engineer, Full Stack Developer, AI Platform Builder
 
 *Las Vegas, NV*
+
+<br/>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=MukundaKatta&color=D4A853&style=flat-square&label=Profile+Views)
 
