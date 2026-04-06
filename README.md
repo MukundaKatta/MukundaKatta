@@ -105,18 +105,33 @@
 
 | Role | Company | Duration |
 |------|---------|----------|
-| **GenAI & Data Engineer** | Ex-Amazon (AWS) | Jan 2022 — Aug 2022 |
+| **GenAI Engineer / AI Python Engineer** | GPS IT Solutions | Jun 2024 — Present |
+| **Software Development Engineer** | Amazon Web Services (AWS) | Aug 2022 — May 2024 |
+| **Data Engineer** | GSP IT Solutions | Jan 2022 — Aug 2022 |
 | **Data Engineer / Software Engineer** | Infosys | Feb 2017 — Dec 2020 |
 
-- Led migration of legacy on-premise ETL workflows to AWS Glue and Lambda, reducing infrastructure costs by 60%
-- Developed Python-based ETL frameworks processing 10M+ records daily for enterprise clients
-- 40% faster AI content delivery using SageMaker and Bedrock
+**Amazon Web Services (AWS)** — Software Development Engineer
+- Built core AI/ML product features for AWS Bedrock and SageMaker, serving thousands of enterprise customers worldwide
+- Developed inference APIs and model-serving infrastructure for Amazon Bedrock (Claude, Llama, Titan) at production scale
+- Engineered SageMaker pipeline components for end-to-end ML workflows, reducing customers' time-to-production by 40%
+- Designed RESTful APIs in Python and Java powering Bedrock's model management, handling millions of API calls daily with 99.99% availability
+- Implemented CI/CD pipelines via Jenkins and AWS CodePipeline with canary releases across 15+ AI/ML microservices
+
+**GPS IT Solutions** — GenAI Engineer
+- Architected GPT-4-powered marketing content generator, reducing content creation time by 40%
+- Built production RAG pipelines using Vertex AI and BigQuery for intelligent document retrieval across 500K+ enterprise documents
+
+**Infosys** — Data Engineer / Software Engineer
+- Developed Python-based ETL frameworks processing 10M+ records daily for enterprise clients including Cigna
+- Built streaming and batch ETL solutions with Apache Beam and PySpark, processing terabytes of healthcare data
 
 ---
 
 ### Education
 
 **University of Central Missouri** — M.S. in Big Data Analytics and Information Technology (2021 — 2022)
+
+**SRM University** — B.Tech in Mechanical Engineering (2012 — 2016)
 
 ---
 
