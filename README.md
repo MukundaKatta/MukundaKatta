@@ -101,6 +101,56 @@
 
 ---
 
+### Experience
+
+| Role | Company | Duration |
+|------|---------|----------|
+| **GenAI & Data Engineer** | Ex-Amazon (AWS) | Jan 2022 — Aug 2022 |
+| **Data Engineer / Software Engineer** | Infosys | Feb 2017 — Dec 2020 |
+
+- Led migration of legacy on-premise ETL workflows to AWS Glue and Lambda, reducing infrastructure costs by 60%
+- Developed Python-based ETL frameworks processing 10M+ records daily for enterprise clients
+- 40% faster AI content delivery using SageMaker and Bedrock
+
+---
+
+### Education
+
+**University of Central Missouri** — M.S. in Big Data Analytics and Information Technology (2021 — 2022)
+
+---
+
+### Certifications
+
+<div align="center">
+
+**Anthropic**
+
+![MCP Advanced](https://img.shields.io/badge/MCP_Advanced_Topics-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Claude with Bedrock](https://img.shields.io/badge/Claude_with_Amazon_Bedrock-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Claude with Vertex AI](https://img.shields.io/badge/Claude_with_Vertex_AI-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Intro to MCP](https://img.shields.io/badge/Intro_to_MCP-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Claude Code](https://img.shields.io/badge/Claude_Code_in_Action-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Building Claude API](https://img.shields.io/badge/Building_with_Claude_API-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Agent Skills](https://img.shields.io/badge/Intro_to_Agent_Skills-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Subagents](https://img.shields.io/badge/Intro_to_Subagents-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+
+**Microsoft**
+
+![GenAI for Devs](https://img.shields.io/badge/Generative_AI_for_Software_Devs-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot_Productivity-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Copilot PM](https://img.shields.io/badge/Copilot_for_Project_Management-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Intro GenAI Copilot](https://img.shields.io/badge/Intro_to_GenAI_for_Developers-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+
+**AWS**
+
+![AWS AI](https://img.shields.io/badge/Bringing_Ideas_to_Life_Using_AI-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Amazon Q](https://img.shields.io/badge/Amazon_Q_for_Software_Dev-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+
+</div>
+
+---
+
 ### Tech Stack
 
 <div align="center">
