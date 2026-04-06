@@ -1,176 +1,103 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=4000&pause=1000&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Hey+%E2%9C%A6+I'm+Mukunda+Rao+Katta;ML+Engineer+%7C+Full+Stack+Dev+%7C+AI+Builder" alt="Typing SVG" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58A6FF&height=220&section=header&text=Mukunda%20Rao%20Katta&fontSize=42&fontColor=FFFFFF&fontAlignY=35&desc=ML%20Engineer%20%E2%80%A2%20Full%20Stack%20Developer%20%E2%80%A2%20AI%20Platform%20Builder&descSize=18&descColor=8B949E&descAlignY=55&animation=fadeIn" width="100%" />
 
-<br/>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-1a1a1a?style=for-the-badge&logo=linkedin&logoColor=D4A853)](https://www.linkedin.com/in/mukunda-k-728155220/)
-[![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
-[![GitHub](https://img.shields.io/badge/GitHub-1a1a1a?style=for-the-badge&logo=github&logoColor=D4A853)](https://github.com/MukundaKatta)
-[![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukund.r1729@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mukunda-k-728155220/)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/katta_mukunda)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MukundaKatta)
+[![Profile Views](https://komarev.com/ghpvc/?username=MukundaKatta&color=58A6FF&style=flat-square&label=Visitors)](https://github.com/MukundaKatta)
 
 </div>
 
-<br/>
+## About Me
 
-<div align="center">
-<em>I build AI-powered products and platforms — from multi-agent systems to full-stack applications.</em>
-<br/>
-<em>Passionate about agentic workflows, LLM orchestration, and shipping production-ready AI solutions.</em>
-</div>
+I build AI-powered products and platforms — from multi-agent systems to full-stack applications. Passionate about agentic workflows, LLM orchestration, and shipping production-ready AI solutions.
 
-<br/>
+- Building **[Karna](https://github.com/MukundaKatta/karna)** — a self-hosted AI agent platform with 7 messaging channels
+- - Exploring multi-agent architectures, RAG pipelines & semantic memory
+  - - Based in **Las Vegas, NV** | Open to opportunities
+   
+    - ---
 
----
+    ## What I Build
 
-### What I Do
+    | Area | Focus |
+    |------|-------|
+    | **AI Agent Development** | Multi-channel AI assistants, agentic workflows, LLM orchestration & tool use |
+    | **Full Stack Engineering** | End-to-end web & mobile apps with TypeScript, React, Next.js, Node.js |
+    | **ML Engineering** | Model integration, RAG pipelines, semantic memory, vector search |
 
-```
- AI Agent Development    Multi-channel AI assistants, agentic workflows, LLM orchestration & tool use
- Full Stack Engineering  End-to-end web & mobile apps — TypeScript, React, Next.js, Node.js, Firebase
- ML Engineering          Model integration, RAG pipelines, semantic memory, vector search
- Cloud & DevOps          GCP Cloud Functions, Docker, Supabase, CI/CD pipelines
-```
+    ---
 
----
+    ## Featured Projects
 
-### Featured Projects
+    | Project | Description | Tech |
+    |---------|-------------|------|
+    | **[Karna](https://github.com/MukundaKatta/karna)** | Self-hosted AI agent platform with 7 messaging channels, extensible skills & semantic memory | TypeScript, Node.js |
+    | **[Sadhak](https://github.com/MukundaKatta/sadhak)** | AI-powered job search pipeline built on Claude Code. The Seeker. | JavaScript |
+    | **[AgentRAG](https://github.com/MukundaKatta/AgentRAG)** | Modular RAG pipeline — chunking, embedding, retrieval & reranking with pluggable vector stores | Python |
+    | **[MCPForge](https://github.com/MukundaKatta/MCPForge)** | Build, test & deploy Model Context Protocol servers in minutes | TypeScript |
+    | **[Nexus Search](https://github.com/MukundaKatta/nexus-search)** | AI-Powered Intelligence Engine with glassmorphism dark UI | Next.js, Claude AI |
+    | **[Kavach](https://github.com/MukundaKatta/kavach)** | AI security and defense tool | Python |
 
-<table>
-  <tr>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/karna">Karna</a> — AI Agent Platform</h4>
-      <p>Self-hosted personal AI assistant with 7 messaging channels (Telegram, Slack, Discord, WhatsApp, SMS, iMessage, Webchat), extensible skills, semantic memory, voice support. TypeScript/Node.js monorepo with Next.js dashboard.</p>
-      <sub>TypeScript &bull; Node.js &bull; Supabase &bull; pgvector</sub>
-    </td>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/amogha-cafe">Amogha Cafe</a> — Restaurant Platform</h4>
-      <p>Premium full-stack Firebase web app with real-time ordering, admin dashboard, kitchen display system, QR dine-in, live order tracking, and payment integration. <strong>Live at <a href="https://amogha-cafe.web.app">amogha-cafe.web.app</a></strong></p>
-      <sub>JavaScript &bull; Firebase &bull; Real-time DB &bull; Cloud Functions</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/rnht">RNHT</a> — Temple Community Platform</h4>
-      <p>Rudra Narayana Hindu Temple — full-featured community platform for events, donations, priest scheduling, member management, and temple communications.</p>
-      <sub>TypeScript &bull; React &bull; Full Stack</sub>
-    </td>
-    <td width="50%">
-      <h4>CareerSavvy — AI Job Platform <em>(Private)</em></h4>
-      <p>Three-repo job search platform: React job seeker portal, employer/recruiter portal, and Python backend on GCP Cloud Functions. End-to-end hiring pipeline with AI-powered matching.</p>
-      <sub>React &bull; Python &bull; GCP &bull; Cloud Functions</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/sadhak">Sadhak</a> — AI Job Search Pipeline</h4>
-      <p>AI-powered job search command center built on Claude Code. Offer evaluation, resume tailoring, cover letter generation, portal scanning, batch processing, and application tracking.</p>
-      <sub>JavaScript &bull; Playwright &bull; Claude Code Skills</sub>
-    </td>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/astra-agent">Astra Agent</a> — AI Agent Framework</h4>
-      <p>Standalone AI agent runtime with tool execution, context management, and multi-model routing. Foundation for building autonomous AI assistants.</p>
-      <sub>TypeScript &bull; LLM Orchestration &bull; Tool Use</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/Oradent">Oradent</a> — Dental Practice Management</h4>
-      <p>Full dental practice platform — appointment scheduling, patient records, billing, treatment planning, and practice analytics.</p>
-      <sub>Full Stack &bull; Healthcare</sub>
-    </td>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/artigen">ArtiGen</a> — AI Art Community</h4>
-      <p>AI art community platform built with React Native, Expo, and Supabase. Create, share, and discover AI-generated art with social features.</p>
-      <sub>React Native &bull; Expo &bull; Supabase</sub>
-    </td>
-  </tr>
-</table>
+    > **More:** [SpotRank](https://github.com/MukundaKatta/SpotRank) · [StockPulse](https://github.com/MukundaKatta/StockPulse) · [Oradent](https://github.com/MukundaKatta/Oradent) · [Amogha Cafe](https://github.com/MukundaKatta/amogha-cafe) · [ArtiGen](https://github.com/MukundaKatta/artigen) · [Office3](https://github.com/MukundaKatta/Office3)
+    >
+    > ---
+    >
+    > ## Tech Stack
+    >
+    > <div align="center">
 
-<details>
-<summary><strong>More Projects</strong></summary>
-<br/>
+    ![Claude](https://img.shields.io/badge/Claude-191919?style=for-the-badge&logo=anthropic&logoColor=white)
+    ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+    ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+    ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+    ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+    ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+    ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+    ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
+    ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+    ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+    ![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)
+    ![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
 
-| Project | Description |
-|---------|-------------|
-| [Vimana](https://github.com/MukundaKatta/vimana) | Self-orchestrating AI — autonomous cloud infrastructure provisioning and scaling |
-| [Heimdall](https://github.com/MukundaKatta/heimdall) | Curated collection of AI system prompts |
-| [Office3](https://github.com/MukundaKatta/Office3) | Officethree Technologies — AI-powered products for small businesses |
+    </div>
 
-</details>
+    ---
 
----
+    ## GitHub Analytics
 
-### Tech Stack
+    <div align="center">
 
-<div align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=MukundaKatta&show_icons=true&theme=github_dark&hide_border=true&count_private=true&bg_color=0d1117&title_color=58A6FF&icon_color=58A6FF&text_color=c9d1d9" height="180" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MukundaKatta&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=c9d1d9" height="180" />
 
-![TypeScript](https://img.shields.io/badge/TypeScript-1a1a1a?style=flat-square&logo=typescript&logoColor=D4A853)
-![Python](https://img.shields.io/badge/Python-1a1a1a?style=flat-square&logo=python&logoColor=D4A853)
-![JavaScript](https://img.shields.io/badge/JavaScript-1a1a1a?style=flat-square&logo=javascript&logoColor=D4A853)
-![Go](https://img.shields.io/badge/Go-1a1a1a?style=flat-square&logo=go&logoColor=D4A853)
-![React](https://img.shields.io/badge/React-1a1a1a?style=flat-square&logo=react&logoColor=D4A853)
-![Next.js](https://img.shields.io/badge/Next.js-1a1a1a?style=flat-square&logo=nextdotjs&logoColor=D4A853)
-![Node.js](https://img.shields.io/badge/Node.js-1a1a1a?style=flat-square&logo=nodedotjs&logoColor=D4A853)
-![React Native](https://img.shields.io/badge/React_Native-1a1a1a?style=flat-square&logo=react&logoColor=D4A853)
-![Claude](https://img.shields.io/badge/Claude-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
-![OpenAI](https://img.shields.io/badge/OpenAI-1a1a1a?style=flat-square&logo=openai&logoColor=D4A853)
-![Supabase](https://img.shields.io/badge/Supabase-1a1a1a?style=flat-square&logo=supabase&logoColor=D4A853)
-![Firebase](https://img.shields.io/badge/Firebase-1a1a1a?style=flat-square&logo=firebase&logoColor=D4A853)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-1a1a1a?style=flat-square&logo=postgresql&logoColor=D4A853)
-![Docker](https://img.shields.io/badge/Docker-1a1a1a?style=flat-square&logo=docker&logoColor=D4A853)
-![GCP](https://img.shields.io/badge/GCP-1a1a1a?style=flat-square&logo=googlecloud&logoColor=D4A853)
-![Expo](https://img.shields.io/badge/Expo-1a1a1a?style=flat-square&logo=expo&logoColor=D4A853)
+    </div>
 
-</div>
+    <div align="center">
 
----
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=MukundaKatta&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" />
 
-### GitHub Stats
+    </div>
 
-<div align="center">
+    <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api?username=MukundaKatta&show_icons=true&bg_color=0d1117&title_color=D4A853&icon_color=D4A853&text_color=c9d1d9&hide_border=true&count_private=true" />
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=MukundaKatta&show_icons=true&bg_color=0d1117&title_color=D4A853&icon_color=D4A853&text_color=c9d1d9&hide_border=true&count_private=true" height="180" />
-</picture>
-&nbsp;&nbsp;
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=MukundaKatta&layout=compact&bg_color=0d1117&title_color=D4A853&text_color=c9d1d9&hide_border=true" />
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=MukundaKatta&layout=compact&bg_color=0d1117&title_color=D4A853&text_color=c9d1d9&hide_border=true" height="180" />
-</picture>
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=MukundaKatta&theme=github-compact&hide_border=true&bg_color=0d1117&color=58A6FF&line=58A6FF&point=c9d1d9&area=true&area_color=58A6FF" width="95%" />
 
-</div>
+    </div>
 
-<br/>
+    ---
 
-<div align="center">
+    <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=MukundaKatta&background=0d1117&ring=D4A853&fire=D4A853&currStreakLabel=D4A853&sideLabels=D4A853&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=555555&hide_border=true" />
-  <img src="https://streak-stats.demolab.com?user=MukundaKatta&background=0d1117&ring=D4A853&fire=D4A853&currStreakLabel=D4A853&sideLabels=D4A853&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=555555&hide_border=true" />
-</picture>
+    ### Let's Connect
 
-</div>
+    Open to collaborating on AI/ML projects and interesting ideas.
 
-<br/>
+    [![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mukunda-k-728155220/)
+    [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/katta_mukunda)
+    [![Email](https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mukundaraokatta@gmail.com)
 
-<div align="center">
+    </div>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=MukundaKatta&bg_color=0d1117&color=D4A853&line=D4A853&point=D4A853&area_color=D4A853&area=true&hide_border=true" width="95%" />
-
-</div>
-
----
-
-<div align="center">
-
-**Open to remote roles** — ML Engineer, Full Stack Developer, AI Platform Builder
-
-*Las Vegas, NV*
-
-<br/>
-
-![Profile Views](https://komarev.com/ghpvc/?username=MukundaKatta&color=D4A853&style=flat-square&label=Profile+Views)
-
-</div>
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58A6FF&height=120&section=footer" width="100%" />
