@@ -124,6 +124,27 @@
 
 <div align="center">
 
+**Stanford University** 🎓
+
+![ML](https://img.shields.io/badge/Machine_Learning-8C1515?style=flat-square&logo=stanford&logoColor=white)
+![Stats](https://img.shields.io/badge/Introduction_to_Statistics-8C1515?style=flat-square&logo=stanford&logoColor=white)
+
+**University of Pennsylvania (Wharton)** 🎓
+
+![Business Analytics](https://img.shields.io/badge/Business_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+![Customer Analytics](https://img.shields.io/badge/Customer_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+![People Analytics](https://img.shields.io/badge/People_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+![Accounting Analytics](https://img.shields.io/badge/Accounting_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+![Operations Analytics](https://img.shields.io/badge/Operations_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+
+**UC Davis**
+
+![SQL](https://img.shields.io/badge/SQL_for_Data_Science-022851?style=flat-square&logo=coursera&logoColor=D4A853)
+
+**IBM**
+
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity_Tools_&_Attacks-052FAD?style=flat-square&logo=ibm&logoColor=white)
+
 **Anthropic**
 
 ![MCP Advanced](https://img.shields.io/badge/MCP_Advanced_Topics-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
@@ -134,6 +155,8 @@
 ![Building Claude API](https://img.shields.io/badge/Building_with_Claude_API-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
 ![Agent Skills](https://img.shields.io/badge/Intro_to_Agent_Skills-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
 ![Subagents](https://img.shields.io/badge/Intro_to_Subagents-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![AI Fluency](https://img.shields.io/badge/AI_Fluency:_Framework_&_Foundations-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Claude 101](https://img.shields.io/badge/Claude_101-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
 
 **Microsoft**
 
@@ -141,11 +164,33 @@
 ![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot_Productivity-0078D4?style=flat-square&logo=microsoft&logoColor=white)
 ![Copilot PM](https://img.shields.io/badge/Copilot_for_Project_Management-0078D4?style=flat-square&logo=microsoft&logoColor=white)
 ![Intro GenAI Copilot](https://img.shields.io/badge/Intro_to_GenAI_for_Developers-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Copilot VS Code](https://img.shields.io/badge/Copilot_&_VS_Code_Workflow-0078D4?style=flat-square&logo=microsoft&logoColor=white)
 
 **AWS**
 
-![AWS AI](https://img.shields.io/badge/Bringing_Ideas_to_Life_Using_AI-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS GenAI Apps](https://img.shields.io/badge/AWS_Generative_AI_Applications-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS AI Solutions](https://img.shields.io/badge/AWS_Services_for_AI_Solutions-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS AI Fundamentals](https://img.shields.io/badge/AI_Fundamentals_&_the_Cloud-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS ML Specialty](https://img.shields.io/badge/AWS_ML_Specialty-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS Solutions Architect Pro](https://img.shields.io/badge/Solutions_Architect_Professional-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS DevOps Pro](https://img.shields.io/badge/DevOps_Engineer_Professional-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
 ![Amazon Q](https://img.shields.io/badge/Amazon_Q_for_Software_Dev-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+
+**Cloud & Infrastructure**
+
+![Azure Data Engineer](https://img.shields.io/badge/Azure_Data_Engineer_Associate-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Azure Fundamentals](https://img.shields.io/badge/Azure_Fundamentals-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![GCP Cloud Architect](https://img.shields.io/badge/GCP_Cloud_Architect-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Terraform GCP](https://img.shields.io/badge/Advanced_Terraform_with_GCP-4285F4?style=flat-square&logo=terraform&logoColor=white)
+
+**LinkedIn Learning**
+
+![Deep Learning](https://img.shields.io/badge/Deep_Learning:_Image_Recognition-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/Deep_Learning_with_TensorFlow-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![Keras](https://img.shields.io/badge/Deep_Learning_with_Keras-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![NLP Python](https://img.shields.io/badge/NLP_with_Python_for_ML-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![Neural Networks](https://img.shields.io/badge/Training_Neural_Networks-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache_Spark_Essential-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
 
 </div>
 
