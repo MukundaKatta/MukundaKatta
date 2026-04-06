@@ -1,4 +1,4 @@
-<div align="center">
+———·····—<div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58A6FF&height=220&section=header&text=Mukunda%20Rao%20Katta&fontSize=42&fontColor=FFFFFF&fontAlignY=35&desc=ML%20Engineer%20%E2%80%A2%20Full%20Stack%20Developer%20%E2%80%A2%20AI%20Platform%20Builder&descSize=18&descColor=8B949E&descAlignY=55&animation=fadeIn" width="100%" />
 
