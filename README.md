@@ -131,13 +131,13 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=MukundaKatta&show_icons=true&bg_color=0d1117&title_color=D4A853&icon_color=D4A853&text_color=c9d1d9&hide_border=true&count_private=true" />
-  <img src="https://github-readme-stats.vercel.app/api?username=MukundaKatta&show_icons=true&bg_color=0d1117&title_color=D4A853&icon_color=D4A853&text_color=c9d1d9&hide_border=true&count_private=true" height="180" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api?username=MukundaKatta&show_icons=true&bg_color=0d1117&title_color=D4A853&icon_color=D4A853&text_color=c9d1d9&hide_border=true&count_private=true" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=MukundaKatta&show_icons=true&bg_color=0d1117&title_color=D4A853&icon_color=D4A853&text_color=c9d1d9&hide_border=true&count_private=true" height="180" />
 </picture>
 &nbsp;&nbsp;
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=MukundaKatta&layout=compact&bg_color=0d1117&title_color=D4A853&text_color=c9d1d9&hide_border=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MukundaKatta&layout=compact&bg_color=0d1117&title_color=D4A853&text_color=c9d1d9&hide_border=true" height="180" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=MukundaKatta&layout=compact&bg_color=0d1117&title_color=D4A853&text_color=c9d1d9&hide_border=true" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=MukundaKatta&layout=compact&bg_color=0d1117&title_color=D4A853&text_color=c9d1d9&hide_border=true" height="180" />
 </picture>
 
 </div>
