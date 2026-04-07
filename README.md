@@ -14,7 +14,7 @@
 <br/>
 
 <div align="center">
-<em>Senior AI/ML Engineer with 7+ years building production AI systems at AWS, Fortune 100 enterprises, and startups.</em>
+<em>Senior AI/ML Engineer with 8+ years building production AI systems at AWS, Fortune 100 enterprises, and startups.</em>
 <br/>
 <em>Built inference APIs for AWS Bedrock (Claude, Llama, Titan) serving millions of daily calls. Creator of Karna AI Agent Platform.</em>
 </div>
