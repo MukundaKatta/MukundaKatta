@@ -28,7 +28,7 @@
 ```
  AI Agent Development    Multi-channel AI assistants, agentic workflows, LLM orchestration & tool use
  Full Stack Engineering  End-to-end web & mobile apps — TypeScript, React, Next.js, Node.js, Firebase
- ML Engineering          Model integration, RAG pipelines, semantic memory, vector search
+ Data & ML Engineering   RAG pipelines, ETL frameworks, SageMaker, Bedrock, model serving at scale
  Cloud & DevOps          GCP Cloud Functions, Docker, Supabase, CI/CD pipelines
 ```
 
