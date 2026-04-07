@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=4000&pause=1000&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Hey!+I'm+Mukunda+Rao+Katta;ML+Engineer+%7C+Full+Stack+Dev+%7C+AI+Builder" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=4000&pause=1000&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Hey!+I'm+Mukunda+Rao+Katta;GenAI+%26+Data+Engineer+%7C+Ex-AWS+%7C+AI+Builder" alt="Typing SVG" />
 
 <br/>
 
@@ -85,6 +85,30 @@
       <sub>React Native &bull; Expo &bull; Supabase</sub>
     </td>
   </tr>
+<tr>
+<td width="50%">
+<h4><a href="https://github.com/MukundaKatta/chetana">Chetana</a> — AI Consciousness Research</h4>
+<p>AI consciousness research platform. Test AI models against 14 consciousness indicators from 6 scientific theories. Bridging philosophy of mind with empirical AI testing.</p>
+<sub>TypeScript &bull; Python &bull; Machine Learning &bull; Research</sub>
+</td>
+<td width="50%">
+<h4><a href="https://github.com/MukundaKatta/AgentRAG">AgentRAG</a> — RAG Pipeline Framework</h4>
+<p>Modular RAG pipeline for AI agents — chunking, embedding, retrieval, and reranking with pluggable vector stores. Built for agentic workflows.</p>
+<sub>RAG &bull; Vector Search &bull; Embeddings &bull; LLM</sub>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<h4><a href="https://github.com/MukundaKatta/MCPForge">MCPForge</a> — MCP Server Builder</h4>
+<p>Build, test, and deploy Model Context Protocol servers in minutes. Scaffolding, hot-reload dev server, and registry publishing for the MCP ecosystem.</p>
+<sub>MCP &bull; TypeScript &bull; Developer Tools</sub>
+</td>
+<td width="50%">
+<h4><a href="https://github.com/MukundaKatta/prithvi">Prithvi</a> — Container Security Scanner</h4>
+<p>Container security scanner with vulnerability detection, compliance checks, and automated security audits for Docker and cloud-native environments.</p>
+<sub>Python &bull; Go &bull; Docker &bull; Security</sub>
+</td>
+</tr>
 </table>
 
 <details>
@@ -94,6 +118,11 @@
 | Project | Description |
 |---------|-------------|
 | [Vimana](https://github.com/MukundaKatta/vimana) | Self-orchestrating AI — autonomous cloud infrastructure provisioning and scaling |
+| [AgentBench](https://github.com/MukundaKatta/AgentBench) | Agent evaluation and benchmarking suite — accuracy, efficiency, and tool usage scoring |
+| [AgentMem](https://github.com/MukundaKatta/agentmem) | Pluggable memory management for AI agents — short-term, long-term, and semantic memory |
+| [LLM Bench CLI](https://github.com/MukundaKatta/llm-bench-cli) | Fast CLI tool for benchmarking local LLMs — speed, throughput, and quality comparison |
+| [TokenWise](https://github.com/MukundaKatta/TokenWise) | Token usage optimization toolkit — count, estimate costs, optimize prompts across LLM providers |
+| [WebMonitor](https://github.com/MukundaKatta/WebMonitor) | Website change detector — content snapshots, diff generation, significant change detection |
 | [Heimdall](https://github.com/MukundaKatta/heimdall) | Curated collection of AI system prompts |
 | [Office3](https://github.com/MukundaKatta/Office3) | Officethree Technologies — AI-powered products for small businesses |
 
@@ -198,6 +227,9 @@
 ![GCP Cloud Architect](https://img.shields.io/badge/GCP_Cloud_Architect-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 ![Terraform GCP](https://img.shields.io/badge/Advanced_Terraform_with_GCP-4285F4?style=flat-square&logo=terraform&logoColor=white)
 
+**Google Cloud**
+![Vertex AI Agent](https://img.shields.io/badge/Build_&_Deploy_Agent_with_Reasoning_Engine-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+
 **LinkedIn Learning**
 
 ![Deep Learning](https://img.shields.io/badge/Deep_Learning:_Image_Recognition-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
@@ -230,6 +262,15 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-1a1a1a?style=flat-square&logo=postgresql&logoColor=D4A853)
 ![Docker](https://img.shields.io/badge/Docker-1a1a1a?style=flat-square&logo=docker&logoColor=D4A853)
 ![GCP](https://img.shields.io/badge/GCP-1a1a1a?style=flat-square&logo=googlecloud&logoColor=D4A853)
+![AWS](https://img.shields.io/badge/AWS-1a1a1a?style=flat-square&logo=amazonaws&logoColor=D4A853)
+![Java](https://img.shields.io/badge/Java-1a1a1a?style=flat-square&logo=openjdk&logoColor=D4A853)
+![Terraform](https://img.shields.io/badge/Terraform-1a1a1a?style=flat-square&logo=terraform&logoColor=D4A853)
+![LangChain](https://img.shields.io/badge/LangChain-1a1a1a?style=flat-square&logo=chainlink&logoColor=D4A853)
+![FastAPI](https://img.shields.io/badge/FastAPI-1a1a1a?style=flat-square&logo=fastapi&logoColor=D4A853)
+![Apache Spark](https://img.shields.io/badge/Spark-1a1a1a?style=flat-square&logo=apachespark&logoColor=D4A853)
+![Apache Airflow](https://img.shields.io/badge/Airflow-1a1a1a?style=flat-square&logo=apacheairflow&logoColor=D4A853)
+![Redis](https://img.shields.io/badge/Redis-1a1a1a?style=flat-square&logo=redis&logoColor=D4A853)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-1a1a1a?style=flat-square&logo=kubernetes&logoColor=D4A853)
 ![Expo](https://img.shields.io/badge/Expo-1a1a1a?style=flat-square&logo=expo&logoColor=D4A853)
 
 </div>
@@ -275,7 +316,7 @@
 
 <div align="center">
 
-**Open to remote roles** — ML Engineer, Full Stack Developer, AI Platform Builder
+**Open to remote roles** — GenAI Engineer, Data Engineer, ML Engineer, Full Stack Developer
 
 *Las Vegas, NV*
 
