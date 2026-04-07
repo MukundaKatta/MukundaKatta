@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=4000&pause=1000&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Hey!+I'm+Mukunda+Rao+Katta;GenAI+%26+Data+Engineer+%7C+Ex-AWS+%7C+AI+Builder" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=4000&pause=1000&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Hey!+I'm+Mukunda+Rao+Katta;Senior+AI%2FML+Engineer+%7C+Ex-AWS+%7C+Open+Source" alt="Typing SVG" />
 
 <br/>
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-1a1a1a?style=for-the-badge&logo=vercel&logoColor=D4A853)](https://mukunda-ai.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-1a1a1a?style=for-the-badge&logo=linkedin&logoColor=D4A853)](https://www.linkedin.com/in/mukunda-k-728155220/)
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
-[![GitHub](https://img.shields.io/badge/GitHub-1a1a1a?style=for-the-badge&logo=github&logoColor=D4A853)](https://github.com/MukundaKatta)
 [![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukund.r1729@gmail.com)
 
 </div>
@@ -14,9 +14,9 @@
 <br/>
 
 <div align="center">
-<em>I build AI-powered products and platforms — from multi-agent systems to full-stack applications.</em>
+<em>Senior AI/ML Engineer with 7+ years building production AI systems at AWS, Fortune 100 enterprises, and startups.</em>
 <br/>
-<em>Passionate about agentic workflows, LLM orchestration, and shipping production-ready AI solutions.</em>
+<em>Built inference APIs for AWS Bedrock (Claude, Llama, Titan) serving millions of daily calls. Creator of Karna AI Agent Platform.</em>
 </div>
 
 <br/>
@@ -26,10 +26,11 @@
 ### What I Do
 
 ```
- AI Agent Development    Multi-channel AI assistants, agentic workflows, LLM orchestration & tool use
- Full Stack Engineering  End-to-end web & mobile apps — TypeScript, React, Next.js, Node.js, Firebase
- Data & ML Engineering   RAG pipelines, ETL frameworks, SageMaker, Bedrock, model serving at scale
- Cloud & DevOps          GCP Cloud Functions, Docker, Supabase, CI/CD pipelines
+ AI/ML Infrastructure     Inference APIs, model serving, LLM evaluation, RAG pipelines, AI observability
+ AI Agent Development     Multi-channel AI assistants, agentic workflows, LLM orchestration & tool use
+ Data Engineering         ETL/ELT pipelines, cloud warehouses (Snowflake, Redshift, BigQuery), Airflow
+ SDK & Developer Tools    TypeScript SDK design, plugin frameworks, MCP tooling, CLI tools
+ Cloud & DevOps           AWS, GCP, Azure | Docker, Kubernetes, Terraform, CI/CD
 ```
 
 ---
@@ -40,75 +41,51 @@
   <tr>
     <td width="50%">
       <h4><a href="https://github.com/MukundaKatta/karna">Karna</a> — AI Agent Platform</h4>
-      <p>Self-hosted personal AI assistant with 7 messaging channels (Telegram, Slack, Discord, WhatsApp, SMS, iMessage, Webchat), extensible skills, semantic memory, voice support. TypeScript/Node.js monorepo with Next.js dashboard.</p>
-      <sub>TypeScript &bull; Node.js &bull; Supabase &bull; pgvector</sub>
+      <p>Self-hosted AI assistant with 7 messaging channels (Telegram, Slack, Discord, WhatsApp, SMS, iMessage, Web), extensible plugin SDK, semantic memory, and voice. TypeScript monorepo (pnpm + Turborepo) with Next.js dashboard and React Native mobile app.</p>
+      <sub>TypeScript &bull; Node.js &bull; Next.js &bull; Supabase &bull; WebSocket &bull; pgvector</sub>
     </td>
     <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/amogha-cafe">Amogha Cafe</a> — Restaurant Platform</h4>
-      <p>Premium full-stack Firebase web app with real-time ordering, admin dashboard, kitchen display system, QR dine-in, live order tracking, and payment integration. <strong>Live at <a href="https://amogha-cafe.web.app">amogha-cafe.web.app</a></strong></p>
-      <sub>JavaScript &bull; Firebase &bull; Real-time DB &bull; Cloud Functions</sub>
+      <h4><a href="https://github.com/MukundaKatta/MCPForge">MCPForge</a> — MCP Server Builder</h4>
+      <p>CLI toolkit to scaffold, test, and deploy Model Context Protocol servers in minutes. Zero-config defaults with progressive complexity disclosure. Built for the Anthropic MCP ecosystem.</p>
+      <sub>TypeScript &bull; MCP &bull; CLI &bull; Developer Tools</sub>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/rnht">RNHT</a> — Temple Community Platform</h4>
-      <p>Rudra Narayana Hindu Temple — full-featured community platform for events, donations, priest scheduling, member management, and temple communications.</p>
-      <sub>TypeScript &bull; React &bull; Full Stack</sub>
+      <h4><a href="https://github.com/MukundaKatta/AgentRAG">AgentRAG</a> — Modular RAG Pipeline</h4>
+      <p>Provider-agnostic RAG framework with pluggable vector stores, chunking strategies, and retrieval methods. Designed for agentic workflows with clean API boundaries.</p>
+      <sub>RAG &bull; Vector Search &bull; Embeddings &bull; TypeScript</sub>
     </td>
     <td width="50%">
-      <h4>CareerSavvy — AI Job Platform <em>(Private)</em></h4>
-      <p>Three-repo job search platform: React job seeker portal, employer/recruiter portal, and Python backend on GCP Cloud Functions. End-to-end hiring pipeline with AI-powered matching.</p>
-      <sub>React &bull; Python &bull; GCP &bull; Cloud Functions</sub>
+      <h4><a href="https://github.com/MukundaKatta/astra-agent">Astra Agent</a> — AI Agent Runtime</h4>
+      <p>Standalone AI agent runtime with tool execution, context management, and multi-model routing. Foundation for building autonomous AI assistants with structured tool use.</p>
+      <sub>TypeScript &bull; LLM Orchestration &bull; Tool Use &bull; Agents</sub>
     </td>
   </tr>
   <tr>
     <td width="50%">
       <h4><a href="https://github.com/MukundaKatta/sadhak">Sadhak</a> — AI Job Search Pipeline</h4>
-      <p>AI-powered job search command center built on Claude Code. Offer evaluation, resume tailoring, cover letter generation, portal scanning, batch processing, and application tracking.</p>
-      <sub>JavaScript &bull; Playwright &bull; Claude Code Skills</sub>
+      <p>AI-powered job search command center built on Claude Code. Automated offer evaluation, resume tailoring, cover letter generation, and application tracking.</p>
+      <sub>JavaScript &bull; Claude Code &bull; Automation</sub>
     </td>
     <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/astra-agent">Astra Agent</a> — AI Agent Framework</h4>
-      <p>Standalone AI agent runtime with tool execution, context management, and multi-model routing. Foundation for building autonomous AI assistants.</p>
-      <sub>TypeScript &bull; LLM Orchestration &bull; Tool Use</sub>
+      <h4><a href="https://github.com/MukundaKatta/chetana">Chetana</a> — AI Consciousness Research</h4>
+      <p>Research platform testing AI models against 14 consciousness indicators from 6 scientific theories. Bridging philosophy of mind with empirical AI testing.</p>
+      <sub>TypeScript &bull; Python &bull; Machine Learning &bull; Research</sub>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/Oradent">Oradent</a> — Dental Practice Management</h4>
-      <p>Full dental practice platform — appointment scheduling, patient records, billing, treatment planning, and practice analytics.</p>
-      <sub>Full Stack &bull; Healthcare</sub>
+      <h4><a href="https://github.com/MukundaKatta/prithvi">Prithvi</a> — Container Security Scanner</h4>
+      <p>Container security scanner with vulnerability detection, compliance checks, and automated audits for Docker and cloud-native environments.</p>
+      <sub>Python &bull; Go &bull; Docker &bull; Security</sub>
     </td>
     <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/artigen">ArtiGen</a> — AI Art Community</h4>
-      <p>AI art community platform built with React Native, Expo, and Supabase. Create, share, and discover AI-generated art with social features.</p>
-      <sub>React Native &bull; Expo &bull; Supabase</sub>
+      <h4><a href="https://github.com/MukundaKatta/amogha-cafe">Amogha Cafe</a> — Restaurant Platform</h4>
+      <p>Full-stack Firebase web app with real-time ordering, admin dashboard, kitchen display, QR dine-in, and payment integration. <strong><a href="https://amogha-cafe.web.app">Live</a></strong></p>
+      <sub>JavaScript &bull; Firebase &bull; Real-time DB &bull; Cloud Functions</sub>
     </td>
   </tr>
-<tr>
-<td width="50%">
-<h4><a href="https://github.com/MukundaKatta/chetana">Chetana</a> — AI Consciousness Research</h4>
-<p>AI consciousness research platform. Test AI models against 14 consciousness indicators from 6 scientific theories. Bridging philosophy of mind with empirical AI testing.</p>
-<sub>TypeScript &bull; Python &bull; Machine Learning &bull; Research</sub>
-</td>
-<td width="50%">
-<h4><a href="https://github.com/MukundaKatta/AgentRAG">AgentRAG</a> — RAG Pipeline Framework</h4>
-<p>Modular RAG pipeline for AI agents — chunking, embedding, retrieval, and reranking with pluggable vector stores. Built for agentic workflows.</p>
-<sub>RAG &bull; Vector Search &bull; Embeddings &bull; LLM</sub>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<h4><a href="https://github.com/MukundaKatta/MCPForge">MCPForge</a> — MCP Server Builder</h4>
-<p>Build, test, and deploy Model Context Protocol servers in minutes. Scaffolding, hot-reload dev server, and registry publishing for the MCP ecosystem.</p>
-<sub>MCP &bull; TypeScript &bull; Developer Tools</sub>
-</td>
-<td width="50%">
-<h4><a href="https://github.com/MukundaKatta/prithvi">Prithvi</a> — Container Security Scanner</h4>
-<p>Container security scanner with vulnerability detection, compliance checks, and automated security audits for Docker and cloud-native environments.</p>
-<sub>Python &bull; Go &bull; Docker &bull; Security</sub>
-</td>
-</tr>
 </table>
 
 <details>
@@ -117,14 +94,14 @@
 
 | Project | Description |
 |---------|-------------|
+| [RNHT](https://github.com/MukundaKatta/rnht) | Temple community platform — events, donations, priest scheduling, member management |
 | [Vimana](https://github.com/MukundaKatta/vimana) | Self-orchestrating AI — autonomous cloud infrastructure provisioning and scaling |
 | [AgentBench](https://github.com/MukundaKatta/AgentBench) | Agent evaluation and benchmarking suite — accuracy, efficiency, and tool usage scoring |
 | [AgentMem](https://github.com/MukundaKatta/agentmem) | Pluggable memory management for AI agents — short-term, long-term, and semantic memory |
-| [LLM Bench CLI](https://github.com/MukundaKatta/llm-bench-cli) | Fast CLI tool for benchmarking local LLMs — speed, throughput, and quality comparison |
-| [TokenWise](https://github.com/MukundaKatta/TokenWise) | Token usage optimization toolkit — count, estimate costs, optimize prompts across LLM providers |
-| [WebMonitor](https://github.com/MukundaKatta/WebMonitor) | Website change detector — content snapshots, diff generation, significant change detection |
-| [Heimdall](https://github.com/MukundaKatta/heimdall) | Curated collection of AI system prompts |
-| [Office3](https://github.com/MukundaKatta/Office3) | Officethree Technologies — AI-powered products for small businesses |
+| [LLM Bench CLI](https://github.com/MukundaKatta/llm-bench-cli) | CLI tool for benchmarking local LLMs — speed, throughput, and quality comparison |
+| [TokenWise](https://github.com/MukundaKatta/TokenWise) | Token usage optimization — count, estimate costs, optimize prompts across providers |
+| [Oradent](https://github.com/MukundaKatta/Oradent) | Dental practice management — scheduling, records, billing, treatment planning |
+| CareerSavvy | AI job platform — React portals + Python backend on GCP *(Private)* |
 
 </details>
 
@@ -134,25 +111,24 @@
 
 | Role | Company | Duration |
 |------|---------|----------|
-| **GenAI Engineer / AI Python Engineer** | GPS IT Solutions | Jun 2024 — Present |
+| **GenAI Engineer** | GPS IT Solutions | Jun 2024 — Present |
 | **Software Development Engineer** | Amazon Web Services (AWS) | Aug 2022 — May 2024 |
 | **Data Engineer** | GSP IT Solutions | Jan 2022 — Aug 2022 |
 | **Data Engineer / Software Engineer** | Infosys | Feb 2017 — Dec 2020 |
 
 **Amazon Web Services (AWS)** — Software Development Engineer
-- Built core AI/ML product features for AWS Bedrock and SageMaker, serving thousands of enterprise customers worldwide
-- Developed inference APIs and model-serving infrastructure for Amazon Bedrock (Claude, Llama, Titan) at production scale
-- Engineered SageMaker pipeline components for end-to-end ML workflows, reducing customers' time-to-production by 40%
-- Designed RESTful APIs in Python and Java powering Bedrock's model management, handling millions of API calls daily with 99.99% availability
-- Implemented CI/CD pipelines via Jenkins and AWS CodePipeline with canary releases across 15+ AI/ML microservices
+- Built inference APIs for AWS Bedrock (Claude, Llama, Titan) handling millions of daily calls with 99.99% availability
+- Engineered SageMaker pipeline components for end-to-end ML workflows, cutting customer time-to-production by 40%
+- Built telemetry and observability pipelines for AI/ML workloads, reducing mean-time-to-detection by 35%
+- Implemented CI/CD with canary releases across 15+ microservices, achieving zero-downtime deployments
 
 **GPS IT Solutions** — GenAI Engineer
-- Architected GPT-4-powered marketing content generator, reducing content creation time by 40%
-- Built production RAG pipelines using Vertex AI and BigQuery for intelligent document retrieval across 500K+ enterprise documents
+- Architected GPT-4-powered content generator with brand-voice compliance, reducing content creation time by 40%
+- Built production RAG pipelines on Vertex AI + BigQuery for retrieval across 500K+ enterprise documents
 
-**Infosys** — Data Engineer / Software Engineer
-- Developed Python-based ETL frameworks processing 10M+ records daily for enterprise clients including Cigna
-- Built streaming and batch ETL solutions with Apache Beam and PySpark, processing terabytes of healthcare data
+**Infosys** — Data Engineer
+- Developed Python-based ETL frameworks processing 10M+ records daily for Fortune 100 healthcare clients
+- Led migration from legacy ETL (SSIS/Oracle) to Snowflake, reducing query times by 70%
 
 ---
 
@@ -168,27 +144,6 @@
 
 <div align="center">
 
-**Stanford University** 🎓
-
-![ML](https://img.shields.io/badge/Machine_Learning-8C1515?style=flat-square&logo=stanford&logoColor=white)
-![Stats](https://img.shields.io/badge/Introduction_to_Statistics-8C1515?style=flat-square&logo=stanford&logoColor=white)
-
-**University of Pennsylvania (Wharton)** 🎓
-
-![Business Analytics](https://img.shields.io/badge/Business_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
-![Customer Analytics](https://img.shields.io/badge/Customer_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
-![People Analytics](https://img.shields.io/badge/People_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
-![Accounting Analytics](https://img.shields.io/badge/Accounting_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
-![Operations Analytics](https://img.shields.io/badge/Operations_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
-
-**UC Davis**
-
-![SQL](https://img.shields.io/badge/SQL_for_Data_Science-022851?style=flat-square&logo=coursera&logoColor=D4A853)
-
-**IBM**
-
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity_Tools_&_Attacks-052FAD?style=flat-square&logo=ibm&logoColor=white)
-
 **Anthropic**
 
 ![MCP Advanced](https://img.shields.io/badge/MCP_Advanced_Topics-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
@@ -202,41 +157,43 @@
 ![AI Fluency](https://img.shields.io/badge/AI_Fluency:_Framework_&_Foundations-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
 ![Claude 101](https://img.shields.io/badge/Claude_101-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
 
+**AWS**
+
+![AWS Solutions Architect Pro](https://img.shields.io/badge/Solutions_Architect_Professional-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS ML Specialty](https://img.shields.io/badge/AWS_ML_Specialty-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS DevOps Pro](https://img.shields.io/badge/DevOps_Engineer_Professional-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS GenAI Apps](https://img.shields.io/badge/AWS_Generative_AI_Applications-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS AI Solutions](https://img.shields.io/badge/AWS_Services_for_AI_Solutions-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS AI Fundamentals](https://img.shields.io/badge/AI_Fundamentals_&_the_Cloud-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Amazon Q](https://img.shields.io/badge/Amazon_Q_for_Software_Dev-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+
+**Cloud & Infrastructure**
+
+![GCP Cloud Architect](https://img.shields.io/badge/GCP_Cloud_Architect-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Terraform GCP](https://img.shields.io/badge/Advanced_Terraform_with_GCP-4285F4?style=flat-square&logo=terraform&logoColor=white)
+![Vertex AI Agent](https://img.shields.io/badge/Build_&_Deploy_Agent_with_Reasoning_Engine-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Azure Data Engineer](https://img.shields.io/badge/Azure_Data_Engineer_Associate-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Azure Fundamentals](https://img.shields.io/badge/Azure_Fundamentals-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+
+**Stanford / Wharton**
+
+![ML](https://img.shields.io/badge/Machine_Learning-8C1515?style=flat-square&logo=stanford&logoColor=white)
+![Stats](https://img.shields.io/badge/Introduction_to_Statistics-8C1515?style=flat-square&logo=stanford&logoColor=white)
+![Business Analytics](https://img.shields.io/badge/Business_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+![Customer Analytics](https://img.shields.io/badge/Customer_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+![People Analytics](https://img.shields.io/badge/People_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+
 **Microsoft**
 
 ![GenAI for Devs](https://img.shields.io/badge/Generative_AI_for_Software_Devs-0078D4?style=flat-square&logo=microsoft&logoColor=white)
 ![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot_Productivity-0078D4?style=flat-square&logo=microsoft&logoColor=white)
 ![Copilot PM](https://img.shields.io/badge/Copilot_for_Project_Management-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-![Intro GenAI Copilot](https://img.shields.io/badge/Intro_to_GenAI_for_Developers-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-![Copilot VS Code](https://img.shields.io/badge/Copilot_&_VS_Code_Workflow-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-
-**AWS**
-
-![AWS GenAI Apps](https://img.shields.io/badge/AWS_Generative_AI_Applications-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![AWS AI Solutions](https://img.shields.io/badge/AWS_Services_for_AI_Solutions-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![AWS AI Fundamentals](https://img.shields.io/badge/AI_Fundamentals_&_the_Cloud-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![AWS ML Specialty](https://img.shields.io/badge/AWS_ML_Specialty-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![AWS Solutions Architect Pro](https://img.shields.io/badge/Solutions_Architect_Professional-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![AWS DevOps Pro](https://img.shields.io/badge/DevOps_Engineer_Professional-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![Amazon Q](https://img.shields.io/badge/Amazon_Q_for_Software_Dev-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-
-**Cloud & Infrastructure**
-
-![Azure Data Engineer](https://img.shields.io/badge/Azure_Data_Engineer_Associate-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Azure Fundamentals](https://img.shields.io/badge/Azure_Fundamentals-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![GCP Cloud Architect](https://img.shields.io/badge/GCP_Cloud_Architect-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![Terraform GCP](https://img.shields.io/badge/Advanced_Terraform_with_GCP-4285F4?style=flat-square&logo=terraform&logoColor=white)
-
-**Google Cloud**
-![Vertex AI Agent](https://img.shields.io/badge/Build_&_Deploy_Agent_with_Reasoning_Engine-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 
 **LinkedIn Learning**
 
 ![Deep Learning](https://img.shields.io/badge/Deep_Learning:_Image_Recognition-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/Deep_Learning_with_TensorFlow-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
-![Keras](https://img.shields.io/badge/Deep_Learning_with_Keras-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
 ![NLP Python](https://img.shields.io/badge/NLP_with_Python_for_ML-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
-![Neural Networks](https://img.shields.io/badge/Training_Neural_Networks-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
 ![Apache Spark](https://img.shields.io/badge/Apache_Spark_Essential-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
 
 </div>
@@ -251,27 +208,25 @@
 ![Python](https://img.shields.io/badge/Python-1a1a1a?style=flat-square&logo=python&logoColor=D4A853)
 ![JavaScript](https://img.shields.io/badge/JavaScript-1a1a1a?style=flat-square&logo=javascript&logoColor=D4A853)
 ![Go](https://img.shields.io/badge/Go-1a1a1a?style=flat-square&logo=go&logoColor=D4A853)
+![Java](https://img.shields.io/badge/Java-1a1a1a?style=flat-square&logo=openjdk&logoColor=D4A853)
 ![React](https://img.shields.io/badge/React-1a1a1a?style=flat-square&logo=react&logoColor=D4A853)
 ![Next.js](https://img.shields.io/badge/Next.js-1a1a1a?style=flat-square&logo=nextdotjs&logoColor=D4A853)
 ![Node.js](https://img.shields.io/badge/Node.js-1a1a1a?style=flat-square&logo=nodedotjs&logoColor=D4A853)
-![React Native](https://img.shields.io/badge/React_Native-1a1a1a?style=flat-square&logo=react&logoColor=D4A853)
 ![Claude](https://img.shields.io/badge/Claude-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
 ![OpenAI](https://img.shields.io/badge/OpenAI-1a1a1a?style=flat-square&logo=openai&logoColor=D4A853)
+![AWS](https://img.shields.io/badge/AWS-1a1a1a?style=flat-square&logo=amazonaws&logoColor=D4A853)
+![GCP](https://img.shields.io/badge/GCP-1a1a1a?style=flat-square&logo=googlecloud&logoColor=D4A853)
+![Snowflake](https://img.shields.io/badge/Snowflake-1a1a1a?style=flat-square&logo=snowflake&logoColor=D4A853)
 ![Supabase](https://img.shields.io/badge/Supabase-1a1a1a?style=flat-square&logo=supabase&logoColor=D4A853)
-![Firebase](https://img.shields.io/badge/Firebase-1a1a1a?style=flat-square&logo=firebase&logoColor=D4A853)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-1a1a1a?style=flat-square&logo=postgresql&logoColor=D4A853)
 ![Docker](https://img.shields.io/badge/Docker-1a1a1a?style=flat-square&logo=docker&logoColor=D4A853)
-![GCP](https://img.shields.io/badge/GCP-1a1a1a?style=flat-square&logo=googlecloud&logoColor=D4A853)
-![AWS](https://img.shields.io/badge/AWS-1a1a1a?style=flat-square&logo=amazonaws&logoColor=D4A853)
-![Java](https://img.shields.io/badge/Java-1a1a1a?style=flat-square&logo=openjdk&logoColor=D4A853)
-![Terraform](https://img.shields.io/badge/Terraform-1a1a1a?style=flat-square&logo=terraform&logoColor=D4A853)
-![LangChain](https://img.shields.io/badge/LangChain-1a1a1a?style=flat-square&logo=chainlink&logoColor=D4A853)
-![FastAPI](https://img.shields.io/badge/FastAPI-1a1a1a?style=flat-square&logo=fastapi&logoColor=D4A853)
-![Apache Spark](https://img.shields.io/badge/Spark-1a1a1a?style=flat-square&logo=apachespark&logoColor=D4A853)
-![Apache Airflow](https://img.shields.io/badge/Airflow-1a1a1a?style=flat-square&logo=apacheairflow&logoColor=D4A853)
-![Redis](https://img.shields.io/badge/Redis-1a1a1a?style=flat-square&logo=redis&logoColor=D4A853)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-1a1a1a?style=flat-square&logo=kubernetes&logoColor=D4A853)
-![Expo](https://img.shields.io/badge/Expo-1a1a1a?style=flat-square&logo=expo&logoColor=D4A853)
+![Terraform](https://img.shields.io/badge/Terraform-1a1a1a?style=flat-square&logo=terraform&logoColor=D4A853)
+![FastAPI](https://img.shields.io/badge/FastAPI-1a1a1a?style=flat-square&logo=fastapi&logoColor=D4A853)
+![Redis](https://img.shields.io/badge/Redis-1a1a1a?style=flat-square&logo=redis&logoColor=D4A853)
+![Apache Airflow](https://img.shields.io/badge/Airflow-1a1a1a?style=flat-square&logo=apacheairflow&logoColor=D4A853)
+![Apache Spark](https://img.shields.io/badge/Spark-1a1a1a?style=flat-square&logo=apachespark&logoColor=D4A853)
+![LangChain](https://img.shields.io/badge/LangChain-1a1a1a?style=flat-square&logo=chainlink&logoColor=D4A853)
 
 </div>
 
@@ -316,9 +271,9 @@
 
 <div align="center">
 
-**Open to remote roles** — GenAI Engineer, Data Engineer, ML Engineer, Full Stack Developer
+**Open to remote roles** — Senior AI/ML Engineer, GenAI Platform Engineer, Data Engineer
 
-*Las Vegas, NV*
+[mukunda-ai.vercel.app](https://mukunda-ai.vercel.app) &bull; Las Vegas, NV
 
 <br/>
 
