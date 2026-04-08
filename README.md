@@ -113,7 +113,7 @@
 |------|---------|----------|
 | **AI/ML Engineer** | Southwest Airlines (via GPS IT Solutions) | Jun 2024 — Present |
 | **SDE (Software Development Engineer)** | Amazon Web Services (AWS) | Aug 2022 — May 2024 |
-| **AI/ML Engineer** | American Express (via Infosys) | Feb 2017 — Dec 2020 |
+| **System Engineer** | American Express (via Infosys) | Feb 2017 — Dec 2020 |
 | **Data Engineer** | Cigna (via GPS IT Solutions) | Jan 2022 — Aug 2022 |
 
 **Southwest Airlines** (via GPS IT Solutions) — AI/ML Engineer
@@ -124,7 +124,7 @@
 - Built AWS Application Manager (Systems Manager service) — React/TypeScript frontend for AWS Console + Java/Python backend services
 - Integrated CloudFormation for infrastructure management and runbook automation for operational workflows
 
-**American Express** (via Infosys) — AI/ML Engineer
+**American Express** (via Infosys) — System Engineer
 - MCG: Built GPT-4 + RAG marketing content generator with FastAPI, FAISS/Pinecone vector search, reducing campaign creation time by 40%
 - MRMG: Developed AI risk governance framework with 23 automated compliance tests aligned to SR 11-7 regulatory standards
 
