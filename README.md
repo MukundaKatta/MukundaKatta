@@ -14,9 +14,9 @@
 <br/>
 
 <div align="center">
-<em>Senior AI/ML Engineer with 8+ years building production AI systems at AWS, Fortune 100 enterprises, and startups.</em>
+<em>Senior AI/ML Engineer with 8+ years building production AI systems at Fortune 100 enterprises. Ex-AWS.</em>
 <br/>
-<em>Built inference APIs for AWS Bedrock (Claude, Llama, Titan) serving millions of daily calls. Creator of Karna AI Agent Platform.</em>
+<em>Building agentic AI solutions with Bedrock, SageMaker, and LangGraph. Creator of Karna AI Agent Platform.</em>
 </div>
 
 <br/>
@@ -26,7 +26,7 @@
 ### What I Do
 
 ```
- AI/ML Infrastructure     Inference APIs, model serving, LLM evaluation, RAG pipelines, AI observability
+ AI/ML Engineering        RAG pipelines, agentic workflows, LLM evaluation, ML fault prediction, AI observability
  AI Agent Development     Multi-channel AI assistants, agentic workflows, LLM orchestration & tool use
  Data Engineering         ETL/ELT pipelines, cloud warehouses (Snowflake, Redshift, BigQuery), Airflow
  SDK & Developer Tools    TypeScript SDK design, plugin frameworks, MCP tooling, CLI tools
@@ -111,24 +111,25 @@
 
 | Role | Company | Duration |
 |------|---------|----------|
-| **GenAI Engineer** | GPS IT Solutions | Jun 2024 — Present |
-| **Software Development Engineer** | Amazon Web Services (AWS) | Aug 2022 — May 2024 |
-| **Data Engineer** | GSP IT Solutions | Jan 2022 — Aug 2022 |
-| **Data Engineer / Software Engineer** | Infosys | Feb 2017 — Dec 2020 |
+| **AI/ML Engineer** | Southwest Airlines (via GPS IT Solutions) | Jun 2024 — Present |
+| **SDE (Software Development Engineer)** | Amazon Web Services (AWS) | Aug 2022 — May 2024 |
+| **AI/ML Engineer** | American Express (via Infosys) | Feb 2017 — Dec 2020 |
+| **Data Engineer** | Cigna (via GPS IT Solutions) | Jan 2022 — Aug 2022 |
 
-**Amazon Web Services (AWS)** — Software Development Engineer
-- Built inference APIs for AWS Bedrock (Claude, Llama, Titan) handling millions of daily calls with 99.99% availability
-- Engineered SageMaker pipeline components for end-to-end ML workflows, cutting customer time-to-production by 40%
-- Built telemetry and observability pipelines for AI/ML workloads, reducing mean-time-to-detection by 35%
-- Implemented CI/CD with canary releases across 15+ microservices, achieving zero-downtime deployments
+**Southwest Airlines** (via GPS IT Solutions) — AI/ML Engineer
+- SWA Sidebar: Built ML fault prediction system, migrated from SageMaker to Bedrock + OpenSearch achieving 78% cost reduction; Flask API, Chrome extension, 10K+ maintenance records
+- Maintenix Chatbot: Developed agentic RAG chatbot with LangGraph, Bedrock Nova Pro/Micro, FAISS + BM25 hybrid retrieval over 30K+ KB entries, 370+ tests, deployed on ECS Fargate
 
-**GPS IT Solutions** — GenAI Engineer
-- Architected GPT-4-powered content generator with brand-voice compliance, reducing content creation time by 40%
-- Built production RAG pipelines on Vertex AI + BigQuery for retrieval across 500K+ enterprise documents
+**Amazon Web Services (AWS)** — SDE (Software Development Engineer)
+- Built AWS Application Manager (Systems Manager service) — React/TypeScript frontend for AWS Console + Java/Python backend services
+- Integrated CloudFormation for infrastructure management and runbook automation for operational workflows
 
-**Infosys** — Data Engineer
-- Developed Python-based ETL frameworks processing 10M+ records daily for Fortune 100 healthcare clients
-- Led migration from legacy ETL (SSIS/Oracle) to Snowflake, reducing query times by 70%
+**American Express** (via Infosys) — AI/ML Engineer
+- MCG: Built GPT-4 + RAG marketing content generator with FastAPI, FAISS/Pinecone vector search, reducing campaign creation time by 40%
+- MRMG: Developed AI risk governance framework with 23 automated compliance tests aligned to SR 11-7 regulatory standards
+
+**Cigna** (via GPS IT Solutions) — Data Engineer
+- Led ETL migration from on-premises infrastructure to AWS (Glue, PySpark) for healthcare data pipelines
 
 ---
 
