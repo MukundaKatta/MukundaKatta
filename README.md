@@ -1,37 +1,102 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=4000&pause=1000&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Hey!+I'm+Mukunda+Rao+Katta;Senior+AI%2FML+Engineer+%7C+Ex-AWS+%7C+Open+Source" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Mukunda+Rao+Katta;Senior+AI%2FML+Engineer+%7C+Ex-AWS+%7C+Building+at+Scale" alt="Typing SVG" />
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-1a1a1a?style=for-the-badge&logo=vercel&logoColor=D4A853)](https://mukunda-ai.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-1a1a1a?style=for-the-badge&logo=linkedin&logoColor=D4A853)](https://www.linkedin.com/in/mukunda-k-728155220/)
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
-[![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukund.r1729@gmail.com)
+[![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:katta.mukunda@gmail.com)
 
 </div>
 
 <br/>
 
 <div align="center">
-<em>Senior AI/ML Engineer with 8+ years building production AI systems at Fortune 100 enterprises. Ex-AWS.</em>
-<br/>
-<em>Building agentic AI solutions with Bedrock, SageMaker, and LangGraph. Creator of Karna AI Agent Platform.</em>
-</div>
 
-<br/>
+```
+  8+ years building production systems at Fortune 100 scale
+  Former SDE at Amazon Web Services  •  Currently at Southwest Airlines
+  Deep expertise in ML systems, distributed architectures, and full-stack engineering
+```
+
+</div>
 
 ---
 
-### What I Do
+### Impact at a Glance
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <strong>78%</strong><br/>
+      <sub>Infrastructure cost reduction<br/>SageMaker → Bedrock migration</sub>
+    </td>
+    <td align="center" width="25%">
+      <strong>600x</strong><br/>
+      <sub>Retrieval latency improvement<br/>ML prediction system</sub>
+    </td>
+    <td align="center" width="25%">
+      <strong>30K+</strong><br/>
+      <sub>Knowledge base entries<br/>9-stage agentic RAG pipeline</sub>
+    </td>
+    <td align="center" width="25%">
+      <strong>370+</strong><br/>
+      <sub>Unit tests & evaluations<br/>Production ML systems</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+### What I Build
 
 ```
- AI/ML Engineering        RAG pipelines, agentic workflows, LLM evaluation, ML fault prediction, AI observability
- AI Agent Development     Multi-channel AI assistants, agentic workflows, LLM orchestration & tool use
- Data Engineering         ETL/ELT pipelines, cloud warehouses (Snowflake, Redshift, BigQuery), Airflow
- SDK & Developer Tools    TypeScript SDK design, plugin frameworks, MCP tooling, CLI tools
- Cloud & DevOps           AWS, GCP, Azure | Docker, Kubernetes, Terraform, CI/CD
+ ML Systems           Fault prediction, embedding pipelines, model evaluation, cost-optimized inference
+ Agentic AI           RAG pipelines, LangGraph workflows, query routing, hallucination detection
+ Cloud Infrastructure AWS (Bedrock, SageMaker, ECS, OpenSearch), GCP, Azure, Kubernetes, Terraform
+ Full-Stack           React/TypeScript + Java/Python backend APIs, CI/CD, zero-downtime deployments
 ```
+
+---
+
+### Experience
+
+| Role | Company | Duration |
+|------|---------|----------|
+| **AI/ML Engineer** | Southwest Airlines | Aug 2025 — Present |
+| **AI/ML Engineer** | GPS IT Solutions | Jun 2024 — Aug 2025 |
+| **Software Development Engineer** | Amazon Web Services (AWS) | Aug 2022 — May 2024 |
+| **Data Engineer** | Cigna | Jan 2022 — Aug 2022 |
+| **Software Engineer** | American Express | Feb 2017 — Dec 2020 |
+
+<details>
+<summary><strong>Highlights</strong></summary>
+<br/>
+
+**Southwest Airlines** — AI/ML Engineer
+- Architected ML fault prediction system for aircraft maintenance — 5 prediction types, 10K+ records, sub-second retrieval
+- Led SageMaker → Bedrock migration: 78% cost reduction ($1,740→$371/mo), 600x latency improvement
+- Designed 9-stage agentic RAG pipeline (LangGraph, Bedrock Nova Pro/Micro, FAISS + BM25) over 30K+ KB entries
+
+**GPS IT Solutions** — AI/ML Engineer
+- Built GPT-4 + RAG content generation platform with compliance validation, reducing production time by 40%
+- Designed AI model risk governance framework with 23 automated evaluation tests achieving regulatory compliance
+- Architected FastAPI microservices with FAISS/Pinecone vector search on Kubernetes
+
+**Amazon Web Services (AWS)** — Software Development Engineer
+- Built and shipped features for AWS Application Manager (Systems Manager) serving enterprise customers globally
+- Owned full-stack delivery: React/TypeScript frontend + Java/Python backend APIs with operational excellence
+- Designed CI/CD and IaC patterns enabling zero-downtime deployments at enterprise scale
+
+**Cigna** — Data Engineer
+- Led end-to-end migration of healthcare data pipelines from on-prem to AWS (Glue, PySpark)
+
+**American Express** — Software Engineer
+- Developed Python backend services and RESTful APIs for enterprise platforms handling high-volume transactions at scale
+
+</details>
 
 ---
 
@@ -41,7 +106,7 @@
   <tr>
     <td width="50%">
       <h4><a href="https://github.com/MukundaKatta/karna">Karna</a> — AI Agent Platform</h4>
-      <p>Self-hosted AI assistant with 7 messaging channels (Telegram, Slack, Discord, WhatsApp, SMS, iMessage, Web), extensible plugin SDK, semantic memory, and voice. TypeScript monorepo (pnpm + Turborepo) with Next.js dashboard and React Native mobile app.</p>
+      <p>Self-hosted AI assistant with 7 messaging channels (Telegram, Slack, Discord, WhatsApp, SMS, iMessage, Web), extensible plugin SDK, semantic memory, and voice. TypeScript monorepo with Next.js dashboard and React Native mobile app.</p>
       <sub>TypeScript &bull; Node.js &bull; Next.js &bull; Supabase &bull; WebSocket &bull; pgvector</sub>
     </td>
     <td width="50%">
@@ -62,30 +127,6 @@
       <sub>TypeScript &bull; LLM Orchestration &bull; Tool Use &bull; Agents</sub>
     </td>
   </tr>
-  <tr>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/sadhak">Sadhak</a> — AI Job Search Pipeline</h4>
-      <p>AI-powered job search command center built on Claude Code. Automated offer evaluation, resume tailoring, cover letter generation, and application tracking.</p>
-      <sub>JavaScript &bull; Claude Code &bull; Automation</sub>
-    </td>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/chetana">Chetana</a> — AI Consciousness Research</h4>
-      <p>Research platform testing AI models against 14 consciousness indicators from 6 scientific theories. Bridging philosophy of mind with empirical AI testing.</p>
-      <sub>TypeScript &bull; Python &bull; Machine Learning &bull; Research</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/prithvi">Prithvi</a> — Container Security Scanner</h4>
-      <p>Container security scanner with vulnerability detection, compliance checks, and automated audits for Docker and cloud-native environments.</p>
-      <sub>Python &bull; Go &bull; Docker &bull; Security</sub>
-    </td>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/amogha-cafe">Amogha Cafe</a> — Restaurant Platform</h4>
-      <p>Full-stack Firebase web app with real-time ordering, admin dashboard, kitchen display, QR dine-in, and payment integration. <strong><a href="https://amogha-cafe.web.app">Live</a></strong></p>
-      <sub>JavaScript &bull; Firebase &bull; Real-time DB &bull; Cloud Functions</sub>
-    </td>
-  </tr>
 </table>
 
 <details>
@@ -94,49 +135,18 @@
 
 | Project | Description |
 |---------|-------------|
-| [RNHT](https://github.com/MukundaKatta/rnht) | Temple community platform — events, donations, priest scheduling, member management |
-| [Vimana](https://github.com/MukundaKatta/vimana) | Self-orchestrating AI — autonomous cloud infrastructure provisioning and scaling |
-| [AgentBench](https://github.com/MukundaKatta/AgentBench) | Agent evaluation and benchmarking suite — accuracy, efficiency, and tool usage scoring |
-| [AgentMem](https://github.com/MukundaKatta/agentmem) | Pluggable memory management for AI agents — short-term, long-term, and semantic memory |
-| [LLM Bench CLI](https://github.com/MukundaKatta/llm-bench-cli) | CLI tool for benchmarking local LLMs — speed, throughput, and quality comparison |
-| [TokenWise](https://github.com/MukundaKatta/TokenWise) | Token usage optimization — count, estimate costs, optimize prompts across providers |
-| [Oradent](https://github.com/MukundaKatta/Oradent) | Dental practice management — scheduling, records, billing, treatment planning |
-| CareerSavvy | AI job platform — React portals + Python backend on GCP *(Private)* |
+| [Sadhak](https://github.com/MukundaKatta/sadhak) | AI-powered job search command center — automated evaluation, resume tailoring, application tracking |
+| [Chetana](https://github.com/MukundaKatta/chetana) | AI consciousness research platform — 14 indicators from 6 scientific theories |
+| [Prithvi](https://github.com/MukundaKatta/prithvi) | Container security scanner — vulnerability detection, compliance checks, Docker audits |
+| [Amogha Cafe](https://github.com/MukundaKatta/amogha-cafe) | Full-stack Firebase restaurant platform — real-time ordering, QR dine-in. [Live](https://amogha-cafe.web.app) |
+| [RNHT](https://github.com/MukundaKatta/rnht) | Temple community platform — events, donations, priest scheduling |
+| [Vimana](https://github.com/MukundaKatta/vimana) | Self-orchestrating AI — autonomous cloud infrastructure provisioning |
+| [AgentBench](https://github.com/MukundaKatta/AgentBench) | Agent evaluation and benchmarking suite |
+| [AgentMem](https://github.com/MukundaKatta/agentmem) | Pluggable memory management for AI agents |
+| [LLM Bench CLI](https://github.com/MukundaKatta/llm-bench-cli) | CLI for benchmarking local LLMs — speed, throughput, quality |
+| [TokenWise](https://github.com/MukundaKatta/TokenWise) | Token usage optimization across providers |
 
 </details>
-
----
-
-### Experience
-
-| Role | Company | Duration |
-|------|---------|----------|
-| **AI/ML Engineer** | Southwest Airlines | Aug 2025 — Present |
-| **AI/ML Engineer** | GPS IT Solutions | Jun 2024 — Aug 2025 |
-| **Software Development Engineer** | Amazon Web Services (AWS) | Aug 2022 — May 2024 |
-| **Data Engineer** | Cigna | Jan 2022 — Aug 2022 |
-| **Software Engineer** | American Express | Feb 2017 — Dec 2020 |
-
-**Southwest Airlines** — AI/ML Engineer
-- Architected ML fault prediction system for aircraft maintenance, serving 5 prediction types across 10K+ records with sub-second retrieval
-- Led SageMaker→Bedrock migration: 78% cost reduction, 600x latency improvement
-- Designed agentic RAG system with 9-stage pipeline (LangGraph, Bedrock Nova Pro/Micro, FAISS + BM25) over 30K+ KB entries, 370+ tests
-
-**GPS IT Solutions** — AI/ML Engineer
-- Built GPT-4 + RAG content generation platform with compliance validation, reducing production time by 40%
-- Designed AI model risk governance framework with 23 automated evaluation tests achieving regulatory compliance
-- Architected FastAPI microservices with FAISS/Pinecone vector search on Kubernetes
-
-**Amazon Web Services (AWS)** — Software Development Engineer
-- Built and shipped features for AWS Application Manager (Systems Manager) serving enterprise customers globally
-- Owned full-stack delivery: React/TypeScript frontend + Java/Python backend APIs with operational excellence
-- Designed CI/CD and IaC patterns enabling zero-downtime deployments at enterprise scale
-
-**Cigna** — Data Engineer
-- Led end-to-end migration of healthcare data pipelines from on-prem to AWS (Glue, PySpark)
-
-**American Express** — Software Engineer
-- Developed Python backend services and RESTful APIs for enterprise marketing and compliance platforms at scale
 
 ---
 
@@ -167,9 +177,6 @@
 
 **AWS**
 
-![AWS Solutions Architect Pro](https://img.shields.io/badge/Solutions_Architect_Professional-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![AWS ML Specialty](https://img.shields.io/badge/AWS_ML_Specialty-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![AWS DevOps Pro](https://img.shields.io/badge/DevOps_Engineer_Professional-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
 ![AWS GenAI Apps](https://img.shields.io/badge/AWS_Generative_AI_Applications-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
 ![AWS AI Solutions](https://img.shields.io/badge/AWS_Services_for_AI_Solutions-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
 ![AWS AI Fundamentals](https://img.shields.io/badge/AI_Fundamentals_&_the_Cloud-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
@@ -177,11 +184,8 @@
 
 **Cloud & Infrastructure**
 
-![GCP Cloud Architect](https://img.shields.io/badge/GCP_Cloud_Architect-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 ![Terraform GCP](https://img.shields.io/badge/Advanced_Terraform_with_GCP-4285F4?style=flat-square&logo=terraform&logoColor=white)
 ![Vertex AI Agent](https://img.shields.io/badge/Build_&_Deploy_Agent_with_Reasoning_Engine-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![Azure Data Engineer](https://img.shields.io/badge/Azure_Data_Engineer_Associate-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Azure Fundamentals](https://img.shields.io/badge/Azure_Fundamentals-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 
 **Stanford / Wharton**
 
@@ -215,8 +219,8 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-1a1a1a?style=flat-square&logo=typescript&logoColor=D4A853)
 ![Python](https://img.shields.io/badge/Python-1a1a1a?style=flat-square&logo=python&logoColor=D4A853)
 ![JavaScript](https://img.shields.io/badge/JavaScript-1a1a1a?style=flat-square&logo=javascript&logoColor=D4A853)
-![Go](https://img.shields.io/badge/Go-1a1a1a?style=flat-square&logo=go&logoColor=D4A853)
 ![Java](https://img.shields.io/badge/Java-1a1a1a?style=flat-square&logo=openjdk&logoColor=D4A853)
+![Go](https://img.shields.io/badge/Go-1a1a1a?style=flat-square&logo=go&logoColor=D4A853)
 ![React](https://img.shields.io/badge/React-1a1a1a?style=flat-square&logo=react&logoColor=D4A853)
 ![Next.js](https://img.shields.io/badge/Next.js-1a1a1a?style=flat-square&logo=nextdotjs&logoColor=D4A853)
 ![Node.js](https://img.shields.io/badge/Node.js-1a1a1a?style=flat-square&logo=nodedotjs&logoColor=D4A853)
@@ -279,7 +283,7 @@
 
 <div align="center">
 
-**Open to remote roles** — Senior AI/ML Engineer, GenAI Platform Engineer, Data Engineer
+**Open to opportunities** — Senior AI/ML Engineer &bull; GenAI Platform Engineer &bull; Software Engineer
 
 [mukunda-ai.vercel.app](https://mukunda-ai.vercel.app) &bull; Las Vegas, NV
 
