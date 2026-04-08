@@ -152,7 +152,7 @@
 
 ### Education
 
-**University of Central Missouri** — M.S. in Big Data Analytics and Information Technology (2021 — 2022)
+**University of Central Missouri** — M.S. in Big Data Analytics and Information Technology (Jan 2021 — May 2022)
 
 **SRM University** — B.Tech in Mechanical Engineering (2012 — 2016)
 
