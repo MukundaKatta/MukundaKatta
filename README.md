@@ -111,30 +111,32 @@
 
 | Role | Company | Duration |
 |------|---------|----------|
-| **AI/ML Engineer** | Southwest Airlines (via GPS IT Solutions) | Aug 2025 — Present |
-| **AI/ML Engineer** | GPS IT Solutions (In-House) | Jun 2024 — Aug 2025 |
-| **SDE (Software Development Engineer)** | Amazon Web Services (AWS) | Aug 2022 — May 2024 |
-| **Data Engineer** | Cigna (via GPS IT Solutions) | Jan 2022 — Aug 2022 |
-| **System Engineer** | American Express (via Infosys) | Feb 2017 — Dec 2020 |
+| **AI/ML Engineer** | Southwest Airlines | Aug 2025 — Present |
+| **AI/ML Engineer** | GPS IT Solutions | Jun 2024 — Aug 2025 |
+| **Software Development Engineer** | Amazon Web Services (AWS) | Aug 2022 — May 2024 |
+| **Data Engineer** | Cigna | Jan 2022 — Aug 2022 |
+| **Software Engineer** | American Express | Feb 2017 — Dec 2020 |
 
-**Southwest Airlines** (via GPS IT Solutions) — AI/ML Engineer
-- SWA Sidebar: Built ML fault prediction system, migrated from SageMaker to Bedrock + OpenSearch achieving 78% cost reduction; Flask API, Chrome extension, 10K+ maintenance records
-- Maintenix Chatbot: Developed agentic RAG chatbot with LangGraph, Bedrock Nova Pro/Micro, FAISS + BM25 hybrid retrieval over 30K+ KB entries, 370+ tests, deployed on ECS Fargate
+**Southwest Airlines** — AI/ML Engineer
+- Architected ML fault prediction system for aircraft maintenance, serving 5 prediction types across 10K+ records with sub-second retrieval
+- Led SageMaker→Bedrock migration: 78% cost reduction, 600x latency improvement
+- Designed agentic RAG system with 9-stage pipeline (LangGraph, Bedrock Nova Pro/Micro, FAISS + BM25) over 30K+ KB entries, 370+ tests
 
-**GPS IT Solutions** — AI/ML Engineer (In-House)
-- Built GPT-4 + RAG content generation platform with automated compliance validation, multi-variant personalized content, reducing content creation time by 40%
-- Designed AI model risk governance framework with 23 automated evaluation tests (PII, bias, hallucination, toxicity), achieving regulatory compliance and 30% reduction in review cycles
-- Implemented FastAPI microservices with FAISS/Pinecone vector search, deployed on Kubernetes with PostgreSQL and Splunk/Dynatrace monitoring
+**GPS IT Solutions** — AI/ML Engineer
+- Built GPT-4 + RAG content generation platform with compliance validation, reducing production time by 40%
+- Designed AI model risk governance framework with 23 automated evaluation tests achieving regulatory compliance
+- Architected FastAPI microservices with FAISS/Pinecone vector search on Kubernetes
 
-**Amazon Web Services (AWS)** — SDE (Software Development Engineer)
-- Built AWS Application Manager (Systems Manager service) — React/TypeScript frontend for AWS Console + Java/Python backend services
-- Integrated CloudFormation for infrastructure management and runbook automation for operational workflows
+**Amazon Web Services (AWS)** — Software Development Engineer
+- Built and shipped features for AWS Application Manager (Systems Manager) serving enterprise customers globally
+- Owned full-stack delivery: React/TypeScript frontend + Java/Python backend APIs with operational excellence
+- Designed CI/CD and IaC patterns enabling zero-downtime deployments at enterprise scale
 
-**Cigna** (via GPS IT Solutions) — Data Engineer
-- Led ETL migration from on-premises infrastructure to AWS (Glue, PySpark) for healthcare data pipelines
+**Cigna** — Data Engineer
+- Led end-to-end migration of healthcare data pipelines from on-prem to AWS (Glue, PySpark)
 
-**American Express** (via Infosys) — System Engineer
-- Developed Python-based backend services and APIs for marketing and compliance platforms handling high-volume transaction data
+**American Express** — Software Engineer
+- Developed Python backend services and RESTful APIs for enterprise marketing and compliance platforms at scale
 
 ---
 
