@@ -111,25 +111,30 @@
 
 | Role | Company | Duration |
 |------|---------|----------|
-| **AI/ML Engineer** | Southwest Airlines (via GPS IT Solutions) | Jun 2024 — Present |
+| **AI/ML Engineer** | Southwest Airlines (via GPS IT Solutions) | Aug 2025 — Present |
+| **AI/ML Engineer** | GPS IT Solutions (In-House) | Jun 2024 — Aug 2025 |
 | **SDE (Software Development Engineer)** | Amazon Web Services (AWS) | Aug 2022 — May 2024 |
-| **System Engineer** | American Express (via Infosys) | Feb 2017 — Dec 2020 |
 | **Data Engineer** | Cigna (via GPS IT Solutions) | Jan 2022 — Aug 2022 |
+| **System Engineer** | American Express (via Infosys) | Feb 2017 — Dec 2020 |
 
 **Southwest Airlines** (via GPS IT Solutions) — AI/ML Engineer
 - SWA Sidebar: Built ML fault prediction system, migrated from SageMaker to Bedrock + OpenSearch achieving 78% cost reduction; Flask API, Chrome extension, 10K+ maintenance records
 - Maintenix Chatbot: Developed agentic RAG chatbot with LangGraph, Bedrock Nova Pro/Micro, FAISS + BM25 hybrid retrieval over 30K+ KB entries, 370+ tests, deployed on ECS Fargate
 
+**GPS IT Solutions** — AI/ML Engineer (In-House)
+- Built GPT-4 + RAG content generation platform with automated compliance validation, multi-variant personalized content, reducing content creation time by 40%
+- Designed AI model risk governance framework with 23 automated evaluation tests (PII, bias, hallucination, toxicity), achieving regulatory compliance and 30% reduction in review cycles
+- Implemented FastAPI microservices with FAISS/Pinecone vector search, deployed on Kubernetes with PostgreSQL and Splunk/Dynatrace monitoring
+
 **Amazon Web Services (AWS)** — SDE (Software Development Engineer)
 - Built AWS Application Manager (Systems Manager service) — React/TypeScript frontend for AWS Console + Java/Python backend services
 - Integrated CloudFormation for infrastructure management and runbook automation for operational workflows
 
-**American Express** (via Infosys) — System Engineer
-- MCG: Built GPT-4 + RAG marketing content generator with FastAPI, FAISS/Pinecone vector search, reducing campaign creation time by 40%
-- MRMG: Developed AI risk governance framework with 23 automated compliance tests aligned to SR 11-7 regulatory standards
-
 **Cigna** (via GPS IT Solutions) — Data Engineer
 - Led ETL migration from on-premises infrastructure to AWS (Glue, PySpark) for healthcare data pipelines
+
+**American Express** (via Infosys) — System Engineer
+- Developed Python-based backend services and APIs for marketing and compliance platforms handling high-volume transaction data
 
 ---
 
