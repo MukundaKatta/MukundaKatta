@@ -47,8 +47,6 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 - [Google `python-genai`](https://github.com/googleapis/python-genai/pull/2298) — clarified structured-output schema guidance
 - [Stanford CRFM `helm`](https://github.com/stanford-crfm/helm/pull/4210) — fixed deep-link pagination behavior for instance pages
 
-I focus on small, mergeable changes that improve developer workflows, docs, SDK ergonomics, and agent tooling reliability.
-
 ---
 
 ### Impact at a Glance
