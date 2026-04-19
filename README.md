@@ -25,6 +25,22 @@
 
 ---
 
+### Open Source Focus
+
+I contribute practical fixes to **AI SDKs, MCP tooling, eval frameworks, agent infrastructure, and developer experience**.
+
+Recent contribution areas:
+
+- **OpenAI** — SDKs, tokenizer tooling, docs, and error handling
+- **Anthropic** — SDK examples and developer experience fixes
+- **Google** — structured output and SDK documentation clarifications
+- **Microsoft** — Playwright MCP docs and browser tooling
+- **Stanford / Princeton** — HELM, benchmark, and evaluation ecosystem improvements
+
+I keep a public log of selected OSS work in **[oss-contributions](https://github.com/MukundaKatta/oss-contributions)**.
+
+---
+
 ### Impact at a Glance
 
 <table>
