@@ -39,6 +39,16 @@ Recent contribution areas:
 
 I keep a public log of selected OSS work in **[oss-contributions](https://github.com/MukundaKatta/oss-contributions)**.
 
+### Recent OSS Highlights
+
+- [OpenAI `tiktoken`](https://github.com/openai/tiktoken/pull/529) — added PyInstaller hook support for dynamic encoding plugins
+- [OpenAI `openai-node`](https://github.com/openai/openai-node/pull/1831) — improved fallback handling for non-standard JSON API errors
+- [Anthropic SDK Python](https://github.com/anthropics/anthropic-sdk-python/pull/1412) — fixed async memory tool example docs
+- [Google `python-genai`](https://github.com/googleapis/python-genai/pull/2298) — clarified structured-output schema guidance
+- [Stanford CRFM `helm`](https://github.com/stanford-crfm/helm/pull/4210) — fixed deep-link pagination behavior for instance pages
+
+I focus on small, mergeable changes that improve developer workflows, docs, SDK ergonomics, and agent tooling reliability.
+
 ---
 
 ### Impact at a Glance
@@ -163,6 +173,17 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 | [TokenWise](https://github.com/MukundaKatta/TokenWise) | Token usage optimization across providers |
 
 </details>
+
+---
+
+### Follow For
+
+If you follow my work here, you’ll mostly see:
+
+- open-source contributions to AI SDKs and agent tooling
+- MCP, eval, and developer-experience improvements
+- practical full-stack and infrastructure-heavy AI projects
+- systems thinking around memory, retrieval, orchestration, and production reliability
 
 ---
 
