@@ -286,6 +286,12 @@ If you follow my work here, you’ll mostly see:
 <div align="center">
 
 [![Fanout Discussions](https://img.shields.io/github/discussions-search/MukundaKatta/fanout?query=is%3Aopen&label=fanout%20discussions&color=D4A853&logo=github)](https://github.com/MukundaKatta/fanout/discussions)
+[![Karna Discussions](https://img.shields.io/github/discussions-search/MukundaKatta/karna?query=is%3Aopen&label=karna%20discussions&color=D4A853&logo=github)](https://github.com/MukundaKatta/karna/discussions)
+[![Chetana Discussions](https://img.shields.io/github/discussions-search/MukundaKatta/chetana?query=is%3Aopen&label=chetana%20discussions&color=D4A853&logo=github)](https://github.com/MukundaKatta/chetana/discussions)
+
+[![AgentBench Discussions](https://img.shields.io/github/discussions-search/MukundaKatta/AgentBench?query=is%3Aopen&label=AgentBench%20discussions&color=D4A853&logo=github)](https://github.com/MukundaKatta/AgentBench/discussions)
+[![agentmem Discussions](https://img.shields.io/github/discussions-search/MukundaKatta/agentmem?query=is%3Aopen&label=agentmem%20discussions&color=D4A853&logo=github)](https://github.com/MukundaKatta/agentmem/discussions)
+[![MCPForge Discussions](https://img.shields.io/github/discussions-search/MukundaKatta/MCPForge?query=is%3Aopen&label=MCPForge%20discussions&color=D4A853&logo=github)](https://github.com/MukundaKatta/MCPForge/discussions)
 
 <br/><br/>
 
