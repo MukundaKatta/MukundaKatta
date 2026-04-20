@@ -136,9 +136,9 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
       <sub>TypeScript &bull; Node.js &bull; Next.js &bull; Supabase &bull; WebSocket &bull; pgvector</sub>
     </td>
     <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/MCPForge">MCPForge</a> — MCP Server Builder</h4>
-      <p>CLI toolkit to scaffold, test, and deploy Model Context Protocol servers in minutes. Zero-config defaults with progressive complexity disclosure. Built for the Anthropic MCP ecosystem.</p>
-      <sub>TypeScript &bull; MCP &bull; CLI &bull; Developer Tools</sub>
+      <h4><a href="https://github.com/MukundaKatta/chetana">Chetana</a> — AI Consciousness Research Platform</h4>
+      <p>Research-driven platform exploring machine consciousness through 14 indicators grounded in 6 scientific theories. Built to turn abstract AI-consciousness questions into structured experiments, scoring, and analysis.</p>
+      <sub>AI Research &bull; Evaluation &bull; Experimentation &bull; Python</sub>
     </td>
   </tr>
   <tr>
