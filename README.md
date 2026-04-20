@@ -40,12 +40,16 @@ Recent contribution areas:
 I keep a public log of selected OSS work in **[oss-contributions](https://github.com/MukundaKatta/oss-contributions)**.
 
 ### Recent OSS Highlights
+### Recent OSS Highlights
 
-- [OpenAI `tiktoken`](https://github.com/openai/tiktoken/pull/529) — added PyInstaller hook support for dynamic encoding plugins
-- [OpenAI `openai-node`](https://github.com/openai/openai-node/pull/1831) — improved fallback handling for non-standard JSON API errors
-- [Anthropic SDK Python](https://github.com/anthropics/anthropic-sdk-python/pull/1412) — fixed async memory tool example docs
-- [Google `python-genai`](https://github.com/googleapis/python-genai/pull/2298) — clarified structured-output schema guidance
-- [Stanford CRFM `helm`](https://github.com/stanford-crfm/helm/pull/4210) — fixed deep-link pagination behavior for instance pages
+<!-- oss-highlights:start -->
+- [openai/openai-node #1831](https://github.com/openai/openai-node/pull/1831) — improved fallback handling for non-standard JSON error bodies
+- [openai/tiktoken #529](https://github.com/openai/tiktoken/pull/529) — added PyInstaller hooks for dynamic encoding plugins
+- [googleapis/python-genai #2298](https://github.com/googleapis/python-genai/pull/2298) — clarified response_schema vs response_json_schema
+- [microsoft/playwright-mcp #1562](https://github.com/microsoft/playwright-mcp/pull/1562) — clarified extension connection and tab-selection flow
+- [anthropics/anthropic-sdk-python #1412](https://github.com/anthropics/anthropic-sdk-python/pull/1412) — fixed async memory tool example docs
+- [stanford-crfm/helm #4210](https://github.com/stanford-crfm/helm/pull/4210) — fixed later-page deep links for run instances
+<!-- oss-highlights:end -->
 
 ---
 
