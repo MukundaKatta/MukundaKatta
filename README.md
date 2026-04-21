@@ -40,13 +40,15 @@ Recent contribution areas:
 I keep a public log of selected OSS work in **[oss-contributions](https://github.com/MukundaKatta/oss-contributions)**.
 
 ### Recent OSS Highlights
+### Recent OSS Highlights
 
 <!-- oss-highlights:start -->
-- [openai/openai-node #1833](https://github.com/openai/openai-node/pull/1833) — preserved nested file paths in Skills API multipart uploads
-- [googleapis/python-genai #2305](https://github.com/googleapis/python-genai/pull/2305) — fixed multimodal function-response serialization for alias-aware media fields
-- [anthropics/claude-agent-sdk-python #851](https://github.com/anthropics/claude-agent-sdk-python/pull/851) — made `continue_conversation=True` resume the latest matching session after restarts
-- [microsoft/semantic-kernel #13891](https://github.com/microsoft/semantic-kernel/pull/13891) — normalized Azure structured-output configs before agent run creation
-- [stanford-crfm/helm #4217](https://github.com/stanford-crfm/helm/pull/4217) — deduplicated leaderboard metric columns so `main_metric` no longer renders twice
+- [openai/openai-node #1831](https://github.com/openai/openai-node/pull/1831) — improved fallback handling for non-standard JSON error bodies
+- [openai/tiktoken #529](https://github.com/openai/tiktoken/pull/529) — added PyInstaller hooks for dynamic encoding plugins
+- [googleapis/python-genai #2298](https://github.com/googleapis/python-genai/pull/2298) — clarified response_schema vs response_json_schema
+- [microsoft/playwright-mcp #1562](https://github.com/microsoft/playwright-mcp/pull/1562) — clarified extension connection and tab-selection flow
+- [anthropics/anthropic-sdk-python #1412](https://github.com/anthropics/anthropic-sdk-python/pull/1412) — fixed async memory tool example docs
+- [stanford-crfm/helm #4210](https://github.com/stanford-crfm/helm/pull/4210) — fixed later-page deep links for run instances
 <!-- oss-highlights:end -->
 
 ---
