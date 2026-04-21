@@ -40,7 +40,6 @@ Recent contribution areas:
 I keep a public log of selected OSS work in **[oss-contributions](https://github.com/MukundaKatta/oss-contributions)**.
 
 ### Recent OSS Highlights
-### Recent OSS Highlights
 
 <!-- oss-highlights:start -->
 - [openai/openai-node #1831](https://github.com/openai/openai-node/pull/1831) — improved fallback handling for non-standard JSON error bodies
@@ -50,6 +49,55 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 - [anthropics/anthropic-sdk-python #1412](https://github.com/anthropics/anthropic-sdk-python/pull/1412) — fixed async memory tool example docs
 - [stanford-crfm/helm #4210](https://github.com/stanford-crfm/helm/pull/4210) — fixed later-page deep links for run instances
 <!-- oss-highlights:end -->
+
+---
+### Featured Projects
+
+<table>
+  <tr>
+    <td width="50%">
+      <h4><a href="https://github.com/MukundaKatta/karna">Karna</a> — AI Agent Platform</h4>
+      <p>Self-hosted AI assistant with 7 messaging channels (Telegram, Slack, Discord, WhatsApp, SMS, iMessage, Web), extensible plugin SDK, semantic memory, and voice. TypeScript monorepo with Next.js dashboard and React Native mobile app.</p>
+      <sub>TypeScript &bull; Node.js &bull; Next.js &bull; Supabase &bull; WebSocket &bull; pgvector</sub>
+    </td>
+    <td width="50%">
+      <h4><a href="https://github.com/MukundaKatta/chetana">Chetana</a> — AI Consciousness Research Platform</h4>
+      <p>Research-driven platform exploring machine consciousness through 14 indicators grounded in 6 scientific theories. Built to turn abstract AI-consciousness questions into structured experiments, scoring, and analysis.</p>
+      <sub>AI Research &bull; Evaluation &bull; Experimentation &bull; Python</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h4><a href="https://github.com/MukundaKatta/AgentRAG">AgentRAG</a> — Modular RAG Pipeline</h4>
+      <p>Provider-agnostic RAG framework with pluggable vector stores, chunking strategies, and retrieval methods. Designed for agentic workflows with clean API boundaries.</p>
+      <sub>RAG &bull; Vector Search &bull; Embeddings &bull; TypeScript</sub>
+    </td>
+    <td width="50%">
+      <h4><a href="https://github.com/MukundaKatta/astra-agent">Astra Agent</a> — AI Agent Runtime</h4>
+      <p>Standalone AI agent runtime with tool execution, context management, and multi-model routing. Foundation for building autonomous AI assistants with structured tool use.</p>
+      <sub>TypeScript &bull; LLM Orchestration &bull; Tool Use &bull; Agents</sub>
+    </td>
+  </tr>
+</table>
+
+<details>
+<summary><strong>More Projects</strong></summary>
+<br/>
+
+| Project | Description |
+|---------|-------------|
+| [Sadhak](https://github.com/MukundaKatta/sadhak) | AI-powered job search command center — automated evaluation, resume tailoring, application tracking |
+| [Chetana](https://github.com/MukundaKatta/chetana) | AI consciousness research platform — 14 indicators from 6 scientific theories |
+| [Prithvi](https://github.com/MukundaKatta/prithvi) | Container security scanner — vulnerability detection, compliance checks, Docker audits |
+| [Amogha Cafe](https://github.com/MukundaKatta/amogha-cafe) | Full-stack Firebase restaurant platform — real-time ordering, QR dine-in. [Live](https://amogha-cafe.web.app) |
+| [RNHT](https://github.com/MukundaKatta/rnht) | Temple community platform — events, donations, priest scheduling |
+| [Vimana](https://github.com/MukundaKatta/vimana) | Self-orchestrating AI — autonomous cloud infrastructure provisioning |
+| [AgentBench](https://github.com/MukundaKatta/AgentBench) | Agent evaluation and benchmarking suite |
+| [AgentMem](https://github.com/MukundaKatta/agentmem) | Pluggable memory management for AI agents |
+| [LLM Bench CLI](https://github.com/MukundaKatta/llm-bench-cli) | CLI for benchmarking local LLMs — speed, throughput, quality |
+| [TokenWise](https://github.com/MukundaKatta/TokenWise) | Token usage optimization across providers |
+
+</details>
 
 ---
 
@@ -128,55 +176,6 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 
 ---
 
-### Featured Projects
-
-<table>
-  <tr>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/karna">Karna</a> — AI Agent Platform</h4>
-      <p>Self-hosted AI assistant with 7 messaging channels (Telegram, Slack, Discord, WhatsApp, SMS, iMessage, Web), extensible plugin SDK, semantic memory, and voice. TypeScript monorepo with Next.js dashboard and React Native mobile app.</p>
-      <sub>TypeScript &bull; Node.js &bull; Next.js &bull; Supabase &bull; WebSocket &bull; pgvector</sub>
-    </td>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/chetana">Chetana</a> — AI Consciousness Research Platform</h4>
-      <p>Research-driven platform exploring machine consciousness through 14 indicators grounded in 6 scientific theories. Built to turn abstract AI-consciousness questions into structured experiments, scoring, and analysis.</p>
-      <sub>AI Research &bull; Evaluation &bull; Experimentation &bull; Python</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/AgentRAG">AgentRAG</a> — Modular RAG Pipeline</h4>
-      <p>Provider-agnostic RAG framework with pluggable vector stores, chunking strategies, and retrieval methods. Designed for agentic workflows with clean API boundaries.</p>
-      <sub>RAG &bull; Vector Search &bull; Embeddings &bull; TypeScript</sub>
-    </td>
-    <td width="50%">
-      <h4><a href="https://github.com/MukundaKatta/astra-agent">Astra Agent</a> — AI Agent Runtime</h4>
-      <p>Standalone AI agent runtime with tool execution, context management, and multi-model routing. Foundation for building autonomous AI assistants with structured tool use.</p>
-      <sub>TypeScript &bull; LLM Orchestration &bull; Tool Use &bull; Agents</sub>
-    </td>
-  </tr>
-</table>
-
-<details>
-<summary><strong>More Projects</strong></summary>
-<br/>
-
-| Project | Description |
-|---------|-------------|
-| [Sadhak](https://github.com/MukundaKatta/sadhak) | AI-powered job search command center — automated evaluation, resume tailoring, application tracking |
-| [Chetana](https://github.com/MukundaKatta/chetana) | AI consciousness research platform — 14 indicators from 6 scientific theories |
-| [Prithvi](https://github.com/MukundaKatta/prithvi) | Container security scanner — vulnerability detection, compliance checks, Docker audits |
-| [Amogha Cafe](https://github.com/MukundaKatta/amogha-cafe) | Full-stack Firebase restaurant platform — real-time ordering, QR dine-in. [Live](https://amogha-cafe.web.app) |
-| [RNHT](https://github.com/MukundaKatta/rnht) | Temple community platform — events, donations, priest scheduling |
-| [Vimana](https://github.com/MukundaKatta/vimana) | Self-orchestrating AI — autonomous cloud infrastructure provisioning |
-| [AgentBench](https://github.com/MukundaKatta/AgentBench) | Agent evaluation and benchmarking suite |
-| [AgentMem](https://github.com/MukundaKatta/agentmem) | Pluggable memory management for AI agents |
-| [LLM Bench CLI](https://github.com/MukundaKatta/llm-bench-cli) | CLI for benchmarking local LLMs — speed, throughput, quality |
-| [TokenWise](https://github.com/MukundaKatta/TokenWise) | Token usage optimization across providers |
-
-</details>
-
----
 
 ### Follow For
 
