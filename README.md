@@ -40,14 +40,15 @@ Recent contribution areas:
 I keep a public log of selected OSS work in **[oss-contributions](https://github.com/MukundaKatta/oss-contributions)**.
 
 ### Recent OSS Highlights
+### Recent OSS Highlights
 
 <!-- oss-highlights:start -->
-- [wheels-dev/wheels #2183](https://github.com/wheels-dev/wheels/pull/2183) — clarified the `@with` controller docstring to show `exception` as the canonical default
-- [FLAMEGPU/FLAMEGPU2 #1381](https://github.com/FLAMEGPU/FLAMEGPU2/pull/1381) — fixed a broken `HostFunctionDescription` reference in the docs
-- [BrianWendt/dnd5e_json_schema #4](https://github.com/BrianWendt/dnd5e_json_schema/pull/4) — corrected the published schema key from `Finnesse` to `Finesse`
-- [VibesDIY/vibes.diy #1429](https://github.com/VibesDIY/vibes.diy/pull/1429) — fixed the homepage prompt placeholder copy from `sharable` to `shareable`
-- [aptos-labs/aptos-core #19511](https://github.com/aptos-labs/aptos-core/pull/19511) — corrected `QuorumCertificate` consensus terminology in doc comments
-- [birdnet-team/BirdNET-Analyzer #896](https://github.com/birdnet-team/BirdNET-Analyzer/pull/896) — fixed the CLI training command by adding the missing `-m` flag
+- [openai/openai-node #1831](https://github.com/openai/openai-node/pull/1831) — improved fallback handling for non-standard JSON error bodies
+- [openai/tiktoken #529](https://github.com/openai/tiktoken/pull/529) — added PyInstaller hooks for dynamic encoding plugins
+- [googleapis/python-genai #2298](https://github.com/googleapis/python-genai/pull/2298) — clarified response_schema vs response_json_schema
+- [microsoft/playwright-mcp #1562](https://github.com/microsoft/playwright-mcp/pull/1562) — clarified extension connection and tab-selection flow
+- [anthropics/anthropic-sdk-python #1412](https://github.com/anthropics/anthropic-sdk-python/pull/1412) — fixed async memory tool example docs
+- [stanford-crfm/helm #4210](https://github.com/stanford-crfm/helm/pull/4210) — fixed later-page deep links for run instances
 <!-- oss-highlights:end -->
 
 ---
