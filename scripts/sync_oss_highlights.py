@@ -14,13 +14,13 @@ DEFAULT_SOURCE = "https://raw.githubusercontent.com/MukundaKatta/oss-contributio
 
 
 def fetch_highlights(source: str) -> list[dict]:
-    with urlopen(source) as response:  # noqa: S310 - controlled raw GitHub source for repo automation
+    with urlopen(source, timeout=30) as response:  # noqa: S310 - controlled raw GitHub source for repo automation
         payload = json.loads(response.read().decode("utf-8"))
     return payload["highlights"]
 
 
 def render_highlights(highlights: list[dict]) -> str:
-    lines = ["### Recent OSS Highlights", "", START_MARKER]
+    lines = [START_MARKER]
     for item in highlights:
         label = f"{item['repo']} #{item['pr']}"
         lines.append(f"- [{label}]({item['url']}) — {item['title']}")
