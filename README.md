@@ -25,6 +25,20 @@
 
 ---
 
+### Portfolio at a Glance
+
+<div align="center">
+
+| Public Repos | Originals | Active Projects | Forks | Archived |
+|:---:|:---:|:---:|:---:|:---:|
+| **505** | **136** | **99** | **369** | **329** |
+
+Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/claude-workspace)** — wired for Multica, Claude Code, Codex, OpenClaw, and Cursor to reason across the portfolio.
+
+</div>
+
+---
+
 ### Open Source Focus
 
 I contribute practical fixes to **AI SDKs, MCP tooling, eval frameworks, agent infrastructure, and developer experience**.
@@ -104,8 +118,8 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 | [Prithvi](https://github.com/MukundaKatta/prithvi) | Container security scanner — vulnerability detection, compliance checks, Docker audits |
 | [Amogha Cafe](https://github.com/MukundaKatta/amogha-cafe) | Full-stack Firebase restaurant platform — real-time ordering, QR dine-in. [Live](https://amogha-cafe.web.app) |
 | [RNHT](https://github.com/MukundaKatta/rnht) | Temple community platform — events, donations, priest scheduling |
-| [Vimana](https://github.com/MukundaKatta/vimana) | Self-orchestrating AI — autonomous cloud infrastructure provisioning |
-| [AgentBench](https://github.com/MukundaKatta/AgentBench) | Agent evaluation and benchmarking suite |
+| [Patchly](https://github.com/MukundaKatta/patchly) | AI code review bot — flags bugs, suggests fixes, explains why, like a senior engineer |
+| [Evalharness](https://github.com/MukundaKatta/evalharness) | Prompt, agent, and RAG test harness — red teaming, regression testing, CI/CD for AI |
 | [AgentMem](https://github.com/MukundaKatta/agentmem) | Pluggable memory management for AI agents |
 | [LLM Bench CLI](https://github.com/MukundaKatta/llm-bench-cli) | CLI for benchmarking local LLMs — speed, throughput, quality |
 | [TokenWise](https://github.com/MukundaKatta/TokenWise) | Token usage optimization across providers |
