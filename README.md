@@ -40,7 +40,6 @@ Recent contribution areas:
 I keep a public log of selected OSS work in **[oss-contributions](https://github.com/MukundaKatta/oss-contributions)**.
 
 ### Recent OSS Highlights
-### Recent OSS Highlights
 
 <!-- oss-highlights:start -->
 - [openai/openai-node #1831](https://github.com/openai/openai-node/pull/1831) — improved fallback handling for non-standard JSON error bodies
