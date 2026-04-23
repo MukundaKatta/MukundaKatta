@@ -52,6 +52,20 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 <!-- oss-highlights:end -->
 
 ---
+### Published Packages
+
+CLI tools and libraries I maintain on [npm](https://www.npmjs.com/~mukundakatta):
+
+| Package | What it does | Install |
+|---|---|---|
+| [`@mukundakatta/mcpcheck`](https://www.npmjs.com/package/@mukundakatta/mcpcheck) | Lint MCP (Model Context Protocol) config files for Claude Desktop, Cursor, Cline, Windsurf, Zed. CLI + GitHub Action + SARIF for Code Scanning. | `npm i -g @mukundakatta/mcpcheck` |
+| [`@mukundakatta/designlint`](https://www.npmjs.com/package/@mukundakatta/designlint) | HTML/CSS accessibility + design linter — contrast, touch targets, headings, form labels, secrets. CLI + GitHub Action + SARIF. | `npm i -g @mukundakatta/designlint` |
+| [`@mukundakatta/skillint`](https://www.npmjs.com/package/@mukundakatta/skillint) | Linter for Claude Code `SKILL.md` files — frontmatter, required fields, descriptions, hardcoded secrets. CLI + GitHub Action. | `npm i -g @mukundakatta/skillint` |
+| [`@mukundakatta/kavach`](https://www.npmjs.com/package/@mukundakatta/kavach) | Small, inspectable threat-scoring library for AI-app security monitoring. Signals → weighted score → tier + playbook. | `npm i @mukundakatta/kavach` |
+
+Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub Action you can drop into any workflow in 3 lines.
+
+---
 ### Featured Projects
 
 <table>
