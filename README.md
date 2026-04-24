@@ -425,9 +425,9 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
   </tr>
   <tr>
     <td><strong>Data Engineer</strong></td>
-    <td>Cigna</td>
+    <td>GPS IT Solutions</td>
     <td>Jan 2022 — Aug 2022</td>
-    <td>healthcare data pipelines, AWS Glue, PySpark</td>
+    <td>data pipelines, AWS Glue, PySpark, analytics workflows</td>
   </tr>
   <tr>
     <td><strong>Software Engineer</strong></td>
@@ -456,8 +456,8 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 - Owned full-stack delivery: React/TypeScript frontend + Java/Python backend APIs with operational excellence
 - Designed CI/CD and IaC patterns enabling zero-downtime deployments at enterprise scale
 
-**Cigna** — Data Engineer
-- Led end-to-end migration of healthcare data pipelines from on-prem to AWS (Glue, PySpark)
+**GPS IT Solutions** — Data Engineer
+- Led end-to-end migration of data pipelines from on-prem to AWS (Glue, PySpark)
 
 **American Express** — Software Engineer
 - Developed Python backend services and RESTful APIs for enterprise platforms handling high-volume transactions at scale
