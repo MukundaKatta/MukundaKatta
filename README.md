@@ -46,9 +46,30 @@
 
 <div align="center">
 
-| Public Repos | Originals | Active Projects | Forks | Archived |
-|:---:|:---:|:---:|:---:|:---:|
-| **505** | **136** | **99** | **369** | **329** |
+<table>
+  <tr>
+    <td align="center" width="20%">
+      <sub>PUBLIC REPOS</sub><br/>
+      <strong>505</strong>
+    </td>
+    <td align="center" width="20%">
+      <sub>ORIGINALS</sub><br/>
+      <strong>136</strong>
+    </td>
+    <td align="center" width="20%">
+      <sub>ACTIVE PROJECTS</sub><br/>
+      <strong>99</strong>
+    </td>
+    <td align="center" width="20%">
+      <sub>FORKS</sub><br/>
+      <strong>369</strong>
+    </td>
+    <td align="center" width="20%">
+      <sub>ARCHIVED</sub><br/>
+      <strong>329</strong>
+    </td>
+  </tr>
+</table>
 
 Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/claude-workspace)** — wired for Multica, Claude Code, Codex, OpenClaw, and Cursor to reason across the portfolio.
 
@@ -90,14 +111,43 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 
 Flagship packages:
 
-| Package | What it does | Install |
-|---|---|---|
-| [`@mukundakatta/mcpcheck`](https://www.npmjs.com/package/@mukundakatta/mcpcheck) | Lint MCP (Model Context Protocol) config files for Claude Desktop, Cursor, Cline, Windsurf, Zed. CLI + GitHub Action + SARIF for Code Scanning. | `npm i -g @mukundakatta/mcpcheck` |
-| [`@mukundakatta/designlint`](https://www.npmjs.com/package/@mukundakatta/designlint) | HTML/CSS accessibility + design linter — contrast, touch targets, headings, form labels, secrets. CLI + GitHub Action + SARIF. | `npm i -g @mukundakatta/designlint` |
-| [`@mukundakatta/skillint`](https://www.npmjs.com/package/@mukundakatta/skillint) | Linter for Claude Code `SKILL.md` files — frontmatter, required fields, descriptions, hardcoded secrets. CLI + GitHub Action. | `npm i -g @mukundakatta/skillint` |
-| [`@mukundakatta/ai-eval-forge`](https://www.npmjs.com/package/@mukundakatta/ai-eval-forge) | Zero-dependency eval harness for LLM and agent regression testing. CLI + programmatic API; also on PyPI. | `npm i @mukundakatta/ai-eval-forge` |
-| [`@mukundakatta/codex-skill-kit`](https://www.npmjs.com/package/@mukundakatta/codex-skill-kit) | Scaffold and validate Codex skills from the command line. Also on PyPI. | `npm i -g @mukundakatta/codex-skill-kit` |
-| [`@mukundakatta/kavach`](https://www.npmjs.com/package/@mukundakatta/kavach) | Small, inspectable threat-scoring library for AI-app security monitoring. Signals → weighted score → tier + playbook. | `npm i @mukundakatta/kavach` |
+<table>
+  <tr>
+    <th align="left">Package</th>
+    <th align="left">Why it matters</th>
+    <th align="left">Install</th>
+  </tr>
+  <tr>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/mcpcheck">@mukundakatta/mcpcheck</a></strong><br/><sub>MCP config quality gate</sub></td>
+    <td>Lint MCP config files for Claude Desktop, Cursor, Cline, Windsurf, and Zed. CLI, GitHub Action, and SARIF for code scanning.</td>
+    <td><code>npm i -g @mukundakatta/mcpcheck</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/designlint">@mukundakatta/designlint</a></strong><br/><sub>frontend quality checks</sub></td>
+    <td>HTML/CSS accessibility and design linter for contrast, touch targets, headings, form labels, and leaked secrets.</td>
+    <td><code>npm i -g @mukundakatta/designlint</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/skillint">@mukundakatta/skillint</a></strong><br/><sub>AI skill validation</sub></td>
+    <td>Lint Claude Code <code>SKILL.md</code> files for frontmatter, required fields, descriptions, and hardcoded secrets.</td>
+    <td><code>npm i -g @mukundakatta/skillint</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/ai-eval-forge">@mukundakatta/ai-eval-forge</a></strong><br/><sub>eval harness</sub></td>
+    <td>Zero-dependency eval harness for comparing model, prompt, and agent behavior. CLI plus programmatic API; also on PyPI.</td>
+    <td><code>npm i @mukundakatta/ai-eval-forge</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/codex-skill-kit">@mukundakatta/codex-skill-kit</a></strong><br/><sub>Codex skill tooling</sub></td>
+    <td>Scaffold and validate Codex skills from the command line. Published for npm and PyPI workflows.</td>
+    <td><code>npm i -g @mukundakatta/codex-skill-kit</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/kavach">@mukundakatta/kavach</a></strong><br/><sub>AI-app threat signals</sub></td>
+    <td>Small, inspectable threat-scoring library for AI-app security monitoring: signals to weighted score to tier and playbook.</td>
+    <td><code>npm i @mukundakatta/kavach</code></td>
+  </tr>
+</table>
 
 <details>
 <summary><strong>More npm packages (33)</strong> — grouped by area</summary>
@@ -178,16 +228,53 @@ Install any of them with `npm i @mukundakatta/<package>`.
 
 **PyPI:**
 
-| Package | What it does | Install |
-|---|---|---|
-| [`claude-skill-check`](https://pypi.org/project/claude-skill-check/) | Python linter for Claude Code `SKILL.md` files. Validates YAML frontmatter, required fields, description length, and flags common secret patterns. CLI + library API. | `pip install claude-skill-check` |
-| [`mcp-config-check`](https://pypi.org/project/mcp-config-check/) | Python linter for MCP config files (Claude Desktop, Cursor, Cline, Windsurf, Zed). Catches missing transports, hardcoded secrets, placeholder values, auth over plain HTTP, autoApprove wildcards, and duplicate server names. CLI + library API. | `pip install mcp-config-check` |
-| [`claude-hooks-check`](https://pypi.org/project/claude-hooks-check/) | Python linter for Claude Code hooks configuration. Catches typos in event names, malformed matcher blocks, dangerous commands (`rm -rf /`, `curl | sh`, `sudo`, `dd`), and hardcoded secrets before Claude runs them. CLI + library API. | `pip install claude-hooks-check` |
-| [`claude-commands-check`](https://pypi.org/project/claude-commands-check/) | Python linter for Claude Code slash-command files (`.claude/commands/*.md`). Validates filename format, YAML frontmatter, allowed-tools shape, model value, and flags hardcoded secrets. CLI + library API. | `pip install claude-commands-check` |
-| [`llm-usage-report`](https://pypi.org/project/llm-usage-report/) | Parse LLM API response logs (Anthropic, OpenAI, Google) and generate token + cost reports. Works on raw JSONL you already have — no SDK adoption, no proxy. Group by model / provider / day / project / user. | `pip install llm-usage-report` |
-| [`codex-skill-kit`](https://pypi.org/project/codex-skill-kit/) | Scaffold and validate Codex skills from the command line. Python port of the npm `@mukundakatta/codex-skill-kit` CLI. | `pip install codex-skill-kit` |
-| [`ai-eval-forge`](https://pypi.org/project/ai-eval-forge/) | Zero-dependency eval harness for LLM and agent regression testing. Scores outputs with `exact`, `contains`, `regex`, `token_f1`, `json_valid`, `json_field`, and `citation_coverage` checks. Python port of the npm `@mukundakatta/ai-eval-forge`. | `pip install ai-eval-forge` |
-| [`agent-run-diff`](https://pypi.org/project/agent-run-diff/) | Compare baseline vs current agent runs and surface regressions as structured reasons across 7 signals: success loss, new error signatures, tool failure rises, output drift (token-F1), step bloat, latency bloat, cost bloat. Zero deps, works on any agent framework. | `pip install agent-run-diff` |
+<table>
+  <tr>
+    <th align="left">Package</th>
+    <th align="left">Purpose</th>
+    <th align="left">Install</th>
+  </tr>
+  <tr>
+    <td><strong><a href="https://pypi.org/project/claude-skill-check/">claude-skill-check</a></strong></td>
+    <td>Lint Claude Code <code>SKILL.md</code> files for YAML frontmatter, required fields, description quality, and secret patterns.</td>
+    <td><code>pip install claude-skill-check</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://pypi.org/project/mcp-config-check/">mcp-config-check</a></strong></td>
+    <td>Validate MCP configs across Claude Desktop, Cursor, Cline, Windsurf, and Zed; catches auth, transport, duplicate, and placeholder issues.</td>
+    <td><code>pip install mcp-config-check</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://pypi.org/project/claude-hooks-check/">claude-hooks-check</a></strong></td>
+    <td>Audit Claude Code hooks for malformed matchers, dangerous commands, invalid events, and hardcoded secrets.</td>
+    <td><code>pip install claude-hooks-check</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://pypi.org/project/claude-commands-check/">claude-commands-check</a></strong></td>
+    <td>Validate Claude Code slash-command files for naming, frontmatter, model values, allowed-tools shape, and secret leakage.</td>
+    <td><code>pip install claude-commands-check</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://pypi.org/project/llm-usage-report/">llm-usage-report</a></strong></td>
+    <td>Parse raw LLM API response logs and generate token and cost reports by provider, model, day, project, or user.</td>
+    <td><code>pip install llm-usage-report</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://pypi.org/project/codex-skill-kit/">codex-skill-kit</a></strong></td>
+    <td>Scaffold and validate Codex skills from Python environments; mirrors the npm CLI workflow.</td>
+    <td><code>pip install codex-skill-kit</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://pypi.org/project/ai-eval-forge/">ai-eval-forge</a></strong></td>
+    <td>Zero-dependency LLM and agent eval harness with exact, regex, token-F1, JSON, and citation-coverage checks.</td>
+    <td><code>pip install ai-eval-forge</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://pypi.org/project/agent-run-diff/">agent-run-diff</a></strong></td>
+    <td>Compare baseline and current agent runs across success, errors, tools, output drift, steps, latency, and cost.</td>
+    <td><code>pip install agent-run-diff</code></td>
+  </tr>
+</table>
 
 **GitHub Marketplace (Actions):**
 
@@ -212,27 +299,27 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 
 <table>
   <tr>
-    <td width="50%">
+    <td width="50%" valign="top">
       <h4><a href="https://github.com/MukundaKatta/karna">Karna</a> — AI Agent Platform</h4>
       <p>Self-hosted AI assistant with 7 messaging channels (Telegram, Slack, Discord, WhatsApp, SMS, iMessage, Web), extensible plugin SDK, semantic memory, and voice. TypeScript monorepo with Next.js dashboard and React Native mobile app.</p>
-      <sub>TypeScript &bull; Node.js &bull; Next.js &bull; Supabase &bull; WebSocket &bull; pgvector</sub>
+      <p><sub><strong>Stack</strong> · TypeScript &bull; Node.js &bull; Next.js &bull; Supabase &bull; WebSocket &bull; pgvector</sub></p>
     </td>
-    <td width="50%">
+    <td width="50%" valign="top">
       <h4><a href="https://github.com/MukundaKatta/chetana">Chetana</a> — AI Consciousness Research Platform</h4>
       <p>Research-driven platform exploring machine consciousness through 14 indicators grounded in 6 scientific theories. Built to turn abstract AI-consciousness questions into structured experiments, scoring, and analysis.</p>
-      <sub>AI Research &bull; Evaluation &bull; Experimentation &bull; Python</sub>
+      <p><sub><strong>Stack</strong> · AI Research &bull; Evaluation &bull; Experimentation &bull; Python</sub></p>
     </td>
   </tr>
   <tr>
-    <td width="50%">
+    <td width="50%" valign="top">
       <h4><a href="https://github.com/MukundaKatta/AgentRAG">AgentRAG</a> — Modular RAG Pipeline</h4>
       <p>Provider-agnostic RAG framework with pluggable vector stores, chunking strategies, and retrieval methods. Designed for agentic workflows with clean API boundaries.</p>
-      <sub>RAG &bull; Vector Search &bull; Embeddings &bull; TypeScript</sub>
+      <p><sub><strong>Stack</strong> · RAG &bull; Vector Search &bull; Embeddings &bull; TypeScript</sub></p>
     </td>
-    <td width="50%">
+    <td width="50%" valign="top">
       <h4><a href="https://github.com/MukundaKatta/astra-agent">Astra Agent</a> — AI Agent Runtime</h4>
       <p>Standalone AI agent runtime with tool execution, context management, and multi-model routing. Foundation for building autonomous AI assistants with structured tool use.</p>
-      <sub>TypeScript &bull; LLM Orchestration &bull; Tool Use &bull; Agents</sub>
+      <p><sub><strong>Stack</strong> · TypeScript &bull; LLM Orchestration &bull; Tool Use &bull; Agents</sub></p>
     </td>
   </tr>
 </table>
@@ -262,45 +349,53 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 
 <table>
   <tr>
-    <td colspan="4" align="center"><strong>At Work</strong></td>
+    <td colspan="4" align="center"><strong>Production AI / ML Impact</strong></td>
   </tr>
   <tr>
     <td align="center" width="25%">
+      <sub>COST EFFICIENCY</sub><br/>
       <strong>78%</strong><br/>
-      <sub>Infrastructure cost reduction<br/>SageMaker → Bedrock migration</sub>
+      <sub>infrastructure cost reduction<br/>SageMaker → Bedrock migration</sub>
     </td>
     <td align="center" width="25%">
+      <sub>LATENCY</sub><br/>
       <strong>600x</strong><br/>
-      <sub>Retrieval latency improvement<br/>ML prediction system</sub>
+      <sub>retrieval latency improvement<br/>ML prediction system</sub>
     </td>
     <td align="center" width="25%">
+      <sub>RAG SCALE</sub><br/>
       <strong>30K+</strong><br/>
-      <sub>Knowledge base entries<br/>9-stage agentic RAG pipeline</sub>
+      <sub>knowledge base entries<br/>9-stage agentic RAG pipeline</sub>
     </td>
     <td align="center" width="25%">
+      <sub>QUALITY</sub><br/>
       <strong>370+</strong><br/>
-      <sub>Unit tests & evaluations<br/>Production ML systems</sub>
+      <sub>unit tests & evaluations<br/>production ML systems</sub>
     </td>
   </tr>
   <tr>
-    <td colspan="4" align="center"><strong>In Open Source</strong></td>
+    <td colspan="4" align="center"><strong>Open Source Footprint</strong></td>
   </tr>
   <tr>
     <td align="center" width="25%">
+      <sub>UPSTREAM</sub><br/>
       <strong>93</strong><br/>
-      <sub>Merged PRs<br/>in external public repos</sub>
+      <sub>merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
+      <sub>PACKAGES</sub><br/>
       <strong>47</strong><br/>
-      <sub>Published packages<br/>across npm + PyPI</sub>
+      <sub>published packages<br/>across npm + PyPI</sub>
     </td>
     <td align="center" width="25%">
+      <sub>ORIGINAL WORK</sub><br/>
       <strong>136</strong><br/>
-      <sub>Original public repos<br/>maintained on GitHub</sub>
+      <sub>original public repos<br/>maintained on GitHub</sub>
     </td>
     <td align="center" width="25%">
+      <sub>ECOSYSTEMS</sub><br/>
       <strong>6+</strong><br/>
-      <sub>Orgs contributed to<br/>OpenAI, Anthropic, Google,<br/>Microsoft, Stanford, Princeton</sub>
+      <sub>major org ecosystems<br/>OpenAI, Anthropic, Google,<br/>Microsoft, Stanford, Princeton</sub>
     </td>
   </tr>
 </table>
@@ -320,13 +415,44 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 
 ### Experience
 
-| Role | Company | Duration |
-|------|---------|----------|
-| **AI/ML Engineer** | Southwest Airlines | Aug 2025 — Present |
-| **AI/ML Engineer** | GPS IT Solutions | Jun 2024 — Aug 2025 |
-| **Software Development Engineer** | Amazon Web Services (AWS) | Aug 2022 — May 2024 |
-| **Data Engineer** | Cigna | Jan 2022 — Aug 2022 |
-| **Software Engineer** | American Express | Feb 2017 — Dec 2020 |
+<table>
+  <tr>
+    <th align="left">Role</th>
+    <th align="left">Company</th>
+    <th align="left">Era</th>
+    <th align="left">Primary arena</th>
+  </tr>
+  <tr>
+    <td><strong>AI/ML Engineer</strong></td>
+    <td>Southwest Airlines</td>
+    <td>Aug 2025 — Present</td>
+    <td>production ML, agentic RAG, Bedrock migration</td>
+  </tr>
+  <tr>
+    <td><strong>AI/ML Engineer</strong></td>
+    <td>GPS IT Solutions</td>
+    <td>Jun 2024 — Aug 2025</td>
+    <td>RAG platforms, model-risk governance, vector search</td>
+  </tr>
+  <tr>
+    <td><strong>Software Development Engineer</strong></td>
+    <td>Amazon Web Services</td>
+    <td>Aug 2022 — May 2024</td>
+    <td>enterprise cloud systems, React/Java/Python, CI/CD</td>
+  </tr>
+  <tr>
+    <td><strong>Data Engineer</strong></td>
+    <td>Cigna</td>
+    <td>Jan 2022 — Aug 2022</td>
+    <td>healthcare data pipelines, AWS Glue, PySpark</td>
+  </tr>
+  <tr>
+    <td><strong>Software Engineer</strong></td>
+    <td>American Express</td>
+    <td>Feb 2017 — Dec 2020</td>
+    <td>Python backend services, REST APIs, enterprise platforms</td>
+  </tr>
+</table>
 
 <details>
 <summary><strong>Highlights</strong></summary>
