@@ -84,6 +84,15 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 | [`claude-hooks-check`](https://pypi.org/project/claude-hooks-check/) | Python linter for Claude Code hooks configuration. Catches typos in event names, malformed matcher blocks, dangerous commands (`rm -rf /`, `curl | sh`, `sudo`, `dd`), and hardcoded secrets before Claude runs them. CLI + library API. | `pip install claude-hooks-check` |
 | [`claude-commands-check`](https://pypi.org/project/claude-commands-check/) | Python linter for Claude Code slash-command files (`.claude/commands/*.md`). Validates filename format, YAML frontmatter, allowed-tools shape, model value, and flags hardcoded secrets. CLI + library API. | `pip install claude-commands-check` |
 
+**GitHub Marketplace (Actions):**
+
+All four Python linters are also published as composite GitHub Actions, discoverable on the [GitHub Marketplace](https://github.com/marketplace):
+
+- [`claude-skill-check`](https://github.com/marketplace/actions/claude-skill-check)
+- [`mcp-config-check`](https://github.com/marketplace/actions/mcp-config-check)
+- [`claude-hooks-check`](https://github.com/marketplace/actions/claude-hooks-check)
+- [`claude-commands-check`](https://github.com/marketplace/actions/claude-commands-check)
+
 Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub Action you can drop into any workflow in 3 lines.
 
 ---
