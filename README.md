@@ -57,10 +57,13 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 <!-- oss-highlights:start -->
 - [openai/openai-node #1831](https://github.com/openai/openai-node/pull/1831) — improved fallback handling for non-standard JSON error bodies
 - [openai/tiktoken #529](https://github.com/openai/tiktoken/pull/529) — added PyInstaller hooks for dynamic encoding plugins
+- [anthropics/anthropic-sdk-python #1412](https://github.com/anthropics/anthropic-sdk-python/pull/1412) — fixed async memory tool example docs
 - [googleapis/python-genai #2298](https://github.com/googleapis/python-genai/pull/2298) — clarified response_schema vs response_json_schema
 - [microsoft/playwright-mcp #1562](https://github.com/microsoft/playwright-mcp/pull/1562) — clarified extension connection and tab-selection flow
-- [anthropics/anthropic-sdk-python #1412](https://github.com/anthropics/anthropic-sdk-python/pull/1412) — fixed async memory tool example docs
 - [stanford-crfm/helm #4210](https://github.com/stanford-crfm/helm/pull/4210) — fixed later-page deep links for run instances
+- [pydantic/pydantic-ai #5156](https://github.com/pydantic/pydantic-ai/pull/5156) — fixed vercel-ai regenerate requests without `messageId`
+- [safetensors/safetensors #753](https://github.com/safetensors/safetensors/pull/753) — made `SafetensorError` picklable in the Python bindings (Hugging Face ecosystem)
+- [meilisearch/heed #364](https://github.com/meilisearch/heed/pull/364) — opted heed crates into multi-target docs.rs builds
 <!-- oss-highlights:end -->
 
 ---
@@ -77,6 +80,17 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 | [`@mukundakatta/codex-skill-kit`](https://www.npmjs.com/package/@mukundakatta/codex-skill-kit) | Scaffold and validate Codex skills from the command line. | `npm i -g @mukundakatta/codex-skill-kit` |
 | [`@mukundakatta/ai-eval-forge`](https://www.npmjs.com/package/@mukundakatta/ai-eval-forge) | Zero-dependency eval harness for LLM and agent regression testing. | `npm i @mukundakatta/ai-eval-forge` |
 | [`@mukundakatta/context-forge`](https://www.npmjs.com/package/@mukundakatta/context-forge) | Context engineering toolkit for ranking, packing, and risk-scanning RAG context. | `npm i @mukundakatta/context-forge` |
+| [`@mukundakatta/agent-regression-lens`](https://www.npmjs.com/package/@mukundakatta/agent-regression-lens) | Detect regressions between baseline and current AI agent runs. | `npm i @mukundakatta/agent-regression-lens` |
+| [`@mukundakatta/agent-trajectory-replay`](https://www.npmjs.com/package/@mukundakatta/agent-trajectory-replay) | Replay and diff AI agent event trajectories for debugging regressions. | `npm i @mukundakatta/agent-trajectory-replay` |
+| [`@mukundakatta/context-drift-detector`](https://www.npmjs.com/package/@mukundakatta/context-drift-detector) | Detect topic drift between user intent, retrieved context, and AI answers. | `npm i @mukundakatta/context-drift-detector` |
+| [`@mukundakatta/eval-dataset-smith`](https://www.npmjs.com/package/@mukundakatta/eval-dataset-smith) | Generate balanced eval cases from bugs, docs, examples, and policies. | `npm i @mukundakatta/eval-dataset-smith` |
+| [`@mukundakatta/llm-cost-guard`](https://www.npmjs.com/package/@mukundakatta/llm-cost-guard) | Estimate AI request cost and enforce per-request or session budgets. | `npm i @mukundakatta/llm-cost-guard` |
+| [`@mukundakatta/model-router-policy`](https://www.npmjs.com/package/@mukundakatta/model-router-policy) | Policy-based model routing by capability, cost, latency, and privacy. | `npm i @mukundakatta/model-router-policy` |
+| [`@mukundakatta/pii-sentry`](https://www.npmjs.com/package/@mukundakatta/pii-sentry) | Detect and redact PII and secret-like values before AI processing. | `npm i @mukundakatta/pii-sentry` |
+| [`@mukundakatta/prompt-injection-shield`](https://www.npmjs.com/package/@mukundakatta/prompt-injection-shield) | Prompt-injection risk scanner for untrusted AI context. | `npm i @mukundakatta/prompt-injection-shield` |
+| [`@mukundakatta/rag-quality-kit`](https://www.npmjs.com/package/@mukundakatta/rag-quality-kit) | Heuristic quality metrics for RAG retrieval and grounded answers. | `npm i @mukundakatta/rag-quality-kit` |
+| [`@mukundakatta/semantic-cache-key`](https://www.npmjs.com/package/@mukundakatta/semantic-cache-key) | Stable semantic cache keys for AI prompts, tools, models, and retrieval context. | `npm i @mukundakatta/semantic-cache-key` |
+| [`@mukundakatta/tool-call-contracts`](https://www.npmjs.com/package/@mukundakatta/tool-call-contracts) | Validate LLM tool-call payloads with small JSON-like contracts. | `npm i @mukundakatta/tool-call-contracts` |
 
 **PyPI:**
 
@@ -193,7 +207,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
       <sub>Merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
-      <strong>15</strong><br/>
+      <strong>26</strong><br/>
       <sub>Published packages<br/>across npm + PyPI</sub>
     </td>
     <td align="center" width="25%">
