@@ -25,23 +25,6 @@
 
 ---
 
-### Live Signals
-
-<div align="center">
-
-![Profile Views](https://komarev.com/ghpvc/?username=MukundaKatta&color=D4A853&style=for-the-badge&label=PROFILE+VIEWS)
-![GitHub Followers](https://img.shields.io/github/followers/MukundaKatta?style=for-the-badge&logo=github&label=FOLLOWERS&color=D4A853&labelColor=1a1a1a)
-![GitHub Stars](https://img.shields.io/github/stars/MukundaKatta?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&logo=github&label=STARS&color=D4A853&labelColor=1a1a1a)
-
-![ai-eval-forge npm](https://img.shields.io/npm/v/%40mukundakatta%2Fai-eval-forge?style=flat-square&logo=npm&label=ai-eval-forge&color=D4A853&labelColor=1a1a1a)
-![agent-regression-lens npm](https://img.shields.io/npm/v/%40mukundakatta%2Fagent-regression-lens?style=flat-square&logo=npm&label=agent-regression-lens&color=D4A853&labelColor=1a1a1a)
-![codex-skill-kit PyPI](https://img.shields.io/pypi/v/codex-skill-kit?style=flat-square&logo=pypi&label=codex-skill-kit&color=D4A853&labelColor=1a1a1a)
-![OSS log activity](https://img.shields.io/github/last-commit/MukundaKatta/oss-contributions?style=flat-square&logo=github&label=oss-contributions&color=D4A853&labelColor=1a1a1a)
-
-</div>
-
----
-
 ### Portfolio at a Glance
 
 <div align="center">
@@ -621,6 +604,23 @@ If you follow my work here, you’ll mostly see:
 <div align="center">
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=MukundaKatta&bg_color=0d1117&color=D4A853&line=D4A853&point=D4A853&area_color=D4A853&area=true&hide_border=true" width="95%" />
+
+</div>
+
+---
+
+### Live Signals
+
+<div align="center">
+
+![Profile Views](https://komarev.com/ghpvc/?username=MukundaKatta&color=D4A853&style=for-the-badge&label=PROFILE+VIEWS)
+![GitHub Followers](https://img.shields.io/github/followers/MukundaKatta?style=for-the-badge&logo=github&label=FOLLOWERS&color=D4A853&labelColor=1a1a1a)
+![GitHub Stars](https://img.shields.io/github/stars/MukundaKatta?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&logo=github&label=STARS&color=D4A853&labelColor=1a1a1a)
+
+![ai-eval-forge npm](https://img.shields.io/npm/v/%40mukundakatta%2Fai-eval-forge?style=flat-square&logo=npm&label=ai-eval-forge&color=D4A853&labelColor=1a1a1a)
+![agent-regression-lens npm](https://img.shields.io/npm/v/%40mukundakatta%2Fagent-regression-lens?style=flat-square&logo=npm&label=agent-regression-lens&color=D4A853&labelColor=1a1a1a)
+![codex-skill-kit PyPI](https://img.shields.io/pypi/v/codex-skill-kit?style=flat-square&logo=pypi&label=codex-skill-kit&color=D4A853&labelColor=1a1a1a)
+![OSS log activity](https://img.shields.io/github/last-commit/MukundaKatta/oss-contributions?style=flat-square&logo=github&label=oss-contributions&color=D4A853&labelColor=1a1a1a)
 
 </div>
 
