@@ -83,6 +83,7 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 | [`mcp-config-check`](https://pypi.org/project/mcp-config-check/) | Python linter for MCP config files (Claude Desktop, Cursor, Cline, Windsurf, Zed). Catches missing transports, hardcoded secrets, placeholder values, auth over plain HTTP, autoApprove wildcards, and duplicate server names. CLI + library API. | `pip install mcp-config-check` |
 | [`claude-hooks-check`](https://pypi.org/project/claude-hooks-check/) | Python linter for Claude Code hooks configuration. Catches typos in event names, malformed matcher blocks, dangerous commands (`rm -rf /`, `curl | sh`, `sudo`, `dd`), and hardcoded secrets before Claude runs them. CLI + library API. | `pip install claude-hooks-check` |
 | [`claude-commands-check`](https://pypi.org/project/claude-commands-check/) | Python linter for Claude Code slash-command files (`.claude/commands/*.md`). Validates filename format, YAML frontmatter, allowed-tools shape, model value, and flags hardcoded secrets. CLI + library API. | `pip install claude-commands-check` |
+| [`llm-usage-report`](https://pypi.org/project/llm-usage-report/) | Parse LLM API response logs (Anthropic, OpenAI, Google) and generate token + cost reports. Works on raw JSONL you already have — no SDK adoption, no proxy. Group by model / provider / day / project / user. | `pip install llm-usage-report` |
 
 **GitHub Marketplace (Actions):**
 
@@ -186,7 +187,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
       <sub>Merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
-      <strong>8</strong><br/>
+      <strong>9</strong><br/>
       <sub>Published packages<br/>across npm + PyPI</sub>
     </td>
     <td align="center" width="25%">
