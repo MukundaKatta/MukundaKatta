@@ -138,6 +138,9 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 
 <table>
   <tr>
+    <td colspan="4" align="center"><strong>At Work</strong></td>
+  </tr>
+  <tr>
     <td align="center" width="25%">
       <strong>78%</strong><br/>
       <sub>Infrastructure cost reduction<br/>SageMaker → Bedrock migration</sub>
@@ -153,6 +156,27 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     <td align="center" width="25%">
       <strong>370+</strong><br/>
       <sub>Unit tests & evaluations<br/>Production ML systems</sub>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><strong>In Open Source</strong></td>
+  </tr>
+  <tr>
+    <td align="center" width="25%">
+      <strong>93</strong><br/>
+      <sub>Merged PRs<br/>in external public repos</sub>
+    </td>
+    <td align="center" width="25%">
+      <strong>5</strong><br/>
+      <sub>Published packages<br/>across npm + PyPI</sub>
+    </td>
+    <td align="center" width="25%">
+      <strong>136</strong><br/>
+      <sub>Original public repos<br/>maintained on GitHub</sub>
+    </td>
+    <td align="center" width="25%">
+      <strong>6+</strong><br/>
+      <sub>Orgs contributed to<br/>OpenAI, Anthropic, Google,<br/>Microsoft, Stanford, Princeton</sub>
     </td>
   </tr>
 </table>
