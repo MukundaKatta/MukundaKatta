@@ -41,7 +41,9 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 
 ### Open Source Focus
 
-I contribute practical fixes to **AI SDKs, MCP tooling, eval frameworks, agent infrastructure, and developer experience**.
+I contribute practical fixes to **AI SDKs, MCP tooling, eval frameworks, agent infrastructure, structured outputs, and developer experience**.
+
+My lane is finding the sharp edges that slow builders down: unclear contracts, brittle tool calls, docs that almost answer the question, eval gaps where regressions hide, and AI tooling that needs better failure signals. I like small, reviewable patches with clear intent, and compact packages that turn repeated manual checks into reusable workflows.
 
 Recent contribution areas (merged upstream):
 
