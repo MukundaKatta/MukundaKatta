@@ -55,15 +55,16 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 
 ### Recent OSS Highlights
 <!-- oss-highlights:start -->
-- [openai/openai-node #1831](https://github.com/openai/openai-node/pull/1831) — improved fallback handling for non-standard JSON error bodies
-- [openai/tiktoken #529](https://github.com/openai/tiktoken/pull/529) — added PyInstaller hooks for dynamic encoding plugins
-- [anthropics/anthropic-sdk-python #1412](https://github.com/anthropics/anthropic-sdk-python/pull/1412) — fixed async memory tool example docs
-- [googleapis/python-genai #2298](https://github.com/googleapis/python-genai/pull/2298) — clarified response_schema vs response_json_schema
-- [microsoft/playwright-mcp #1562](https://github.com/microsoft/playwright-mcp/pull/1562) — clarified extension connection and tab-selection flow
-- [stanford-crfm/helm #4210](https://github.com/stanford-crfm/helm/pull/4210) — fixed later-page deep links for run instances
-- [pydantic/pydantic-ai #5156](https://github.com/pydantic/pydantic-ai/pull/5156) — fixed vercel-ai regenerate requests without `messageId`
+_Merged-only. Every PR below is confirmed `merged=true` via the GitHub API._
+
+- [microsoft/hve-core #1385](https://github.com/microsoft/hve-core/pull/1385) — broadened Security Review description beyond OWASP
+- [microsoft/hve-core #1382](https://github.com/microsoft/hve-core/pull/1382) — added JSON output formatter for markdownlint-cli2 builds
+- [microsoft/physical-ai-toolchain #510](https://github.com/microsoft/physical-ai-toolchain/pull/510) — normalized validate.yaml placeholder env/compute values
+- [pydantic/pydantic-ai #5156](https://github.com/pydantic/pydantic-ai/pull/5156) — allowed vercel-ai regenerate requests without `messageId`
 - [safetensors/safetensors #753](https://github.com/safetensors/safetensors/pull/753) — made `SafetensorError` picklable in the Python bindings (Hugging Face ecosystem)
 - [meilisearch/heed #364](https://github.com/meilisearch/heed/pull/364) — opted heed crates into multi-target docs.rs builds
+- [huggingface/sentence-transformers #3734](https://github.com/huggingface/sentence-transformers/pull/3734) — migrated SimCSE README example to `SentenceTransformerTrainer`
+- [vercel/next.js #92809](https://github.com/vercel/next.js/pull/92809) — added documentation for the `no-typos` ESLint rule
 <!-- oss-highlights:end -->
 
 ---
