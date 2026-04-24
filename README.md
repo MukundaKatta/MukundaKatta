@@ -93,6 +93,13 @@ All four Python linters are also published as composite GitHub Actions, discover
 - [`claude-hooks-check`](https://github.com/marketplace/actions/claude-hooks-check)
 - [`claude-commands-check`](https://github.com/marketplace/actions/claude-commands-check)
 
+**Homebrew tap** — [`mukundakatta/tools`](https://github.com/MukundaKatta/homebrew-tools):
+
+```bash
+brew tap mukundakatta/tools
+brew install claude-skill-check mcp-config-check claude-hooks-check claude-commands-check
+```
+
 Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub Action you can drop into any workflow in 3 lines.
 
 ---
