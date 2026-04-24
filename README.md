@@ -43,13 +43,14 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 
 I contribute practical fixes to **AI SDKs, MCP tooling, eval frameworks, agent infrastructure, and developer experience**.
 
-Recent contribution areas:
+Recent contribution areas (merged upstream):
 
-- **OpenAI** — SDKs, tokenizer tooling, docs, and error handling
-- **Anthropic** — SDK examples and developer experience fixes
-- **Google** — structured output and SDK documentation clarifications
-- **Microsoft** — Playwright MCP docs and browser tooling
-- **Stanford / Princeton** — HELM, benchmark, and evaluation ecosystem improvements
+- **Microsoft** — security and architecture docs for internal AI-engineering toolchains (`hve-core`, `physical-ai-toolchain`)
+- **Pydantic** — `pydantic-ai` integration with the Vercel AI SDK
+- **Hugging Face ecosystem** — `safetensors` Python bindings, `sentence-transformers` trainer migration docs
+- **Meilisearch** — `heed` multi-target docs.rs infrastructure
+- **Vercel** — `next.js` documentation
+- **Apache Software Foundation** — doc / comment fixes across `iceberg`, `pulsar`, `skywalking`, `ozone`, `iotdb`
 
 I keep a public log of selected OSS work in **[oss-contributions](https://github.com/MukundaKatta/oss-contributions)**.
 
@@ -82,43 +83,79 @@ Flagship packages:
 | [`@mukundakatta/kavach`](https://www.npmjs.com/package/@mukundakatta/kavach) | Small, inspectable threat-scoring library for AI-app security monitoring. Signals → weighted score → tier + playbook. | `npm i @mukundakatta/kavach` |
 
 <details>
-<summary><strong>More npm packages (33)</strong> — AI agent infra, RAG quality, prompt safety, evals, context engineering</summary>
+<summary><strong>More npm packages (33)</strong> — grouped by area</summary>
 
-| Package | What it does | Install |
-|---|---|---|
-| [`@mukundakatta/agent-loop-breaker`](https://www.npmjs.com/package/@mukundakatta/agent-loop-breaker) | Detect repeated agent steps and stop runaway loops. | `npm i @mukundakatta/agent-loop-breaker` |
-| [`@mukundakatta/agent-regression-lens`](https://www.npmjs.com/package/@mukundakatta/agent-regression-lens) | Detect regressions between baseline and current AI agent runs. | `npm i @mukundakatta/agent-regression-lens` |
-| [`@mukundakatta/agent-trajectory-replay`](https://www.npmjs.com/package/@mukundakatta/agent-trajectory-replay) | Replay and diff AI agent event trajectories for debugging regressions. | `npm i @mukundakatta/agent-trajectory-replay` |
-| [`@mukundakatta/ai-supply-chain-manifest`](https://www.npmjs.com/package/@mukundakatta/ai-supply-chain-manifest) | Build and validate lightweight AI model / data / tool manifests. | `npm i @mukundakatta/ai-supply-chain-manifest` |
-| [`@mukundakatta/citation-integrity-check`](https://www.npmjs.com/package/@mukundakatta/citation-integrity-check) | Verify answer citations refer to supplied source ids. | `npm i @mukundakatta/citation-integrity-check` |
-| [`@mukundakatta/consent-redaction-log`](https://www.npmjs.com/package/@mukundakatta/consent-redaction-log) | Record consent-aware redactions for privacy review trails. | `npm i @mukundakatta/consent-redaction-log` |
-| [`@mukundakatta/context-drift-detector`](https://www.npmjs.com/package/@mukundakatta/context-drift-detector) | Detect topic drift between user intent, retrieved context, and AI answers. | `npm i @mukundakatta/context-drift-detector` |
-| [`@mukundakatta/context-forge`](https://www.npmjs.com/package/@mukundakatta/context-forge) | Context engineering toolkit for ranking, packing, and risk-scanning RAG context. | `npm i @mukundakatta/context-forge` |
-| [`@mukundakatta/context-window-packer`](https://www.npmjs.com/package/@mukundakatta/context-window-packer) | Pack context chunks into a budget by relevance and priority. | `npm i @mukundakatta/context-window-packer` |
-| [`@mukundakatta/embedding-dedupe`](https://www.npmjs.com/package/@mukundakatta/embedding-dedupe) | Deduplicate near-identical embedding records by cosine similarity. | `npm i @mukundakatta/embedding-dedupe` |
-| [`@mukundakatta/eval-dataset-smith`](https://www.npmjs.com/package/@mukundakatta/eval-dataset-smith) | Generate balanced eval cases from bugs, docs, examples, and policies. | `npm i @mukundakatta/eval-dataset-smith` |
-| [`@mukundakatta/eval-flake-detector`](https://www.npmjs.com/package/@mukundakatta/eval-flake-detector) | Detect flaky LLM eval cases across repeated runs. | `npm i @mukundakatta/eval-flake-detector` |
-| [`@mukundakatta/hallucination-risk-meter`](https://www.npmjs.com/package/@mukundakatta/hallucination-risk-meter) | Estimate hallucination risk from answer, context, citations, and uncertainty language. | `npm i @mukundakatta/hallucination-risk-meter` |
-| [`@mukundakatta/jailbreak-corpus-mini`](https://www.npmjs.com/package/@mukundakatta/jailbreak-corpus-mini) | Small local jailbreak + prompt-injection fixture set for tests. | `npm i @mukundakatta/jailbreak-corpus-mini` |
-| [`@mukundakatta/llm-cost-guard`](https://www.npmjs.com/package/@mukundakatta/llm-cost-guard) | Estimate AI request cost and enforce per-request or session budgets. | `npm i @mukundakatta/llm-cost-guard` |
-| [`@mukundakatta/llm-output-sanitizer`](https://www.npmjs.com/package/@mukundakatta/llm-output-sanitizer) | Sanitize LLM outputs before rendering, SQL, shell, or markdown sinks. | `npm i @mukundakatta/llm-output-sanitizer` |
-| [`@mukundakatta/llm-response-schema-lite`](https://www.npmjs.com/package/@mukundakatta/llm-response-schema-lite) | Tiny schema validator for structured LLM responses. | `npm i @mukundakatta/llm-response-schema-lite` |
-| [`@mukundakatta/llm-trace-sampler`](https://www.npmjs.com/package/@mukundakatta/llm-trace-sampler) | Sample LLM traces by risk, errors, latency, and deterministic ids. | `npm i @mukundakatta/llm-trace-sampler` |
-| [`@mukundakatta/model-fallback-planner`](https://www.npmjs.com/package/@mukundakatta/model-fallback-planner) | Plan model fallback chains from capability, cost, and health data. | `npm i @mukundakatta/model-fallback-planner` |
-| [`@mukundakatta/model-router-policy`](https://www.npmjs.com/package/@mukundakatta/model-router-policy) | Policy-based model routing by capability, cost, latency, and privacy. | `npm i @mukundakatta/model-router-policy` |
-| [`@mukundakatta/pii-sentry`](https://www.npmjs.com/package/@mukundakatta/pii-sentry) | Detect and redact PII and secret-like values before AI processing. | `npm i @mukundakatta/pii-sentry` |
-| [`@mukundakatta/prompt-injection-shield`](https://www.npmjs.com/package/@mukundakatta/prompt-injection-shield) | Prompt-injection risk scanner for untrusted AI context. | `npm i @mukundakatta/prompt-injection-shield` |
-| [`@mukundakatta/prompt-token-trim`](https://www.npmjs.com/package/@mukundakatta/prompt-token-trim) | Trim prompt messages to fit a token budget while preserving priority. | `npm i @mukundakatta/prompt-token-trim` |
-| [`@mukundakatta/prompt-version-diff`](https://www.npmjs.com/package/@mukundakatta/prompt-version-diff) | Diff prompt templates and flag risky instruction changes. | `npm i @mukundakatta/prompt-version-diff` |
-| [`@mukundakatta/rag-quality-kit`](https://www.npmjs.com/package/@mukundakatta/rag-quality-kit) | Heuristic quality metrics for RAG retrieval and grounded answers. | `npm i @mukundakatta/rag-quality-kit` |
-| [`@mukundakatta/rag-staleness-auditor`](https://www.npmjs.com/package/@mukundakatta/rag-staleness-auditor) | Find stale RAG chunks by age, version, and freshness requirements. | `npm i @mukundakatta/rag-staleness-auditor` |
-| [`@mukundakatta/retrieval-acl-filter`](https://www.npmjs.com/package/@mukundakatta/retrieval-acl-filter) | Enforce document ACLs after retrieval and before prompting. | `npm i @mukundakatta/retrieval-acl-filter` |
-| [`@mukundakatta/semantic-cache-key`](https://www.npmjs.com/package/@mukundakatta/semantic-cache-key) | Stable semantic cache keys for AI prompts, tools, models, and retrieval context. | `npm i @mukundakatta/semantic-cache-key` |
-| [`@mukundakatta/system-prompt-leak-scan`](https://www.npmjs.com/package/@mukundakatta/system-prompt-leak-scan) | Detect system prompt leakage in model outputs. | `npm i @mukundakatta/system-prompt-leak-scan` |
-| [`@mukundakatta/tool-call-contracts`](https://www.npmjs.com/package/@mukundakatta/tool-call-contracts) | Validate LLM tool-call payloads with small JSON-like contracts. | `npm i @mukundakatta/tool-call-contracts` |
-| [`@mukundakatta/tool-permission-gate`](https://www.npmjs.com/package/@mukundakatta/tool-permission-gate) | Policy-check agent tool calls before execution. | `npm i @mukundakatta/tool-permission-gate` |
-| [`@mukundakatta/tool-result-taint`](https://www.npmjs.com/package/@mukundakatta/tool-result-taint) | Track untrusted tool output before it enters prompts or actions. | `npm i @mukundakatta/tool-result-taint` |
-| [`@mukundakatta/vector-poison-score`](https://www.npmjs.com/package/@mukundakatta/vector-poison-score) | Score retrieved documents for vector/RAG poisoning signals. | `npm i @mukundakatta/vector-poison-score` |
+<br/>
+
+**Agent infrastructure (6)**
+
+| Package | What it does |
+|---|---|
+| [`@mukundakatta/agent-loop-breaker`](https://www.npmjs.com/package/@mukundakatta/agent-loop-breaker) | Detect repeated agent steps and stop runaway loops. |
+| [`@mukundakatta/agent-regression-lens`](https://www.npmjs.com/package/@mukundakatta/agent-regression-lens) | Detect regressions between baseline and current AI agent runs. |
+| [`@mukundakatta/agent-trajectory-replay`](https://www.npmjs.com/package/@mukundakatta/agent-trajectory-replay) | Replay and diff AI agent event trajectories for debugging regressions. |
+| [`@mukundakatta/tool-call-contracts`](https://www.npmjs.com/package/@mukundakatta/tool-call-contracts) | Validate LLM tool-call payloads with small JSON-like contracts. |
+| [`@mukundakatta/tool-permission-gate`](https://www.npmjs.com/package/@mukundakatta/tool-permission-gate) | Policy-check agent tool calls before execution. |
+| [`@mukundakatta/tool-result-taint`](https://www.npmjs.com/package/@mukundakatta/tool-result-taint) | Track untrusted tool output before it enters prompts or actions. |
+
+**RAG & retrieval (6)**
+
+| Package | What it does |
+|---|---|
+| [`@mukundakatta/rag-quality-kit`](https://www.npmjs.com/package/@mukundakatta/rag-quality-kit) | Heuristic quality metrics for RAG retrieval and grounded answers. |
+| [`@mukundakatta/rag-staleness-auditor`](https://www.npmjs.com/package/@mukundakatta/rag-staleness-auditor) | Find stale RAG chunks by age, version, and freshness requirements. |
+| [`@mukundakatta/retrieval-acl-filter`](https://www.npmjs.com/package/@mukundakatta/retrieval-acl-filter) | Enforce document ACLs after retrieval and before prompting. |
+| [`@mukundakatta/vector-poison-score`](https://www.npmjs.com/package/@mukundakatta/vector-poison-score) | Score retrieved documents for vector/RAG poisoning signals. |
+| [`@mukundakatta/embedding-dedupe`](https://www.npmjs.com/package/@mukundakatta/embedding-dedupe) | Deduplicate near-identical embedding records by cosine similarity. |
+| [`@mukundakatta/context-drift-detector`](https://www.npmjs.com/package/@mukundakatta/context-drift-detector) | Detect topic drift between user intent, retrieved context, and AI answers. |
+
+**Prompt & output safety (5)**
+
+| Package | What it does |
+|---|---|
+| [`@mukundakatta/pii-sentry`](https://www.npmjs.com/package/@mukundakatta/pii-sentry) | Detect and redact PII and secret-like values before AI processing. |
+| [`@mukundakatta/prompt-injection-shield`](https://www.npmjs.com/package/@mukundakatta/prompt-injection-shield) | Prompt-injection risk scanner for untrusted AI context. |
+| [`@mukundakatta/llm-output-sanitizer`](https://www.npmjs.com/package/@mukundakatta/llm-output-sanitizer) | Sanitize LLM outputs before rendering, SQL, shell, or markdown sinks. |
+| [`@mukundakatta/system-prompt-leak-scan`](https://www.npmjs.com/package/@mukundakatta/system-prompt-leak-scan) | Detect system prompt leakage in model outputs. |
+| [`@mukundakatta/jailbreak-corpus-mini`](https://www.npmjs.com/package/@mukundakatta/jailbreak-corpus-mini) | Small local jailbreak + prompt-injection fixture set for tests. |
+
+**Context & prompt engineering (4)**
+
+| Package | What it does |
+|---|---|
+| [`@mukundakatta/context-forge`](https://www.npmjs.com/package/@mukundakatta/context-forge) | Context engineering toolkit for ranking, packing, and risk-scanning RAG context. |
+| [`@mukundakatta/context-window-packer`](https://www.npmjs.com/package/@mukundakatta/context-window-packer) | Pack context chunks into a budget by relevance and priority. |
+| [`@mukundakatta/prompt-token-trim`](https://www.npmjs.com/package/@mukundakatta/prompt-token-trim) | Trim prompt messages to fit a token budget while preserving priority. |
+| [`@mukundakatta/prompt-version-diff`](https://www.npmjs.com/package/@mukundakatta/prompt-version-diff) | Diff prompt templates and flag risky instruction changes. |
+
+**Evals & tracing (3)**
+
+| Package | What it does |
+|---|---|
+| [`@mukundakatta/eval-dataset-smith`](https://www.npmjs.com/package/@mukundakatta/eval-dataset-smith) | Generate balanced eval cases from bugs, docs, examples, and policies. |
+| [`@mukundakatta/eval-flake-detector`](https://www.npmjs.com/package/@mukundakatta/eval-flake-detector) | Detect flaky LLM eval cases across repeated runs. |
+| [`@mukundakatta/llm-trace-sampler`](https://www.npmjs.com/package/@mukundakatta/llm-trace-sampler) | Sample LLM traces by risk, errors, latency, and deterministic ids. |
+
+**Cost, routing & caching (4)**
+
+| Package | What it does |
+|---|---|
+| [`@mukundakatta/llm-cost-guard`](https://www.npmjs.com/package/@mukundakatta/llm-cost-guard) | Estimate AI request cost and enforce per-request or session budgets. |
+| [`@mukundakatta/model-fallback-planner`](https://www.npmjs.com/package/@mukundakatta/model-fallback-planner) | Plan model fallback chains from capability, cost, and health data. |
+| [`@mukundakatta/model-router-policy`](https://www.npmjs.com/package/@mukundakatta/model-router-policy) | Policy-based model routing by capability, cost, latency, and privacy. |
+| [`@mukundakatta/semantic-cache-key`](https://www.npmjs.com/package/@mukundakatta/semantic-cache-key) | Stable semantic cache keys for AI prompts, tools, models, and retrieval context. |
+
+**Supply chain, citations, consent (5)**
+
+| Package | What it does |
+|---|---|
+| [`@mukundakatta/ai-supply-chain-manifest`](https://www.npmjs.com/package/@mukundakatta/ai-supply-chain-manifest) | Build and validate lightweight AI model / data / tool manifests. |
+| [`@mukundakatta/citation-integrity-check`](https://www.npmjs.com/package/@mukundakatta/citation-integrity-check) | Verify answer citations refer to supplied source ids. |
+| [`@mukundakatta/consent-redaction-log`](https://www.npmjs.com/package/@mukundakatta/consent-redaction-log) | Record consent-aware redactions for privacy review trails. |
+| [`@mukundakatta/hallucination-risk-meter`](https://www.npmjs.com/package/@mukundakatta/hallucination-risk-meter) | Estimate hallucination risk from answer, context, citations, and uncertainty language. |
+| [`@mukundakatta/llm-response-schema-lite`](https://www.npmjs.com/package/@mukundakatta/llm-response-schema-lite) | Tiny schema validator for structured LLM responses. |
+
+Install any of them with `npm i @mukundakatta/<package>`.
 
 </details>
 
