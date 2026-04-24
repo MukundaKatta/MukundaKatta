@@ -66,7 +66,7 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 ---
 ### Published Packages
 
-CLI tools and libraries I maintain on [npm](https://www.npmjs.com/~mukundakatta):
+**npm** (scope [`@mukundakatta`](https://www.npmjs.com/~mukundakatta)):
 
 | Package | What it does | Install |
 |---|---|---|
@@ -74,6 +74,12 @@ CLI tools and libraries I maintain on [npm](https://www.npmjs.com/~mukundakatta)
 | [`@mukundakatta/designlint`](https://www.npmjs.com/package/@mukundakatta/designlint) | HTML/CSS accessibility + design linter — contrast, touch targets, headings, form labels, secrets. CLI + GitHub Action + SARIF. | `npm i -g @mukundakatta/designlint` |
 | [`@mukundakatta/skillint`](https://www.npmjs.com/package/@mukundakatta/skillint) | Linter for Claude Code `SKILL.md` files — frontmatter, required fields, descriptions, hardcoded secrets. CLI + GitHub Action. | `npm i -g @mukundakatta/skillint` |
 | [`@mukundakatta/kavach`](https://www.npmjs.com/package/@mukundakatta/kavach) | Small, inspectable threat-scoring library for AI-app security monitoring. Signals → weighted score → tier + playbook. | `npm i @mukundakatta/kavach` |
+
+**PyPI:**
+
+| Package | What it does | Install |
+|---|---|---|
+| [`claude-skill-check`](https://pypi.org/project/claude-skill-check/) | Python linter for Claude Code `SKILL.md` files. Validates YAML frontmatter, required fields, description length, and flags common secret patterns. CLI + library API. | `pip install claude-skill-check` |
 
 Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub Action you can drop into any workflow in 3 lines.
 
