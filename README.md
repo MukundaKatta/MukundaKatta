@@ -89,6 +89,7 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 | [`llm-usage-report`](https://pypi.org/project/llm-usage-report/) | Parse LLM API response logs (Anthropic, OpenAI, Google) and generate token + cost reports. Works on raw JSONL you already have — no SDK adoption, no proxy. Group by model / provider / day / project / user. | `pip install llm-usage-report` |
 | [`codex-skill-kit`](https://pypi.org/project/codex-skill-kit/) | Scaffold and validate Codex skills from the command line. Python port of the npm `@mukundakatta/codex-skill-kit` CLI. | `pip install codex-skill-kit` |
 | [`ai-eval-forge`](https://pypi.org/project/ai-eval-forge/) | Zero-dependency eval harness for LLM and agent regression testing. Scores outputs with `exact`, `contains`, `regex`, `token_f1`, `json_valid`, `json_field`, and `citation_coverage` checks. Python port of the npm `@mukundakatta/ai-eval-forge`. | `pip install ai-eval-forge` |
+| [`agent-run-diff`](https://pypi.org/project/agent-run-diff/) | Compare baseline vs current agent runs and surface regressions as structured reasons across 7 signals: success loss, new error signatures, tool failure rises, output drift (token-F1), step bloat, latency bloat, cost bloat. Zero deps, works on any agent framework. | `pip install agent-run-diff` |
 
 **GitHub Marketplace (Actions):**
 
@@ -192,7 +193,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
       <sub>Merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
-      <strong>14</strong><br/>
+      <strong>15</strong><br/>
       <sub>Published packages<br/>across npm + PyPI</sub>
     </td>
     <td align="center" width="25%">
