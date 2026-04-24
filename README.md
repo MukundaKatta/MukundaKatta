@@ -74,6 +74,9 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 | [`@mukundakatta/designlint`](https://www.npmjs.com/package/@mukundakatta/designlint) | HTML/CSS accessibility + design linter — contrast, touch targets, headings, form labels, secrets. CLI + GitHub Action + SARIF. | `npm i -g @mukundakatta/designlint` |
 | [`@mukundakatta/skillint`](https://www.npmjs.com/package/@mukundakatta/skillint) | Linter for Claude Code `SKILL.md` files — frontmatter, required fields, descriptions, hardcoded secrets. CLI + GitHub Action. | `npm i -g @mukundakatta/skillint` |
 | [`@mukundakatta/kavach`](https://www.npmjs.com/package/@mukundakatta/kavach) | Small, inspectable threat-scoring library for AI-app security monitoring. Signals → weighted score → tier + playbook. | `npm i @mukundakatta/kavach` |
+| [`@mukundakatta/codex-skill-kit`](https://www.npmjs.com/package/@mukundakatta/codex-skill-kit) | Scaffold and validate Codex skills from the command line. | `npm i -g @mukundakatta/codex-skill-kit` |
+| [`@mukundakatta/ai-eval-forge`](https://www.npmjs.com/package/@mukundakatta/ai-eval-forge) | Zero-dependency eval harness for LLM and agent regression testing. | `npm i @mukundakatta/ai-eval-forge` |
+| [`@mukundakatta/context-forge`](https://www.npmjs.com/package/@mukundakatta/context-forge) | Context engineering toolkit for ranking, packing, and risk-scanning RAG context. | `npm i @mukundakatta/context-forge` |
 
 **PyPI:**
 
@@ -84,6 +87,7 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 | [`claude-hooks-check`](https://pypi.org/project/claude-hooks-check/) | Python linter for Claude Code hooks configuration. Catches typos in event names, malformed matcher blocks, dangerous commands (`rm -rf /`, `curl | sh`, `sudo`, `dd`), and hardcoded secrets before Claude runs them. CLI + library API. | `pip install claude-hooks-check` |
 | [`claude-commands-check`](https://pypi.org/project/claude-commands-check/) | Python linter for Claude Code slash-command files (`.claude/commands/*.md`). Validates filename format, YAML frontmatter, allowed-tools shape, model value, and flags hardcoded secrets. CLI + library API. | `pip install claude-commands-check` |
 | [`llm-usage-report`](https://pypi.org/project/llm-usage-report/) | Parse LLM API response logs (Anthropic, OpenAI, Google) and generate token + cost reports. Works on raw JSONL you already have — no SDK adoption, no proxy. Group by model / provider / day / project / user. | `pip install llm-usage-report` |
+| [`codex-skill-kit`](https://pypi.org/project/codex-skill-kit/) | Scaffold and validate Codex skills from the command line. Python port of the npm `@mukundakatta/codex-skill-kit` CLI. | `pip install codex-skill-kit` |
 
 **GitHub Marketplace (Actions):**
 
@@ -187,7 +191,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
       <sub>Merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
-      <strong>9</strong><br/>
+      <strong>13</strong><br/>
       <sub>Published packages<br/>across npm + PyPI</sub>
     </td>
     <td align="center" width="25%">
