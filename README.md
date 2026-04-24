@@ -80,6 +80,7 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 | Package | What it does | Install |
 |---|---|---|
 | [`claude-skill-check`](https://pypi.org/project/claude-skill-check/) | Python linter for Claude Code `SKILL.md` files. Validates YAML frontmatter, required fields, description length, and flags common secret patterns. CLI + library API. | `pip install claude-skill-check` |
+| [`mcp-config-check`](https://pypi.org/project/mcp-config-check/) | Python linter for MCP config files (Claude Desktop, Cursor, Cline, Windsurf, Zed). Catches missing transports, hardcoded secrets, placeholder values, auth over plain HTTP, autoApprove wildcards, and duplicate server names. CLI + library API. | `pip install mcp-config-check` |
 
 Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub Action you can drop into any workflow in 3 lines.
 
@@ -167,7 +168,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
       <sub>Merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
-      <strong>5</strong><br/>
+      <strong>6</strong><br/>
       <sub>Published packages<br/>across npm + PyPI</sub>
     </td>
     <td align="center" width="25%">
