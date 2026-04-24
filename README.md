@@ -55,8 +55,6 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 
 ### Recent OSS Highlights
 <!-- oss-highlights:start -->
-_Merged-only. Every PR below is confirmed `merged=true` via the GitHub API._
-
 - [microsoft/hve-core #1385](https://github.com/microsoft/hve-core/pull/1385) — broadened Security Review description beyond OWASP
 - [microsoft/hve-core #1382](https://github.com/microsoft/hve-core/pull/1382) — added JSON output formatter for markdownlint-cli2 builds
 - [microsoft/physical-ai-toolchain #510](https://github.com/microsoft/physical-ai-toolchain/pull/510) — normalized validate.yaml placeholder env/compute values
