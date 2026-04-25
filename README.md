@@ -642,7 +642,7 @@ If you follow my work here, you’ll mostly see:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/MukundaKatta/MukundaKatta/profile-3d-contrib/profile-night-view.svg" width="95%" alt="3D contribution graph" />
+<img src="https://raw.githubusercontent.com/MukundaKatta/MukundaKatta/profile-3d-contrib/profile-3d-contrib/profile-night-view.svg" width="95%" alt="3D contribution graph" />
 
 </div>
 
