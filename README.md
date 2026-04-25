@@ -110,11 +110,11 @@ _Last refreshed 2026-04-25 from npm, PyPI, and the GitHub API._
 
 **Recently merged PRs**
 
-- `2026-04-25` · [dmachard/DNS-collector #1203](https://github.com/dmachard/DNS-collector/pull/1203) — docs(afpacket): fix IP-defrag option name 'enable-fragment-support' -> 'enable-defrag-ip'
-- `2026-04-24` · [MukundaKatta/amogha-cafe #68](https://github.com/MukundaKatta/amogha-cafe/pull/68) — fix(pos): screenOrientation fullSensor — rotate even when auto-rotate is OFF
-- `2026-04-24` · [MukundaKatta/amogha-cafe #67](https://github.com/MukundaKatta/amogha-cafe/pull/67) — fix(pos): unlock screen orientation — was hard-locked to landscape
-- `2026-04-24` · [MukundaKatta/amogha-cafe #66](https://github.com/MukundaKatta/amogha-cafe/pull/66) — ci: auto-fetch POS APK artifact before deploy so /pos-latest.apk survives
-- `2026-04-24` · [MukundaKatta/amogha-cafe #65](https://github.com/MukundaKatta/amogha-cafe/pull/65) — hosting: serve .apk with Android MIME for on-device POS install
+- `2026-04-24` · [langgenius/dify #35547](https://github.com/langgenius/dify/pull/35547) — docs: fix Kubernetes deployment wording
+- `2026-04-24` · [infiniflow/ragflow #14352](https://github.com/infiniflow/ragflow/pull/14352) — docs: fix API key guide typo
+- `2026-04-22` · [pydantic/pydantic-ai #5156](https://github.com/pydantic/pydantic-ai/pull/5156) — fix(vercel-ai): allow regenerate requests without `messageId`
+- `2026-04-23` · [ntop/ntopng #10297](https://github.com/ntop/ntopng/pull/10297) — fix(locales/en): correct display string 'Enstablished' -> 'Established'
+- `2026-04-22` · [safetensors/safetensors #753](https://github.com/safetensors/safetensors/pull/753) — fix(python): make SafetensorError picklable
 
 <!-- recently-shipped:end -->
 

@@ -180,36 +180,46 @@ def fetch_recent_releases(limit: int = 3) -> list[dict]:
 
 
 def fetch_recent_prs(limit: int = 5) -> list[dict]:
+    # Surface the user's most prestigious upstream contributions. We pull a
+    # generous window of recent external merged PRs, then rank by repo stars
+    # (with merge date as tiebreaker) so well-known projects like openai,
+    # anthropics, microsoft, langgenius/dify float to the top instead of
+    # whatever PR happened to merge most recently.
+    pool_size = max(limit * 6, 30)
     query = (
         "{\n"
-        f'  search(query: "is:pr is:merged author:{GH_USER} sort:updated-desc", type: ISSUE, first: {limit}) {{\n'
+        f'  search(query: "is:pr is:merged author:{GH_USER} -user:{GH_USER} sort:updated-desc", type: ISSUE, first: {pool_size}) {{\n'
         "    nodes {\n"
         "      ... on PullRequest {\n"
         "        title\n"
         "        url\n"
         "        mergedAt\n"
-        "        repository { nameWithOwner }\n"
+        "        repository { nameWithOwner stargazerCount }\n"
         "      }\n"
         "    }\n"
         "  }\n"
         "}"
     )
     data = gh_graphql(query)
-    output = []
+    pulls: list[dict] = []
     for node in data["search"]["nodes"]:
         if not node:
             continue
-        merged = (node.get("mergedAt") or "")[:10]
-        output.append(
+        repo = node["repository"]
+        merged = node.get("mergedAt") or ""
+        pulls.append(
             {
-                "date": merged,
-                "repo": node["repository"]["nameWithOwner"],
+                "stars": repo["stargazerCount"],
+                "merged": merged,
+                "date": merged[:10],
+                "repo": repo["nameWithOwner"],
                 "url": node["url"],
                 "title": node["title"],
                 "number": node["url"].rsplit("/", 1)[-1],
             }
         )
-    return output
+    pulls.sort(key=lambda p: (p["stars"], p["merged"]), reverse=True)
+    return pulls[:limit]
 
 
 def render_recently_shipped(releases: list[dict], prs: list[dict]) -> str:
