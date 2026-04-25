@@ -4,6 +4,8 @@ import json
 import os
 import re
 import sys
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -103,10 +105,15 @@ def fetch_total_stars() -> int:
     return total
 
 
-def fetch_npm_count() -> int:
+def fetch_npm_packages() -> list[str]:
     url = f"https://registry.npmjs.org/-/v1/search?text=maintainer:{NPM_USER}&size=250"
     with urlopen(url, timeout=30) as response:  # noqa: S310
-        return int(json.loads(response.read().decode("utf-8")).get("total", 0))
+        data = json.loads(response.read().decode("utf-8"))
+    return [obj["package"]["name"] for obj in data.get("objects", [])]
+
+
+def fetch_npm_count() -> int:
+    return len(fetch_npm_packages())
 
 
 def fetch_pypi_count() -> int:
@@ -122,6 +129,130 @@ def fetch_pypi_count() -> int:
         except URLError:
             return 0
     return found
+
+
+def _fetch_npm_release(name: str) -> tuple[str, str, str] | None:
+    try:
+        with urlopen(f"https://registry.npmjs.org/{name}", timeout=15) as response:  # noqa: S310
+            data = json.loads(response.read().decode("utf-8"))
+    except (HTTPError, URLError):
+        return None
+    latest = data.get("dist-tags", {}).get("latest")
+    if not latest:
+        return None
+    timestamp = data.get("time", {}).get(latest) or data.get("time", {}).get("modified")
+    if not timestamp:
+        return None
+    return (timestamp, name, latest)
+
+
+def _fetch_pypi_release(name: str) -> tuple[str, str, str] | None:
+    try:
+        with urlopen(f"https://pypi.org/pypi/{name}/json", timeout=15) as response:  # noqa: S310
+            data = json.loads(response.read().decode("utf-8"))
+    except (HTTPError, URLError):
+        return None
+    version = data.get("info", {}).get("version")
+    if not version:
+        return None
+    releases = data.get("releases", {}).get(version, [])
+    if not releases:
+        return None
+    upload_times = [entry.get("upload_time_iso_8601") for entry in releases if entry.get("upload_time_iso_8601")]
+    if not upload_times:
+        return None
+    return (max(upload_times), name, version)
+
+
+def fetch_recent_releases(limit: int = 3) -> list[dict]:
+    npm_packages = fetch_npm_packages()
+    releases: list[tuple[str, str, str, str]] = []
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for result in pool.map(_fetch_npm_release, npm_packages):
+            if result:
+                releases.append((*result, "npm"))
+        for result in pool.map(_fetch_pypi_release, PYPI_PACKAGES):
+            if result:
+                releases.append((*result, "pypi"))
+    releases.sort(reverse=True)
+    output = []
+    for timestamp, name, version, registry in releases[:limit]:
+        date = timestamp[:10]
+        if registry == "npm":
+            url = f"https://www.npmjs.com/package/{name}"
+            display = f"`{name}`"
+        else:
+            url = f"https://pypi.org/project/{name}/"
+            display = f"`{name}`"
+        output.append({"date": date, "name": name, "version": version, "registry": registry, "url": url, "display": display})
+    return output
+
+
+def fetch_recent_prs(limit: int = 5) -> list[dict]:
+    query = (
+        "{\n"
+        f'  search(query: "is:pr is:merged author:{GH_USER} sort:updated-desc", type: ISSUE, first: {limit}) {{\n'
+        "    nodes {\n"
+        "      ... on PullRequest {\n"
+        "        title\n"
+        "        url\n"
+        "        mergedAt\n"
+        "        repository { nameWithOwner }\n"
+        "      }\n"
+        "    }\n"
+        "  }\n"
+        "}"
+    )
+    data = gh_graphql(query)
+    output = []
+    for node in data["search"]["nodes"]:
+        if not node:
+            continue
+        merged = (node.get("mergedAt") or "")[:10]
+        output.append(
+            {
+                "date": merged,
+                "repo": node["repository"]["nameWithOwner"],
+                "url": node["url"],
+                "title": node["title"],
+                "number": node["url"].rsplit("/", 1)[-1],
+            }
+        )
+    return output
+
+
+def render_recently_shipped(releases: list[dict], prs: list[dict]) -> str:
+    lines = [
+        "<!-- recently-shipped:start -->",
+        "",
+        f"_Last refreshed {datetime.now(timezone.utc).strftime('%Y-%m-%d')} from npm, PyPI, and the GitHub API._",
+        "",
+        "**Latest releases**",
+        "",
+    ]
+    if releases:
+        for r in releases:
+            registry_tag = "npm" if r["registry"] == "npm" else "PyPI"
+            lines.append(f"- `{r['date']}` · [{r['display']}]({r['url']}) `v{r['version']}` · {registry_tag}")
+    else:
+        lines.append("- _no releases discovered_")
+    lines.extend(["", "**Recently merged PRs**", ""])
+    if prs:
+        for p in prs:
+            lines.append(f"- `{p['date']}` · [{p['repo']} #{p['number']}]({p['url']}) — {p['title']}")
+    else:
+        lines.append("- _no merged PRs discovered_")
+    lines.extend(["", "<!-- recently-shipped:end -->"])
+    return "\n".join(lines)
+
+
+def replace_recently_shipped(text: str, replacement: str) -> tuple[str, bool]:
+    pattern = re.compile(
+        r"<!-- recently-shipped:start -->.*?<!-- recently-shipped:end -->",
+        re.DOTALL,
+    )
+    new_text, count = pattern.subn(replacement, text, count=1)
+    return new_text, count > 0
 
 
 def replace_after_label(text: str, label: str, value: int) -> tuple[str, bool]:
@@ -152,6 +283,8 @@ def main() -> None:
     repos = fetch_repo_counts()
     packages = fetch_npm_count() + fetch_pypi_count()
     total_stars = fetch_total_stars()
+    releases = fetch_recent_releases(limit=3)
+    prs = fetch_recent_prs(limit=5)
 
     updates = [
         ("PUBLIC REPOS", repos["public_repos"]),
@@ -173,11 +306,20 @@ def main() -> None:
     text, stars_ok = replace_stars_badge(text, total_stars)
     if not stars_ok:
         missing.append("GitHub Stars badge")
+    text, shipped_ok = replace_recently_shipped(text, render_recently_shipped(releases, prs))
+    if not shipped_ok:
+        missing.append("recently-shipped section")
     if missing:
-        sys.exit(f"Could not locate stat labels in README: {', '.join(missing)}")
+        sys.exit(f"Could not locate sections in README: {', '.join(missing)}")
 
     README_FILE.write_text(text, encoding="utf-8")
-    print(json.dumps({**dict(updates), "STARS": total_stars}, indent=2))
+    summary = {
+        **dict(updates),
+        "STARS": total_stars,
+        "RECENT_RELEASES": len(releases),
+        "RECENT_PRS": len(prs),
+    }
+    print(json.dumps(summary, indent=2))
 
 
 if __name__ == "__main__":

@@ -9,6 +9,12 @@
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
 [![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukunda.vjcs6@gmail.com)
 
+<sub>
+
+[`Open Source`](#open-source-focus) &nbsp;·&nbsp; [`Recently Shipped`](#recently-shipped) &nbsp;·&nbsp; [`Packages`](#published-packages) &nbsp;·&nbsp; [`Projects`](#featured-projects) &nbsp;·&nbsp; [`Impact`](#impact-at-a-glance) &nbsp;·&nbsp; [`Experience`](#experience) &nbsp;·&nbsp; [`Stats`](#github-stats)
+
+</sub>
+
 </div>
 
 <br/>
@@ -20,6 +26,10 @@
   Former SDE at Amazon Web Services  •  Currently at Southwest Airlines
   Deep expertise in ML systems, distributed architectures, and full-stack engineering
 ```
+
+<!-- now:start -->
+**Now:** building agent guardrails, MCP linters, and eval harnesses; contributing to AI SDKs upstream.
+<!-- now:end -->
 
 </div>
 
@@ -87,6 +97,27 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 - [stanford-crfm/helm #4210](https://github.com/stanford-crfm/helm/pull/4210) — fixed later-page deep links for run instances
 <!-- oss-highlights:end -->
 
+### Recently Shipped
+<!-- recently-shipped:start -->
+
+_Last refreshed 2026-04-25 from npm, PyPI, and the GitHub API._
+
+**Latest releases**
+
+- `2026-04-24` · [`@mukundakatta/codex-skill-kit`](https://www.npmjs.com/package/@mukundakatta/codex-skill-kit) `v0.1.2` · npm
+- `2026-04-24` · [`@mukundakatta/vector-poison-score`](https://www.npmjs.com/package/@mukundakatta/vector-poison-score) `v0.1.0` · npm
+- `2026-04-24` · [`@mukundakatta/tool-result-taint`](https://www.npmjs.com/package/@mukundakatta/tool-result-taint) `v0.1.0` · npm
+
+**Recently merged PRs**
+
+- `2026-04-25` · [dmachard/DNS-collector #1203](https://github.com/dmachard/DNS-collector/pull/1203) — docs(afpacket): fix IP-defrag option name 'enable-fragment-support' -> 'enable-defrag-ip'
+- `2026-04-24` · [MukundaKatta/amogha-cafe #68](https://github.com/MukundaKatta/amogha-cafe/pull/68) — fix(pos): screenOrientation fullSensor — rotate even when auto-rotate is OFF
+- `2026-04-24` · [MukundaKatta/amogha-cafe #67](https://github.com/MukundaKatta/amogha-cafe/pull/67) — fix(pos): unlock screen orientation — was hard-locked to landscape
+- `2026-04-24` · [MukundaKatta/amogha-cafe #66](https://github.com/MukundaKatta/amogha-cafe/pull/66) — ci: auto-fetch POS APK artifact before deploy so /pos-latest.apk survives
+- `2026-04-24` · [MukundaKatta/amogha-cafe #65](https://github.com/MukundaKatta/amogha-cafe/pull/65) — hosting: serve .apk with Android MIME for on-device POS install
+
+<!-- recently-shipped:end -->
+
 ---
 ### Published Packages
 
@@ -101,32 +132,32 @@ Flagship packages:
     <th align="left">Install</th>
   </tr>
   <tr>
-    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/mcpcheck">@mukundakatta/mcpcheck</a></strong><br/><sub>MCP config quality gate</sub></td>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/mcpcheck">@mukundakatta/mcpcheck</a></strong> <a href="https://www.npmjs.com/package/@mukundakatta/mcpcheck"><img src="https://img.shields.io/npm/dm/%40mukundakatta%2Fmcpcheck?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a><br/><sub>MCP config quality gate</sub></td>
     <td>Lint MCP config files for Claude Desktop, Cursor, Cline, Windsurf, and Zed. CLI, GitHub Action, and SARIF for code scanning.</td>
     <td><code>npm i -g @mukundakatta/mcpcheck</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/designlint">@mukundakatta/designlint</a></strong><br/><sub>frontend quality checks</sub></td>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/designlint">@mukundakatta/designlint</a></strong> <a href="https://www.npmjs.com/package/@mukundakatta/designlint"><img src="https://img.shields.io/npm/dm/%40mukundakatta%2Fdesignlint?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a><br/><sub>frontend quality checks</sub></td>
     <td>HTML/CSS accessibility and design linter for contrast, touch targets, headings, form labels, and leaked secrets.</td>
     <td><code>npm i -g @mukundakatta/designlint</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/skillint">@mukundakatta/skillint</a></strong><br/><sub>AI skill validation</sub></td>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/skillint">@mukundakatta/skillint</a></strong> <a href="https://www.npmjs.com/package/@mukundakatta/skillint"><img src="https://img.shields.io/npm/dm/%40mukundakatta%2Fskillint?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a><br/><sub>AI skill validation</sub></td>
     <td>Lint Claude Code <code>SKILL.md</code> files for frontmatter, required fields, descriptions, and hardcoded secrets.</td>
     <td><code>npm i -g @mukundakatta/skillint</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/ai-eval-forge">@mukundakatta/ai-eval-forge</a></strong><br/><sub>eval harness</sub></td>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/ai-eval-forge">@mukundakatta/ai-eval-forge</a></strong> <a href="https://www.npmjs.com/package/@mukundakatta/ai-eval-forge"><img src="https://img.shields.io/npm/dm/%40mukundakatta%2Fai-eval-forge?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a><br/><sub>eval harness</sub></td>
     <td>Zero-dependency eval harness for comparing model, prompt, and agent behavior. CLI plus programmatic API; also on PyPI.</td>
     <td><code>npm i @mukundakatta/ai-eval-forge</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/codex-skill-kit">@mukundakatta/codex-skill-kit</a></strong><br/><sub>Codex skill tooling</sub></td>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/codex-skill-kit">@mukundakatta/codex-skill-kit</a></strong> <a href="https://www.npmjs.com/package/@mukundakatta/codex-skill-kit"><img src="https://img.shields.io/npm/dm/%40mukundakatta%2Fcodex-skill-kit?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a><br/><sub>Codex skill tooling</sub></td>
     <td>Scaffold and validate Codex skills from the command line. Published for npm and PyPI workflows.</td>
     <td><code>npm i -g @mukundakatta/codex-skill-kit</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/kavach">@mukundakatta/kavach</a></strong><br/><sub>AI-app threat signals</sub></td>
+    <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/kavach">@mukundakatta/kavach</a></strong> <a href="https://www.npmjs.com/package/@mukundakatta/kavach"><img src="https://img.shields.io/npm/dm/%40mukundakatta%2Fkavach?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a><br/><sub>AI-app threat signals</sub></td>
     <td>Small, inspectable threat-scoring library for AI-app security monitoring: signals to weighted score to tier and playbook.</td>
     <td><code>npm i @mukundakatta/kavach</code></td>
   </tr>
@@ -218,42 +249,42 @@ Install any of them with `npm i @mukundakatta/<package>`.
     <th align="left">Install</th>
   </tr>
   <tr>
-    <td><strong><a href="https://pypi.org/project/claude-skill-check/">claude-skill-check</a></strong></td>
+    <td><strong><a href="https://pypi.org/project/claude-skill-check/">claude-skill-check</a></strong> <a href="https://pypi.org/project/claude-skill-check/"><img src="https://img.shields.io/pypi/dm/claude-skill-check?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a></td>
     <td>Lint Claude Code <code>SKILL.md</code> files for YAML frontmatter, required fields, description quality, and secret patterns.</td>
     <td><code>pip install claude-skill-check</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://pypi.org/project/mcp-config-check/">mcp-config-check</a></strong></td>
+    <td><strong><a href="https://pypi.org/project/mcp-config-check/">mcp-config-check</a></strong> <a href="https://pypi.org/project/mcp-config-check/"><img src="https://img.shields.io/pypi/dm/mcp-config-check?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a></td>
     <td>Validate MCP configs across Claude Desktop, Cursor, Cline, Windsurf, and Zed; catches auth, transport, duplicate, and placeholder issues.</td>
     <td><code>pip install mcp-config-check</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://pypi.org/project/claude-hooks-check/">claude-hooks-check</a></strong></td>
+    <td><strong><a href="https://pypi.org/project/claude-hooks-check/">claude-hooks-check</a></strong> <a href="https://pypi.org/project/claude-hooks-check/"><img src="https://img.shields.io/pypi/dm/claude-hooks-check?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a></td>
     <td>Audit Claude Code hooks for malformed matchers, dangerous commands, invalid events, and hardcoded secrets.</td>
     <td><code>pip install claude-hooks-check</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://pypi.org/project/claude-commands-check/">claude-commands-check</a></strong></td>
+    <td><strong><a href="https://pypi.org/project/claude-commands-check/">claude-commands-check</a></strong> <a href="https://pypi.org/project/claude-commands-check/"><img src="https://img.shields.io/pypi/dm/claude-commands-check?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a></td>
     <td>Validate Claude Code slash-command files for naming, frontmatter, model values, allowed-tools shape, and secret leakage.</td>
     <td><code>pip install claude-commands-check</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://pypi.org/project/llm-usage-report/">llm-usage-report</a></strong></td>
+    <td><strong><a href="https://pypi.org/project/llm-usage-report/">llm-usage-report</a></strong> <a href="https://pypi.org/project/llm-usage-report/"><img src="https://img.shields.io/pypi/dm/llm-usage-report?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a></td>
     <td>Parse raw LLM API response logs and generate token and cost reports by provider, model, day, project, or user.</td>
     <td><code>pip install llm-usage-report</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://pypi.org/project/codex-skill-kit/">codex-skill-kit</a></strong></td>
+    <td><strong><a href="https://pypi.org/project/codex-skill-kit/">codex-skill-kit</a></strong> <a href="https://pypi.org/project/codex-skill-kit/"><img src="https://img.shields.io/pypi/dm/codex-skill-kit?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a></td>
     <td>Scaffold and validate Codex skills from Python environments; mirrors the npm CLI workflow.</td>
     <td><code>pip install codex-skill-kit</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://pypi.org/project/ai-eval-forge/">ai-eval-forge</a></strong></td>
+    <td><strong><a href="https://pypi.org/project/ai-eval-forge/">ai-eval-forge</a></strong> <a href="https://pypi.org/project/ai-eval-forge/"><img src="https://img.shields.io/pypi/dm/ai-eval-forge?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a></td>
     <td>Zero-dependency LLM and agent eval harness with exact, regex, token-F1, JSON, and citation-coverage checks.</td>
     <td><code>pip install ai-eval-forge</code></td>
   </tr>
   <tr>
-    <td><strong><a href="https://pypi.org/project/agent-run-diff/">agent-run-diff</a></strong></td>
+    <td><strong><a href="https://pypi.org/project/agent-run-diff/">agent-run-diff</a></strong> <a href="https://pypi.org/project/agent-run-diff/"><img src="https://img.shields.io/pypi/dm/agent-run-diff?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a></td>
     <td>Compare baseline and current agent runs across success, errors, tools, output drift, steps, latency, and cost.</td>
     <td><code>pip install agent-run-diff</code></td>
   </tr>
@@ -604,6 +635,14 @@ If you follow my work here, you’ll mostly see:
 <div align="center">
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=MukundaKatta&bg_color=0d1117&color=D4A853&line=D4A853&point=D4A853&area_color=D4A853&area=true&hide_border=true" width="95%" />
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/MukundaKatta/MukundaKatta/profile-3d-contrib/profile-night-view.svg" width="95%" alt="3D contribution graph" />
 
 </div>
 
