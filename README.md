@@ -654,7 +654,7 @@ If you follow my work here, you’ll mostly see:
 
 ![Profile Views](https://komarev.com/ghpvc/?username=MukundaKatta&color=D4A853&style=for-the-badge&label=PROFILE+VIEWS)
 ![GitHub Followers](https://img.shields.io/github/followers/MukundaKatta?style=for-the-badge&logo=github&label=FOLLOWERS&color=D4A853&labelColor=1a1a1a)
-![GitHub Stars](https://img.shields.io/badge/STARS-546-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
+![GitHub Stars](https://img.shields.io/badge/STARS-1227-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
 
 ![ai-eval-forge npm](https://img.shields.io/npm/v/%40mukundakatta%2Fai-eval-forge?style=flat-square&logo=npm&label=ai-eval-forge&color=D4A853&labelColor=1a1a1a)
 ![agent-regression-lens npm](https://img.shields.io/npm/v/%40mukundakatta%2Fagent-regression-lens?style=flat-square&logo=npm&label=agent-regression-lens&color=D4A853&labelColor=1a1a1a)

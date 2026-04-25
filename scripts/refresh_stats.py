@@ -33,14 +33,15 @@ PYPI_PACKAGES = [
 GH_TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
 
-def gh_graphql(query: str) -> dict:
-    if not GH_TOKEN:
+def gh_graphql(query: str, token: str | None = None) -> dict:
+    auth = token or GH_TOKEN
+    if not auth:
         sys.exit("GH_TOKEN or GITHUB_TOKEN required")
     req = Request(
         "https://api.github.com/graphql",
         data=json.dumps({"query": query}).encode(),
         headers={
-            "Authorization": f"bearer {GH_TOKEN}",
+            "Authorization": f"bearer {auth}",
             "Content-Type": "application/json",
             "User-Agent": "MukundaKatta-profile-refresh",
         },
@@ -78,31 +79,21 @@ def fetch_repo_counts() -> dict[str, int]:
 
 
 def fetch_total_stars() -> int:
-    # shields.io has no documented endpoint for total stars across all of a
-    # user's repos, so we paginate the owner's public repos and sum
-    # stargazerCount ourselves. The README badge is rewritten in main() to a
-    # static `/badge/STARS-{N}-color` URL using this value.
-    cursor: str | None = None
-    total = 0
-    while True:
-        after = f', after: "{cursor}"' if cursor else ""
-        query = (
-            "{\n"
-            f'  user(login: "{GH_USER}") {{\n'
-            f"    repositories(ownerAffiliations: OWNER, privacy: PUBLIC, first: 100{after}) {{\n"
-            "      pageInfo { hasNextPage endCursor }\n"
-            "      nodes { stargazerCount }\n"
-            "    }\n"
-            "  }\n"
-            "}"
-        )
-        data = gh_graphql(query)
-        repos = data["user"]["repositories"]
-        total += sum(node["stargazerCount"] for node in repos["nodes"])
-        if not repos["pageInfo"]["hasNextPage"]:
-            break
-        cursor = repos["pageInfo"]["endCursor"]
-    return total
+    # Total stars the user has given (own self-stars + external stars), which
+    # is what shows on the Stars tab of the profile. Private self-stars are
+    # only visible when authenticated as the user — set STARS_TOKEN in repo
+    # secrets to a PAT with `read:user` scope to include those. Without it
+    # the workflow falls back to the publicly-visible count, which understates
+    # by the number of private repos the user has starred.
+    query = (
+        "{\n"
+        f'  user(login: "{GH_USER}") {{\n'
+        "    starredRepositories { totalCount }\n"
+        "  }\n"
+        "}"
+    )
+    data = gh_graphql(query, token=os.environ.get("STARS_TOKEN"))
+    return data["user"]["starredRepositories"]["totalCount"]
 
 
 def fetch_npm_packages() -> list[str]:
