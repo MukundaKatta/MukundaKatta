@@ -75,6 +75,34 @@ def fetch_repo_counts() -> dict[str, int]:
     }
 
 
+def fetch_total_stars() -> int:
+    # shields.io has no documented endpoint for total stars across all of a
+    # user's repos, so we paginate the owner's public repos and sum
+    # stargazerCount ourselves. The README badge is rewritten in main() to a
+    # static `/badge/STARS-{N}-color` URL using this value.
+    cursor: str | None = None
+    total = 0
+    while True:
+        after = f', after: "{cursor}"' if cursor else ""
+        query = (
+            "{\n"
+            f'  user(login: "{GH_USER}") {{\n'
+            f"    repositories(ownerAffiliations: OWNER, privacy: PUBLIC, first: 100{after}) {{\n"
+            "      pageInfo { hasNextPage endCursor }\n"
+            "      nodes { stargazerCount }\n"
+            "    }\n"
+            "  }\n"
+            "}"
+        )
+        data = gh_graphql(query)
+        repos = data["user"]["repositories"]
+        total += sum(node["stargazerCount"] for node in repos["nodes"])
+        if not repos["pageInfo"]["hasNextPage"]:
+            break
+        cursor = repos["pageInfo"]["endCursor"]
+    return total
+
+
 def fetch_npm_count() -> int:
     url = f"https://registry.npmjs.org/-/v1/search?text=maintainer:{NPM_USER}&size=250"
     with urlopen(url, timeout=30) as response:  # noqa: S310
@@ -106,9 +134,24 @@ def replace_after_label(text: str, label: str, value: int) -> tuple[str, bool]:
     return new_text, count > 0
 
 
+STARS_BADGE_PATTERN = re.compile(
+    r"(\!\[GitHub Stars\]\()https://img\.shields\.io/[^)]+(\))"
+)
+
+
+def replace_stars_badge(text: str, total_stars: int) -> tuple[str, bool]:
+    replacement = (
+        rf"\1https://img.shields.io/badge/STARS-{total_stars}-D4A853"
+        r"?style=for-the-badge&logo=github&labelColor=1a1a1a\2"
+    )
+    new_text, count = STARS_BADGE_PATTERN.subn(replacement, text, count=1)
+    return new_text, count > 0
+
+
 def main() -> None:
     repos = fetch_repo_counts()
     packages = fetch_npm_count() + fetch_pypi_count()
+    total_stars = fetch_total_stars()
 
     updates = [
         ("PUBLIC REPOS", repos["public_repos"]),
@@ -127,11 +170,14 @@ def main() -> None:
         text, ok = replace_after_label(text, label, value)
         if not ok:
             missing.append(label)
+    text, stars_ok = replace_stars_badge(text, total_stars)
+    if not stars_ok:
+        missing.append("GitHub Stars badge")
     if missing:
         sys.exit(f"Could not locate stat labels in README: {', '.join(missing)}")
 
     README_FILE.write_text(text, encoding="utf-8")
-    print(json.dumps(dict(updates), indent=2))
+    print(json.dumps({**dict(updates), "STARS": total_stars}, indent=2))
 
 
 if __name__ == "__main__":
