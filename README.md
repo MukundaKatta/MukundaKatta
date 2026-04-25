@@ -43,23 +43,23 @@
   <tr>
     <td align="center" width="20%">
       <sub>PUBLIC REPOS</sub><br/>
-      <strong>534</strong>
+      <strong>572</strong>
     </td>
     <td align="center" width="20%">
       <sub>ORIGINALS</sub><br/>
-      <strong>156</strong>
+      <strong>160</strong>
     </td>
     <td align="center" width="20%">
       <sub>ACTIVE PROJECTS</sub><br/>
-      <strong>118</strong>
+      <strong>122</strong>
     </td>
     <td align="center" width="20%">
       <sub>FORKS</sub><br/>
-      <strong>378</strong>
+      <strong>412</strong>
     </td>
     <td align="center" width="20%">
       <sub>ARCHIVED</sub><br/>
-      <strong>327</strong>
+      <strong>324</strong>
     </td>
   </tr>
 </table>
@@ -74,32 +74,27 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 
 > A streaming JSON parser that yields **partial valid trees as tokens arrive**.
 > Built for LLM tool calls, structured-output streams, and partial recovery.
-> Shipped in lockstep across npm, PyPI, and MCP so libraries, Python apps, and AI assistants can all use it directly.
+> Shipped to npm, the official MCP Registry, and Homebrew so libraries, CLIs, and AI assistants can use it directly.
 
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
       <h4>📦 <a href="https://github.com/MukundaKatta/streamparse">@mukundakatta/streamparse</a></h4>
-      <p><sub><strong>npm</strong> &bull; TypeScript &bull; 64 tests &bull; 0 deps &bull; ESM</sub></p>
+      <p><sub><strong>npm + CLI + Homebrew</strong> &bull; TypeScript &bull; 64 tests &bull; 0 deps &bull; ESM</sub></p>
       <p>Single-pass state machine. Push bytes, take a snapshot, render mid-stream. Synthetic closure makes every snapshot valid JSON. Lenient mode handles the LLM-isms (trailing commas, single quotes, ```json fences, comments, prose).</p>
-      <pre><code>npm i @mukundakatta/streamparse</code></pre>
+      <pre><code>npm i @mukundakatta/streamparse
+brew install mukundakatta/tools/streamparse</code></pre>
     </td>
-    <td width="33%" valign="top">
-      <h4>🐍 <a href="https://github.com/MukundaKatta/partial-json-stream">partial-json-stream</a></h4>
-      <p><sub><strong>PyPI</strong> &bull; Python 3.9+ &bull; 55 tests &bull; 0 deps</sub></p>
-      <p>Pure-Python port. Same algorithm, same lenient repairs, same partial-snapshot semantics. Identical API surface so the same patterns work on either runtime.</p>
-      <pre><code>pip install partial-json-stream</code></pre>
-    </td>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
       <h4>🤖 <a href="https://github.com/MukundaKatta/streamparse-mcp">@mukundakatta/streamparse-mcp</a></h4>
-      <p><sub><strong>MCP server</strong> &bull; 3 tools &bull; stdio &bull; 4 e2e tests</sub></p>
-      <p>Exposes <code>parse_partial_json</code>, <code>extract_json_from_text</code>, and <code>validate_json</code> so Claude Desktop, Cursor, Cline, Windsurf, and Zed can call streamparse directly mid-conversation.</p>
+      <p><sub><strong>npm + MCP Registry</strong> &bull; 3 tools &bull; stdio &bull; 4 e2e tests</sub></p>
+      <p>Listed in the official <a href="https://registry.modelcontextprotocol.io">Model Context Protocol Registry</a> as <code>io.github.MukundaKatta/streamparse</code>. Exposes <code>parse_partial_json</code>, <code>extract_json_from_text</code>, and <code>validate_json</code> so Claude Desktop, Cursor, Cline, Windsurf, and Zed can call streamparse directly mid-conversation.</p>
       <pre><code>npx -y @mukundakatta/streamparse-mcp</code></pre>
     </td>
   </tr>
 </table>
 
-<sub>Performance: ~6.8x slower than <code>JSON.parse</code> on full docs, faster than naive try/catch on streaming, and gives a usable tree from the very first chunk. Reproducible benchmarks in <a href="https://github.com/MukundaKatta/streamparse">the repo</a>.</sub>
+<sub>Performance: ~6.8x slower than <code>JSON.parse</code> on full docs, faster than naive try/catch on streaming, and gives a usable tree from the very first chunk. Reproducible benchmarks in <a href="https://github.com/MukundaKatta/streamparse">the repo</a>. A pure-Python port lives at <a href="https://github.com/MukundaKatta/partial-json-stream"><code>partial-json-stream</code></a>; pip publish pending.</sub>
 
 ---
 
@@ -146,9 +141,8 @@ _Last refreshed 2026-04-25 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
-- `2026-04-25` · [`@mukundakatta/streamparse`](https://github.com/MukundaKatta/streamparse) `v1.0.0` · npm · streaming JSON parser, partial valid trees
-- `2026-04-25` · [`partial-json-stream`](https://github.com/MukundaKatta/partial-json-stream) `v1.0.0` · PyPI · Python port of streamparse
-- `2026-04-25` · [`@mukundakatta/streamparse-mcp`](https://github.com/MukundaKatta/streamparse-mcp) `v1.0.0` · MCP server for partial JSON parsing
+- `2026-04-25` · [`@mukundakatta/streamparse`](https://www.npmjs.com/package/@mukundakatta/streamparse) `v1.0.1` · npm · streaming JSON parser with CLI + Homebrew formula
+- `2026-04-25` · [`@mukundakatta/streamparse-mcp`](https://www.npmjs.com/package/@mukundakatta/streamparse-mcp) `v1.0.1` · npm + [MCP Registry](https://registry.modelcontextprotocol.io) (`io.github.MukundaKatta/streamparse`)
 - `2026-04-24` · [`@mukundakatta/codex-skill-kit`](https://www.npmjs.com/package/@mukundakatta/codex-skill-kit) `v0.1.2` · npm
 - `2026-04-24` · [`@mukundakatta/vector-poison-score`](https://www.npmjs.com/package/@mukundakatta/vector-poison-score) `v0.1.0` · npm
 - `2026-04-24` · [`@mukundakatta/tool-result-taint`](https://www.npmjs.com/package/@mukundakatta/tool-result-taint) `v0.1.0` · npm
@@ -178,7 +172,7 @@ Flagship packages:
   </tr>
   <tr>
     <td><strong><a href="https://www.npmjs.com/package/@mukundakatta/streamparse">@mukundakatta/streamparse</a></strong> <a href="https://www.npmjs.com/package/@mukundakatta/streamparse"><img src="https://img.shields.io/npm/v/%40mukundakatta%2Fstreamparse?style=flat-square&label=v&color=D4A853&labelColor=1a1a1a" alt="version"/></a><br/><sub>partial JSON for LLM streams</sub></td>
-    <td>Streaming JSON parser that yields partial valid trees as tokens arrive. Render LLM tool calls mid-stream, recover dropped responses, parse messy ` ```json ` blocks. Zero deps, 64 tests, also on <a href="https://pypi.org/project/partial-json-stream/">PyPI</a> and as an <a href="https://github.com/MukundaKatta/streamparse-mcp">MCP server</a>.</td>
+    <td>Streaming JSON parser that yields partial valid trees as tokens arrive. Render LLM tool calls mid-stream, recover dropped responses, parse messy ` ```json ` blocks. Zero deps, 64 tests. Also published as an <a href="https://github.com/MukundaKatta/streamparse-mcp">MCP server</a> in the <a href="https://registry.modelcontextprotocol.io">official MCP Registry</a>.</td>
     <td><code>npm i @mukundakatta/streamparse</code></td>
   </tr>
   <tr>
@@ -309,11 +303,6 @@ Install any of them with `npm i @mukundakatta/<package>`.
     <th align="left">Package</th>
     <th align="left">Purpose</th>
     <th align="left">Install</th>
-  </tr>
-  <tr>
-    <td><strong><a href="https://pypi.org/project/partial-json-stream/">partial-json-stream</a></strong> <a href="https://pypi.org/project/partial-json-stream/"><img src="https://img.shields.io/pypi/v/partial-json-stream?style=flat-square&label=v&color=D4A853&labelColor=1a1a1a" alt="version"/></a></td>
-    <td>Streaming JSON parser that yields partial valid trees as tokens arrive. Python port of <a href="https://github.com/MukundaKatta/streamparse"><code>streamparse</code></a>. 55 tests, zero deps, Python 3.9+.</td>
-    <td><code>pip install partial-json-stream</code></td>
   </tr>
   <tr>
     <td><strong><a href="https://pypi.org/project/claude-skill-check/">claude-skill-check</a></strong> <a href="https://pypi.org/project/claude-skill-check/"><img src="https://img.shields.io/pypi/dm/claude-skill-check?style=flat-square&label=%2Fmo&color=D4A853&labelColor=1a1a1a" alt="downloads"/></a></td>
@@ -466,11 +455,11 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
       <strong>50</strong><br/>
-      <sub>published packages<br/>across npm + PyPI + MCP</sub>
+      <sub>41 npm + 8 PyPI + 1 in the<br/>official MCP Registry</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
-      <strong>156</strong><br/>
+      <strong>160</strong><br/>
       <sub>original public repos<br/>maintained on GitHub</sub>
     </td>
     <td align="center" width="25%">
