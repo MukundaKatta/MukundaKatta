@@ -28,7 +28,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipping the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast) and contributing fixes upstream across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
+**Now:** shipping the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast) plus their matching MCP servers, and contributing fixes upstream across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
 <!-- now:end -->
 
 </div>
@@ -110,6 +110,16 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 npm i @mukundakatta/agentfit @mukundakatta/agentguard @mukundakatta/agentsnap @mukundakatta/agentvet @mukundakatta/agentcast
 ```
 
+**Each one also ships as an MCP server** so Claude Desktop, Cursor, Cline, Windsurf, and Zed can call them directly mid-conversation:
+
+```bash
+npx -y @mukundakatta/agentfit-mcp     # fit a chat history into a budget
+npx -y @mukundakatta/agentguard-mcp   # check URLs against an egress policy
+npx -y @mukundakatta/agentsnap-mcp    # diff tool-call traces
+npx -y @mukundakatta/agentvet-mcp     # validate tool args + generate retry hints
+npx -y @mukundakatta/agentcast-mcp    # extract / validate JSON from LLM text
+```
+
 <sub>Sibling libraries that share a design philosophy: small, focused, zero-dep, BYO-LLM. Each one solves a single concrete reliability problem so you can pick the ones you need without dragging in a framework. Previous drop, <a href="https://github.com/MukundaKatta/streamparse">streamparse</a> (streaming JSON parser, npm + Homebrew + MCP Registry), is still in active use.</sub>
 
 ---
@@ -157,6 +167,11 @@ _Last refreshed 2026-04-26 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
+- `2026-04-26` · [`@mukundakatta/agentfit-mcp`](https://www.npmjs.com/package/@mukundakatta/agentfit-mcp) `v0.1.0` · npm · MCP server for agentfit
+- `2026-04-26` · [`@mukundakatta/agentguard-mcp`](https://www.npmjs.com/package/@mukundakatta/agentguard-mcp) `v0.1.0` · npm · MCP server for agentguard
+- `2026-04-26` · [`@mukundakatta/agentsnap-mcp`](https://www.npmjs.com/package/@mukundakatta/agentsnap-mcp) `v0.1.0` · npm · MCP server for agentsnap
+- `2026-04-26` · [`@mukundakatta/agentvet-mcp`](https://www.npmjs.com/package/@mukundakatta/agentvet-mcp) `v0.1.0` · npm · MCP server for agentvet
+- `2026-04-26` · [`@mukundakatta/agentcast-mcp`](https://www.npmjs.com/package/@mukundakatta/agentcast-mcp) `v0.1.0` · npm · MCP server for agentcast
 - `2026-04-26` · [`@mukundakatta/agentcast`](https://www.npmjs.com/package/@mukundakatta/agentcast) `v0.1.0` · npm · structured-output enforcer for any LLM
 - `2026-04-26` · [`@mukundakatta/agentfit`](https://www.npmjs.com/package/@mukundakatta/agentfit) `v0.1.0` · npm · token-aware message truncation
 - `2026-04-26` · [`@mukundakatta/agentvet`](https://www.npmjs.com/package/@mukundakatta/agentvet) `v0.1.0` · npm · tool-arg validator with retry hints
@@ -247,16 +262,26 @@ Flagship packages:
 </table>
 
 <details>
-<summary><strong>More npm packages (38)</strong> — grouped by area</summary>
+<summary><strong>More npm packages (43)</strong> — grouped by area</summary>
 
 <br/>
 
-**Structured outputs & parsing (2)**
+**MCP servers (6)** — callable directly from Claude Desktop, Cursor, Cline, Windsurf, Zed via stdio:
+
+| Package | What it does |
+|---|---|
+| [`@mukundakatta/streamparse-mcp`](https://www.npmjs.com/package/@mukundakatta/streamparse-mcp) | Parse partial / truncated / messy JSON for LLM tool calls. Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io). |
+| [`@mukundakatta/agentfit-mcp`](https://www.npmjs.com/package/@mukundakatta/agentfit-mcp) | Token-aware message truncation: count tokens, fit a chat history into a budget. |
+| [`@mukundakatta/agentguard-mcp`](https://www.npmjs.com/package/@mukundakatta/agentguard-mcp) | Check URLs against a network-egress allowlist before any tool fetch. |
+| [`@mukundakatta/agentsnap-mcp`](https://www.npmjs.com/package/@mukundakatta/agentsnap-mcp) | Diff and validate tool-call trace snapshots. |
+| [`@mukundakatta/agentvet-mcp`](https://www.npmjs.com/package/@mukundakatta/agentvet-mcp) | Validate tool-call args against a shape spec; produce LLM-friendly retry hints. |
+| [`@mukundakatta/agentcast-mcp`](https://www.npmjs.com/package/@mukundakatta/agentcast-mcp) | Extract JSON from messy LLM text and validate it against a shape. |
+
+**Structured outputs & parsing (1)**
 
 | Package | What it does |
 |---|---|
 | [`@mukundakatta/streamparse`](https://www.npmjs.com/package/@mukundakatta/streamparse) | Streaming JSON parser that yields partial valid trees as tokens arrive. |
-| [`@mukundakatta/streamparse-mcp`](https://www.npmjs.com/package/@mukundakatta/streamparse-mcp) | MCP server exposing streamparse tools to Claude / Cursor / Cline / Windsurf / Zed. |
 
 **Agent infrastructure (11)**
 
@@ -493,8 +518,8 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>55</strong><br/>
-      <sub>46 npm + 8 PyPI + 1 in the<br/>official MCP Registry</sub>
+      <strong>60</strong><br/>
+      <sub>51 npm (incl. 6 MCP servers) + 8 PyPI<br/>+ 1 in the official MCP Registry</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
