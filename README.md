@@ -551,6 +551,13 @@ brew install claude-skill-check mcp-config-check claude-hooks-check claude-comma
 
 Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub Action you can drop into any workflow in 3 lines.
 
+**🤗 HuggingFace** — [`mukunda1729`](https://huggingface.co/mukunda1729):
+
+| Type | Name | What it is |
+|---|---|---|
+| 🚀 Space | [`agent-stack-demo`](https://huggingface.co/spaces/mukunda1729/agent-stack-demo) | Live Gradio demo — paste any chat / URL / tool call and see all 5 agent-stack libraries (`fit`, `guard`, `snap`, `vet`, `cast`) run against it in real time. No install required. |
+| 📊 Dataset | [`jailbreak-corpus-mini`](https://huggingface.co/datasets/mukunda1729/jailbreak-corpus-mini) | 15 curated jailbreak / prompt-injection fixtures across 8 categories + 3 severity levels. Loadable via `datasets.load_dataset("mukunda1729/jailbreak-corpus-mini")` for guardrail unit tests. |
+
 ---
 ### Featured Projects
 
@@ -641,8 +648,8 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>117</strong><br/>
-      <sub>52 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions</sub>
+      <strong>119</strong><br/>
+      <sub>52 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>1 HF Space + 1 HF Dataset</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
