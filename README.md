@@ -28,7 +28,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipping the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast) plus their matching MCP servers, and contributing fixes upstream across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
+**Now:** shipped the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 matching MCP servers in the official [MCP Registry](https://registry.modelcontextprotocol.io), 3 new GitHub Actions on the Marketplace, and 18 new Python ports on PyPI. Plus 40+ open PRs across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
 <!-- now:end -->
 
 </div>
@@ -163,10 +163,15 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-04-26 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-04-27 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
+- `2026-04-27` · 18 new Python ports on PyPI: `partial-json-stream`, `agentfit-py`, `agentguard-firewall`, `agentsnap-py`, `agentvet-py`, `agentcast-py`, `pii-sentry-py`, `prompt-injection-shield-py`, `llm-output-sanitizer-py`, `rag-quality-kit`, `vector-poison-score`, `embedding-dedupe`, `llm-cost-guard-py`, `semantic-cache-key`, `eval-flake-detector`, `citation-integrity-check`, `hallucination-risk-meter`, `system-prompt-leak-scan`
+- `2026-04-27` · [`@mukundakatta/agentkit`](https://www.npmjs.com/package/@mukundakatta/agentkit) `v0.1.0` · npm · meta-package re-exporting all 5 agent-stack libraries
+- `2026-04-27` · 5 of the 5 agent-stack libraries bumped to `v0.1.1` with new `npx`-runnable CLI binaries
+- `2026-04-27` · 3 new GitHub Marketplace Actions: [`agentvet-action`](https://github.com/marketplace/actions/agentvet-action), [`agentsnap-action`](https://github.com/marketplace/actions/agentsnap-action), [`mcp-stack-validate-action`](https://github.com/marketplace/actions/mcp-stack-validate-action)
+- `2026-04-27` · 5 new entries in the [official MCP Registry](https://registry.modelcontextprotocol.io): `io.github.MukundaKatta/{agentfit, agentguard, agentsnap, agentvet, agentcast}`
 - `2026-04-26` · [`@mukundakatta/agentfit-mcp`](https://www.npmjs.com/package/@mukundakatta/agentfit-mcp) `v0.1.0` · npm · MCP server for agentfit
 - `2026-04-26` · [`@mukundakatta/agentguard-mcp`](https://www.npmjs.com/package/@mukundakatta/agentguard-mcp) `v0.1.0` · npm · MCP server for agentguard
 - `2026-04-26` · [`@mukundakatta/agentsnap-mcp`](https://www.npmjs.com/package/@mukundakatta/agentsnap-mcp) `v0.1.0` · npm · MCP server for agentsnap
@@ -410,14 +415,70 @@ Install any of them with `npm i @mukundakatta/<package>`.
   </tr>
 </table>
 
-**GitHub Marketplace (Actions):**
+<details>
+<summary><strong>More PyPI packages (18)</strong> — Python ports of the @mukundakatta JS libraries</summary>
 
-All four Python linters are also published as composite GitHub Actions, discoverable on the [GitHub Marketplace](https://github.com/marketplace):
+<br/>
 
+**Streaming + agent reliability stack (6)**
+
+| Package | What it does |
+|---|---|
+| [`partial-json-stream`](https://pypi.org/project/partial-json-stream/) | Streaming JSON parser that yields partial valid trees as tokens arrive. |
+| [`agentfit-py`](https://pypi.org/project/agentfit-py/) | Token-aware message truncation; fit a chat history into a context budget. |
+| [`agentguard-firewall`](https://pypi.org/project/agentguard-firewall/) | Network-egress firewall for agent tools. |
+| [`agentsnap-py`](https://pypi.org/project/agentsnap-py/) | Snapshot tests for tool-call traces. |
+| [`agentvet-py`](https://pypi.org/project/agentvet-py/) | Validate tool args before execution; LLM-friendly retry hints. |
+| [`agentcast-py`](https://pypi.org/project/agentcast-py/) | Structured-output enforcer; validate, retry with feedback. |
+
+**Prompt + output safety (3)**
+
+| Package | What it does |
+|---|---|
+| [`pii-sentry-py`](https://pypi.org/project/pii-sentry-py/) | Detect and redact PII and secret-like values before AI processing. |
+| [`prompt-injection-shield-py`](https://pypi.org/project/prompt-injection-shield-py/) | Prompt-injection risk scanner for untrusted AI context. |
+| [`llm-output-sanitizer-py`](https://pypi.org/project/llm-output-sanitizer-py/) | Sanitize LLM outputs before HTML / SQL / shell / markdown sinks. |
+
+**RAG + retrieval (3)**
+
+| Package | What it does |
+|---|---|
+| [`rag-quality-kit`](https://pypi.org/project/rag-quality-kit/) | Heuristic quality metrics for RAG retrieval and grounded answers. |
+| [`vector-poison-score`](https://pypi.org/project/vector-poison-score/) | Score retrieved documents for vector / RAG poisoning signals. |
+| [`embedding-dedupe`](https://pypi.org/project/embedding-dedupe/) | Deduplicate near-identical embedding records by cosine similarity. |
+
+**Cost, caching, evals (3)**
+
+| Package | What it does |
+|---|---|
+| [`llm-cost-guard-py`](https://pypi.org/project/llm-cost-guard-py/) | Estimate AI request cost and enforce per-request or session budgets. |
+| [`semantic-cache-key`](https://pypi.org/project/semantic-cache-key/) | Stable semantic cache keys for AI prompts, tools, models, retrieval. |
+| [`eval-flake-detector`](https://pypi.org/project/eval-flake-detector/) | Detect flaky LLM eval cases across repeated runs. |
+
+**Verification + grounding (3)**
+
+| Package | What it does |
+|---|---|
+| [`citation-integrity-check`](https://pypi.org/project/citation-integrity-check/) | Verify answer citations refer to supplied source ids. |
+| [`hallucination-risk-meter`](https://pypi.org/project/hallucination-risk-meter/) | Estimate hallucination risk from answer + context + citations. |
+| [`system-prompt-leak-scan`](https://pypi.org/project/system-prompt-leak-scan/) | Detect system-prompt leakage in model outputs. |
+
+</details>
+
+**GitHub Marketplace (7 Actions):**
+
+Composite GitHub Actions, discoverable on the [GitHub Marketplace](https://github.com/marketplace):
+
+Linters:
 - [`claude-skill-check`](https://github.com/marketplace/actions/claude-skill-check)
 - [`mcp-config-check`](https://github.com/marketplace/actions/mcp-config-check)
 - [`claude-hooks-check`](https://github.com/marketplace/actions/claude-hooks-check)
 - [`claude-commands-check`](https://github.com/marketplace/actions/claude-commands-check)
+
+Agent-stack CI gates:
+- [`agentvet-action`](https://github.com/marketplace/actions/agentvet-action) — fail PRs on bad LLM tool definitions
+- [`agentsnap-action`](https://github.com/marketplace/actions/agentsnap-action) — fail PRs on tool-call trace drift
+- [`mcp-stack-validate-action`](https://github.com/marketplace/actions/mcp-stack-validate-action) — one CI gate that runs all 5 agent-stack tools
 
 **Homebrew tap** — [`mukundakatta/tools`](https://github.com/MukundaKatta/homebrew-tools):
 
@@ -518,8 +579,8 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>60</strong><br/>
-      <sub>51 npm (incl. 6 MCP servers) + 8 PyPI<br/>+ 1 in the official MCP Registry</sub>
+      <strong>91</strong><br/>
+      <sub>52 npm (incl. 6 MCP servers, agentkit) +<br/>26 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
