@@ -72,6 +72,8 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 
 ### Latest Drop · The Agent Reliability Stack
 
+> 🌐 **Live at [mukundakatta.github.io/agent-stack](https://mukundakatta.github.io/agent-stack/)** — single landing page for the whole 117-package ecosystem (npm + PyPI + MCP Registry + GitHub Marketplace).
+
 > Five small, focused npm packages that fix the boring problems every long-running agent eventually hits.
 > Pure ESM JavaScript, zero runtime deps, TypeScript types in the box. Designed to compose into a pipeline:
 > **`fit → guard → snap → vet → cast`**.
