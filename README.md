@@ -551,12 +551,49 @@ brew install claude-skill-check mcp-config-check claude-hooks-check claude-comma
 
 Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub Action you can drop into any workflow in 3 lines.
 
-**🤗 HuggingFace** — [`mukunda1729`](https://huggingface.co/mukunda1729):
+**🤗 HuggingFace** — [`mukunda1729`](https://huggingface.co/mukunda1729) — **14 Spaces · 13 Datasets**:
 
-| Type | Name | What it is |
-|---|---|---|
-| 🚀 Space | [`agent-stack-demo`](https://huggingface.co/spaces/mukunda1729/agent-stack-demo) | Live Gradio demo — paste any chat / URL / tool call and see all 5 agent-stack libraries (`fit`, `guard`, `snap`, `vet`, `cast`) run against it in real time. No install required. |
-| 📊 Dataset | [`jailbreak-corpus-mini`](https://huggingface.co/datasets/mukunda1729/jailbreak-corpus-mini) | 15 curated jailbreak / prompt-injection fixtures across 8 categories + 3 severity levels. Loadable via `datasets.load_dataset("mukunda1729/jailbreak-corpus-mini")` for guardrail unit tests. |
+**🚀 Live Gradio playgrounds** (6):
+
+| Space | What you can try |
+|---|---|
+| [`agent-stack-demo`](https://huggingface.co/spaces/mukunda1729/agent-stack-demo) | All 5 libs (`fit`, `guard`, `snap`, `vet`, `cast`) in one app. |
+| [`token-counter`](https://huggingface.co/spaces/mukunda1729/token-counter) | Count tokens for any text across Claude / GPT / Llama tokenizers. |
+| [`json-extractor`](https://huggingface.co/spaces/mukunda1729/json-extractor) | Pull clean JSON out of messy LLM output (fenced, inline, unfenced). |
+| [`pii-redactor`](https://huggingface.co/spaces/mukunda1729/pii-redactor) | Find emails, phones, secrets, and IDs — mask, hash, or highlight. |
+| [`prompt-injection-detector`](https://huggingface.co/spaces/mukunda1729/prompt-injection-detector) | Heuristic scanner for the most common injection families. |
+| [`mcp-config-validator`](https://huggingface.co/spaces/mukunda1729/mcp-config-validator) | Sanity-check Claude Desktop / Cursor / Cline / Windsurf / Zed configs. |
+
+**📖 Static reference & explainer pages** (8):
+
+| Space | What it covers |
+|---|---|
+| [`agent-stack-tour`](https://huggingface.co/spaces/mukunda1729/agent-stack-tour) | Guided tour of all 5 libraries with install commands and live links. |
+| [`why-this-stack`](https://huggingface.co/spaces/mukunda1729/why-this-stack) | The thinking behind the stack — what's broken, why these 5 libs. |
+| [`install-cheatsheet`](https://huggingface.co/spaces/mukunda1729/install-cheatsheet) | All install commands across pip, npm, and MCP. |
+| [`mcp-quickstart`](https://huggingface.co/spaces/mukunda1729/mcp-quickstart) | Add the 5 MCP servers to Claude Desktop / Cursor / Cline / Windsurf / Zed. |
+| [`fit-strategies-explained`](https://huggingface.co/spaces/mukunda1729/fit-strategies-explained) | Visual explainer: drop-oldest vs drop-middle vs priority. |
+| [`trace-format-reference`](https://huggingface.co/spaces/mukunda1729/trace-format-reference) | Field-by-field reference for the agentsnap trace JSON schema. |
+| [`prompt-injection-taxonomy`](https://huggingface.co/spaces/mukunda1729/prompt-injection-taxonomy) | 10-category taxonomy with examples + the cheap defense for each. |
+| [`dataset-cards-index`](https://huggingface.co/spaces/mukunda1729/dataset-cards-index) | One-page index of all 13 datasets below. |
+
+**📊 Datasets** (13) — all MIT, all `datasets.load_dataset("mukunda1729/<name>")` ready:
+
+| Dataset | Rows | Purpose |
+|---|---:|---|
+| [`jailbreak-corpus-mini`](https://huggingface.co/datasets/mukunda1729/jailbreak-corpus-mini) | 15 | Curated jailbreak fixtures across 8 categories. |
+| [`prompt-injection-patterns-extended`](https://huggingface.co/datasets/mukunda1729/prompt-injection-patterns-extended) | 30 | Prompt-injection patterns across 10 categories. |
+| [`pii-detection-fixtures`](https://huggingface.co/datasets/mukunda1729/pii-detection-fixtures) | 25 | PII / secret strings labeled with span offsets. |
+| [`tool-arg-validation-cases`](https://huggingface.co/datasets/mukunda1729/tool-arg-validation-cases) | 20 | (Tool, schema, args) tuples — valid + invalid. |
+| [`mcp-tool-test-fixtures`](https://huggingface.co/datasets/mukunda1729/mcp-tool-test-fixtures) | 22 | MCP tool-call args across 8 categories. |
+| [`llm-output-extraction-cases`](https://huggingface.co/datasets/mukunda1729/llm-output-extraction-cases) | 20 | Messy LLM outputs with expected JSON. |
+| [`hallucination-risk-cases`](https://huggingface.co/datasets/mukunda1729/hallucination-risk-cases) | 20 | Prompt → response pairs rated for hallucination risk. |
+| [`rag-quality-benchmarks-mini`](https://huggingface.co/datasets/mukunda1729/rag-quality-benchmarks-mini) | 15 | RAG eval queries with ground-truth answers. |
+| [`agent-trace-samples`](https://huggingface.co/datasets/mukunda1729/agent-trace-samples) | 10 | agentsnap-format tool-call traces (good + regressed pairs). |
+| [`agent-budget-violations`](https://huggingface.co/datasets/mukunda1729/agent-budget-violations) | 15 | Agent runs with budget caps + actual usage + root cause. |
+| [`token-counting-edge-cases`](https://huggingface.co/datasets/mukunda1729/token-counting-edge-cases) | 20 | Strings with token counts across 3 tokenizer families. |
+| [`model-pricing-table`](https://huggingface.co/datasets/mukunda1729/model-pricing-table) | 20 | LLM pricing — input/output cost per 1k tokens, context window. |
+| [`mcp-config-examples`](https://huggingface.co/datasets/mukunda1729/mcp-config-examples) | 15 | MCP client configs across Claude Desktop, Cursor, Cline, Windsurf, Zed. |
 
 ---
 ### Featured Projects
@@ -648,8 +685,8 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>119</strong><br/>
-      <sub>52 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>1 HF Space + 1 HF Dataset</sub>
+      <strong>144</strong><br/>
+      <sub>52 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 13 HF Datasets</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
