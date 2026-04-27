@@ -28,7 +28,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 matching MCP servers in the official [MCP Registry](https://registry.modelcontextprotocol.io), 3 new GitHub Actions on the Marketplace, and 18 new Python ports on PyPI. Plus 40+ open PRs across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
+**Now:** shipped the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 matching MCP servers in the official [MCP Registry](https://registry.modelcontextprotocol.io), 3 new GitHub Actions on the Marketplace, and **doubled the PyPI footprint to 52 packages** (full Python ports of the npm catalog). Plus 40+ open PRs across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
 <!-- now:end -->
 
 </div>
@@ -167,6 +167,7 @@ _Last refreshed 2026-04-27 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
+- `2026-04-27` · **PyPI footprint doubled to 52 packages.** Added 26 more Python ports today (mk-agentkit meta + 5 agent infra: agent-loop-breaker-py, agent-regression-lens-py, agent-trajectory-replay-py, tool-call-contracts-py, tool-permission-gate-py · 5 evals/cost/routing: eval-dataset-smith-py, llm-trace-sampler-py, model-fallback-planner-py, model-router-policy-py, ai-supply-chain-manifest-py · 3 tools/safety: tool-result-taint-py, jailbreak-corpus-mini-py, consent-redaction-log-py · 3 RAG: rag-staleness-auditor-py, retrieval-acl-filter-py, context-drift-detector-py · 5 context/prompt: context-forge-py, context-window-packer-py, prompt-token-trim-py, prompt-version-diff-py, llm-response-schema-lite-py · 4 niche: kavach-py, mcpcheck-py, skillint-py, designlint-py)
 - `2026-04-27` · 18 new Python ports on PyPI: `partial-json-stream`, `agentfit-py`, `agentguard-firewall`, `agentsnap-py`, `agentvet-py`, `agentcast-py`, `pii-sentry-py`, `prompt-injection-shield-py`, `llm-output-sanitizer-py`, `rag-quality-kit`, `vector-poison-score`, `embedding-dedupe`, `llm-cost-guard-py`, `semantic-cache-key`, `eval-flake-detector`, `citation-integrity-check`, `hallucination-risk-meter`, `system-prompt-leak-scan`
 - `2026-04-27` · [`@mukundakatta/agentkit`](https://www.npmjs.com/package/@mukundakatta/agentkit) `v0.1.0` · npm · meta-package re-exporting all 5 agent-stack libraries
 - `2026-04-27` · 5 of the 5 agent-stack libraries bumped to `v0.1.1` with new `npx`-runnable CLI binaries
@@ -416,7 +417,7 @@ Install any of them with `npm i @mukundakatta/<package>`.
 </table>
 
 <details>
-<summary><strong>More PyPI packages (18)</strong> — Python ports of the @mukundakatta JS libraries</summary>
+<summary><strong>More PyPI packages (44)</strong> — Python ports of the @mukundakatta JS libraries</summary>
 
 <br/>
 
@@ -462,6 +463,63 @@ Install any of them with `npm i @mukundakatta/<package>`.
 | [`citation-integrity-check`](https://pypi.org/project/citation-integrity-check/) | Verify answer citations refer to supplied source ids. |
 | [`hallucination-risk-meter`](https://pypi.org/project/hallucination-risk-meter/) | Estimate hallucination risk from answer + context + citations. |
 | [`system-prompt-leak-scan`](https://pypi.org/project/system-prompt-leak-scan/) | Detect system-prompt leakage in model outputs. |
+
+**Agent infrastructure + meta (6)**
+
+| Package | What it does |
+|---|---|
+| [`mk-agentkit`](https://pypi.org/project/mk-agentkit/) | Meta-package re-exporting all 5 agent-stack ports under one import. |
+| [`agent-loop-breaker-py`](https://pypi.org/project/agent-loop-breaker-py/) | Detect repeated agent steps and stop runaway loops. |
+| [`agent-regression-lens-py`](https://pypi.org/project/agent-regression-lens-py/) | Detect regressions between baseline and current agent runs. |
+| [`agent-trajectory-replay-py`](https://pypi.org/project/agent-trajectory-replay-py/) | Replay and diff agent event trajectories. |
+| [`tool-call-contracts-py`](https://pypi.org/project/tool-call-contracts-py/) | Validate LLM tool-call payloads with small JSON-like contracts. |
+| [`tool-permission-gate-py`](https://pypi.org/project/tool-permission-gate-py/) | Policy-check agent tool calls before execution. |
+
+**Tools / safety / privacy (4)**
+
+| Package | What it does |
+|---|---|
+| [`tool-result-taint-py`](https://pypi.org/project/tool-result-taint-py/) | Track untrusted tool output before it enters prompts. |
+| [`jailbreak-corpus-mini-py`](https://pypi.org/project/jailbreak-corpus-mini-py/) | Local jailbreak + prompt-injection fixture set for tests. |
+| [`consent-redaction-log-py`](https://pypi.org/project/consent-redaction-log-py/) | Record consent-aware redactions for privacy review trails. |
+| [`kavach-py`](https://pypi.org/project/kavach-py/) | Threat-scoring library for AI-app security monitoring. |
+
+**RAG (3)**
+
+| Package | What it does |
+|---|---|
+| [`rag-staleness-auditor-py`](https://pypi.org/project/rag-staleness-auditor-py/) | Find stale RAG chunks by age, version, and freshness requirements. |
+| [`retrieval-acl-filter-py`](https://pypi.org/project/retrieval-acl-filter-py/) | Enforce document ACLs after retrieval and before prompting. |
+| [`context-drift-detector-py`](https://pypi.org/project/context-drift-detector-py/) | Detect topic drift between intent, context, and answer. |
+
+**Context engineering (5)**
+
+| Package | What it does |
+|---|---|
+| [`context-forge-py`](https://pypi.org/project/context-forge-py/) | Context engineering toolkit: ranking, packing, risk-scanning. |
+| [`context-window-packer-py`](https://pypi.org/project/context-window-packer-py/) | Pack context chunks into a budget by relevance and priority. |
+| [`prompt-token-trim-py`](https://pypi.org/project/prompt-token-trim-py/) | Trim prompt messages to fit a token budget while preserving priority. |
+| [`prompt-version-diff-py`](https://pypi.org/project/prompt-version-diff-py/) | Diff prompt templates and flag risky instruction changes. |
+| [`llm-response-schema-lite-py`](https://pypi.org/project/llm-response-schema-lite-py/) | Tiny schema validator for structured LLM responses. |
+
+**Evals + cost + routing (5)**
+
+| Package | What it does |
+|---|---|
+| [`eval-dataset-smith-py`](https://pypi.org/project/eval-dataset-smith-py/) | Generate balanced eval cases from bugs, docs, examples, policies. |
+| [`llm-trace-sampler-py`](https://pypi.org/project/llm-trace-sampler-py/) | Sample LLM traces by risk, errors, latency, and deterministic ids. |
+| [`llm-cost-guard-py`](https://pypi.org/project/llm-cost-guard-py/) | Estimate AI request cost and enforce per-request or session budgets. |
+| [`model-fallback-planner-py`](https://pypi.org/project/model-fallback-planner-py/) | Plan model fallback chains from capability, cost, and health data. |
+| [`model-router-policy-py`](https://pypi.org/project/model-router-policy-py/) | Policy-based model routing by capability, cost, latency, privacy. |
+
+**Niche linters (4)**
+
+| Package | What it does |
+|---|---|
+| [`mcpcheck-py`](https://pypi.org/project/mcpcheck-py/) | Lint MCP config files for Claude Desktop, Cursor, Cline, Windsurf, Zed. |
+| [`skillint-py`](https://pypi.org/project/skillint-py/) | Lint Claude Code SKILL.md files. |
+| [`designlint-py`](https://pypi.org/project/designlint-py/) | HTML/CSS accessibility and design linter. |
+| [`ai-supply-chain-manifest-py`](https://pypi.org/project/ai-supply-chain-manifest-py/) | Build and validate lightweight AI model / data / tool manifests. |
 
 </details>
 
@@ -579,8 +637,8 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>91</strong><br/>
-      <sub>52 npm (incl. 6 MCP servers, agentkit) +<br/>26 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions</sub>
+      <strong>117</strong><br/>
+      <sub>52 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
