@@ -28,7 +28,7 @@
 ```
 
 <!-- now:start -->
-**Now:** building agent guardrails, MCP linters, and eval harnesses; contributing to AI SDKs upstream.
+**Now:** shipping the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast) and contributing fixes upstream across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
 <!-- now:end -->
 
 </div>
@@ -70,31 +70,47 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 
 ---
 
-### Latest Drop · streamparse
+### Latest Drop · The Agent Reliability Stack
 
-> A streaming JSON parser that yields **partial valid trees as tokens arrive**.
-> Built for LLM tool calls, structured-output streams, and partial recovery.
-> Shipped to npm, the official MCP Registry, and Homebrew so libraries, CLIs, and AI assistants can use it directly.
+> Five small, focused npm packages that fix the boring problems every long-running agent eventually hits.
+> Pure ESM JavaScript, zero runtime deps, TypeScript types in the box. Designed to compose into a pipeline:
+> **`fit → guard → snap → vet → cast`**.
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h4>📦 <a href="https://github.com/MukundaKatta/streamparse">@mukundakatta/streamparse</a></h4>
-      <p><sub><strong>npm + CLI + Homebrew</strong> &bull; TypeScript &bull; 64 tests &bull; 0 deps &bull; ESM</sub></p>
-      <p>Single-pass state machine. Push bytes, take a snapshot, render mid-stream. Synthetic closure makes every snapshot valid JSON. Lenient mode handles the LLM-isms (trailing commas, single quotes, ```json fences, comments, prose).</p>
-      <pre><code>npm i @mukundakatta/streamparse
-brew install mukundakatta/tools/streamparse</code></pre>
+    <td width="20%" valign="top">
+      <h4><a href="https://www.npmjs.com/package/@mukundakatta/agentfit">agentfit</a></h4>
+      <p><sub><em>Fit it.</em></sub></p>
+      <p>Token-aware message truncation with three strategies (drop-oldest, drop-middle, priority). Pluggable tokenizers. Per-model estimators.</p>
     </td>
-    <td width="50%" valign="top">
-      <h4>🤖 <a href="https://github.com/MukundaKatta/streamparse-mcp">@mukundakatta/streamparse-mcp</a></h4>
-      <p><sub><strong>npm + MCP Registry</strong> &bull; 3 tools &bull; stdio &bull; 4 e2e tests</sub></p>
-      <p>Listed in the official <a href="https://registry.modelcontextprotocol.io">Model Context Protocol Registry</a> as <code>io.github.MukundaKatta/streamparse</code>. Exposes <code>parse_partial_json</code>, <code>extract_json_from_text</code>, and <code>validate_json</code> so Claude Desktop, Cursor, Cline, Windsurf, and Zed can call streamparse directly mid-conversation.</p>
-      <pre><code>npx -y @mukundakatta/streamparse-mcp</code></pre>
+    <td width="20%" valign="top">
+      <h4><a href="https://www.npmjs.com/package/@mukundakatta/agentguard">agentguard</a></h4>
+      <p><sub><em>Sandbox it.</em></sub></p>
+      <p>Network-egress firewall: a declarative allowlist of domains agent tools can fetch. Throws on violation, with a clear error.</p>
+    </td>
+    <td width="20%" valign="top">
+      <h4><a href="https://www.npmjs.com/package/@mukundakatta/agentsnap">agentsnap</a></h4>
+      <p><sub><em>Test it.</em></sub></p>
+      <p>Snapshot tests for tool-call traces. Catch silent regressions in LLM tool use the way you catch UI regressions today.</p>
+    </td>
+    <td width="20%" valign="top">
+      <h4><a href="https://www.npmjs.com/package/@mukundakatta/agentvet">agentvet</a></h4>
+      <p><sub><em>Vet it.</em></sub></p>
+      <p>Validate tool args before execution. Wrap any tool function; on bad args, throw a typed error with an LLM-friendly retry hint.</p>
+    </td>
+    <td width="20%" valign="top">
+      <h4><a href="https://www.npmjs.com/package/@mukundakatta/agentcast">agentcast</a></h4>
+      <p><sub><em>Validate it.</em></sub></p>
+      <p>Structured-output enforcer. Validate the model's response, retry with the validation error as feedback, return typed data or throw after N attempts. BYO LLM and validator.</p>
     </td>
   </tr>
 </table>
 
-<sub>Performance: ~6.8x slower than <code>JSON.parse</code> on full docs, faster than naive try/catch on streaming, and gives a usable tree from the very first chunk. Reproducible benchmarks in <a href="https://github.com/MukundaKatta/streamparse">the repo</a>. A pure-Python port lives at <a href="https://github.com/MukundaKatta/partial-json-stream"><code>partial-json-stream</code></a>; pip publish pending.</sub>
+```bash
+npm i @mukundakatta/agentfit @mukundakatta/agentguard @mukundakatta/agentsnap @mukundakatta/agentvet @mukundakatta/agentcast
+```
+
+<sub>Sibling libraries that share a design philosophy: small, focused, zero-dep, BYO-LLM. Each one solves a single concrete reliability problem so you can pick the ones you need without dragging in a framework. Previous drop, <a href="https://github.com/MukundaKatta/streamparse">streamparse</a> (streaming JSON parser, npm + Homebrew + MCP Registry), is still in active use.</sub>
 
 ---
 
@@ -137,15 +153,17 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-04-25 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-04-26 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
+- `2026-04-26` · [`@mukundakatta/agentcast`](https://www.npmjs.com/package/@mukundakatta/agentcast) `v0.1.0` · npm · structured-output enforcer for any LLM
+- `2026-04-26` · [`@mukundakatta/agentfit`](https://www.npmjs.com/package/@mukundakatta/agentfit) `v0.1.0` · npm · token-aware message truncation
+- `2026-04-26` · [`@mukundakatta/agentvet`](https://www.npmjs.com/package/@mukundakatta/agentvet) `v0.1.0` · npm · tool-arg validator with retry hints
+- `2026-04-25` · [`@mukundakatta/agentguard`](https://www.npmjs.com/package/@mukundakatta/agentguard) `v0.1.0` · npm · network-egress firewall for agent tools
+- `2026-04-25` · [`@mukundakatta/agentsnap`](https://www.npmjs.com/package/@mukundakatta/agentsnap) `v0.1.0` · npm · snapshot tests for tool-call traces
 - `2026-04-25` · [`@mukundakatta/streamparse`](https://www.npmjs.com/package/@mukundakatta/streamparse) `v1.0.1` · npm · streaming JSON parser with CLI + Homebrew formula
 - `2026-04-25` · [`@mukundakatta/streamparse-mcp`](https://www.npmjs.com/package/@mukundakatta/streamparse-mcp) `v1.0.1` · npm + [MCP Registry](https://registry.modelcontextprotocol.io) (`io.github.MukundaKatta/streamparse`)
-- `2026-04-24` · [`@mukundakatta/codex-skill-kit`](https://www.npmjs.com/package/@mukundakatta/codex-skill-kit) `v0.1.2` · npm
-- `2026-04-24` · [`@mukundakatta/vector-poison-score`](https://www.npmjs.com/package/@mukundakatta/vector-poison-score) `v0.1.0` · npm
-- `2026-04-24` · [`@mukundakatta/tool-result-taint`](https://www.npmjs.com/package/@mukundakatta/tool-result-taint) `v0.1.0` · npm
 
 **Recently merged PRs**
 
@@ -154,6 +172,22 @@ _Last refreshed 2026-04-25 from npm, PyPI, and the GitHub API._
 - `2026-04-22` · [pydantic/pydantic-ai #5156](https://github.com/pydantic/pydantic-ai/pull/5156) — fix(vercel-ai): allow regenerate requests without `messageId`
 - `2026-04-23` · [ntop/ntopng #10297](https://github.com/ntop/ntopng/pull/10297) — fix(locales/en): correct display string 'Enstablished' -> 'Established'
 - `2026-04-22` · [safetensors/safetensors #753](https://github.com/safetensors/safetensors/pull/753) — fix(python): make SafetensorError picklable
+
+**Open PRs (recent batch)** — substantive fixes shipped 2026-04-26 across MCP, Anthropic, FastMCP, Apache, Google Cloud, HuggingFace, OpenTelemetry:
+
+- [modelcontextprotocol/typescript-sdk #1961](https://github.com/modelcontextprotocol/typescript-sdk/pull/1961) — fix SSE reader-lock leak in `StreamableHTTPClientTransport`
+- [modelcontextprotocol/typescript-sdk #1965](https://github.com/modelcontextprotocol/typescript-sdk/pull/1965) — feat(client): honor `Retry-After` on HTTP 429 responses
+- [modelcontextprotocol/typescript-sdk #1964](https://github.com/modelcontextprotocol/typescript-sdk/pull/1964) — feat(deps): make HTTP/SSE transport deps optional for stdio-only consumers
+- [modelcontextprotocol/csharp-sdk #1530](https://github.com/modelcontextprotocol/csharp-sdk/pull/1530) — fix(client): preserve underlying status code in AutoDetect probe
+- [modelcontextprotocol/inspector #1231](https://github.com/modelcontextprotocol/inspector/pull/1231) — feat(auth): support OAuth 2.0 client_credentials grant type
+- [modelcontextprotocol/registry #1209](https://github.com/modelcontextprotocol/registry/pull/1209) — feat(sources): add Maven Central package source for JVM MCP servers
+- [anthropics/claude-code-action #1261](https://github.com/anthropics/claude-code-action/pull/1261) — fix(mcp): spawn bundled MCP servers on `pull_request` events
+- [anthropics/claude-agent-sdk-python #879](https://github.com/anthropics/claude-agent-sdk-python/pull/879) — fix(session): generate AI title for SDK-created sessions
+- [PrefectHQ/fastmcp #4071](https://github.com/PrefectHQ/fastmcp/pull/4071) — feat(openapi): per-call HTTP headers for multi-tenant auth
+- [pydantic/pydantic #13120](https://github.com/pydantic/pydantic/pull/13120) — docs(validators): document `model_validator` execution order with inheritance
+- [huggingface/lerobot #3464](https://github.com/huggingface/lerobot/pull/3464) — fix(policy): resolve state-dict naming clash from tied-weight storage views
+- [open-telemetry/opentelemetry-python #5149](https://github.com/open-telemetry/opentelemetry-python/pull/5149) — fix(ci): stabilize tracecontext job
+- [apache/skywalking #13845](https://github.com/apache/skywalking/pull/13845) — docs: BanyanDB 0.10.0 upgrade notes
 
 <!-- recently-shipped:end -->
 
@@ -213,7 +247,7 @@ Flagship packages:
 </table>
 
 <details>
-<summary><strong>More npm packages (33)</strong> — grouped by area</summary>
+<summary><strong>More npm packages (38)</strong> — grouped by area</summary>
 
 <br/>
 
@@ -224,10 +258,15 @@ Flagship packages:
 | [`@mukundakatta/streamparse`](https://www.npmjs.com/package/@mukundakatta/streamparse) | Streaming JSON parser that yields partial valid trees as tokens arrive. |
 | [`@mukundakatta/streamparse-mcp`](https://www.npmjs.com/package/@mukundakatta/streamparse-mcp) | MCP server exposing streamparse tools to Claude / Cursor / Cline / Windsurf / Zed. |
 
-**Agent infrastructure (6)**
+**Agent infrastructure (11)**
 
 | Package | What it does |
 |---|---|
+| [`@mukundakatta/agentfit`](https://www.npmjs.com/package/@mukundakatta/agentfit) | Token-aware message truncation; fit chat history into a context budget. |
+| [`@mukundakatta/agentguard`](https://www.npmjs.com/package/@mukundakatta/agentguard) | Network-egress firewall for agent tools: declarative domain allowlist. |
+| [`@mukundakatta/agentsnap`](https://www.npmjs.com/package/@mukundakatta/agentsnap) | Snapshot tests for tool-call traces, like Jest snapshots for LLM tool use. |
+| [`@mukundakatta/agentvet`](https://www.npmjs.com/package/@mukundakatta/agentvet) | Validate tool args before execution, with LLM-friendly retry hints. |
+| [`@mukundakatta/agentcast`](https://www.npmjs.com/package/@mukundakatta/agentcast) | Structured-output enforcer: validate, retry with feedback, BYO-LLM/validator. |
 | [`@mukundakatta/agent-loop-breaker`](https://www.npmjs.com/package/@mukundakatta/agent-loop-breaker) | Detect repeated agent steps and stop runaway loops. |
 | [`@mukundakatta/agent-regression-lens`](https://www.npmjs.com/package/@mukundakatta/agent-regression-lens) | Detect regressions between baseline and current AI agent runs. |
 | [`@mukundakatta/agent-trajectory-replay`](https://www.npmjs.com/package/@mukundakatta/agent-trajectory-replay) | Replay and diff AI agent event trajectories for debugging regressions. |
@@ -454,8 +493,8 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>50</strong><br/>
-      <sub>41 npm + 8 PyPI + 1 in the<br/>official MCP Registry</sub>
+      <strong>55</strong><br/>
+      <sub>46 npm + 8 PyPI + 1 in the<br/>official MCP Registry</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
