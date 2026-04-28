@@ -43,23 +43,23 @@
   <tr>
     <td align="center" width="20%">
       <sub>PUBLIC REPOS</sub><br/>
-      <strong>572</strong>
+      <strong>651</strong>
     </td>
     <td align="center" width="20%">
       <sub>ORIGINALS</sub><br/>
-      <strong>160</strong>
+      <strong>222</strong>
     </td>
     <td align="center" width="20%">
       <sub>ACTIVE PROJECTS</sub><br/>
-      <strong>122</strong>
+      <strong>184</strong>
     </td>
     <td align="center" width="20%">
       <sub>FORKS</sub><br/>
-      <strong>412</strong>
+      <strong>429</strong>
     </td>
     <td align="center" width="20%">
       <sub>ARCHIVED</sub><br/>
-      <strong>324</strong>
+      <strong>319</strong>
     </td>
   </tr>
 </table>
@@ -167,52 +167,21 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-04-27 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-04-28 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
-- `2026-04-27` · **PyPI footprint doubled to 52 packages.** Added 26 more Python ports today (mk-agentkit meta + 5 agent infra: agent-loop-breaker-py, agent-regression-lens-py, agent-trajectory-replay-py, tool-call-contracts-py, tool-permission-gate-py · 5 evals/cost/routing: eval-dataset-smith-py, llm-trace-sampler-py, model-fallback-planner-py, model-router-policy-py, ai-supply-chain-manifest-py · 3 tools/safety: tool-result-taint-py, jailbreak-corpus-mini-py, consent-redaction-log-py · 3 RAG: rag-staleness-auditor-py, retrieval-acl-filter-py, context-drift-detector-py · 5 context/prompt: context-forge-py, context-window-packer-py, prompt-token-trim-py, prompt-version-diff-py, llm-response-schema-lite-py · 4 niche: kavach-py, mcpcheck-py, skillint-py, designlint-py)
-- `2026-04-27` · 18 new Python ports on PyPI: `partial-json-stream`, `agentfit-py`, `agentguard-firewall`, `agentsnap-py`, `agentvet-py`, `agentcast-py`, `pii-sentry-py`, `prompt-injection-shield-py`, `llm-output-sanitizer-py`, `rag-quality-kit`, `vector-poison-score`, `embedding-dedupe`, `llm-cost-guard-py`, `semantic-cache-key`, `eval-flake-detector`, `citation-integrity-check`, `hallucination-risk-meter`, `system-prompt-leak-scan`
-- `2026-04-27` · [`@mukundakatta/agentkit`](https://www.npmjs.com/package/@mukundakatta/agentkit) `v0.1.0` · npm · meta-package re-exporting all 5 agent-stack libraries
-- `2026-04-27` · 5 of the 5 agent-stack libraries bumped to `v0.1.1` with new `npx`-runnable CLI binaries
-- `2026-04-27` · 3 new GitHub Marketplace Actions: [`agentvet-action`](https://github.com/marketplace/actions/agentvet-action), [`agentsnap-action`](https://github.com/marketplace/actions/agentsnap-action), [`mcp-stack-validate-action`](https://github.com/marketplace/actions/mcp-stack-validate-action)
-- `2026-04-27` · 5 new entries in the [official MCP Registry](https://registry.modelcontextprotocol.io): `io.github.MukundaKatta/{agentfit, agentguard, agentsnap, agentvet, agentcast}`
-- `2026-04-26` · [`@mukundakatta/agentfit-mcp`](https://www.npmjs.com/package/@mukundakatta/agentfit-mcp) `v0.1.0` · npm · MCP server for agentfit
-- `2026-04-26` · [`@mukundakatta/agentguard-mcp`](https://www.npmjs.com/package/@mukundakatta/agentguard-mcp) `v0.1.0` · npm · MCP server for agentguard
-- `2026-04-26` · [`@mukundakatta/agentsnap-mcp`](https://www.npmjs.com/package/@mukundakatta/agentsnap-mcp) `v0.1.0` · npm · MCP server for agentsnap
-- `2026-04-26` · [`@mukundakatta/agentvet-mcp`](https://www.npmjs.com/package/@mukundakatta/agentvet-mcp) `v0.1.0` · npm · MCP server for agentvet
-- `2026-04-26` · [`@mukundakatta/agentcast-mcp`](https://www.npmjs.com/package/@mukundakatta/agentcast-mcp) `v0.1.0` · npm · MCP server for agentcast
-- `2026-04-26` · [`@mukundakatta/agentcast`](https://www.npmjs.com/package/@mukundakatta/agentcast) `v0.1.0` · npm · structured-output enforcer for any LLM
-- `2026-04-26` · [`@mukundakatta/agentfit`](https://www.npmjs.com/package/@mukundakatta/agentfit) `v0.1.0` · npm · token-aware message truncation
-- `2026-04-26` · [`@mukundakatta/agentvet`](https://www.npmjs.com/package/@mukundakatta/agentvet) `v0.1.0` · npm · tool-arg validator with retry hints
-- `2026-04-25` · [`@mukundakatta/agentguard`](https://www.npmjs.com/package/@mukundakatta/agentguard) `v0.1.0` · npm · network-egress firewall for agent tools
-- `2026-04-25` · [`@mukundakatta/agentsnap`](https://www.npmjs.com/package/@mukundakatta/agentsnap) `v0.1.0` · npm · snapshot tests for tool-call traces
-- `2026-04-25` · [`@mukundakatta/streamparse`](https://www.npmjs.com/package/@mukundakatta/streamparse) `v1.0.1` · npm · streaming JSON parser with CLI + Homebrew formula
-- `2026-04-25` · [`@mukundakatta/streamparse-mcp`](https://www.npmjs.com/package/@mukundakatta/streamparse-mcp) `v1.0.1` · npm + [MCP Registry](https://registry.modelcontextprotocol.io) (`io.github.MukundaKatta/streamparse`)
+- `2026-04-28` · [`@mukundakatta/openai-responses-testkit`](https://www.npmjs.com/package/@mukundakatta/openai-responses-testkit) `v0.1.0` · npm
+- `2026-04-27` · [`@mukundakatta/agentcast`](https://www.npmjs.com/package/@mukundakatta/agentcast) `v0.1.1` · npm
+- `2026-04-27` · [`@mukundakatta/agentvet`](https://www.npmjs.com/package/@mukundakatta/agentvet) `v0.1.1` · npm
 
 **Recently merged PRs**
 
 - `2026-04-24` · [langgenius/dify #35547](https://github.com/langgenius/dify/pull/35547) — docs: fix Kubernetes deployment wording
 - `2026-04-24` · [infiniflow/ragflow #14352](https://github.com/infiniflow/ragflow/pull/14352) — docs: fix API key guide typo
+- `2026-04-25` · [PrefectHQ/fastmcp #4001](https://github.com/PrefectHQ/fastmcp/pull/4001) — docs: add best practices for custom telemetry spans
 - `2026-04-22` · [pydantic/pydantic-ai #5156](https://github.com/pydantic/pydantic-ai/pull/5156) — fix(vercel-ai): allow regenerate requests without `messageId`
-- `2026-04-23` · [ntop/ntopng #10297](https://github.com/ntop/ntopng/pull/10297) — fix(locales/en): correct display string 'Enstablished' -> 'Established'
-- `2026-04-22` · [safetensors/safetensors #753](https://github.com/safetensors/safetensors/pull/753) — fix(python): make SafetensorError picklable
-
-**Open PRs (recent batch)** — substantive fixes shipped 2026-04-26 across MCP, Anthropic, FastMCP, Apache, Google Cloud, HuggingFace, OpenTelemetry:
-
-- [modelcontextprotocol/typescript-sdk #1961](https://github.com/modelcontextprotocol/typescript-sdk/pull/1961) — fix SSE reader-lock leak in `StreamableHTTPClientTransport`
-- [modelcontextprotocol/typescript-sdk #1965](https://github.com/modelcontextprotocol/typescript-sdk/pull/1965) — feat(client): honor `Retry-After` on HTTP 429 responses
-- [modelcontextprotocol/typescript-sdk #1964](https://github.com/modelcontextprotocol/typescript-sdk/pull/1964) — feat(deps): make HTTP/SSE transport deps optional for stdio-only consumers
-- [modelcontextprotocol/csharp-sdk #1530](https://github.com/modelcontextprotocol/csharp-sdk/pull/1530) — fix(client): preserve underlying status code in AutoDetect probe
-- [modelcontextprotocol/inspector #1231](https://github.com/modelcontextprotocol/inspector/pull/1231) — feat(auth): support OAuth 2.0 client_credentials grant type
-- [modelcontextprotocol/registry #1209](https://github.com/modelcontextprotocol/registry/pull/1209) — feat(sources): add Maven Central package source for JVM MCP servers
-- [anthropics/claude-code-action #1261](https://github.com/anthropics/claude-code-action/pull/1261) — fix(mcp): spawn bundled MCP servers on `pull_request` events
-- [anthropics/claude-agent-sdk-python #879](https://github.com/anthropics/claude-agent-sdk-python/pull/879) — fix(session): generate AI title for SDK-created sessions
-- [PrefectHQ/fastmcp #4071](https://github.com/PrefectHQ/fastmcp/pull/4071) — feat(openapi): per-call HTTP headers for multi-tenant auth
-- [pydantic/pydantic #13120](https://github.com/pydantic/pydantic/pull/13120) — docs(validators): document `model_validator` execution order with inheritance
-- [huggingface/lerobot #3464](https://github.com/huggingface/lerobot/pull/3464) — fix(policy): resolve state-dict naming clash from tied-weight storage views
-- [open-telemetry/opentelemetry-python #5149](https://github.com/open-telemetry/opentelemetry-python/pull/5149) — fix(ci): stabilize tracecontext job
-- [apache/skywalking #13845](https://github.com/apache/skywalking/pull/13845) — docs: BanyanDB 0.10.0 upgrade notes
+- `2026-04-27` · [apache/druid #19318](https://github.com/apache/druid/pull/19318) — fix: correct typo in SeekableStreamIndexTaskRunner log message
 
 <!-- recently-shipped:end -->
 
@@ -680,17 +649,17 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
   <tr>
     <td align="center" width="25%">
       <sub>UPSTREAM</sub><br/>
-      <strong>97</strong><br/>
+      <strong>105</strong><br/>
       <sub>merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>144</strong><br/>
+      <strong>61</strong><br/>
       <sub>52 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 13 HF Datasets</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
-      <strong>160</strong><br/>
+      <strong>222</strong><br/>
       <sub>original public repos<br/>maintained on GitHub</sub>
     </td>
     <td align="center" width="25%">
@@ -928,7 +897,7 @@ If you follow my work here, you’ll mostly see:
 
 ![Profile Views](https://komarev.com/ghpvc/?username=MukundaKatta&color=D4A853&style=for-the-badge&label=PROFILE+VIEWS)
 ![GitHub Followers](https://img.shields.io/github/followers/MukundaKatta?style=for-the-badge&logo=github&label=FOLLOWERS&color=D4A853&labelColor=1a1a1a)
-![GitHub Stars](https://img.shields.io/badge/STARS-1227-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
+![GitHub Stars](https://img.shields.io/badge/STARS-1231-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
 
 ![ai-eval-forge npm](https://img.shields.io/npm/v/%40mukundakatta%2Fai-eval-forge?style=flat-square&logo=npm&label=ai-eval-forge&color=D4A853&labelColor=1a1a1a)
 ![agent-regression-lens npm](https://img.shields.io/npm/v/%40mukundakatta%2Fagent-regression-lens?style=flat-square&logo=npm&label=agent-regression-lens&color=D4A853&labelColor=1a1a1a)
