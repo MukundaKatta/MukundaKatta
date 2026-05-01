@@ -44,23 +44,23 @@
   <tr>
     <td align="center" width="20%">
       <sub>PUBLIC REPOS</sub><br/>
-      <strong>651</strong>
+      <strong>661</strong>
     </td>
     <td align="center" width="20%">
       <sub>ORIGINALS</sub><br/>
-      <strong>222</strong>
+      <strong>223</strong>
     </td>
     <td align="center" width="20%">
       <sub>ACTIVE PROJECTS</sub><br/>
-      <strong>184</strong>
+      <strong>185</strong>
     </td>
     <td align="center" width="20%">
       <sub>FORKS</sub><br/>
-      <strong>429</strong>
+      <strong>438</strong>
     </td>
     <td align="center" width="20%">
       <sub>ARCHIVED</sub><br/>
-      <strong>319</strong>
+      <strong>318</strong>
     </td>
   </tr>
 </table>
@@ -168,20 +168,20 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-04-28 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-05-01 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
+- `2026-04-28` · [`@mukundakatta/agentbudget`](https://www.npmjs.com/package/@mukundakatta/agentbudget) `v0.1.0` · npm
 - `2026-04-28` · [`@mukundakatta/openai-responses-testkit`](https://www.npmjs.com/package/@mukundakatta/openai-responses-testkit) `v0.1.0` · npm
 - `2026-04-27` · [`@mukundakatta/agentcast`](https://www.npmjs.com/package/@mukundakatta/agentcast) `v0.1.1` · npm
-- `2026-04-27` · [`@mukundakatta/agentvet`](https://www.npmjs.com/package/@mukundakatta/agentvet) `v0.1.1` · npm
 
 **Recently merged PRs**
 
 - `2026-04-24` · [langgenius/dify #35547](https://github.com/langgenius/dify/pull/35547) — docs: fix Kubernetes deployment wording
+- `2026-04-15` · [vercel/next.js #92809](https://github.com/vercel/next.js/pull/92809) — docs: add documentation for no-typos ESLint rule
 - `2026-04-24` · [infiniflow/ragflow #14352](https://github.com/infiniflow/ragflow/pull/14352) — docs: fix API key guide typo
 - `2026-04-25` · [PrefectHQ/fastmcp #4001](https://github.com/PrefectHQ/fastmcp/pull/4001) — docs: add best practices for custom telemetry spans
-- `2026-04-22` · [pydantic/pydantic-ai #5156](https://github.com/pydantic/pydantic-ai/pull/5156) — fix(vercel-ai): allow regenerate requests without `messageId`
 - `2026-04-27` · [apache/druid #19318](https://github.com/apache/druid/pull/19318) — fix: correct typo in SeekableStreamIndexTaskRunner log message
 
 <!-- recently-shipped:end -->
@@ -650,17 +650,17 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
   <tr>
     <td align="center" width="25%">
       <sub>UPSTREAM</sub><br/>
-      <strong>105</strong><br/>
+      <strong>109</strong><br/>
       <sub>merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>61</strong><br/>
+      <strong>62</strong><br/>
       <sub>52 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 13 HF Datasets</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
-      <strong>222</strong><br/>
+      <strong>223</strong><br/>
       <sub>original public repos<br/>maintained on GitHub</sub>
     </td>
     <td align="center" width="25%">
