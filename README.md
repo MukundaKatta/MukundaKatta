@@ -168,21 +168,21 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-05-01 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-05-03 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
 - `2026-04-28` · [`@mukundakatta/agentbudget`](https://www.npmjs.com/package/@mukundakatta/agentbudget) `v0.1.0` · npm
 - `2026-04-28` · [`@mukundakatta/openai-responses-testkit`](https://www.npmjs.com/package/@mukundakatta/openai-responses-testkit) `v0.1.0` · npm
-- `2026-04-27` · [`@mukundakatta/agentcast`](https://www.npmjs.com/package/@mukundakatta/agentcast) `v0.1.1` · npm
+- `2026-04-27` · [`llm-response-schema-lite-py`](https://pypi.org/project/llm-response-schema-lite-py/) `v0.1.0` · PyPI
 
 **Recently merged PRs**
 
-- `2026-04-24` · [langgenius/dify #35547](https://github.com/langgenius/dify/pull/35547) — docs: fix Kubernetes deployment wording
 - `2026-04-15` · [vercel/next.js #92809](https://github.com/vercel/next.js/pull/92809) — docs: add documentation for no-typos ESLint rule
-- `2026-04-24` · [infiniflow/ragflow #14352](https://github.com/infiniflow/ragflow/pull/14352) — docs: fix API key guide typo
-- `2026-04-25` · [PrefectHQ/fastmcp #4001](https://github.com/PrefectHQ/fastmcp/pull/4001) — docs: add best practices for custom telemetry spans
 - `2026-04-27` · [apache/druid #19318](https://github.com/apache/druid/pull/19318) — fix: correct typo in SeekableStreamIndexTaskRunner log message
+- `2026-04-28` · [getsentry/XcodeBuildMCP #350](https://github.com/getsentry/XcodeBuildMCP/pull/350) — fix(device): stop suggesting unsupported --device-id
+- `2026-04-28` · [googleapis/google-cloud-python #16808](https://github.com/googleapis/google-cloud-python/pull/16808) — ci: add pylint presubmit on golden files (closes #16393)
+- `2026-04-28` · [cloudflare/cloudflare-docs #30210](https://github.com/cloudflare/cloudflare-docs/pull/30210) — docs(wrangler/deprecations): 'wrangler deploy' -> 'wrangler publish' in publish deprecation section
 
 <!-- recently-shipped:end -->
 
@@ -650,12 +650,12 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
   <tr>
     <td align="center" width="25%">
       <sub>UPSTREAM</sub><br/>
-      <strong>109</strong><br/>
+      <strong>128</strong><br/>
       <sub>merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>62</strong><br/>
+      <strong>106</strong><br/>
       <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 13 HF Datasets</sub>
     </td>
     <td align="center" width="25%">
@@ -898,7 +898,11 @@ If you follow my work here, you’ll mostly see:
 
 ![Profile Views](https://komarev.com/ghpvc/?username=MukundaKatta&color=D4A853&style=for-the-badge&label=PROFILE+VIEWS)
 ![GitHub Followers](https://img.shields.io/github/followers/MukundaKatta?style=for-the-badge&logo=github&label=FOLLOWERS&color=D4A853&labelColor=1a1a1a)
-![GitHub Stars](https://img.shields.io/badge/STARS-551-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
+![GitHub Stars](https://img.shields.io/badge/STARS-1231-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
+
+![Downloads/mo combined](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMukundaKatta%2FMukundaKatta%2Fmain%2F.stats%2Fdownloads.json)
+![npm downloads/mo](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMukundaKatta%2FMukundaKatta%2Fmain%2F.stats%2Fnpm.json)
+![pypi downloads/mo](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMukundaKatta%2FMukundaKatta%2Fmain%2F.stats%2Fpypi.json)
 
 ![ai-eval-forge npm](https://img.shields.io/npm/v/%40mukundakatta%2Fai-eval-forge?style=flat-square&logo=npm&label=ai-eval-forge&color=D4A853&labelColor=1a1a1a)
 ![agent-regression-lens npm](https://img.shields.io/npm/v/%40mukundakatta%2Fagent-regression-lens?style=flat-square&logo=npm&label=agent-regression-lens&color=D4A853&labelColor=1a1a1a)

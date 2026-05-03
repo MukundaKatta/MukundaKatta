@@ -20,6 +20,7 @@ NPM_USER = "mukundakatta"
 # Mirrors the PyPI table in README.md. PyPI's user page sits behind a JS
 # challenge, so we verify each package via the JSON API instead of scraping.
 PYPI_PACKAGES = [
+    # Featured (linked at the top of the README PyPI table).
     "claude-skill-check",
     "mcp-config-check",
     "claude-hooks-check",
@@ -28,6 +29,61 @@ PYPI_PACKAGES = [
     "codex-skill-kit",
     "ai-eval-forge",
     "agent-run-diff",
+    "mk-agentkit",
+    # Streaming + agent reliability stack (Python ports of the npm quintet).
+    "agentfit-py",
+    "agentguard-firewall",
+    "agentsnap-py",
+    "agentvet-py",
+    "agentcast-py",
+    "partial-json-stream",
+    # Prompt + output safety.
+    "prompt-injection-shield-py",
+    "llm-output-sanitizer-py",
+    "system-prompt-leak-scan",
+    # RAG + retrieval.
+    "embedding-dedupe",
+    "rag-quality-kit",
+    "rag-staleness-auditor-py",
+    # Cost, caching, evals.
+    "llm-cost-guard-py",
+    "semantic-cache-key",
+    "eval-flake-detector",
+    # Verification + grounding.
+    "hallucination-risk-meter",
+    "citation-integrity-check",
+    "vector-poison-score",
+    # Agent infrastructure + meta.
+    "agent-loop-breaker-py",
+    "agent-regression-lens-py",
+    "agent-trajectory-replay-py",
+    "context-forge-py",
+    "context-window-packer-py",
+    "context-drift-detector-py",
+    # Tools / safety / privacy.
+    "tool-call-contracts-py",
+    "tool-permission-gate-py",
+    "tool-result-taint-py",
+    "pii-sentry-py",
+    # Niche linters + extras.
+    "designlint-py",
+    "skillint-py",
+    "mcpcheck-py",
+    "kavach-py",
+    # Evals + cost + routing.
+    "eval-dataset-smith-py",
+    "model-router-policy-py",
+    "model-fallback-planner-py",
+    "llm-trace-sampler-py",
+    "llm-response-schema-lite-py",
+    # Safety + supply chain.
+    "ai-supply-chain-manifest-py",
+    "consent-redaction-log-py",
+    "retrieval-acl-filter-py",
+    "prompt-token-trim-py",
+    "prompt-version-diff-py",
+    "jailbreak-corpus-mini-py",
+    "openai-responses-testkit",
 ]
 
 GH_TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
@@ -153,6 +209,75 @@ def _fetch_pypi_release(name: str) -> tuple[str, str, str] | None:
     if not upload_times:
         return None
     return (max(upload_times), name, version)
+
+
+def _npm_downloads_last_month(name: str) -> int:
+    from urllib.parse import quote
+
+    enc = quote(name, safe="")
+    try:
+        with urlopen(
+            f"https://api.npmjs.org/downloads/point/last-month/{enc}", timeout=15
+        ) as response:  # noqa: S310
+            return int(json.loads(response.read().decode("utf-8")).get("downloads", 0) or 0)
+    except (HTTPError, URLError):
+        return 0
+
+
+def _pypi_downloads_last_month(name: str) -> int:
+    try:
+        with urlopen(
+            f"https://pypistats.org/api/packages/{name}/recent", timeout=15
+        ) as response:  # noqa: S310
+            data = json.loads(response.read().decode("utf-8"))
+        return int((data.get("data") or {}).get("last_month", 0) or 0)
+    except HTTPError as err:
+        if err.code == 404:
+            return 0
+        return 0
+    except URLError:
+        return 0
+
+
+def fetch_total_downloads() -> dict[str, int]:
+    """Sum last-month downloads across npm and PyPI.
+
+    npm has tight per-IP rate limits on /downloads, so we throttle with a small
+    pool. PyPI's pypistats.org is more generous but still benefits from a pool.
+    """
+    npm_packages = fetch_npm_packages()
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        npm_total = sum(pool.map(_npm_downloads_last_month, npm_packages))
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        pypi_total = sum(pool.map(_pypi_downloads_last_month, PYPI_PACKAGES))
+    return {
+        "npm": npm_total,
+        "pypi": pypi_total,
+        "combined": npm_total + pypi_total,
+    }
+
+
+def _human(n: int) -> str:
+    if n >= 1_000_000:
+        return f"{n / 1_000_000:.1f}M"
+    if n >= 1_000:
+        return f"{n / 1_000:.1f}k"
+    return str(n)
+
+
+def write_shield_endpoint(label: str, value: int, color: str, path: Path) -> None:
+    """Write a shields.io 'endpoint' JSON file the README badge can point at."""
+    payload = {
+        "schemaVersion": 1,
+        "label": label,
+        "message": _human(value),
+        "color": color,
+        "labelColor": "1a1a1a",
+        "style": "for-the-badge",
+        "namedLogo": "data",
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload) + "\n", encoding="utf-8")
 
 
 def fetch_recent_releases(limit: int = 3) -> list[dict]:
@@ -286,6 +411,16 @@ def main() -> None:
     total_stars = fetch_total_stars()
     releases = fetch_recent_releases(limit=3)
     prs = fetch_recent_prs(limit=5)
+    downloads = fetch_total_downloads()
+    write_shield_endpoint(
+        "downloads/mo", downloads["combined"], "D4A853", ROOT / ".stats" / "downloads.json"
+    )
+    write_shield_endpoint(
+        "npm/mo", downloads["npm"], "CB3837", ROOT / ".stats" / "npm.json"
+    )
+    write_shield_endpoint(
+        "pypi/mo", downloads["pypi"], "3776AB", ROOT / ".stats" / "pypi.json"
+    )
 
     updates = [
         ("PUBLIC REPOS", repos["public_repos"]),
@@ -319,6 +454,9 @@ def main() -> None:
         "STARS": total_stars,
         "RECENT_RELEASES": len(releases),
         "RECENT_PRS": len(prs),
+        "DOWNLOADS_NPM": downloads["npm"],
+        "DOWNLOADS_PYPI": downloads["pypi"],
+        "DOWNLOADS_COMBINED": downloads["combined"],
     }
     print(json.dumps(summary, indent=2))
 
