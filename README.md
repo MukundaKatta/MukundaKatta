@@ -73,7 +73,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 
 ### Latest Drop · The Agent Reliability Stack
 
-> 🌐 **Live at [mukundakatta.github.io/agent-stack](https://mukundakatta.github.io/agent-stack/)** — single landing page for the whole 117-package ecosystem (npm + PyPI + MCP Registry + GitHub Marketplace).
+> 🌐 **Live at [mukundakatta.github.io/agent-stack](https://mukundakatta.github.io/agent-stack/)** — single landing page for the whole 120-package ecosystem (npm + PyPI + MCP Registry + GitHub Marketplace).
 >
 > 🤗 **Try it live** on the [HuggingFace Space](https://huggingface.co/spaces/mukunda1729/agent-stack-demo) · jailbreak fixtures on the [HF Dataset](https://huggingface.co/datasets/mukunda1729/jailbreak-corpus-mini).
 
@@ -656,7 +656,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
       <strong>62</strong><br/>
-      <sub>52 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 13 HF Datasets</sub>
+      <sub>55 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 13 HF Datasets</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
@@ -898,7 +898,7 @@ If you follow my work here, you’ll mostly see:
 
 ![Profile Views](https://komarev.com/ghpvc/?username=MukundaKatta&color=D4A853&style=for-the-badge&label=PROFILE+VIEWS)
 ![GitHub Followers](https://img.shields.io/github/followers/MukundaKatta?style=for-the-badge&logo=github&label=FOLLOWERS&color=D4A853&labelColor=1a1a1a)
-![GitHub Stars](https://img.shields.io/badge/STARS-1231-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
+![GitHub Stars](https://img.shields.io/badge/STARS-551-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
 
 ![ai-eval-forge npm](https://img.shields.io/npm/v/%40mukundakatta%2Fai-eval-forge?style=flat-square&logo=npm&label=ai-eval-forge&color=D4A853&labelColor=1a1a1a)
 ![agent-regression-lens npm](https://img.shields.io/npm/v/%40mukundakatta%2Fagent-regression-lens?style=flat-square&logo=npm&label=agent-regression-lens&color=D4A853&labelColor=1a1a1a)
