@@ -73,7 +73,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 
 ### Latest Drop · The Agent Reliability Stack
 
-> 🌐 **Live at [mukundakatta.github.io/agent-stack](https://mukundakatta.github.io/agent-stack/)** — single landing page for the whole 120-package ecosystem (npm + PyPI + MCP Registry + GitHub Marketplace).
+> 🌐 **Live at [mukundakatta.github.io/agent-stack](https://mukundakatta.github.io/agent-stack/)** — single landing page for the whole 119-package ecosystem (npm + PyPI + MCP Registry + GitHub Marketplace).
 >
 > 🤗 **Try it live** on the [HuggingFace Space](https://huggingface.co/spaces/mukunda1729/agent-stack-demo) · jailbreak fixtures on the [HF Dataset](https://huggingface.co/datasets/mukunda1729/jailbreak-corpus-mini).
 
@@ -656,7 +656,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
       <strong>62</strong><br/>
-      <sub>55 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 13 HF Datasets</sub>
+      <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 13 HF Datasets</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
