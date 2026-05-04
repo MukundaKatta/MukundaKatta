@@ -1,12 +1,13 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3500&pause=900&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=1000&height=120&lines=Hey!+I+am+Mukunda+Rao+Katta;Senior+AI%2FML+Engineer+%7C+Ex-AWS+%7C+Building+at+Scale;Shipping+across+GitHub+%E2%80%A2+GitLab+%E2%80%A2+npm+%E2%80%A2+PyPI" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3500&pause=900&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=1000&height=120&lines=Hey!+I+am+Mukunda+Rao+Katta;Senior+AI%2FML+Engineer+%7C+Ex-AWS+%7C+Building+at+Scale;Shipping+across+GitHub+%E2%80%A2+GitLab+%E2%80%A2+Bitbucket+%E2%80%A2+npm+%E2%80%A2+PyPI" alt="Typing SVG" />
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-1a1a1a?style=for-the-badge&logo=vercel&logoColor=D4A853)](https://mukunda-ai.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-1a1a1a?style=for-the-badge&logo=linkedin&logoColor=D4A853)](https://www.linkedin.com/in/mukunda-katta-728155220/)
 [![GitLab](https://img.shields.io/badge/GitLab-1a1a1a?style=for-the-badge&logo=gitlab&logoColor=D4A853)](https://gitlab.com/mukunda.vjcs6)
+[![Bitbucket](https://img.shields.io/badge/Bitbucket-1a1a1a?style=for-the-badge&logo=bitbucket&logoColor=D4A853)](https://bitbucket.org/personal-agent-harness/workspace/repositories/)
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
 [![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukunda.vjcs6@gmail.com)
 
