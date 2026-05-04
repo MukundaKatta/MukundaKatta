@@ -169,7 +169,7 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-05-03 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-05-04 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
@@ -180,10 +180,10 @@ _Last refreshed 2026-05-03 from npm, PyPI, and the GitHub API._
 **Recently merged PRs**
 
 - `2026-04-15` · [vercel/next.js #92809](https://github.com/vercel/next.js/pull/92809) — docs: add documentation for no-typos ESLint rule
-- `2026-04-27` · [apache/druid #19318](https://github.com/apache/druid/pull/19318) — fix: correct typo in SeekableStreamIndexTaskRunner log message
 - `2026-04-28` · [getsentry/XcodeBuildMCP #350](https://github.com/getsentry/XcodeBuildMCP/pull/350) — fix(device): stop suggesting unsupported --device-id
 - `2026-04-28` · [googleapis/google-cloud-python #16808](https://github.com/googleapis/google-cloud-python/pull/16808) — ci: add pylint presubmit on golden files (closes #16393)
 - `2026-04-28` · [cloudflare/cloudflare-docs #30210](https://github.com/cloudflare/cloudflare-docs/pull/30210) — docs(wrangler/deprecations): 'wrangler deploy' -> 'wrangler publish' in publish deprecation section
+- `2026-04-28` · [supabase/supabase-js #2269](https://github.com/supabase/supabase-js/pull/2269) — docs(auth): surface global-scope warning on signOut JSDoc
 
 <!-- recently-shipped:end -->
 
@@ -651,7 +651,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
   <tr>
     <td align="center" width="25%">
       <sub>UPSTREAM</sub><br/>
-      <strong>128</strong><br/>
+      <strong>130</strong><br/>
       <sub>merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
