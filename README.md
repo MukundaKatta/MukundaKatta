@@ -8,6 +8,9 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-1a1a1a?style=for-the-badge&logo=linkedin&logoColor=D4A853)](https://www.linkedin.com/in/mukunda-katta-728155220/)
 [![GitLab](https://img.shields.io/badge/GitLab-1a1a1a?style=for-the-badge&logo=gitlab&logoColor=D4A853)](https://gitlab.com/mukunda.vjcs6)
 [![Bitbucket](https://img.shields.io/badge/Bitbucket-1a1a1a?style=for-the-badge&logo=bitbucket&logoColor=D4A853)](https://bitbucket.org/personal-agent-harness/bitbucket-profile-readme)
+[![Kaggle](https://img.shields.io/badge/Kaggle-1a1a1a?style=for-the-badge&logo=kaggle&logoColor=D4A853)](https://www.kaggle.com/mukundakatta)
+[![Codeberg](https://img.shields.io/badge/Codeberg-1a1a1a?style=for-the-badge&logo=codeberg&logoColor=D4A853)](https://codeberg.org/MukundaKatta)
+[![Apache](https://img.shields.io/badge/Apache-1a1a1a?style=for-the-badge&logo=apache&logoColor=D4A853)](https://github.com/apache/pulsar-site/pulls?q=is%3Apr+author%3AMukundaKatta)
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
 [![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukunda.vjcs6@gmail.com)
 
@@ -81,6 +84,20 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 > Five small, focused npm packages that fix the boring problems every long-running agent eventually hits.
 > Pure ESM JavaScript, zero runtime deps, TypeScript types in the box. Designed to compose into a pipeline:
 > **`fit → guard → snap → vet → cast`**.
+
+---
+
+### Fresh Contributions
+
+<div align="center">
+
+| Surface | Latest proof |
+| --- | --- |
+| Kaggle | [Agent Eval Scenarios](https://www.kaggle.com/datasets/mukundakatta/agent-eval-scenarios) - public eval dataset for lightweight agent benchmarking |
+| Codeberg | [Documentation PR #784](https://codeberg.org/Codeberg/Documentation/pulls/784) - clarified HTTPS auth with 2FA and token-based Git usage |
+| Apache | [pulsar-site PR #1139](https://github.com/apache/pulsar-site/pull/1139) - fixed failover standby mapping in the 3.0.x docs |
+
+</div>
 
 <table>
   <tr>
