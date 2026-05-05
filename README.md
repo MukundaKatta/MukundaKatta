@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3500&pause=900&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=1000&height=120&lines=Hey!+I+am+Mukunda+Rao+Katta;Senior+AI%2FML+Engineer+%7C+Ex-AWS+%7C+Building+at+Scale;Shipping+across+GitHub+%E2%80%A2+GitLab+%E2%80%A2+Bitbucket+%E2%80%A2+npm+%E2%80%A2+PyPI" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3500&pause=900&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=1000&height=120&lines=Hey!+I+am+Mukunda+Rao+Katta;Senior+AI%2FML+Engineer+%7C+Ex-AWS+%7C+Building+at+Scale;Shipping+across+GitHub+%E2%80%A2+GitLab+%E2%80%A2+Bitbucket+%E2%80%A2+Kaggle+%E2%80%A2+Codeberg;Publishing+on+OpenAI+GPTs+%E2%80%A2+Poe+%E2%80%A2+Replicate+%E2%80%A2+Modal" alt="Typing SVG" />
 
 <br/>
 
@@ -11,6 +11,11 @@
 [![Kaggle](https://img.shields.io/badge/Kaggle-1a1a1a?style=for-the-badge&logo=kaggle&logoColor=D4A853)](https://www.kaggle.com/mukundakatta)
 [![Codeberg](https://img.shields.io/badge/Codeberg-1a1a1a?style=for-the-badge&logo=codeberg&logoColor=D4A853)](https://codeberg.org/MukundaKatta)
 [![Apache](https://img.shields.io/badge/Apache-1a1a1a?style=for-the-badge&logo=apache&logoColor=D4A853)](https://github.com/pulls?q=is%3Apr+author%3AMukundaKatta+org%3Aapache)
+[![GPT Store](https://img.shields.io/badge/GPT%20Store-1a1a1a?style=for-the-badge&logo=openai&logoColor=D4A853)](https://chatgpt.com/g/g-69f949f9653c819188b87ab44205fa74-agent-eval-lab)
+[![Poe](https://img.shields.io/badge/Poe-1a1a1a?style=for-the-badge&logo=quora&logoColor=D4A853)](https://poe.com/AgentEvalLab)
+[![Replicate](https://img.shields.io/badge/Replicate-1a1a1a?style=for-the-badge&logo=replicate&logoColor=D4A853)](https://replicate.com/mukundakatta/agent-eval-lab)
+[![Modal](https://img.shields.io/badge/Modal-1a1a1a?style=for-the-badge&logo=modal&logoColor=D4A853)](https://mukunda-vjcs6--agent-eval-lab-evaluate-agent.modal.run)
+[![Codeberg Pages](https://img.shields.io/badge/Codeberg%20Pages-1a1a1a?style=for-the-badge&logo=codeberg&logoColor=D4A853)](https://mukundakatta.codeberg.page)
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
 [![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukunda.vjcs6@gmail.com)
 
@@ -93,8 +98,20 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 
 | Surface | Latest proof |
 | --- | --- |
+| OpenAI GPT Store | [Agent Eval Lab](https://chatgpt.com/g/g-69f949f9653c819188b87ab44205fa74-agent-eval-lab) - public GPT for lightweight agent evaluation and scenario walkthroughs |
+| Poe | [AgentEvalLab](https://poe.com/AgentEvalLab) - public bot for agent-eval prompts and scoring flows |
+| Poe | [OpsScorecardLab](https://poe.com/OpsScorecardLab) - public bot for turning eval scenarios into operations scorecards |
+| Poe | [RepoLandscapeLab](https://poe.com/RepoLandscapeLab) - public bot for mapping premium agent repo surfaces |
+| Replicate | [agent-eval-lab](https://replicate.com/mukundakatta/agent-eval-lab) - public model/app page for eval-oriented agent interactions |
+| Replicate | [ops-scorecard-lab](https://replicate.com/mukundakatta/ops-scorecard-lab) - public app page for ops scorecard generation |
+| Replicate | [repo-landscape-lab](https://replicate.com/mukundakatta/repo-landscape-lab) - public app page for repo-surface mapping |
+| Modal | [agent-eval-lab endpoint](https://mukunda-vjcs6--agent-eval-lab-evaluate-agent.modal.run) - live API endpoint returning structured eval JSON |
+| Modal | [ops-scorecard-lab endpoint](https://mukunda-vjcs6--ops-scorecard-lab-score-agent.modal.run) - live API endpoint for scorecard generation |
+| Modal | [repo-landscape-lab endpoint](https://mukunda-vjcs6--repo-landscape-lab-map-repo.modal.run) - live API endpoint for repo-landscape mapping |
+| Codeberg Pages | [MukundaKatta.codeberg.page](https://mukundakatta.codeberg.page) - public portfolio page routing across the non-GitHub footprint |
 | Kaggle | [Premium Agent Repo Landscape](https://www.kaggle.com/datasets/mukundakatta/premium-agent-repo-landscape) - public dataset mapping premium agent repos by surface, stack, and focus |
 | Kaggle | [Agent Eval Scenarios](https://www.kaggle.com/datasets/mukundakatta/agent-eval-scenarios) - public eval dataset for lightweight agent benchmarking |
+| Kaggle | [building-a-lightweight-agent-eval-benchmark](https://www.kaggle.com/code/mukundakatta/building-a-lightweight-agent-eval-benchmark) - clean public notebook replacement with a successful run and resilient dataset loading |
 | Codeberg | [premium-agent-landscape](https://codeberg.org/MukundaKatta/premium-agent-landscape) - public showcase repo for agent portfolio mapping and presentation |
 | Codeberg | [agent-eval-lab](https://codeberg.org/MukundaKatta/agent-eval-lab) - public repo for evaluation artifacts and benchmark framing |
 | Codeberg | [apache-contribution-atlas](https://codeberg.org/MukundaKatta/apache-contribution-atlas) - public tracker for Apache-facing contribution work |
