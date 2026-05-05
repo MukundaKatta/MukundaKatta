@@ -138,6 +138,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Type | Title | Venue |
 | --- | --- | --- |
 | Preprint | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://doi.org/10.5281/zenodo.20034550) | [Zenodo](https://zenodo.org/records/20034550) |
+| Preprint Submission | Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents | MetaArXiv on OSF Preprints, pending moderator approval |
 
 </div>
 
