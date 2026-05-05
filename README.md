@@ -10,7 +10,7 @@
 [![Bitbucket](https://img.shields.io/badge/Bitbucket-1a1a1a?style=for-the-badge&logo=bitbucket&logoColor=D4A853)](https://bitbucket.org/personal-agent-harness/bitbucket-profile-readme)
 [![Kaggle](https://img.shields.io/badge/Kaggle-1a1a1a?style=for-the-badge&logo=kaggle&logoColor=D4A853)](https://www.kaggle.com/mukundakatta)
 [![Codeberg](https://img.shields.io/badge/Codeberg-1a1a1a?style=for-the-badge&logo=codeberg&logoColor=D4A853)](https://codeberg.org/MukundaKatta)
-[![Apache](https://img.shields.io/badge/Apache-1a1a1a?style=for-the-badge&logo=apache&logoColor=D4A853)](https://github.com/apache/pulsar-site/pulls?q=is%3Apr+author%3AMukundaKatta)
+[![Apache](https://img.shields.io/badge/Apache-1a1a1a?style=for-the-badge&logo=apache&logoColor=D4A853)](https://github.com/pulls?q=is%3Apr+author%3AMukundaKatta+org%3Aapache)
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
 [![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukunda.vjcs6@gmail.com)
 
@@ -93,8 +93,14 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 
 | Surface | Latest proof |
 | --- | --- |
+| Kaggle | [Premium Agent Repo Landscape](https://www.kaggle.com/datasets/mukundakatta/premium-agent-repo-landscape) - public dataset mapping premium agent repos by surface, stack, and focus |
 | Kaggle | [Agent Eval Scenarios](https://www.kaggle.com/datasets/mukundakatta/agent-eval-scenarios) - public eval dataset for lightweight agent benchmarking |
+| Codeberg | [premium-agent-landscape](https://codeberg.org/MukundaKatta/premium-agent-landscape) - public showcase repo for agent portfolio mapping and presentation |
+| Codeberg | [agent-eval-lab](https://codeberg.org/MukundaKatta/agent-eval-lab) - public repo for evaluation artifacts and benchmark framing |
+| Codeberg | [apache-contribution-atlas](https://codeberg.org/MukundaKatta/apache-contribution-atlas) - public tracker for Apache-facing contribution work |
 | Codeberg | [Documentation PR #784](https://codeberg.org/Codeberg/Documentation/pulls/784) - clarified HTTPS auth with 2FA and token-based Git usage |
+| Apache | [fluss PR #3243](https://github.com/apache/fluss/pull/3243) - added a blog contribution guide for the Fluss website community docs |
+| Apache | [fluss PR #3244](https://github.com/apache/fluss/pull/3244) - added an FIP contribution guide for the Fluss contributor workflow |
 | Apache | [pulsar-site PR #1139](https://github.com/apache/pulsar-site/pull/1139) - fixed failover standby mapping in the 3.0.x docs |
 
 </div>
