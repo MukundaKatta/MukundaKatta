@@ -15,6 +15,7 @@
 [![Hugging%20Face](https://img.shields.io/badge/Hugging%20Face-1a1a1a?style=for-the-badge&logo=huggingface&logoColor=D4A853)](https://huggingface.co/mukunda1729)
 [![ORCID](https://img.shields.io/badge/ORCID-1a1a1a?style=for-the-badge&logo=orcid&logoColor=D4A853)](https://orcid.org/0009-0007-6071-3896)
 [![Zenodo](https://img.shields.io/badge/Zenodo-1a1a1a?style=for-the-badge&logo=zenodo&logoColor=D4A853)](https://doi.org/10.5281/zenodo.20034550)
+[![SSRN](https://img.shields.io/badge/SSRN-1a1a1a?style=for-the-badge&logo=elsevier&logoColor=D4A853)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6718599)
 [![GPT Store](https://img.shields.io/badge/GPT%20Store-1a1a1a?style=for-the-badge&logo=openai&logoColor=D4A853)](https://chatgpt.com/g/g-69f949f9653c819188b87ab44205fa74-agent-eval-lab)
 [![Poe](https://img.shields.io/badge/Poe-1a1a1a?style=for-the-badge&logo=quora&logoColor=D4A853)](https://poe.com/AgentEvalLab)
 [![Replicate](https://img.shields.io/badge/Replicate-1a1a1a?style=for-the-badge&logo=replicate&logoColor=D4A853)](https://replicate.com/mukundakatta/agent-eval-lab)
@@ -139,6 +140,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Type | Title | Venue |
 | --- | --- | --- |
 | Preprint | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://doi.org/10.5281/zenodo.20034550) | [Zenodo](https://zenodo.org/records/20034550) |
+| Preprint Submission | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6718599) | SSRN, under review |
 | Preprint Submission | Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents | MetaArXiv on OSF Preprints, pending moderator approval |
 | Research Profile | [Mukunda Katta](https://orcid.org/0009-0007-6071-3896) | [ORCID](https://orcid.org/0009-0007-6071-3896) |
 
