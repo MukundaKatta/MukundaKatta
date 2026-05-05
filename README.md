@@ -146,6 +146,11 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Preprint Submission | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6718599) | SSRN, in process (`PRELIMINARY_UPLOAD`) |
 | Preprint Submission | Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents | Research Square, prescreening |
 | Preprint Submission | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://osf.io/preprints/metaarxiv/af7cp_v1) | MetaArXiv on OSF Preprints, pending moderator approval |
+| Preprint | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://doi.org/10.5281/zenodo.20044318) | [Zenodo](https://zenodo.org/records/20044318) |
+| Artifact Repo | [ai-eval-forge-paper](https://github.com/MukundaKatta/ai-eval-forge-paper) | GitHub |
+| Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6720559) | SSRN, submission received |
+| Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://osf.io/preprints/metaarxiv/agw2x_v1) | MetaArXiv on OSF Preprints, submitted |
+| Preprint Submission | AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows | Research Square, private draft `rs-9622741` |
 | Research Profile | [Mukunda Katta](https://orcid.org/0009-0007-6071-3896) | [ORCID](https://orcid.org/0009-0007-6071-3896) |
 
 </div>
