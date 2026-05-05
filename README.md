@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3500&pause=900&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=1000&height=156&lines=Hey!+I+am+Mukunda+Rao+Katta;Senior+AI%2FML+Engineer+%7C+Ex-AWS+%7C+Building+at+Scale;Shipping+across+GitHub+%E2%80%A2+GitLab+%E2%80%A2+Bitbucket+%E2%80%A2+Kaggle+%E2%80%A2+Codeberg;Publishing+on+OpenAI+GPTs+%E2%80%A2+Poe+%E2%80%A2+Replicate+%E2%80%A2+Modal" alt="Typing SVG" height="156" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3500&pause=900&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=1200&height=168&lines=Hey!+I+am+Mukunda+Rao+Katta;Senior+AI%2FML+Engineer+%7C+Ex-AWS+%7C+Building+at+Scale;Shipping+across+GitHub+%E2%80%A2+GitLab+%E2%80%A2+Bitbucket+%E2%80%A2+Kaggle+%E2%80%A2+Codeberg;Publishing+on+OpenAI+GPTs+%E2%80%A2+Poe+%E2%80%A2+Replicate+%E2%80%A2+Modal" alt="Typing SVG" height="168" />
 
 <br/>
 <br/>
