@@ -12,6 +12,7 @@
 [![Kaggle](https://img.shields.io/badge/Kaggle-1a1a1a?style=for-the-badge&logo=kaggle&logoColor=D4A853)](https://www.kaggle.com/mukundakatta)
 [![Codeberg](https://img.shields.io/badge/Codeberg-1a1a1a?style=for-the-badge&logo=codeberg&logoColor=D4A853)](https://codeberg.org/MukundaKatta)
 [![Apache](https://img.shields.io/badge/Apache-1a1a1a?style=for-the-badge&logo=apache&logoColor=D4A853)](https://github.com/pulls?q=is%3Apr+author%3AMukundaKatta+org%3Aapache)
+[![Hugging%20Face](https://img.shields.io/badge/Hugging%20Face-1a1a1a?style=for-the-badge&logo=huggingface&logoColor=D4A853)](https://huggingface.co/mukunda1729)
 [![GPT Store](https://img.shields.io/badge/GPT%20Store-1a1a1a?style=for-the-badge&logo=openai&logoColor=D4A853)](https://chatgpt.com/g/g-69f949f9653c819188b87ab44205fa74-agent-eval-lab)
 [![Poe](https://img.shields.io/badge/Poe-1a1a1a?style=for-the-badge&logo=quora&logoColor=D4A853)](https://poe.com/AgentEvalLab)
 [![Replicate](https://img.shields.io/badge/Replicate-1a1a1a?style=for-the-badge&logo=replicate&logoColor=D4A853)](https://replicate.com/mukundakatta/agent-eval-lab)
@@ -107,10 +108,14 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Replicate | [agent-eval-lab](https://replicate.com/mukundakatta/agent-eval-lab) - public model/app page for eval-oriented agent interactions |
 | Replicate | [ops-scorecard-lab](https://replicate.com/mukundakatta/ops-scorecard-lab) - public app page for ops scorecard generation |
 | Replicate | [repo-landscape-lab](https://replicate.com/mukundakatta/repo-landscape-lab) - public app page for repo-surface mapping |
+| Hugging Face | [Agent Labs Portfolio](https://huggingface.co/collections/mukunda1729/agent-labs-portfolio) - curated collection tying together the live Spaces and datasets |
+| Hugging Face | [Ops Scorecard Lab](https://huggingface.co/spaces/mukunda1729/ops-scorecard-lab) - public Space for turning rough workflows into operator-facing scorecards |
 | Modal | [agent-eval-lab endpoint](https://mukunda-vjcs6--agent-eval-lab-evaluate-agent.modal.run) - live API endpoint returning structured eval JSON |
 | Modal | [ops-scorecard-lab endpoint](https://mukunda-vjcs6--ops-scorecard-lab-score-agent.modal.run) - live API endpoint for scorecard generation |
 | Modal | [repo-landscape-lab endpoint](https://mukunda-vjcs6--repo-landscape-lab-map-repo.modal.run) - live API endpoint for repo-landscape mapping |
+| Modal | [Agent Labs Portal](https://mukunda-vjcs6--agent-labs-portal-fastapi-app.modal.run) - public two-panel demo surface for evaluation plans and ops scorecards |
 | OpenRouter | [Agent Eval Lab](https://openrouter.ai/apps?url=https%3A%2F%2Fmukunda1729-agent-eval-lab.hf.space%2F) - public OpenRouter app analytics page seeded from the live Hugging Face Space |
+| OpenRouter | [Ops Scorecard Lab](https://openrouter.ai/apps?url=https%3A%2F%2Fmukunda1729-ops-scorecard-lab.hf.space%2F) - public OpenRouter app analytics page for the scorecard Space |
 | Codeberg Pages | [MukundaKatta.codeberg.page](https://mukundakatta.codeberg.page) - public portfolio page routing across the non-GitHub footprint |
 | Kaggle | [Premium Agent Repo Landscape](https://www.kaggle.com/datasets/mukundakatta/premium-agent-repo-landscape) - public dataset mapping premium agent repos by surface, stack, and focus |
 | Kaggle | [Agent Eval Scenarios](https://www.kaggle.com/datasets/mukundakatta/agent-eval-scenarios) - public eval dataset for lightweight agent benchmarking |
