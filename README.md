@@ -25,7 +25,7 @@
 
 <sub>
 
-[`Open Source`](#open-source-focus) &nbsp;·&nbsp; [`Recently Shipped`](#recently-shipped) &nbsp;·&nbsp; [`Packages`](#published-packages) &nbsp;·&nbsp; [`Projects`](#featured-projects) &nbsp;·&nbsp; [`Impact`](#impact-at-a-glance) &nbsp;·&nbsp; [`Experience`](#experience) &nbsp;·&nbsp; [`Stats`](#github-stats)
+[`Open Source`](#open-source-focus) &nbsp;·&nbsp; [`Publications`](#publications) &nbsp;·&nbsp; [`Recently Shipped`](#recently-shipped) &nbsp;·&nbsp; [`Packages`](#published-packages) &nbsp;·&nbsp; [`Projects`](#featured-projects) &nbsp;·&nbsp; [`Impact`](#impact-at-a-glance) &nbsp;·&nbsp; [`Experience`](#experience) &nbsp;·&nbsp; [`Stats`](#github-stats)
 
 </sub>
 
@@ -117,7 +117,6 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Modal | [Agent Labs Portal](https://mukunda-vjcs6--agent-labs-portal-fastapi-app.modal.run) - public two-panel demo surface for evaluation plans and ops scorecards |
 | OpenRouter | [Agent Eval Lab](https://openrouter.ai/apps?url=https%3A%2F%2Fmukunda1729-agent-eval-lab.hf.space%2F) - public OpenRouter app analytics page seeded from the live Hugging Face Space |
 | OpenRouter | [Ops Scorecard Lab](https://openrouter.ai/apps?url=https%3A%2F%2Fmukunda1729-ops-scorecard-lab.hf.space%2F) - public OpenRouter app analytics page for the scorecard Space |
-| Zenodo | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://doi.org/10.5281/zenodo.20034550) - public preprint record with DOI-backed packaging for the agent-evaluation workflow |
 | Codeberg Pages | [MukundaKatta.codeberg.page](https://mukundakatta.codeberg.page) - public portfolio page routing across the non-GitHub footprint |
 | Kaggle | [Premium Agent Repo Landscape](https://www.kaggle.com/datasets/mukundakatta/premium-agent-repo-landscape) - public dataset mapping premium agent repos by surface, stack, and focus |
 | Kaggle | [Agent Eval Scenarios](https://www.kaggle.com/datasets/mukundakatta/agent-eval-scenarios) - public eval dataset for lightweight agent benchmarking |
@@ -129,6 +128,16 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Apache | [fluss PR #3243](https://github.com/apache/fluss/pull/3243) - added a blog contribution guide for the Fluss website community docs |
 | Apache | [fluss PR #3244](https://github.com/apache/fluss/pull/3244) - added an FIP contribution guide for the Fluss contributor workflow |
 | Apache | [pulsar-site PR #1139](https://github.com/apache/pulsar-site/pull/1139) - fixed failover standby mapping in the 3.0.x docs |
+
+</div>
+
+### Publications
+
+<div align="center">
+
+| Type | Title | Venue |
+| --- | --- | --- |
+| Preprint | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://doi.org/10.5281/zenodo.20034550) | [Zenodo](https://zenodo.org/records/20034550) |
 
 </div>
 
