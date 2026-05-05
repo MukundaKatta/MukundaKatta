@@ -16,6 +16,7 @@
 [![Poe](https://img.shields.io/badge/Poe-1a1a1a?style=for-the-badge&logo=quora&logoColor=D4A853)](https://poe.com/AgentEvalLab)
 [![Replicate](https://img.shields.io/badge/Replicate-1a1a1a?style=for-the-badge&logo=replicate&logoColor=D4A853)](https://replicate.com/mukundakatta/agent-eval-lab)
 [![Modal](https://img.shields.io/badge/Modal-1a1a1a?style=for-the-badge&logo=modal&logoColor=D4A853)](https://mukunda-vjcs6--agent-eval-lab-evaluate-agent.modal.run)
+[![OpenRouter](https://img.shields.io/badge/OpenRouter-1a1a1a?style=for-the-badge&logo=openai&logoColor=D4A853)](https://openrouter.ai/apps?url=https%3A%2F%2Fmukunda1729-agent-eval-lab.hf.space%2F)
 [![Codeberg Pages](https://img.shields.io/badge/Codeberg%20Pages-1a1a1a?style=for-the-badge&logo=codeberg&logoColor=D4A853)](https://mukundakatta.codeberg.page)
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
 [![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukunda.vjcs6@gmail.com)
@@ -109,6 +110,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Modal | [agent-eval-lab endpoint](https://mukunda-vjcs6--agent-eval-lab-evaluate-agent.modal.run) - live API endpoint returning structured eval JSON |
 | Modal | [ops-scorecard-lab endpoint](https://mukunda-vjcs6--ops-scorecard-lab-score-agent.modal.run) - live API endpoint for scorecard generation |
 | Modal | [repo-landscape-lab endpoint](https://mukunda-vjcs6--repo-landscape-lab-map-repo.modal.run) - live API endpoint for repo-landscape mapping |
+| OpenRouter | [Agent Eval Lab](https://openrouter.ai/apps?url=https%3A%2F%2Fmukunda1729-agent-eval-lab.hf.space%2F) - public OpenRouter app analytics page seeded from the live Hugging Face Space |
 | Codeberg Pages | [MukundaKatta.codeberg.page](https://mukundakatta.codeberg.page) - public portfolio page routing across the non-GitHub footprint |
 | Kaggle | [Premium Agent Repo Landscape](https://www.kaggle.com/datasets/mukundakatta/premium-agent-repo-landscape) - public dataset mapping premium agent repos by surface, stack, and focus |
 | Kaggle | [Agent Eval Scenarios](https://www.kaggle.com/datasets/mukundakatta/agent-eval-scenarios) - public eval dataset for lightweight agent benchmarking |
