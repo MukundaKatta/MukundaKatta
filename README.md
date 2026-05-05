@@ -140,6 +140,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Type | Title | Venue |
 | --- | --- | --- |
 | Preprint | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://doi.org/10.5281/zenodo.20034550) | [Zenodo](https://zenodo.org/records/20034550) |
+| Artifact Repo | [lightweight-agent-eval-paper](https://github.com/MukundaKatta/lightweight-agent-eval-paper) | GitHub |
 | Preprint Submission | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6718599) | SSRN, under review |
 | Preprint Submission | Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents | MetaArXiv on OSF Preprints, pending moderator approval |
 | Research Profile | [Mukunda Katta](https://orcid.org/0009-0007-6071-3896) | [ORCID](https://orcid.org/0009-0007-6071-3896) |
