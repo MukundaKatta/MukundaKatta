@@ -13,6 +13,7 @@
 [![Codeberg](https://img.shields.io/badge/Codeberg-1a1a1a?style=for-the-badge&logo=codeberg&logoColor=D4A853)](https://codeberg.org/MukundaKatta)
 [![Apache](https://img.shields.io/badge/Apache-1a1a1a?style=for-the-badge&logo=apache&logoColor=D4A853)](https://github.com/pulls?q=is%3Apr+author%3AMukundaKatta+org%3Aapache)
 [![Hugging%20Face](https://img.shields.io/badge/Hugging%20Face-1a1a1a?style=for-the-badge&logo=huggingface&logoColor=D4A853)](https://huggingface.co/mukunda1729)
+[![Zenodo](https://img.shields.io/badge/Zenodo-1a1a1a?style=for-the-badge&logo=zenodo&logoColor=D4A853)](https://doi.org/10.5281/zenodo.20034550)
 [![GPT Store](https://img.shields.io/badge/GPT%20Store-1a1a1a?style=for-the-badge&logo=openai&logoColor=D4A853)](https://chatgpt.com/g/g-69f949f9653c819188b87ab44205fa74-agent-eval-lab)
 [![Poe](https://img.shields.io/badge/Poe-1a1a1a?style=for-the-badge&logo=quora&logoColor=D4A853)](https://poe.com/AgentEvalLab)
 [![Replicate](https://img.shields.io/badge/Replicate-1a1a1a?style=for-the-badge&logo=replicate&logoColor=D4A853)](https://replicate.com/mukundakatta/agent-eval-lab)
@@ -116,6 +117,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Modal | [Agent Labs Portal](https://mukunda-vjcs6--agent-labs-portal-fastapi-app.modal.run) - public two-panel demo surface for evaluation plans and ops scorecards |
 | OpenRouter | [Agent Eval Lab](https://openrouter.ai/apps?url=https%3A%2F%2Fmukunda1729-agent-eval-lab.hf.space%2F) - public OpenRouter app analytics page seeded from the live Hugging Face Space |
 | OpenRouter | [Ops Scorecard Lab](https://openrouter.ai/apps?url=https%3A%2F%2Fmukunda1729-ops-scorecard-lab.hf.space%2F) - public OpenRouter app analytics page for the scorecard Space |
+| Zenodo | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://doi.org/10.5281/zenodo.20034550) - public preprint record with DOI-backed packaging for the agent-evaluation workflow |
 | Codeberg Pages | [MukundaKatta.codeberg.page](https://mukundakatta.codeberg.page) - public portfolio page routing across the non-GitHub footprint |
 | Kaggle | [Premium Agent Repo Landscape](https://www.kaggle.com/datasets/mukundakatta/premium-agent-repo-landscape) - public dataset mapping premium agent repos by surface, stack, and focus |
 | Kaggle | [Agent Eval Scenarios](https://www.kaggle.com/datasets/mukundakatta/agent-eval-scenarios) - public eval dataset for lightweight agent benchmarking |
