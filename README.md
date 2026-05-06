@@ -1,6 +1,12 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3500&pause=900&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=1200&height=168&lines=Hey!+I+am+Mukunda+Rao+Katta;Senior+AI%2FML+Engineer+%7C+Ex-AWS+%7C+Building+at+Scale;Shipping+across+GitHub+%E2%80%A2+GitLab+%E2%80%A2+Bitbucket+%E2%80%A2+Kaggle+%E2%80%A2+Codeberg;Publishing+on+OpenAI+GPTs+%E2%80%A2+Poe+%E2%80%A2+Replicate+%E2%80%A2+Modal" alt="Typing SVG" height="168" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=900&color=D4A853&center=true&vCenter=true&multiline=true&repeat=true&width=1200&height=220&lines=Hey!+I+am+Mukunda+Rao+Katta;Senior+AI%2FML+Engineer+%7C+Ex-AWS+%7C+Building+at+Scale;Shipping+across+GitHub+%E2%80%A2+GitLab+%E2%80%A2+Bitbucket+%E2%80%A2+Kaggle+%E2%80%A2+Codeberg;Publishing+on+OpenAI+GPTs+%E2%80%A2+Poe+%E2%80%A2+Replicate+%E2%80%A2+Modal" alt="Typing SVG" height="220" />
+
+<br/>
+<br/>
+
+<strong>Active across 50+ public developer, AI, open source, and research surfaces</strong><br/>
+<sub>Code, datasets, package registries, preprints, reproducible demos, agent workflows, and OSS contribution traces.</sub>
 
 <br/>
 <br/>
@@ -160,7 +166,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Preprint Submission | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6726002) | SSRN, submitted for review |
 | Preprint | [Small-Rule Guardrails for Retrieval-Augmented Generation: Prompt Injection and Vector Poisoning Checks](https://doi.org/10.5281/zenodo.20057056) | [Zenodo](https://zenodo.org/records/20057056) |
 | Artifact Repo | [rag-guardrails-paper](https://github.com/MukundaKatta/rag-guardrails-paper) | GitHub |
-| Preprint Mirror | [Small-Rule Guardrails for Retrieval-Augmented Generation: Prompt Injection and Vector Poisoning Checks](https://doi.org/10.6084/m9.figshare.32193543) | [Figshare](https://figshare.com/articles/preprint/_/32193543) |
+| Preprint Mirror | [Small-Rule Guardrails for Retrieval-Augmented Generation: Prompt Injection and Vector Poisoning Checks](https://doi.org/10.6084/m9.figshare.32193543) | [Figshare](https://figshare.com/articles/preprint/Small-Rule_Guardrails_for_Retrieval-Augmented_Generation_Prompt_Injection_and_Vector_Poisoning_Checks/32193543) |
 | Archive | [rag-guardrails-paper](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/MukundaKatta/rag-guardrails-paper) | Software Heritage, archive accepted |
 | Preprint | [Chetana: A Theory-Indexed Probe Framework for AI Consciousness Indicator Scoring](https://doi.org/10.5281/zenodo.20057058) | [Zenodo](https://zenodo.org/records/20057058) |
 | Preprint | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://doi.org/10.5281/zenodo.20057317) | [Zenodo](https://zenodo.org/records/20057317) |
