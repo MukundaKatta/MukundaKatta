@@ -151,6 +151,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6720559) | SSRN, public abstract page |
 | Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://osf.io/preprints/metaarxiv/agw2x_v1) | MetaArXiv on OSF Preprints, submitted |
 | Preprint Submission | AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows | Research Square, private draft `rs-9622741` |
+| Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://dev.to/mukundakatta/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-3oni) | [DEV Community](https://dev.to/mukundakatta) |
 | Research Profile | [Mukunda Katta](https://orcid.org/0009-0007-6071-3896) | [ORCID](https://orcid.org/0009-0007-6071-3896) |
 
 </div>
