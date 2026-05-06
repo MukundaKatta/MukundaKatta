@@ -147,13 +147,14 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Artifact Repo | [lightweight-agent-eval-paper](https://github.com/MukundaKatta/lightweight-agent-eval-paper) | GitHub |
 | Archive | [lightweight-agent-eval-paper](https://archive.softwareheritage.org/api/1/origin/save/2322365/) | Software Heritage, archived successfully |
 | Preprint Submission | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6718599) | SSRN, in process (`PRELIMINARY_UPLOAD`) |
-| Preprint Submission | Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents | Research Square, prescreening |
+| Preprint Submission | Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents | Research Square, declined as not suitable for posting |
 | Preprint Submission | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://osf.io/preprints/metaarxiv/af7cp_v1) | MetaArXiv on OSF Preprints, declined as out of scope |
 | Preprint | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://doi.org/10.5281/zenodo.20044318) | [Zenodo](https://zenodo.org/records/20044318) |
 | Artifact Repo | [ai-eval-forge-paper](https://github.com/MukundaKatta/ai-eval-forge-paper) | GitHub |
 | Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6720559) | SSRN, public abstract page |
 | Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://osf.io/preprints/metaarxiv/agw2x_v1) | MetaArXiv on OSF Preprints, submitted |
-| Preprint Submission | AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows | Research Square, private draft `rs-9622741` |
+| Preprint Submission | Citation Traceability for Web-Native AI Research Workflows | MetaArXiv on OSF Preprints, pending moderator review (`m9j4g_v1`) |
+| Preprint Submission | [Context Forge: A Lightweight Method for Diversity-Aware Context Packing and Prompt-Injection-Aware Retrieval](https://doi.org/10.21203/rs.3.rs-9622741/v1) | Research Square, QA/QC check |
 | Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://dev.to/mukundakatta/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-3oni) | [DEV Community](https://dev.to/mukundakatta) |
 | Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://medium.com/@mukunda.vjcs6/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-2c106f8d758c) | [Medium](https://medium.com/@mukunda.vjcs6) |
 | Research Profile | [Mukunda Katta](https://orcid.org/0009-0007-6071-3896) | [ORCID](https://orcid.org/0009-0007-6071-3896) |
