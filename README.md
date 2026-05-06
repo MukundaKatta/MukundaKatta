@@ -134,6 +134,14 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Streamlit | [Agent Eval Scorecard](https://agent-eval-scorecard.streamlit.app/) - live app for scoring agent behavior with compact operational criteria |
 | Replit | [agent-eval-replit-demo](https://replit.com/@mukundavjcs6/agent-eval-replit-demo) - public Replit project with a hosted demo surface |
 | Codeberg Pages | [MukundaKatta.codeberg.page](https://mukundakatta.codeberg.page) - public portfolio page routing across the non-GitHub footprint |
+| GitHub | [agent-eval-public-notes](https://github.com/MukundaKatta/agent-eval-public-notes) - public notes for scorecards, replay debugging, and RAG guardrail checks |
+| GitLab | [agent-eval-public-notes](https://gitlab.com/mukunda.vjcs6/agent-eval-public-notes) - GitLab mirror of the reusable agent-eval notes |
+| GitHub Gist | [Operational scorecard template](https://gist.github.com/MukundaKatta/53e9be0caf38a1d2a0778840b1e514e3) - standalone template for tool-using agent reviews |
+| GitHub Gist | [Trajectory replay debugging checklist](https://gist.github.com/MukundaKatta/6030219b7df31255ea67155daaaf3587) - replay checklist for agent workflow regressions |
+| GitHub Gist | [RAG guardrail smoke tests](https://gist.github.com/MukundaKatta/7e6b29178882a4f4b1aac35acde60818) - prompt-injection and vector-poisoning smoke tests |
+| GitLab Snippet | [Operational scorecard template](https://gitlab.com/-/snippets/5990117) - public snippet mirror for scorecard evaluation |
+| GitLab Snippet | [Trajectory replay debugging checklist](https://gitlab.com/-/snippets/5990118) - public snippet mirror for replay debugging |
+| GitLab Snippet | [RAG guardrail smoke tests](https://gitlab.com/-/snippets/5990119) - public snippet mirror for RAG guardrails |
 | Kaggle | [Premium Agent Repo Landscape](https://www.kaggle.com/datasets/mukundakatta/premium-agent-repo-landscape) - public dataset mapping premium agent repos by surface, stack, and focus |
 | Kaggle | [Agent Eval Scenarios](https://www.kaggle.com/datasets/mukundakatta/agent-eval-scenarios) - public eval dataset for lightweight agent benchmarking |
 | Kaggle | [building-a-lightweight-agent-eval-benchmark](https://www.kaggle.com/code/mukundakatta/building-a-lightweight-agent-eval-benchmark) - clean public notebook replacement with a successful run and resilient dataset loading |
