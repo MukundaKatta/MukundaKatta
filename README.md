@@ -145,7 +145,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Archive | [lightweight-agent-eval-paper](https://archive.softwareheritage.org/api/1/origin/save/2322365/) | Software Heritage, archived successfully |
 | Preprint Submission | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6718599) | SSRN, in process (`PRELIMINARY_UPLOAD`) |
 | Preprint Submission | Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents | Research Square, prescreening |
-| Preprint Submission | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://osf.io/preprints/metaarxiv/af7cp_v1) | MetaArXiv on OSF Preprints, pending moderator approval |
+| Preprint Submission | [Lightweight Evaluation and Operational Scorecards for Tool-Using AI Agents](https://osf.io/preprints/metaarxiv/af7cp_v1) | MetaArXiv on OSF Preprints, declined as out of scope |
 | Preprint | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://doi.org/10.5281/zenodo.20044318) | [Zenodo](https://zenodo.org/records/20044318) |
 | Artifact Repo | [ai-eval-forge-paper](https://github.com/MukundaKatta/ai-eval-forge-paper) | GitHub |
 | Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6720559) | SSRN, submission received |
