@@ -157,6 +157,8 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Preprint Submission | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6726002) | SSRN, submitted for review |
 | Preprint | [Small-Rule Guardrails for Retrieval-Augmented Generation: Prompt Injection and Vector Poisoning Checks](https://doi.org/10.5281/zenodo.20057056) | [Zenodo](https://zenodo.org/records/20057056) |
 | Preprint | [Chetana: A Theory-Indexed Probe Framework for AI Consciousness Indicator Scoring](https://doi.org/10.5281/zenodo.20057058) | [Zenodo](https://zenodo.org/records/20057058) |
+| Preprint | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://doi.org/10.5281/zenodo.20057317) | [Zenodo](https://zenodo.org/records/20057317) |
+| Preprint Submission | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6726102) | SSRN, submitted for review |
 | Preprint Submission | Citation Traceability for Web-Native AI Research Workflows | MetaArXiv on OSF Preprints, pending moderator review (`m9j4g_v1`) |
 | Preprint Submission | [Context Forge: A Lightweight Method for Diversity-Aware Context Packing and Prompt-Injection-Aware Retrieval](https://doi.org/10.21203/rs.3.rs-9622741/v1) | Research Square, QA/QC check |
 | Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://dev.to/mukundakatta/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-3oni) | [DEV Community](https://dev.to/mukundakatta) |
