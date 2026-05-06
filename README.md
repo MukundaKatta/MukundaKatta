@@ -16,6 +16,8 @@
 [![ORCID](https://img.shields.io/badge/ORCID-1a1a1a?style=for-the-badge&logo=orcid&logoColor=D4A853)](https://orcid.org/0009-0007-6071-3896)
 [![Zenodo](https://img.shields.io/badge/Zenodo-1a1a1a?style=for-the-badge&logo=zenodo&logoColor=D4A853)](https://doi.org/10.5281/zenodo.20034550)
 [![SSRN](https://img.shields.io/badge/SSRN-1a1a1a?style=for-the-badge&logo=elsevier&logoColor=D4A853)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6718599)
+[![Academia.edu](https://img.shields.io/badge/Academia.edu-1a1a1a?style=for-the-badge&logo=academia&logoColor=D4A853)](https://independent.academia.edu/MukundaKatta)
+[![Authorea](https://img.shields.io/badge/Authorea-1a1a1a?style=for-the-badge&logo=readthedocs&logoColor=D4A853)](https://www.authorea.com/users/1042134-mukunda-katta)
 [![GPT Store](https://img.shields.io/badge/GPT%20Store-1a1a1a?style=for-the-badge&logo=openai&logoColor=D4A853)](https://chatgpt.com/g/g-69f949f9653c819188b87ab44205fa74-agent-eval-lab)
 [![Poe](https://img.shields.io/badge/Poe-1a1a1a?style=for-the-badge&logo=quora&logoColor=D4A853)](https://poe.com/AgentEvalLab)
 [![Replicate](https://img.shields.io/badge/Replicate-1a1a1a?style=for-the-badge&logo=replicate&logoColor=D4A853)](https://replicate.com/mukundakatta/agent-eval-lab)
@@ -159,11 +161,14 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Preprint | [Chetana: A Theory-Indexed Probe Framework for AI Consciousness Indicator Scoring](https://doi.org/10.5281/zenodo.20057058) | [Zenodo](https://zenodo.org/records/20057058) |
 | Preprint | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://doi.org/10.5281/zenodo.20057317) | [Zenodo](https://zenodo.org/records/20057317) |
 | Preprint Submission | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6726102) | SSRN, submitted for review |
+| Preprint Mirror | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://www.academia.edu/166763243/ML_Intern_Lab_A_Minimal_Agentic_Workflow_for_Reproducible_Machine_Learning_Experiment_Reports) | Academia.edu |
 | Preprint Submission | Citation Traceability for Web-Native AI Research Workflows | MetaArXiv on OSF Preprints, pending moderator review (`m9j4g_v1`) |
 | Preprint Submission | [Context Forge: A Lightweight Method for Diversity-Aware Context Packing and Prompt-Injection-Aware Retrieval](https://doi.org/10.21203/rs.3.rs-9622741/v1) | Research Square, QA/QC check |
 | Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://dev.to/mukundakatta/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-3oni) | [DEV Community](https://dev.to/mukundakatta) |
 | Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://medium.com/@mukunda.vjcs6/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-2c106f8d758c) | [Medium](https://medium.com/@mukunda.vjcs6) |
 | Research Profile | [Mukunda Katta](https://orcid.org/0009-0007-6071-3896) | [ORCID](https://orcid.org/0009-0007-6071-3896) |
+| Research Profile | [Mukunda Katta](https://independent.academia.edu/MukundaKatta) | Academia.edu |
+| Research Profile | [Mukunda Katta](https://www.authorea.com/users/1042134-mukunda-katta) | Authorea profile, new submissions paused during platform migration |
 
 </div>
 
