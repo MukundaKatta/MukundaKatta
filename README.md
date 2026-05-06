@@ -155,9 +155,13 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Artifact Repo | [ai-eval-forge-paper](https://github.com/MukundaKatta/ai-eval-forge-paper) | GitHub |
 | Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6720559) | SSRN, public abstract page |
 | Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://osf.io/preprints/metaarxiv/agw2x_v1) | MetaArXiv on OSF Preprints, submitted |
+| Preprint Submission | AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows | Qeios, submitted (article 5247, live in 1 business day) |
 | Preprint | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://doi.org/10.5281/zenodo.20057054) | [Zenodo](https://zenodo.org/records/20057054) |
 | Preprint Submission | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6726002) | SSRN, submitted for review |
 | Preprint | [Small-Rule Guardrails for Retrieval-Augmented Generation: Prompt Injection and Vector Poisoning Checks](https://doi.org/10.5281/zenodo.20057056) | [Zenodo](https://zenodo.org/records/20057056) |
+| Artifact Repo | [rag-guardrails-paper](https://github.com/MukundaKatta/rag-guardrails-paper) | GitHub |
+| Preprint Mirror | [Small-Rule Guardrails for Retrieval-Augmented Generation: Prompt Injection and Vector Poisoning Checks](https://doi.org/10.6084/m9.figshare.32193543) | [Figshare](https://figshare.com/articles/preprint/_/32193543) |
+| Archive | [rag-guardrails-paper](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/MukundaKatta/rag-guardrails-paper) | Software Heritage, archive accepted |
 | Preprint | [Chetana: A Theory-Indexed Probe Framework for AI Consciousness Indicator Scoring](https://doi.org/10.5281/zenodo.20057058) | [Zenodo](https://zenodo.org/records/20057058) |
 | Preprint | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://doi.org/10.5281/zenodo.20057317) | [Zenodo](https://zenodo.org/records/20057317) |
 | Preprint Submission | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6726102) | SSRN, submitted for review |
@@ -168,6 +172,8 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://medium.com/@mukunda.vjcs6/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-2c106f8d758c) | [Medium](https://medium.com/@mukunda.vjcs6) |
 | Research Profile | [Mukunda Katta](https://orcid.org/0009-0007-6071-3896) | [ORCID](https://orcid.org/0009-0007-6071-3896) |
 | Research Profile | [Mukunda Katta](https://independent.academia.edu/MukundaKatta) | Academia.edu |
+| Archive | [agent-stack](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/MukundaKatta/agent-stack) (landing page) | Software Heritage, archive accepted |
+| Archive | [agentvet, agentguard, agentsnap, agentfit, agentcast, agent-quintet-demo](https://archive.softwareheritage.org/browse/origin/) | Software Heritage, archive accepted (6 repos) |
 | Research Profile | [Mukunda Katta](https://www.authorea.com/users/1042134-mukunda-katta) | Authorea profile, new submissions paused during platform migration |
 
 </div>
