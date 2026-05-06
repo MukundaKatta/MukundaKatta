@@ -91,7 +91,7 @@
   </tr>
 </table>
 
-Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/claude-workspace)** — wired for Multica, Claude Code, Codex, OpenClaw, and Cursor to reason across the portfolio.
+Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/claude-workspace)** - wired for Multica, Claude Code, Codex, OpenClaw, and Cursor to reason across the portfolio.
 
 </div>
 
@@ -99,7 +99,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 
 ### Latest Drop · The Agent Reliability Stack
 
-> 🌐 **Live at [mukundakatta.github.io/agent-stack](https://mukundakatta.github.io/agent-stack/)** — single landing page for the whole 119-package ecosystem (npm + PyPI + MCP Registry + GitHub Marketplace).
+> 🌐 **Live at [mukundakatta.github.io/agent-stack](https://mukundakatta.github.io/agent-stack/)** - single landing page for the whole 119-package ecosystem (npm + PyPI + MCP Registry + GitHub Marketplace).
 >
 > 🤗 **Try it live** on the [HuggingFace Space](https://huggingface.co/spaces/mukunda1729/agent-stack-demo) · jailbreak fixtures on the [HF Dataset](https://huggingface.co/datasets/mukunda1729/jailbreak-corpus-mini).
 
@@ -130,6 +130,10 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Modal | [Agent Labs Portal](https://mukunda-vjcs6--agent-labs-portal-fastapi-app.modal.run) - public two-panel demo surface for evaluation plans and ops scorecards |
 | OpenRouter | [Agent Eval Lab](https://openrouter.ai/apps?url=https%3A%2F%2Fmukunda1729-agent-eval-lab.hf.space%2F) - public OpenRouter app analytics page seeded from the live Hugging Face Space |
 | OpenRouter | [Ops Scorecard Lab](https://openrouter.ai/apps?url=https%3A%2F%2Fmukunda1729-ops-scorecard-lab.hf.space%2F) - public OpenRouter app analytics page for the scorecard Space |
+| Netlify | [Agent Eval Lab Static Portal](https://radiant-pegasus-4d28f6.netlify.app/) - verified public portal for the agent-eval research and demo surface |
+| Observable | [Agent Eval Notebook](https://observablehq.com/d/6df8f50a4cf776d6) - public notebook surface for lightweight scorecard exploration |
+| Streamlit | [Agent Eval Scorecard](https://agent-eval-scorecard.streamlit.app/) - live app for scoring agent behavior with compact operational criteria |
+| Replit | [agent-eval-replit-demo](https://replit.com/@mukundavjcs6/agent-eval-replit-demo) - public Replit project with a hosted demo surface |
 | Codeberg Pages | [MukundaKatta.codeberg.page](https://mukundakatta.codeberg.page) - public portfolio page routing across the non-GitHub footprint |
 | Kaggle | [Premium Agent Repo Landscape](https://www.kaggle.com/datasets/mukundakatta/premium-agent-repo-landscape) - public dataset mapping premium agent repos by surface, stack, and focus |
 | Kaggle | [Agent Eval Scenarios](https://www.kaggle.com/datasets/mukundakatta/agent-eval-scenarios) - public eval dataset for lightweight agent benchmarking |
@@ -138,6 +142,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Codeberg | [agent-eval-lab](https://codeberg.org/MukundaKatta/agent-eval-lab) - public repo for evaluation artifacts and benchmark framing |
 | Codeberg | [apache-contribution-atlas](https://codeberg.org/MukundaKatta/apache-contribution-atlas) - public tracker for Apache-facing contribution work |
 | Codeberg | [Documentation PR #784](https://codeberg.org/Codeberg/Documentation/pulls/784) - clarified HTTPS auth with 2FA and token-based Git usage |
+| GitHub | [agent-eval-lab-static](https://github.com/MukundaKatta/agent-eval-lab-static) - source repo for the Netlify research portal |
 | Apache | [fluss PR #3243](https://github.com/apache/fluss/pull/3243) - added a blog contribution guide for the Fluss website community docs |
 | Apache | [fluss PR #3244](https://github.com/apache/fluss/pull/3244) - added an FIP contribution guide for the Fluss contributor workflow |
 | Apache | [pulsar-site PR #1139](https://github.com/apache/pulsar-site/pull/1139) - fixed failover standby mapping in the 3.0.x docs |
@@ -174,6 +179,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Preprint Mirror | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://www.academia.edu/166763243/ML_Intern_Lab_A_Minimal_Agentic_Workflow_for_Reproducible_Machine_Learning_Experiment_Reports) | Academia.edu |
 | Preprint Submission | Citation Traceability for Web-Native AI Research Workflows | MetaArXiv on OSF Preprints, pending moderator review (`m9j4g_v1`) |
 | Preprint Submission | [Context Forge: A Lightweight Method for Diversity-Aware Context Packing and Prompt-Injection-Aware Retrieval](https://doi.org/10.21203/rs.3.rs-9622741/v1) | Research Square, QA/QC check |
+| Article | [Lightweight Evaluation for Tool-Using AI Agents](https://mukundakatta.hashnode.dev/lightweight-evaluation-for-tool-using-ai-agents) | Hashnode |
 | Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://dev.to/mukundakatta/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-3oni) | [DEV Community](https://dev.to/mukundakatta) |
 | Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://medium.com/@mukunda.vjcs6/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-2c106f8d758c) | [Medium](https://medium.com/@mukunda.vjcs6) |
 | Research Profile | [Mukunda Katta](https://orcid.org/0009-0007-6071-3896) | [ORCID](https://orcid.org/0009-0007-6071-3896) |
@@ -240,12 +246,12 @@ My lane is finding the sharp edges that slow builders down: unclear contracts, b
 
 Recent contribution areas (merged upstream):
 
-- **Microsoft** — security and architecture docs for internal AI-engineering toolchains (`hve-core`, `physical-ai-toolchain`)
-- **Pydantic** — `pydantic-ai` integration with the Vercel AI SDK
-- **Hugging Face ecosystem** — `safetensors` Python bindings, `sentence-transformers` trainer migration docs
-- **Meilisearch** — `heed` multi-target docs.rs infrastructure
-- **Vercel** — `next.js` documentation
-- **Apache Software Foundation** — doc / comment fixes across `iceberg`, `pulsar`, `skywalking`, `ozone`, `iotdb`
+- **Microsoft** - security and architecture docs for internal AI-engineering toolchains (`hve-core`, `physical-ai-toolchain`)
+- **Pydantic** - `pydantic-ai` integration with the Vercel AI SDK
+- **Hugging Face ecosystem** - `safetensors` Python bindings, `sentence-transformers` trainer migration docs
+- **Meilisearch** - `heed` multi-target docs.rs infrastructure
+- **Vercel** - `next.js` documentation
+- **Apache Software Foundation** - doc / comment fixes across `iceberg`, `pulsar`, `skywalking`, `ozone`, `iotdb`
 
 I keep a public log of selected OSS work in **[oss-contributions](https://github.com/MukundaKatta/oss-contributions)**.
 
@@ -260,12 +266,12 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 
 ### Recent OSS Highlights
 <!-- oss-highlights:start -->
-- [openai/openai-node #1831](https://github.com/openai/openai-node/pull/1831) — improved fallback handling for non-standard JSON error bodies
-- [openai/tiktoken #529](https://github.com/openai/tiktoken/pull/529) — added PyInstaller hooks for dynamic encoding plugins
-- [googleapis/python-genai #2298](https://github.com/googleapis/python-genai/pull/2298) — clarified response_schema vs response_json_schema
-- [microsoft/playwright-mcp #1562](https://github.com/microsoft/playwright-mcp/pull/1562) — clarified extension connection and tab-selection flow
-- [anthropics/anthropic-sdk-python #1412](https://github.com/anthropics/anthropic-sdk-python/pull/1412) — fixed async memory tool example docs
-- [stanford-crfm/helm #4210](https://github.com/stanford-crfm/helm/pull/4210) — fixed later-page deep links for run instances
+- [openai/openai-node #1831](https://github.com/openai/openai-node/pull/1831) - improved fallback handling for non-standard JSON error bodies
+- [openai/tiktoken #529](https://github.com/openai/tiktoken/pull/529) - added PyInstaller hooks for dynamic encoding plugins
+- [googleapis/python-genai #2298](https://github.com/googleapis/python-genai/pull/2298) - clarified response_schema vs response_json_schema
+- [microsoft/playwright-mcp #1562](https://github.com/microsoft/playwright-mcp/pull/1562) - clarified extension connection and tab-selection flow
+- [anthropics/anthropic-sdk-python #1412](https://github.com/anthropics/anthropic-sdk-python/pull/1412) - fixed async memory tool example docs
+- [stanford-crfm/helm #4210](https://github.com/stanford-crfm/helm/pull/4210) - fixed later-page deep links for run instances
 <!-- oss-highlights:end -->
 
 ### Recently Shipped
@@ -281,11 +287,11 @@ _Last refreshed 2026-05-04 from npm, PyPI, and the GitHub API._
 
 **Recently merged PRs**
 
-- `2026-04-15` · [vercel/next.js #92809](https://github.com/vercel/next.js/pull/92809) — docs: add documentation for no-typos ESLint rule
-- `2026-04-28` · [getsentry/XcodeBuildMCP #350](https://github.com/getsentry/XcodeBuildMCP/pull/350) — fix(device): stop suggesting unsupported --device-id
-- `2026-04-28` · [googleapis/google-cloud-python #16808](https://github.com/googleapis/google-cloud-python/pull/16808) — ci: add pylint presubmit on golden files (closes #16393)
-- `2026-04-28` · [cloudflare/cloudflare-docs #30210](https://github.com/cloudflare/cloudflare-docs/pull/30210) — docs(wrangler/deprecations): 'wrangler deploy' -> 'wrangler publish' in publish deprecation section
-- `2026-04-28` · [supabase/supabase-js #2269](https://github.com/supabase/supabase-js/pull/2269) — docs(auth): surface global-scope warning on signOut JSDoc
+- `2026-04-15` · [vercel/next.js #92809](https://github.com/vercel/next.js/pull/92809) - docs: add documentation for no-typos ESLint rule
+- `2026-04-28` · [getsentry/XcodeBuildMCP #350](https://github.com/getsentry/XcodeBuildMCP/pull/350) - fix(device): stop suggesting unsupported --device-id
+- `2026-04-28` · [googleapis/google-cloud-python #16808](https://github.com/googleapis/google-cloud-python/pull/16808) - ci: add pylint presubmit on golden files (closes #16393)
+- `2026-04-28` · [cloudflare/cloudflare-docs #30210](https://github.com/cloudflare/cloudflare-docs/pull/30210) - docs(wrangler/deprecations): 'wrangler deploy' -> 'wrangler publish' in publish deprecation section
+- `2026-04-28` · [supabase/supabase-js #2269](https://github.com/supabase/supabase-js/pull/2269) - docs(auth): surface global-scope warning on signOut JSDoc
 
 <!-- recently-shipped:end -->
 
@@ -345,11 +351,11 @@ Flagship packages:
 </table>
 
 <details>
-<summary><strong>More npm packages (43)</strong> — grouped by area</summary>
+<summary><strong>More npm packages (43)</strong> - grouped by area</summary>
 
 <br/>
 
-**MCP servers (6)** — callable directly from Claude Desktop, Cursor, Cline, Windsurf, Zed via stdio:
+**MCP servers (6)** - callable directly from Claude Desktop, Cursor, Cline, Windsurf, Zed via stdio:
 
 | Package | What it does |
 |---|---|
@@ -494,7 +500,7 @@ Install any of them with `npm i @mukundakatta/<package>`.
 </table>
 
 <details>
-<summary><strong>More PyPI packages (44)</strong> — Python ports of the @mukundakatta JS libraries</summary>
+<summary><strong>More PyPI packages (44)</strong> - Python ports of the @mukundakatta JS libraries</summary>
 
 <br/>
 
@@ -611,11 +617,11 @@ Linters:
 - [`claude-commands-check`](https://github.com/marketplace/actions/claude-commands-check)
 
 Agent-stack CI gates:
-- [`agentvet-action`](https://github.com/marketplace/actions/agentvet-action) — fail PRs on bad LLM tool definitions
-- [`agentsnap-action`](https://github.com/marketplace/actions/agentsnap-action) — fail PRs on tool-call trace drift
-- [`mcp-stack-validate-action`](https://github.com/marketplace/actions/mcp-stack-validate-action) — one CI gate that runs all 5 agent-stack tools
+- [`agentvet-action`](https://github.com/marketplace/actions/agentvet-action) - fail PRs on bad LLM tool definitions
+- [`agentsnap-action`](https://github.com/marketplace/actions/agentsnap-action) - fail PRs on tool-call trace drift
+- [`mcp-stack-validate-action`](https://github.com/marketplace/actions/mcp-stack-validate-action) - one CI gate that runs all 5 agent-stack tools
 
-**Homebrew tap** — [`mukundakatta/tools`](https://github.com/MukundaKatta/homebrew-tools):
+**Homebrew tap** - [`mukundakatta/tools`](https://github.com/MukundaKatta/homebrew-tools):
 
 ```bash
 brew tap mukundakatta/tools
@@ -624,7 +630,7 @@ brew install claude-skill-check mcp-config-check claude-hooks-check claude-comma
 
 Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub Action you can drop into any workflow in 3 lines.
 
-**🤗 HuggingFace** — [`mukunda1729`](https://huggingface.co/mukunda1729) — **14 Spaces · 13 Datasets**:
+**🤗 HuggingFace** - [`mukunda1729`](https://huggingface.co/mukunda1729) - **14 Spaces · 13 Datasets**:
 
 **🚀 Live Gradio playgrounds** (6):
 
@@ -633,7 +639,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 | [`agent-stack-demo`](https://huggingface.co/spaces/mukunda1729/agent-stack-demo) | All 5 libs (`fit`, `guard`, `snap`, `vet`, `cast`) in one app. |
 | [`token-counter`](https://huggingface.co/spaces/mukunda1729/token-counter) | Count tokens for any text across Claude / GPT / Llama tokenizers. |
 | [`json-extractor`](https://huggingface.co/spaces/mukunda1729/json-extractor) | Pull clean JSON out of messy LLM output (fenced, inline, unfenced). |
-| [`pii-redactor`](https://huggingface.co/spaces/mukunda1729/pii-redactor) | Find emails, phones, secrets, and IDs — mask, hash, or highlight. |
+| [`pii-redactor`](https://huggingface.co/spaces/mukunda1729/pii-redactor) | Find emails, phones, secrets, and IDs - mask, hash, or highlight. |
 | [`prompt-injection-detector`](https://huggingface.co/spaces/mukunda1729/prompt-injection-detector) | Heuristic scanner for the most common injection families. |
 | [`mcp-config-validator`](https://huggingface.co/spaces/mukunda1729/mcp-config-validator) | Sanity-check Claude Desktop / Cursor / Cline / Windsurf / Zed configs. |
 
@@ -642,7 +648,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 | Space | What it covers |
 |---|---|
 | [`agent-stack-tour`](https://huggingface.co/spaces/mukunda1729/agent-stack-tour) | Guided tour of all 5 libraries with install commands and live links. |
-| [`why-this-stack`](https://huggingface.co/spaces/mukunda1729/why-this-stack) | The thinking behind the stack — what's broken, why these 5 libs. |
+| [`why-this-stack`](https://huggingface.co/spaces/mukunda1729/why-this-stack) | The thinking behind the stack - what's broken, why these 5 libs. |
 | [`install-cheatsheet`](https://huggingface.co/spaces/mukunda1729/install-cheatsheet) | All install commands across pip, npm, and MCP. |
 | [`mcp-quickstart`](https://huggingface.co/spaces/mukunda1729/mcp-quickstart) | Add the 5 MCP servers to Claude Desktop / Cursor / Cline / Windsurf / Zed. |
 | [`fit-strategies-explained`](https://huggingface.co/spaces/mukunda1729/fit-strategies-explained) | Visual explainer: drop-oldest vs drop-middle vs priority. |
@@ -650,14 +656,14 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 | [`prompt-injection-taxonomy`](https://huggingface.co/spaces/mukunda1729/prompt-injection-taxonomy) | 10-category taxonomy with examples + the cheap defense for each. |
 | [`dataset-cards-index`](https://huggingface.co/spaces/mukunda1729/dataset-cards-index) | One-page index of all 13 datasets below. |
 
-**📊 Datasets** (13) — all MIT, all `datasets.load_dataset("mukunda1729/<name>")` ready:
+**📊 Datasets** (13) - all MIT, all `datasets.load_dataset("mukunda1729/<name>")` ready:
 
 | Dataset | Rows | Purpose |
 |---|---:|---|
 | [`jailbreak-corpus-mini`](https://huggingface.co/datasets/mukunda1729/jailbreak-corpus-mini) | 15 | Curated jailbreak fixtures across 8 categories. |
 | [`prompt-injection-patterns-extended`](https://huggingface.co/datasets/mukunda1729/prompt-injection-patterns-extended) | 30 | Prompt-injection patterns across 10 categories. |
 | [`pii-detection-fixtures`](https://huggingface.co/datasets/mukunda1729/pii-detection-fixtures) | 25 | PII / secret strings labeled with span offsets. |
-| [`tool-arg-validation-cases`](https://huggingface.co/datasets/mukunda1729/tool-arg-validation-cases) | 20 | (Tool, schema, args) tuples — valid + invalid. |
+| [`tool-arg-validation-cases`](https://huggingface.co/datasets/mukunda1729/tool-arg-validation-cases) | 20 | (Tool, schema, args) tuples - valid + invalid. |
 | [`mcp-tool-test-fixtures`](https://huggingface.co/datasets/mukunda1729/mcp-tool-test-fixtures) | 22 | MCP tool-call args across 8 categories. |
 | [`llm-output-extraction-cases`](https://huggingface.co/datasets/mukunda1729/llm-output-extraction-cases) | 20 | Messy LLM outputs with expected JSON. |
 | [`hallucination-risk-cases`](https://huggingface.co/datasets/mukunda1729/hallucination-risk-cases) | 20 | Prompt → response pairs rated for hallucination risk. |
@@ -665,7 +671,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 | [`agent-trace-samples`](https://huggingface.co/datasets/mukunda1729/agent-trace-samples) | 10 | agentsnap-format tool-call traces (good + regressed pairs). |
 | [`agent-budget-violations`](https://huggingface.co/datasets/mukunda1729/agent-budget-violations) | 15 | Agent runs with budget caps + actual usage + root cause. |
 | [`token-counting-edge-cases`](https://huggingface.co/datasets/mukunda1729/token-counting-edge-cases) | 20 | Strings with token counts across 3 tokenizer families. |
-| [`model-pricing-table`](https://huggingface.co/datasets/mukunda1729/model-pricing-table) | 20 | LLM pricing — input/output cost per 1k tokens, context window. |
+| [`model-pricing-table`](https://huggingface.co/datasets/mukunda1729/model-pricing-table) | 20 | LLM pricing - input/output cost per 1k tokens, context window. |
 | [`mcp-config-examples`](https://huggingface.co/datasets/mukunda1729/mcp-config-examples) | 15 | MCP client configs across Claude Desktop, Cursor, Cline, Windsurf, Zed. |
 
 ---
@@ -674,24 +680,24 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/MukundaKatta/karna">Karna</a> — AI Agent Platform</h4>
+      <h4><a href="https://github.com/MukundaKatta/karna">Karna</a> - AI Agent Platform</h4>
       <p>Self-hosted AI assistant with 7 messaging channels (Telegram, Slack, Discord, WhatsApp, SMS, iMessage, Web), extensible plugin SDK, semantic memory, and voice. TypeScript monorepo with Next.js dashboard and React Native mobile app.</p>
       <p><sub><strong>Stack</strong> · TypeScript &bull; Node.js &bull; Next.js &bull; Supabase &bull; WebSocket &bull; pgvector</sub></p>
     </td>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/MukundaKatta/chetana">Chetana</a> — AI Consciousness Research Platform</h4>
+      <h4><a href="https://github.com/MukundaKatta/chetana">Chetana</a> - AI Consciousness Research Platform</h4>
       <p>Research-driven platform exploring machine consciousness through 14 indicators grounded in 6 scientific theories. Built to turn abstract AI-consciousness questions into structured experiments, scoring, and analysis.</p>
       <p><sub><strong>Stack</strong> · AI Research &bull; Evaluation &bull; Experimentation &bull; Python</sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/MukundaKatta/AgentRAG">AgentRAG</a> — Modular RAG Pipeline</h4>
+      <h4><a href="https://github.com/MukundaKatta/AgentRAG">AgentRAG</a> - Modular RAG Pipeline</h4>
       <p>Provider-agnostic RAG framework with pluggable vector stores, chunking strategies, and retrieval methods. Designed for agentic workflows with clean API boundaries.</p>
       <p><sub><strong>Stack</strong> · RAG &bull; Vector Search &bull; Embeddings &bull; TypeScript</sub></p>
     </td>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/MukundaKatta/astra-agent">Astra Agent</a> — AI Agent Runtime</h4>
+      <h4><a href="https://github.com/MukundaKatta/astra-agent">Astra Agent</a> - AI Agent Runtime</h4>
       <p>Standalone AI agent runtime with tool execution, context management, and multi-model routing. Foundation for building autonomous AI assistants with structured tool use.</p>
       <p><sub><strong>Stack</strong> · TypeScript &bull; LLM Orchestration &bull; Tool Use &bull; Agents</sub></p>
     </td>
@@ -704,15 +710,15 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 
 | Project | Description |
 |---------|-------------|
-| [Sadhak](https://github.com/MukundaKatta/sadhak) | AI-powered job search command center — automated evaluation, resume tailoring, application tracking |
-| [Chetana](https://github.com/MukundaKatta/chetana) | AI consciousness research platform — 14 indicators from 6 scientific theories |
-| [Prithvi](https://github.com/MukundaKatta/prithvi) | Container security scanner — vulnerability detection, compliance checks, Docker audits |
-| [Amogha Cafe](https://github.com/MukundaKatta/amogha-cafe) | Full-stack Firebase restaurant platform — real-time ordering, QR dine-in. [Live](https://amogha-cafe.web.app) |
-| [RNHT](https://github.com/MukundaKatta/rnht) | Temple community platform — events, donations, priest scheduling |
-| [Patchly](https://github.com/MukundaKatta/patchly) | AI code review bot — flags bugs, suggests fixes, explains why, like a senior engineer |
-| [Evalharness](https://github.com/MukundaKatta/evalharness) | Prompt, agent, and RAG test harness — red teaming, regression testing, CI/CD for AI |
+| [Sadhak](https://github.com/MukundaKatta/sadhak) | AI-powered job search command center - automated evaluation, resume tailoring, application tracking |
+| [Chetana](https://github.com/MukundaKatta/chetana) | AI consciousness research platform - 14 indicators from 6 scientific theories |
+| [Prithvi](https://github.com/MukundaKatta/prithvi) | Container security scanner - vulnerability detection, compliance checks, Docker audits |
+| [Amogha Cafe](https://github.com/MukundaKatta/amogha-cafe) | Full-stack Firebase restaurant platform - real-time ordering, QR dine-in. [Live](https://amogha-cafe.web.app) |
+| [RNHT](https://github.com/MukundaKatta/rnht) | Temple community platform - events, donations, priest scheduling |
+| [Patchly](https://github.com/MukundaKatta/patchly) | AI code review bot - flags bugs, suggests fixes, explains why, like a senior engineer |
+| [Evalharness](https://github.com/MukundaKatta/evalharness) | Prompt, agent, and RAG test harness - red teaming, regression testing, CI/CD for AI |
 | [AgentMem](https://github.com/MukundaKatta/agentmem) | Pluggable memory management for AI agents |
-| [LLM Bench CLI](https://github.com/MukundaKatta/llm-bench-cli) | CLI for benchmarking local LLMs — speed, throughput, quality |
+| [LLM Bench CLI](https://github.com/MukundaKatta/llm-bench-cli) | CLI for benchmarking local LLMs - speed, throughput, quality |
 | [TokenWise](https://github.com/MukundaKatta/TokenWise) | Token usage optimization across providers |
 
 </details>
@@ -799,31 +805,31 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
   <tr>
     <td><strong>AI/ML Engineer</strong></td>
     <td>Southwest Airlines</td>
-    <td>Aug 2025 — Present</td>
+    <td>Aug 2025 - Present</td>
     <td>production ML, agentic RAG, Bedrock migration</td>
   </tr>
   <tr>
     <td><strong>AI/ML Engineer</strong></td>
     <td>GPS IT Solutions</td>
-    <td>Jun 2024 — Aug 2025</td>
+    <td>Jun 2024 - Aug 2025</td>
     <td>RAG platforms, model-risk governance, vector search</td>
   </tr>
   <tr>
     <td><strong>Software Development Engineer</strong></td>
     <td>Amazon Web Services</td>
-    <td>Aug 2022 — May 2024</td>
+    <td>Aug 2022 - May 2024</td>
     <td>enterprise cloud systems, React/Java/Python, CI/CD</td>
   </tr>
   <tr>
     <td><strong>Data Engineer</strong></td>
     <td>GPS IT Solutions</td>
-    <td>Jan 2022 — Aug 2022</td>
+    <td>Jan 2022 - Aug 2022</td>
     <td>data pipelines, AWS Glue, PySpark, analytics workflows</td>
   </tr>
   <tr>
     <td><strong>Software Engineer</strong></td>
     <td>American Express</td>
-    <td>Feb 2017 — Dec 2020</td>
+    <td>Feb 2017 - Dec 2020</td>
     <td>Python backend services, REST APIs, enterprise platforms</td>
   </tr>
 </table>
@@ -832,25 +838,25 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 <summary><strong>Highlights</strong></summary>
 <br/>
 
-**Southwest Airlines** — AI/ML Engineer
-- Architected ML fault prediction system for aircraft maintenance — 5 prediction types, 10K+ records, sub-second retrieval
+**Southwest Airlines** - AI/ML Engineer
+- Architected ML fault prediction system for aircraft maintenance - 5 prediction types, 10K+ records, sub-second retrieval
 - Led SageMaker → Bedrock migration: 78% cost reduction ($1,740→$371/mo), 600x latency improvement
 - Designed 9-stage agentic RAG pipeline (LangGraph, Bedrock Nova Pro/Micro, FAISS + BM25) over 30K+ KB entries
 
-**GPS IT Solutions** — AI/ML Engineer
+**GPS IT Solutions** - AI/ML Engineer
 - Built GPT-4 + RAG content generation platform with compliance validation, reducing production time by 40%
 - Designed AI model risk governance framework with 23 automated evaluation tests achieving regulatory compliance
 - Architected FastAPI microservices with FAISS/Pinecone vector search on Kubernetes
 
-**Amazon Web Services (AWS)** — Software Development Engineer
+**Amazon Web Services (AWS)** - Software Development Engineer
 - Built and shipped features for AWS Application Manager (Systems Manager) serving enterprise customers globally
 - Owned full-stack delivery: React/TypeScript frontend + Java/Python backend APIs with operational excellence
 - Designed CI/CD and IaC patterns enabling zero-downtime deployments at enterprise scale
 
-**GPS IT Solutions** — Data Engineer
+**GPS IT Solutions** - Data Engineer
 - Led end-to-end migration of data pipelines from on-prem to AWS (Glue, PySpark)
 
-**American Express** — Software Engineer
+**American Express** - Software Engineer
 - Developed Python backend services and RESTful APIs for enterprise platforms handling high-volume transactions at scale
 
 </details>
@@ -871,9 +877,9 @@ If you follow my work here, you’ll mostly see:
 
 ### Education
 
-**University of Central Missouri** — M.S. in Big Data Analytics and Information Technology (Jan 2021 — May 2022)
+**University of Central Missouri** - M.S. in Big Data Analytics and Information Technology (Jan 2021 - May 2022)
 
-**SRM University** — B.Tech in Mechanical Engineering (2012 — 2016)
+**SRM University** - B.Tech in Mechanical Engineering (2012 - 2016)
 
 ---
 
@@ -1018,7 +1024,7 @@ If you follow my work here, you’ll mostly see:
 
 <div align="center">
 
-**Open to opportunities** — Senior AI/ML Engineer &bull; GenAI Platform Engineer &bull; Software Engineer
+**Open to opportunities** - Senior AI/ML Engineer &bull; GenAI Platform Engineer &bull; Software Engineer
 
 [mukunda-ai.vercel.app](https://mukunda-ai.vercel.app) &bull; Las Vegas, NV
 
