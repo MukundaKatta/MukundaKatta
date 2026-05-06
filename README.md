@@ -23,6 +23,9 @@
 [![OpenRouter](https://img.shields.io/badge/OpenRouter-1a1a1a?style=for-the-badge&logo=openai&logoColor=D4A853)](https://openrouter.ai/apps?url=https%3A%2F%2Fmukunda1729-agent-eval-lab.hf.space%2F)
 [![Codeberg Pages](https://img.shields.io/badge/Codeberg%20Pages-1a1a1a?style=for-the-badge&logo=codeberg&logoColor=D4A853)](https://mukundakatta.codeberg.page)
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
+[![DEV](https://img.shields.io/badge/DEV-1a1a1a?style=for-the-badge&logo=devdotto&logoColor=D4A853)](https://dev.to/mukundakatta)
+[![Medium](https://img.shields.io/badge/Medium-1a1a1a?style=for-the-badge&logo=medium&logoColor=D4A853)](https://medium.com/@mukunda.vjcs6)
+[![Bluesky](https://img.shields.io/badge/Bluesky-1a1a1a?style=for-the-badge&logo=bluesky&logoColor=D4A853)](https://bsky.app)
 [![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukunda.vjcs6@gmail.com)
 
 <sub>
@@ -152,6 +155,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://osf.io/preprints/metaarxiv/agw2x_v1) | MetaArXiv on OSF Preprints, submitted |
 | Preprint Submission | AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows | Research Square, private draft `rs-9622741` |
 | Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://dev.to/mukundakatta/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-3oni) | [DEV Community](https://dev.to/mukundakatta) |
+| Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://medium.com/@mukunda.vjcs6/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-2c106f8d758c) | [Medium](https://medium.com/@mukunda.vjcs6) |
 | Research Profile | [Mukunda Katta](https://orcid.org/0009-0007-6071-3896) | [ORCID](https://orcid.org/0009-0007-6071-3896) |
 
 </div>
