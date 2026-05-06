@@ -25,7 +25,7 @@
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
 [![DEV](https://img.shields.io/badge/DEV-1a1a1a?style=for-the-badge&logo=devdotto&logoColor=D4A853)](https://dev.to/mukundakatta)
 [![Medium](https://img.shields.io/badge/Medium-1a1a1a?style=for-the-badge&logo=medium&logoColor=D4A853)](https://medium.com/@mukunda.vjcs6)
-[![Bluesky](https://img.shields.io/badge/Bluesky-1a1a1a?style=for-the-badge&logo=bluesky&logoColor=D4A853)](https://bsky.app)
+[![Bluesky](https://img.shields.io/badge/Bluesky-1a1a1a?style=for-the-badge&logo=bluesky&logoColor=D4A853)](https://bsky.app/profile/mukundakatta.bsky.social)
 [![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukunda.vjcs6@gmail.com)
 
 <sub>
