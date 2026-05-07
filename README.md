@@ -188,19 +188,27 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Preprint | [Karna: A Chat-Native, Multi-Channel Architecture for Personal AI Chief-of-Staff Agents](https://doi.org/10.5281/zenodo.20074229) | [Zenodo](https://zenodo.org/records/20074229) |
 | Preprint Submission | Karna: A Chat-Native, Multi-Channel Architecture for Personal AI Chief-of-Staff Agents | Qeios, submitted (article 5249, live in 1 business day) |
 | Artifact Mirror | [Karna: A Chat-Native, Multi-Channel Architecture for Personal AI Chief-of-Staff Agents](https://doi.org/10.6084/m9.figshare.32209317) | Figshare public dataset mirror |
+| Artifact Repo | [karna-chat-native-assistant-paper](https://github.com/MukundaKatta/karna-chat-native-assistant-paper) | GitHub |
 | Preprint | [Six Reliability Primitives for LLM Agents: An Artifact Pattern for Stackable, Single-Concern Libraries](https://doi.org/10.5281/zenodo.20074702) | [Zenodo](https://zenodo.org/records/20074702) |
+| Artifact Repo | [agent-stack-reliability-primitives-paper](https://github.com/MukundaKatta/agent-stack-reliability-primitives-paper) | GitHub |
 | Preprint | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://doi.org/10.5281/zenodo.20057054) | [Zenodo](https://zenodo.org/records/20057054) |
 | Preprint Submission | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6726002) | SSRN, submitted for review |
+| Artifact Repo | [agent-trajectory-replay-paper](https://github.com/MukundaKatta/agent-trajectory-replay-paper) | GitHub |
 | Preprint | [Small-Rule Guardrails for Retrieval-Augmented Generation: Prompt Injection and Vector Poisoning Checks](https://doi.org/10.5281/zenodo.20057056) | [Zenodo](https://zenodo.org/records/20057056) |
 | Artifact Repo | [rag-guardrails-paper](https://github.com/MukundaKatta/rag-guardrails-paper) | GitHub |
 | Preprint Mirror | [Small-Rule Guardrails for Retrieval-Augmented Generation: Prompt Injection and Vector Poisoning Checks](https://doi.org/10.6084/m9.figshare.32193543) | [Figshare](https://figshare.com/articles/preprint/Small-Rule_Guardrails_for_Retrieval-Augmented_Generation_Prompt_Injection_and_Vector_Poisoning_Checks/32193543) |
 | Archive | [rag-guardrails-paper](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/MukundaKatta/rag-guardrails-paper) | Software Heritage, archive accepted |
 | Preprint | [Chetana: A Theory-Indexed Probe Framework for AI Consciousness Indicator Scoring](https://doi.org/10.5281/zenodo.20057058) | [Zenodo](https://zenodo.org/records/20057058) |
+| Artifact Repo | [chetana-consciousness-indicator-paper](https://github.com/MukundaKatta/chetana-consciousness-indicator-paper) | GitHub |
 | Preprint | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://doi.org/10.5281/zenodo.20057317) | [Zenodo](https://zenodo.org/records/20057317) |
 | Preprint Submission | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6726102) | SSRN, submitted for review |
 | Preprint Mirror | [ML Intern Lab: A Minimal Agentic Workflow for Reproducible Machine Learning Experiment Reports](https://www.academia.edu/166763243/ML_Intern_Lab_A_Minimal_Agentic_Workflow_for_Reproducible_Machine_Learning_Experiment_Reports) | Academia.edu |
+| Artifact Repo | [ml-intern-lab-paper](https://github.com/MukundaKatta/ml-intern-lab-paper) | GitHub |
+| Artifact Repo | [lightweight-eval-scorecards-paper](https://github.com/MukundaKatta/lightweight-eval-scorecards-paper) | GitHub |
 | Preprint Submission | [Citation Traceability for Web-Native AI Research Workflows](https://osf.io/preprints/metaarxiv/m9j4g_v1) | MetaArXiv on OSF Preprints, resubmitted and pending moderator review |
+| Artifact Repo | [browser-research-agent-paper](https://github.com/MukundaKatta/browser-research-agent-paper) | GitHub |
 | Preprint Submission | [Context Forge: A Lightweight Method for Diversity-Aware Context Packing and Prompt-Injection-Aware Retrieval](https://doi.org/10.21203/rs.3.rs-9622741/v1) | Research Square, QA/QC check |
+| Artifact Repo | [context-forge-paper](https://github.com/MukundaKatta/context-forge-paper) | GitHub |
 | Article | [Lightweight Evaluation for Tool-Using AI Agents](https://mukundakatta.hashnode.dev/lightweight-evaluation-for-tool-using-ai-agents) | Hashnode |
 | Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://dev.to/mukundakatta/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-3oni) | [DEV Community](https://dev.to/mukundakatta) |
 | Article | [I Built 5 Tiny Libraries to Stop My AI Agents from Misbehaving in Production](https://medium.com/@mukunda.vjcs6/i-built-5-tiny-libraries-to-stop-my-ai-agents-from-misbehaving-in-production-2c106f8d758c) | [Medium](https://medium.com/@mukunda.vjcs6) |
