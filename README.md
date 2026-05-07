@@ -207,6 +207,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Live Space | [Prompt Injection Shield Demo](https://huggingface.co/spaces/mukunda1729/prompt-injection-shield-demo) | Hugging Face Space (Streamlit), live interactive scanner |
 | Eval Dataset | [prompt-injection-eval](https://huggingface.co/datasets/mukunda1729/prompt-injection-eval) | Hugging Face Dataset, 74 hand-curated rows across 9 categories |
 | Eval Dataset (mirror) | [Prompt Injection Eval Set](https://www.kaggle.com/datasets/mukundakatta/prompt-injection-eval-set) | Kaggle Dataset, MIT, mirror of HF dataset |
+| Research Project | [Small-Rule Guardrails for RAG](https://osf.io/nxyvr) | Open Science Framework, public companion artifact bundling preprint + libs + dataset + demo |
 | Curated List | [awesome-prompt-injection-defense](https://github.com/MukundaKatta/awesome-prompt-injection-defense) | GitHub awesome-list, CC0, links to detection libs + datasets + papers |
 | CLI Package | [prompt-injection-shield-cli](https://pypi.org/project/prompt-injection-shield-cli/) | PyPI (`pip install prompt-injection-shield-cli`), exposes `pis-scan` |
 | Homebrew Tap | [MukundaKatta/homebrew-tap](https://github.com/MukundaKatta/homebrew-tap) | `brew install MukundaKatta/tap/pis-scan` |
