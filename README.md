@@ -210,6 +210,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Research Project | [Small-Rule Guardrails for RAG](https://osf.io/nxyvr) | Open Science Framework, public companion artifact bundling preprint + libs + dataset + demo |
 | Codeberg Mirrors | [awesome-prompt-injection-defense](https://codeberg.org/MukundaKatta/awesome-prompt-injection-defense) · [prompt-injection-shield-cli](https://codeberg.org/MukundaKatta/prompt-injection-shield-cli) · [rag-guardrails-action](https://codeberg.org/MukundaKatta/rag-guardrails-action) · [homebrew-tap](https://codeberg.org/MukundaKatta/homebrew-tap) | Codeberg (Forgejo), 4 mirrors |
 | GitLab Mirrors | [awesome-prompt-injection-defense](https://gitlab.com/mukunda.vjcs6/awesome-prompt-injection-defense) · [prompt-injection-shield-cli](https://gitlab.com/mukunda.vjcs6/prompt-injection-shield-cli) · [rag-guardrails-action](https://gitlab.com/mukunda.vjcs6/rag-guardrails-action) · [homebrew-tap](https://gitlab.com/mukunda.vjcs6/homebrew-tap) | gitlab.com, 4 mirrors |
+| Replit Workspace | [@mukundavjcs6](https://replit.com/@mukundavjcs6) | Replit, prompt-injection-shield-cli imported |
 | Curated List | [awesome-prompt-injection-defense](https://github.com/MukundaKatta/awesome-prompt-injection-defense) | GitHub awesome-list, CC0, links to detection libs + datasets + papers |
 | Curated List Pages | [mukundakatta.github.io/awesome-prompt-injection-defense](https://mukundakatta.github.io/awesome-prompt-injection-defense/) | GitHub Pages render of the awesome list |
 | CLI Package | [prompt-injection-shield-cli](https://pypi.org/project/prompt-injection-shield-cli/) | PyPI (`pip install prompt-injection-shield-cli`), exposes `pis-scan` |
@@ -798,8 +799,8 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>106</strong><br/>
-      <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>53 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 14 HF Datasets +<br/>1 Homebrew tap + 1 GHCR image</sub>
+      <strong>107</strong><br/>
+      <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>53 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 14 HF Datasets +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
