@@ -206,6 +206,10 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Archive | [agentvet, agentguard, agentsnap, agentfit, agentcast, agent-quintet-demo](https://archive.softwareheritage.org/browse/origin/) | Software Heritage, archive accepted (6 repos) |
 | Live Space | [Prompt Injection Shield Demo](https://huggingface.co/spaces/mukunda1729/prompt-injection-shield-demo) | Hugging Face Space (Streamlit), live interactive scanner |
 | Eval Dataset | [prompt-injection-eval](https://huggingface.co/datasets/mukunda1729/prompt-injection-eval) | Hugging Face Dataset, 74 hand-curated rows across 9 categories |
+| Curated List | [awesome-prompt-injection-defense](https://github.com/MukundaKatta/awesome-prompt-injection-defense) | GitHub awesome-list, CC0, links to detection libs + datasets + papers |
+| CLI Package | [prompt-injection-shield-cli](https://pypi.org/project/prompt-injection-shield-cli/) | PyPI (`pip install prompt-injection-shield-cli`), exposes `pis-scan` |
+| Homebrew Tap | [MukundaKatta/homebrew-tap](https://github.com/MukundaKatta/homebrew-tap) | `brew install MukundaKatta/tap/pis-scan` |
+| Container | [ghcr.io/mukundakatta/pis-scan](https://github.com/MukundaKatta/prompt-injection-shield-cli/pkgs/container/pis-scan) | GitHub Container Registry, built via Actions |
 | Live Demo Mirror | [Agent Eval Lab Static](https://mukundakatta.github.io/agent-eval-lab-static/) | GitHub Pages |
 | GitHub Action | [rag-guardrails-action](https://github.com/MukundaKatta/rag-guardrails-action) | Composite Action wrapping prompt-injection-shield + vector-poison-score, v0.1.0 released |
 | Live Demo | [Agent Eval Lab](https://agent-eval-lab.netlify.app) | Netlify, deployed via netlify-cli |
@@ -790,7 +794,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
       <strong>106</strong><br/>
-      <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 14 HF Datasets</sub>
+      <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>53 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 14 HF Datasets +<br/>1 Homebrew tap + 1 GHCR image</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
