@@ -301,12 +301,12 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 
 ### Recent OSS Highlights
 <!-- oss-highlights:start -->
-- [openai/openai-node #1831](https://github.com/openai/openai-node/pull/1831) - improved fallback handling for non-standard JSON error bodies
-- [openai/tiktoken #529](https://github.com/openai/tiktoken/pull/529) - added PyInstaller hooks for dynamic encoding plugins
-- [googleapis/python-genai #2298](https://github.com/googleapis/python-genai/pull/2298) - clarified response_schema vs response_json_schema
-- [microsoft/playwright-mcp #1562](https://github.com/microsoft/playwright-mcp/pull/1562) - clarified extension connection and tab-selection flow
-- [anthropics/anthropic-sdk-python #1412](https://github.com/anthropics/anthropic-sdk-python/pull/1412) - fixed async memory tool example docs
-- [stanford-crfm/helm #4210](https://github.com/stanford-crfm/helm/pull/4210) - fixed later-page deep links for run instances
+- [openai/openai-node #1831](https://github.com/openai/openai-node/pull/1831) — improved fallback handling for non-standard JSON error bodies
+- [openai/tiktoken #529](https://github.com/openai/tiktoken/pull/529) — added PyInstaller hooks for dynamic encoding plugins
+- [googleapis/python-genai #2298](https://github.com/googleapis/python-genai/pull/2298) — clarified response_schema vs response_json_schema
+- [microsoft/playwright-mcp #1562](https://github.com/microsoft/playwright-mcp/pull/1562) — clarified extension connection and tab-selection flow
+- [anthropics/anthropic-sdk-python #1412](https://github.com/anthropics/anthropic-sdk-python/pull/1412) — fixed async memory tool example docs
+- [stanford-crfm/helm #4210](https://github.com/stanford-crfm/helm/pull/4210) — fixed later-page deep links for run instances
 <!-- oss-highlights:end -->
 
 ### Recently Shipped
