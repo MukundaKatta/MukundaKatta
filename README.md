@@ -203,6 +203,8 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Research Profile | [Mukunda Katta](https://independent.academia.edu/MukundaKatta) | Academia.edu |
 | Archive | [agent-stack](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/MukundaKatta/agent-stack) (landing page) | Software Heritage, archive accepted |
 | Archive | [agentvet, agentguard, agentsnap, agentfit, agentcast, agent-quintet-demo](https://archive.softwareheritage.org/browse/origin/) | Software Heritage, archive accepted (6 repos) |
+| Live Demo Mirror | [Agent Eval Lab Static](https://mukundakatta.github.io/agent-eval-lab-static/) | GitHub Pages |
+| GitHub Action | [rag-guardrails-action](https://github.com/MukundaKatta/rag-guardrails-action) | Composite Action wrapping prompt-injection-shield + vector-poison-score, v0.1.0 released |
 | Live Demo | [Agent Eval Lab](https://agent-eval-lab.netlify.app) | Netlify, deployed via netlify-cli |
 | Live Demo Mirror | [Agent Eval Lab](https://agent-eval-lab.pages.dev) | Cloudflare Pages |
 | Package | [@mukundakatta/agent-scorecard](https://jsr.io/@mukundakatta/agent-scorecard) | JSR (Deno + TypeScript registry), v0.1.0 |
