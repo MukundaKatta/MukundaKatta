@@ -790,7 +790,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
       <strong>106</strong><br/>
-      <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 13 HF Datasets</sub>
+      <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>52 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 14 HF Datasets</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
