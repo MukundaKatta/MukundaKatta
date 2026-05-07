@@ -146,6 +146,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Read the Docs | [Agent Evaluation Field Notes](https://agent-eval-field-notes.readthedocs.io/en/latest/) - hosted documentation for the field-notes project |
 | Val Town | [agent-scorecard-val](https://val.town/x/mukundakatta/agent-scorecard-val) - public TypeScript scorecard function for agent evaluation notes |
 | Google Colab | [Agent Evaluation Field Notes Scorecard](https://colab.research.google.com/github/MukundaKatta/agent-eval-platform-starters/blob/main/starter-artifacts/colab/agent_eval_field_notes_scorecard.ipynb) - public notebook for scenario scoring and scorecard walkthroughs |
+| CodeSandbox | [Agent Evaluation Field Notes](https://mh72cq.csb.app/) - public sandbox preview for the scorecard app |
 | GitHub Gist | [Operational scorecard template](https://gist.github.com/MukundaKatta/53e9be0caf38a1d2a0778840b1e514e3) - standalone template for tool-using agent reviews |
 | GitHub Gist | [Trajectory replay debugging checklist](https://gist.github.com/MukundaKatta/6030219b7df31255ea67155daaaf3587) - replay checklist for agent workflow regressions |
 | GitHub Gist | [RAG guardrail smoke tests](https://gist.github.com/MukundaKatta/7e6b29178882a4f4b1aac35acde60818) - prompt-injection and vector-poisoning smoke tests |
