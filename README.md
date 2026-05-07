@@ -140,6 +140,11 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | GitLab | [agent-eval-public-notes](https://gitlab.com/mukunda.vjcs6/agent-eval-public-notes) - GitLab mirror of the reusable agent-eval notes |
 | GitHub | [agent-eval-platform-starters](https://github.com/MukundaKatta/agent-eval-platform-starters) - starter artifacts for publishing field notes across cloud, notebook, data, and docs platforms |
 | GitLab | [agent-eval-platform-starters](https://gitlab.com/mukunda.vjcs6/agent-eval-platform-starters) - GitLab mirror of the platform-starter artifacts |
+| Gitea | [agent-eval-platform-starters](https://gitea.com/MukundaKatta/agent-eval-platform-starters) - Gitea mirror of the platform-starter artifacts |
+| StackBlitz | [agent-eval-platform-starters workspace](https://stackblitz.com/github/MukundaKatta/agent-eval-platform-starters) - browser-editable workspace URL for the starter artifacts |
+| Gitpod | [agent-eval-platform-starters workspace](https://gitpod.io/#https://github.com/MukundaKatta/agent-eval-platform-starters) - cloud workspace launch URL for the starter artifacts |
+| Read the Docs | [Agent Evaluation Field Notes](https://agent-eval-field-notes.readthedocs.io/en/latest/) - hosted documentation for the field-notes project |
+| Val Town | [agent-scorecard-val](https://val.town/x/mukundakatta/agent-scorecard-val) - public TypeScript scorecard function for agent evaluation notes |
 | GitHub Gist | [Operational scorecard template](https://gist.github.com/MukundaKatta/53e9be0caf38a1d2a0778840b1e514e3) - standalone template for tool-using agent reviews |
 | GitHub Gist | [Trajectory replay debugging checklist](https://gist.github.com/MukundaKatta/6030219b7df31255ea67155daaaf3587) - replay checklist for agent workflow regressions |
 | GitHub Gist | [RAG guardrail smoke tests](https://gist.github.com/MukundaKatta/7e6b29178882a4f4b1aac35acde60818) - prompt-injection and vector-poisoning smoke tests |
