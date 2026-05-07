@@ -133,9 +133,13 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Observable | [Agent Eval Notebook](https://observablehq.com/d/6df8f50a4cf776d6) - public notebook surface for lightweight scorecard exploration |
 | Streamlit | [Agent Eval Scorecard](https://agent-eval-scorecard.streamlit.app/) - live app for scoring agent behavior with compact operational criteria |
 | Replit | [agent-eval-replit-demo](https://replit.com/@mukundavjcs6/agent-eval-replit-demo) - public Replit project with a hosted demo surface |
+| Cloudflare Pages | [Agent Evaluation Field Notes](https://agent-eval-field-notes.pages.dev) - static field-notes surface for scorecards, replay, and RAG guardrails |
+| Firebase Hosting | [Agent Evaluation Field Notes](https://agent-eval-field-notes.web.app) - Firebase-hosted mirror of the field-notes surface |
 | Codeberg Pages | [MukundaKatta.codeberg.page](https://mukundakatta.codeberg.page) - public portfolio page routing across the non-GitHub footprint |
 | GitHub | [agent-eval-public-notes](https://github.com/MukundaKatta/agent-eval-public-notes) - public notes for scorecards, replay debugging, and RAG guardrail checks |
 | GitLab | [agent-eval-public-notes](https://gitlab.com/mukunda.vjcs6/agent-eval-public-notes) - GitLab mirror of the reusable agent-eval notes |
+| GitHub | [agent-eval-platform-starters](https://github.com/MukundaKatta/agent-eval-platform-starters) - starter artifacts for publishing field notes across cloud, notebook, data, and docs platforms |
+| GitLab | [agent-eval-platform-starters](https://gitlab.com/mukunda.vjcs6/agent-eval-platform-starters) - GitLab mirror of the platform-starter artifacts |
 | GitHub Gist | [Operational scorecard template](https://gist.github.com/MukundaKatta/53e9be0caf38a1d2a0778840b1e514e3) - standalone template for tool-using agent reviews |
 | GitHub Gist | [Trajectory replay debugging checklist](https://gist.github.com/MukundaKatta/6030219b7df31255ea67155daaaf3587) - replay checklist for agent workflow regressions |
 | GitHub Gist | [RAG guardrail smoke tests](https://gist.github.com/MukundaKatta/7e6b29178882a4f4b1aac35acde60818) - prompt-injection and vector-poisoning smoke tests |
