@@ -185,6 +185,8 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6720559) | SSRN, public abstract page |
 | Preprint Submission | [AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows](https://osf.io/preprints/metaarxiv/agw2x_v1) | MetaArXiv on OSF Preprints, submitted |
 | Preprint Submission | AI Eval Forge: Mixed-Check Regression Testing for LLM and Agent Workflows | Qeios, submitted (article 5247, live in 1 business day) |
+| Preprint Submission | Karna: A Chat-Native, Multi-Channel Architecture for Personal AI Chief-of-Staff Agents | Qeios, submitted (article 5249, live in 1 business day) |
+| Artifact Mirror | [Karna: A Chat-Native, Multi-Channel Architecture for Personal AI Chief-of-Staff Agents](https://doi.org/10.6084/m9.figshare.32209317) | Figshare public dataset mirror |
 | Preprint | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://doi.org/10.5281/zenodo.20057054) | [Zenodo](https://zenodo.org/records/20057054) |
 | Preprint Submission | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6726002) | SSRN, submitted for review |
 | Preprint | [Small-Rule Guardrails for Retrieval-Augmented Generation: Prompt Injection and Vector Poisoning Checks](https://doi.org/10.5281/zenodo.20057056) | [Zenodo](https://zenodo.org/records/20057056) |
