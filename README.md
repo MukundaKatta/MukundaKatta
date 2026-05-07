@@ -69,19 +69,19 @@
   <tr>
     <td align="center" width="20%">
       <sub>PUBLIC REPOS</sub><br/>
-      <strong>661</strong>
+      <strong>683</strong>
     </td>
     <td align="center" width="20%">
       <sub>ORIGINALS</sub><br/>
-      <strong>223</strong>
+      <strong>236</strong>
     </td>
     <td align="center" width="20%">
       <sub>ACTIVE PROJECTS</sub><br/>
-      <strong>185</strong>
+      <strong>198</strong>
     </td>
     <td align="center" width="20%">
       <sub>FORKS</sub><br/>
-      <strong>438</strong>
+      <strong>447</strong>
     </td>
     <td align="center" width="20%">
       <sub>ARCHIVED</sub><br/>
@@ -312,7 +312,7 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-05-04 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-05-07 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
@@ -322,11 +322,11 @@ _Last refreshed 2026-05-04 from npm, PyPI, and the GitHub API._
 
 **Recently merged PRs**
 
-- `2026-04-15` · [vercel/next.js #92809](https://github.com/vercel/next.js/pull/92809) - docs: add documentation for no-typos ESLint rule
-- `2026-04-28` · [getsentry/XcodeBuildMCP #350](https://github.com/getsentry/XcodeBuildMCP/pull/350) - fix(device): stop suggesting unsupported --device-id
-- `2026-04-28` · [googleapis/google-cloud-python #16808](https://github.com/googleapis/google-cloud-python/pull/16808) - ci: add pylint presubmit on golden files (closes #16393)
-- `2026-04-28` · [cloudflare/cloudflare-docs #30210](https://github.com/cloudflare/cloudflare-docs/pull/30210) - docs(wrangler/deprecations): 'wrangler deploy' -> 'wrangler publish' in publish deprecation section
-- `2026-04-28` · [supabase/supabase-js #2269](https://github.com/supabase/supabase-js/pull/2269) - docs(auth): surface global-scope warning on signOut JSDoc
+- `2026-04-15` · [vercel/next.js #92809](https://github.com/vercel/next.js/pull/92809) — docs: add documentation for no-typos ESLint rule
+- `2026-05-04` · [PrefectHQ/fastmcp #4069](https://github.com/PrefectHQ/fastmcp/pull/4069) — Fix #4056: keep blank query values, add token bucket regression test
+- `2026-05-04` · [PrefectHQ/fastmcp #4076](https://github.com/PrefectHQ/fastmcp/pull/4076) — fix(openapi): keep blank values in parse_qs (refs #4056)
+- `2026-05-04` · [PrefectHQ/fastmcp #4070](https://github.com/PrefectHQ/fastmcp/pull/4070) — docs(integrations): add Pydantic AI FastMCP toolset guide
+- `2026-05-07` · [elastic/beats #50281](https://github.com/elastic/beats/pull/50281) — docs: fix 'ElasticSearch' casing and 'a SSL' -> 'an SSL' across reference docs
 
 <!-- recently-shipped:end -->
 
@@ -794,17 +794,17 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
   <tr>
     <td align="center" width="25%">
       <sub>UPSTREAM</sub><br/>
-      <strong>130</strong><br/>
+      <strong>137</strong><br/>
       <sub>merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>107</strong><br/>
+      <strong>106</strong><br/>
       <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>53 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 14 HF Datasets +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
-      <strong>223</strong><br/>
+      <strong>236</strong><br/>
       <sub>original public repos<br/>maintained on GitHub</sub>
     </td>
     <td align="center" width="25%">
