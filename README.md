@@ -188,6 +188,7 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Preprint | [Karna: A Chat-Native, Multi-Channel Architecture for Personal AI Chief-of-Staff Agents](https://doi.org/10.5281/zenodo.20074229) | [Zenodo](https://zenodo.org/records/20074229) |
 | Preprint Submission | Karna: A Chat-Native, Multi-Channel Architecture for Personal AI Chief-of-Staff Agents | Qeios, submitted (article 5249, live in 1 business day) |
 | Artifact Mirror | [Karna: A Chat-Native, Multi-Channel Architecture for Personal AI Chief-of-Staff Agents](https://doi.org/10.6084/m9.figshare.32209317) | Figshare public dataset mirror |
+| Preprint | [Six Reliability Primitives for LLM Agents: An Artifact Pattern for Stackable, Single-Concern Libraries](https://doi.org/10.5281/zenodo.20074702) | [Zenodo](https://zenodo.org/records/20074702) |
 | Preprint | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://doi.org/10.5281/zenodo.20057054) | [Zenodo](https://zenodo.org/records/20057054) |
 | Preprint Submission | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6726002) | SSRN, submitted for review |
 | Preprint | [Small-Rule Guardrails for Retrieval-Augmented Generation: Prompt Injection and Vector Poisoning Checks](https://doi.org/10.5281/zenodo.20057056) | [Zenodo](https://zenodo.org/records/20057056) |
