@@ -32,6 +32,7 @@
 [![X](https://img.shields.io/badge/X-1a1a1a?style=for-the-badge&logo=x&logoColor=D4A853)](https://x.com/katta_mukunda)
 [![DEV](https://img.shields.io/badge/DEV-1a1a1a?style=for-the-badge&logo=devdotto&logoColor=D4A853)](https://dev.to/mukundakatta)
 [![Medium](https://img.shields.io/badge/Medium-1a1a1a?style=for-the-badge&logo=medium&logoColor=D4A853)](https://medium.com/@mukunda.vjcs6)
+[![Hashnode](https://img.shields.io/badge/Hashnode-1a1a1a?style=for-the-badge&logo=hashnode&logoColor=D4A853)](https://mukundakatta.hashnode.dev/)
 [![Bluesky](https://img.shields.io/badge/Bluesky-1a1a1a?style=for-the-badge&logo=bluesky&logoColor=D4A853)](https://bsky.app/profile/mukundakatta.bsky.social)
 [![Email](https://img.shields.io/badge/Email-1a1a1a?style=for-the-badge&logo=gmail&logoColor=D4A853)](mailto:mukunda.vjcs6@gmail.com)
 
@@ -191,6 +192,11 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 | Artifact Repo | [karna-chat-native-assistant-paper](https://github.com/MukundaKatta/karna-chat-native-assistant-paper) | GitHub |
 | Preprint | [Six Reliability Primitives for LLM Agents: An Artifact Pattern for Stackable, Single-Concern Libraries](https://doi.org/10.5281/zenodo.20074702) | [Zenodo](https://zenodo.org/records/20074702) |
 | Artifact Repo | [agent-stack-reliability-primitives-paper](https://github.com/MukundaKatta/agent-stack-reliability-primitives-paper) | GitHub |
+| Model Card | [agent-stack on HuggingFace Hub](https://huggingface.co/mukunda1729/agent-stack) - second native DOI [`10.57967/hf/8720`](https://doi.org/10.57967/hf/8720) | Hugging Face Hub |
+| Article | [Six Reliability Primitives for LLM Agents](https://medium.com/@mukunda.vjcs6/six-reliability-primitives-for-llm-agents-5fc1dfa33d93) | [Medium](https://medium.com/@mukunda.vjcs6) |
+| Article | [Six Reliability Primitives for LLM Agents](https://dev.to/mukundakatta/six-reliability-primitives-for-llm-agents-m13) | [DEV Community](https://dev.to/mukundakatta) |
+| Article | [Six Reliability Primitives for LLM Agents](https://mukundakatta.hashnode.dev/six-reliability-primitives-for-llm-agents) | Hashnode |
+| Hackathon | [AI Agent Olympics @ Milan AI Week 2026](https://lablab.ai/event/milan-ai-week-hackathon) - Agentic Workflows track, registered + approved 2026-05-08 | Lablab.ai (build phase May 13-19, $28K+ pool) |
 | Preprint | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://doi.org/10.5281/zenodo.20057054) | [Zenodo](https://zenodo.org/records/20057054) |
 | Preprint Submission | [Agent Trajectory Replay for Debugging Tool-Using AI Workflow Regressions](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6726002) | SSRN, submitted for review |
 | Artifact Repo | [agent-trajectory-replay-paper](https://github.com/MukundaKatta/agent-trajectory-replay-paper) | GitHub |
