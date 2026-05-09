@@ -55,7 +55,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 matching MCP servers in the official [MCP Registry](https://registry.modelcontextprotocol.io), 3 new GitHub Actions on the Marketplace, and **doubled the PyPI footprint to 52 packages** (full Python ports of the npm catalog). Plus 40+ open PRs across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
+**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) - five-dimensional drift detection for production RAG (Rust core + PyPI wheel) - and the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) workspace of 5 small focused Rust crates (`embedrank`, `promptbudget`, `stopstream`, `citecite`, `ragmetric`) live on crates.io. Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 matching MCP servers in the official [MCP Registry](https://registry.modelcontextprotocol.io), 3 new GitHub Actions on the Marketplace, and **52 PyPI packages** (full Python ports of the npm catalog). Plus 40+ open PRs across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
 <!-- now:end -->
 
 </div>
@@ -330,10 +330,13 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-05-07 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-05-09 from npm, PyPI, crates.io, and the GitHub API._
 
 **Latest releases**
 
+- `2026-05-09` · [`ragdrift-py`](https://pypi.org/project/ragdrift-py/) `v0.1.3` · PyPI · five-dimensional RAG drift detection (Rust core, abi3 wheel for Python 3.10–3.13)
+- `2026-05-09` · [`ragdrift`](https://crates.io/crates/ragdrift) `v0.1.3` + [`ragdrift-core`](https://crates.io/crates/ragdrift-core) `v0.1.3` · crates.io · pure-Rust drift detection core
+- `2026-05-09` · [`embedrank`](https://crates.io/crates/embedrank), [`promptbudget`](https://crates.io/crates/promptbudget), [`stopstream`](https://crates.io/crates/stopstream), [`citecite`](https://crates.io/crates/citecite), [`ragmetric`](https://crates.io/crates/ragmetric) `v0.1.0` · crates.io · five small focused Rust crates for the LLM/RAG/agent niche ([rust-llm-stack](https://github.com/MukundaKatta/rust-llm-stack))
 - `2026-04-28` · [`@mukundakatta/agentbudget`](https://www.npmjs.com/package/@mukundakatta/agentbudget) `v0.1.0` · npm
 - `2026-04-28` · [`@mukundakatta/openai-responses-testkit`](https://www.npmjs.com/package/@mukundakatta/openai-responses-testkit) `v0.1.0` · npm
 - `2026-04-27` · [`llm-response-schema-lite-py`](https://pypi.org/project/llm-response-schema-lite-py/) `v0.1.0` · PyPI
@@ -682,6 +685,53 @@ brew install claude-skill-check mcp-config-check claude-hooks-check claude-comma
 ```
 
 Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub Action you can drop into any workflow in 3 lines.
+
+**🦀 crates.io** (Rust) - [`MukundaKatta`](https://crates.io/users/MukundaKatta) - small focused crates for the LLM / RAG / agent niche:
+
+<table>
+  <tr>
+    <th align="left">Crate</th>
+    <th align="left">Purpose</th>
+    <th align="left">Install</th>
+  </tr>
+  <tr>
+    <td><strong><a href="https://crates.io/crates/ragdrift">ragdrift</a></strong> <a href="https://crates.io/crates/ragdrift"><img src="https://img.shields.io/crates/v/ragdrift?style=flat-square&label=v&color=D4A853&labelColor=1a1a1a" alt="version"/></a><br/><sub>RAG drift detection</sub></td>
+    <td>Five-dimensional drift detection for production RAG: data, embedding, response, confidence, query mix. MMD + sliced Wasserstein + KS + PSI in pure Rust. Sibling Python wheel ships as <code>ragdrift-py</code>.</td>
+    <td><code>cargo add ragdrift</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://crates.io/crates/ragdrift-core">ragdrift-core</a></strong> <a href="https://crates.io/crates/ragdrift-core"><img src="https://img.shields.io/crates/v/ragdrift-core?style=flat-square&label=v&color=D4A853&labelColor=1a1a1a" alt="version"/></a><br/><sub>RAG drift core</sub></td>
+    <td>Pure-Rust core of <code>ragdrift</code>: KS, PSI, MMD (RBF kernel), 1D and sliced Wasserstein, k-means. No BLAS dependency. Used as the backbone of the Python <code>ragdrift-py</code> wheel via PyO3.</td>
+    <td><code>cargo add ragdrift-core</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://crates.io/crates/embedrank">embedrank</a></strong> <a href="https://crates.io/crates/embedrank"><img src="https://img.shields.io/crates/v/embedrank?style=flat-square&label=v&color=D4A853&labelColor=1a1a1a" alt="version"/></a><br/><sub>vector top-k retrieval</sub></td>
+    <td>Batched cosine / dot / L2 distance for f32 embeddings + a heap-based top-k selector. No BLAS, no allocator surprises. Designed for the hot path of small-to-medium RAG retrieval.</td>
+    <td><code>cargo add embedrank</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://crates.io/crates/promptbudget">promptbudget</a></strong> <a href="https://crates.io/crates/promptbudget"><img src="https://img.shields.io/crates/v/promptbudget?style=flat-square&label=v&color=D4A853&labelColor=1a1a1a" alt="version"/></a><br/><sub>token-budget truncation</sub></td>
+    <td>Token-budget-aware text truncation with multiple strategies (head, tail, head+tail, smart-cut with marker). Bring-your-own tokenizer; no hard <code>tiktoken</code> dependency.</td>
+    <td><code>cargo add promptbudget</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://crates.io/crates/stopstream">stopstream</a></strong> <a href="https://crates.io/crates/stopstream"><img src="https://img.shields.io/crates/v/stopstream?style=flat-square&label=v&color=D4A853&labelColor=1a1a1a" alt="version"/></a><br/><sub>streaming stop-sequence detector</sub></td>
+    <td>Streaming-safe stop-sequence detector for LLM token streams. Holds back exactly the suffix-prefix overlap so partial matches at chunk boundaries never leak downstream. UTF-8 boundary safe.</td>
+    <td><code>cargo add stopstream</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://crates.io/crates/citecite">citecite</a></strong> <a href="https://crates.io/crates/citecite"><img src="https://img.shields.io/crates/v/citecite?style=flat-square&label=v&color=D4A853&labelColor=1a1a1a" alt="version"/></a><br/><sub>RAG citation markers</sub></td>
+    <td>Citation-marker <code>[1] [2]</code> injector + parser for RAG outputs. Round-trippable: inject markers tied to source ids, parse them back when post-processing, or strip them entirely.</td>
+    <td><code>cargo add citecite</code></td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://crates.io/crates/ragmetric">ragmetric</a></strong> <a href="https://crates.io/crates/ragmetric"><img src="https://img.shields.io/crates/v/ragmetric?style=flat-square&label=v&color=D4A853&labelColor=1a1a1a" alt="version"/></a><br/><sub>RAG retrieval IR metrics</sub></td>
+    <td>IR metrics for RAG retrieval evaluation: Recall@k, Hit@k, MRR, NDCG@k. Pure data ops, no model dependencies. Sibling-in-spirit to <code>ragdrift</code>.</td>
+    <td><code>cargo add ragmetric</code></td>
+  </tr>
+</table>
+
+The five `rust-llm-stack` crates are also available together as one workspace: [`MukundaKatta/rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack). Each crate is independently versioned and published.
 
 **🤗 HuggingFace** - [`mukunda1729`](https://huggingface.co/mukunda1729) - **14 Spaces · 13 Datasets**:
 
