@@ -55,7 +55,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) - five-dimensional drift detection for production RAG (Rust core + PyPI wheel) - and the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) workspace of 5 small focused Rust crates (`embedrank`, `promptbudget`, `stopstream`, `citecite`, `ragmetric`) live on crates.io. Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 matching MCP servers in the official [MCP Registry](https://registry.modelcontextprotocol.io), 3 new GitHub Actions on the Marketplace, and **52 PyPI packages** (full Python ports of the npm catalog). Plus 40+ open PRs across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
+**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of 5 small Rust crates (`embedrank`, `promptbudget`, `stopstream`, `citecite`, `ragmetric`), and the matching [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of 4 MCP servers (`promptbudget-mcp`, `citecite-mcp`, `ragmetric-mcp`, `ragdrift-mcp`) so Claude Desktop / Cursor / Cline / Windsurf / Zed can call them mid-conversation. Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers in the official [MCP Registry](https://registry.modelcontextprotocol.io), 3 GitHub Actions on the Marketplace, and **52 PyPI packages**. Plus 40+ open PRs across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
 <!-- now:end -->
 
 </div>
@@ -334,6 +334,7 @@ _Last refreshed 2026-05-09 from npm, PyPI, crates.io, and the GitHub API._
 
 **Latest releases**
 
+- `2026-05-09` · [`@mukundakatta/promptbudget-mcp`](https://www.npmjs.com/package/@mukundakatta/promptbudget-mcp), [`citecite-mcp`](https://www.npmjs.com/package/@mukundakatta/citecite-mcp), [`ragmetric-mcp`](https://www.npmjs.com/package/@mukundakatta/ragmetric-mcp), [`ragdrift-mcp`](https://www.npmjs.com/package/@mukundakatta/ragdrift-mcp) `v0.1.0` · npm · 4 new MCP servers for LLM clients ([mcp-stack](https://github.com/MukundaKatta/mcp-stack))
 - `2026-05-09` · [`ragdrift-py`](https://pypi.org/project/ragdrift-py/) `v0.1.3` · PyPI · five-dimensional RAG drift detection (Rust core, abi3 wheel for Python 3.10–3.13)
 - `2026-05-09` · [`ragdrift`](https://crates.io/crates/ragdrift) `v0.1.3` + [`ragdrift-core`](https://crates.io/crates/ragdrift-core) `v0.1.3` · crates.io · pure-Rust drift detection core
 - `2026-05-09` · [`embedrank`](https://crates.io/crates/embedrank), [`promptbudget`](https://crates.io/crates/promptbudget), [`stopstream`](https://crates.io/crates/stopstream), [`citecite`](https://crates.io/crates/citecite), [`ragmetric`](https://crates.io/crates/ragmetric) `v0.1.0` · crates.io · five small focused Rust crates for the LLM/RAG/agent niche ([rust-llm-stack](https://github.com/MukundaKatta/rust-llm-stack))
@@ -411,7 +412,7 @@ Flagship packages:
 
 <br/>
 
-**MCP servers (6)** - callable directly from Claude Desktop, Cursor, Cline, Windsurf, Zed via stdio:
+**MCP servers (10)** - callable directly from Claude Desktop, Cursor, Cline, Windsurf, Zed via stdio:
 
 | Package | What it does |
 |---|---|
@@ -421,6 +422,10 @@ Flagship packages:
 | [`@mukundakatta/agentsnap-mcp`](https://www.npmjs.com/package/@mukundakatta/agentsnap-mcp) | Diff and validate tool-call trace snapshots. |
 | [`@mukundakatta/agentvet-mcp`](https://www.npmjs.com/package/@mukundakatta/agentvet-mcp) | Validate tool-call args against a shape spec; produce LLM-friendly retry hints. |
 | [`@mukundakatta/agentcast-mcp`](https://www.npmjs.com/package/@mukundakatta/agentcast-mcp) | Extract JSON from messy LLM text and validate it against a shape. |
+| [`@mukundakatta/promptbudget-mcp`](https://www.npmjs.com/package/@mukundakatta/promptbudget-mcp) | Truncate text to a token budget with 4 strategies (head, tail, head+tail, smart-cut). Sibling to the [`promptbudget`](https://crates.io/crates/promptbudget) Rust crate. |
+| [`@mukundakatta/citecite-mcp`](https://www.npmjs.com/package/@mukundakatta/citecite-mcp) | Inject `[1] [2]` citation markers into RAG outputs, parse them back, or strip them. Sibling to the [`citecite`](https://crates.io/crates/citecite) Rust crate. |
+| [`@mukundakatta/ragmetric-mcp`](https://www.npmjs.com/package/@mukundakatta/ragmetric-mcp) | Compute RAG retrieval IR metrics on demand: recall@k, hit@k, MRR, NDCG@k, batch eval. Sibling to the [`ragmetric`](https://crates.io/crates/ragmetric) Rust crate. |
+| [`@mukundakatta/ragdrift-mcp`](https://www.npmjs.com/package/@mukundakatta/ragdrift-mcp) | Diagnose RAG drift alerts: interpret scores, recommend thresholds, explain the 5 drift dimensions. Sibling to [`ragdrift`](https://crates.io/crates/ragdrift) / [`ragdrift-py`](https://pypi.org/project/ragdrift-py/). |
 
 **Structured outputs & parsing (1)**
 
