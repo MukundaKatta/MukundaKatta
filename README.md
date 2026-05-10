@@ -55,7 +55,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of 5 small Rust crates (`embedrank`, `promptbudget`, `stopstream`, `citecite`, `ragmetric`), and the matching [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of 4 MCP servers (`promptbudget-mcp`, `citecite-mcp`, `ragmetric-mcp`, `ragdrift-mcp`) so Claude Desktop / Cursor / Cline / Windsurf / Zed can call them mid-conversation. Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers in the official [MCP Registry](https://registry.modelcontextprotocol.io), 3 GitHub Actions on the Marketplace, and **52 PyPI packages**. Plus 40+ open PRs across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
+**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of 5 small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **9 MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers (`promptbudget-mcp`, `citecite-mcp`, `ragmetric-mcp`, `ragdrift-mcp`) and 5 reliable transforms LLMs reach for tools instead of imagining (`csv-tools-mcp`, `regex-test-mcp`, `jmespath-mcp`, `diff-mcp`, `sqlfmt-mcp`). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers, 3 GitHub Actions on the Marketplace, **52 PyPI packages**, and 40+ open PRs across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
 <!-- now:end -->
 
 </div>
@@ -408,7 +408,7 @@ Flagship packages:
 
 <br/>
 
-**MCP servers (10)** - callable directly from Claude Desktop, Cursor, Cline, Windsurf, Zed via stdio:
+**MCP servers (15)** - callable directly from Claude Desktop, Cursor, Cline, Windsurf, Zed via stdio. The 9 in [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) plus the 6 in [`@mukundakatta/agent*`](https://www.npmjs.com/~mukundakatta) and `streamparse-mcp`. All listed in the [official MCP Registry](https://registry.modelcontextprotocol.io):
 
 | Package | What it does |
 |---|---|
@@ -422,6 +422,11 @@ Flagship packages:
 | [`@mukundakatta/citecite-mcp`](https://www.npmjs.com/package/@mukundakatta/citecite-mcp) | Inject `[1] [2]` citation markers into RAG outputs, parse them back, or strip them. Sibling to the [`citecite`](https://crates.io/crates/citecite) Rust crate. Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io). |
 | [`@mukundakatta/ragmetric-mcp`](https://www.npmjs.com/package/@mukundakatta/ragmetric-mcp) | Compute RAG retrieval IR metrics on demand: recall@k, hit@k, MRR, NDCG@k, batch eval. Sibling to the [`ragmetric`](https://crates.io/crates/ragmetric) Rust crate. Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io). |
 | [`@mukundakatta/ragdrift-mcp`](https://www.npmjs.com/package/@mukundakatta/ragdrift-mcp) | Diagnose RAG drift alerts: interpret scores, recommend thresholds, explain the 5 drift dimensions. Sibling to [`ragdrift`](https://crates.io/crates/ragdrift) / [`ragdrift-py`](https://pypi.org/project/ragdrift-py/). Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io). |
+| [`@mukundakatta/csv-tools-mcp`](https://www.npmjs.com/package/@mukundakatta/csv-tools-mcp) | RFC 4180 CSV parsing + generation. Handles quoted fields, embedded commas, BOMs, CRLF. Tools: `parse_csv`, `to_csv`, `pluck_columns`. Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io). |
+| [`@mukundakatta/regex-test-mcp`](https://www.npmjs.com/package/@mukundakatta/regex-test-mcp) | Trustworthy JS regex testing with real match offsets, named groups, safe against zero-width loops. Tools: `test_regex`, `find_all`, `replace`. Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io). |
+| [`@mukundakatta/jmespath-mcp`](https://www.npmjs.com/package/@mukundakatta/jmespath-mcp) | Run JMESPath queries against deep JSON. Pure JS, no jq binary needed. Tool: `json_query`. Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io). |
+| [`@mukundakatta/diff-mcp`](https://www.npmjs.com/package/@mukundakatta/diff-mcp) | Character-precise unified diffs + patch application + parsing. For code-review and code-edit agents. Tools: `unified_diff`, `apply_patch`, `parse_patch`. Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io). |
+| [`@mukundakatta/sqlfmt-mcp`](https://www.npmjs.com/package/@mukundakatta/sqlfmt-mcp) | Deterministic SQL formatting across 19 dialects (postgres, mysql, snowflake, bigquery, etc.). Tools: `format_sql`, `list_dialects`. Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io). |
 
 **Structured outputs & parsing (1)**
 
