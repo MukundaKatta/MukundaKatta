@@ -734,6 +734,59 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 
 The five `rust-llm-stack` crates are also available together as one workspace: [`MukundaKatta/rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack). Each crate is independently versioned and published.
 
+<details>
+<summary><strong>More crates (24)</strong> - grouped by area</summary>
+
+<br/>
+
+**Agent reliability stack (10)** - sibling Rust ports of the `@mukundakatta/agent*` npm family:
+
+| Crate | Purpose |
+|---|---|
+| [`agentfit`](https://crates.io/crates/agentfit) | Token-aware message truncation; pluggable tokenizers (`tiktoken` feature for accurate BPE). |
+| [`agentguard`](https://crates.io/crates/agentguard) | Network-egress allowlist for AI agent tools; optional `reqwest-middleware` integration. |
+| [`agentsnap`](https://crates.io/crates/agentsnap) | Snapshot tests for agent traces; Jest-style record-and-diff. |
+| [`agentvet`](https://crates.io/crates/agentvet) | Validate LLM-generated tool args against a JSON Schema; LLM-friendly retry hints. |
+| [`agentcast`](https://crates.io/crates/agentcast) | Structured-output enforcer: repair → validate → optional retry-with-LLM. |
+| [`agenttrace`](https://crates.io/crates/agenttrace) | Run-level cost + latency aggregation; p50/p95 + per-model breakdown. |
+| [`agentprompt`](https://crates.io/crates/agentprompt) | Jinja2-syntax LLM prompt templates with role-aware `Messages` builder. |
+| [`agentidemp`](https://crates.io/crates/agentidemp) | Idempotency keys for agent retries; deterministic content-derived (sha256-hex / UUIDv5). |
+| [`agenttap`](https://crates.io/crates/agenttap) | Wire-level prompt introspection; credentials redacted by default. |
+| [`llmfleet`](https://crates.io/crates/llmfleet) | Fleet-level batch dispatcher; pool requests across tasks for 50% off via Batch APIs. |
+
+**Anthropic-specific (3)** - small focused primitives that don't depend on any official SDK:
+
+| Crate | Purpose |
+|---|---|
+| [`claude-cost`](https://crates.io/crates/claude-cost) | Cache-aware cost calculator for Anthropic API + Bedrock model IDs. |
+| [`claude-stream`](https://crates.io/crates/claude-stream) | Incremental SSE event-stream parser → typed `Event` enum. |
+| [`llm-json-repair`](https://crates.io/crates/llm-json-repair) | Three-pass JSON repair (fences, balanced extraction, trailing commas) for messy LLM output. |
+
+**Observability & tracing (2)**
+
+| Crate | Purpose |
+|---|---|
+| [`cachebench`](https://crates.io/crates/cachebench) | Prompt-cache observability: per-call hit ratio, cost saved, regression alerts, miss-aware retry. |
+| [`otel-genai-bridge`](https://crates.io/crates/otel-genai-bridge) | Translate LLM telemetry attributes between OpenInference and OTel GenAI semantic conventions. |
+
+**Pure-Rust utility cores (9)** - small, allocation-disciplined building blocks:
+
+| Crate | Purpose |
+|---|---|
+| [`snipsplit-core`](https://crates.io/crates/snipsplit-core) | Token-aware text chunker for RAG ingestion. |
+| [`lshdedup-core`](https://crates.io/crates/lshdedup-core) | MinHash + LSH near-duplicate detection. |
+| [`vecnorm-core`](https://crates.io/crates/vecnorm-core) | Bulk vector ops on f32 matrices. |
+| [`toklab-core`](https://crates.io/crates/toklab-core) | Bulk tokenizer + counter for OpenAI BPE encodings. |
+| [`annflat-core`](https://crates.io/crates/annflat-core) | Small in-memory flat-file ANN over f32 vectors. |
+| [`maskprompt-core`](https://crates.io/crates/maskprompt-core) | PII redaction for LLM prompts. |
+| [`embedcache-core`](https://crates.io/crates/embedcache-core) | Content-addressed embedding cache. |
+| [`textsanity-core`](https://crates.io/crates/textsanity-core) | Unicode / whitespace / encoding cleanup. |
+| [`secretsniff-core`](https://crates.io/crates/secretsniff-core) | Source-code secret scanner. |
+
+</details>
+
+Total: **31 published crates** under [`MukundaKatta`](https://crates.io/users/MukundaKatta) on crates.io.
+
 **🤗 HuggingFace** - [`mukunda1729`](https://huggingface.co/mukunda1729) - **14 Spaces · 13 Datasets**:
 
 **🚀 Live Gradio playgrounds** (6):
