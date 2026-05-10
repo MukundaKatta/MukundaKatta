@@ -70,23 +70,23 @@
   <tr>
     <td align="center" width="20%">
       <sub>PUBLIC REPOS</sub><br/>
-      <strong>683</strong>
+      <strong>736</strong>
     </td>
     <td align="center" width="20%">
       <sub>ORIGINALS</sub><br/>
-      <strong>236</strong>
+      <strong>287</strong>
     </td>
     <td align="center" width="20%">
       <sub>ACTIVE PROJECTS</sub><br/>
-      <strong>198</strong>
+      <strong>249</strong>
     </td>
     <td align="center" width="20%">
       <sub>FORKS</sub><br/>
-      <strong>447</strong>
+      <strong>449</strong>
     </td>
     <td align="center" width="20%">
       <sub>ARCHIVED</sub><br/>
-      <strong>318</strong>
+      <strong>317</strong>
     </td>
   </tr>
 </table>
@@ -330,17 +330,13 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-05-09 from npm, PyPI, crates.io, and the GitHub API._
+_Last refreshed 2026-05-10 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
-- `2026-05-09` · [`@mukundakatta/promptbudget-mcp`](https://www.npmjs.com/package/@mukundakatta/promptbudget-mcp), [`citecite-mcp`](https://www.npmjs.com/package/@mukundakatta/citecite-mcp), [`ragmetric-mcp`](https://www.npmjs.com/package/@mukundakatta/ragmetric-mcp), [`ragdrift-mcp`](https://www.npmjs.com/package/@mukundakatta/ragdrift-mcp) `v0.1.0` · npm · 4 new MCP servers for LLM clients ([mcp-stack](https://github.com/MukundaKatta/mcp-stack))
-- `2026-05-09` · [`ragdrift-py`](https://pypi.org/project/ragdrift-py/) `v0.1.3` · PyPI · five-dimensional RAG drift detection (Rust core, abi3 wheel for Python 3.10–3.13)
-- `2026-05-09` · [`ragdrift`](https://crates.io/crates/ragdrift) `v0.1.3` + [`ragdrift-core`](https://crates.io/crates/ragdrift-core) `v0.1.3` · crates.io · pure-Rust drift detection core
-- `2026-05-09` · [`embedrank`](https://crates.io/crates/embedrank), [`promptbudget`](https://crates.io/crates/promptbudget), [`stopstream`](https://crates.io/crates/stopstream), [`citecite`](https://crates.io/crates/citecite), [`ragmetric`](https://crates.io/crates/ragmetric) `v0.1.0` · crates.io · five small focused Rust crates for the LLM/RAG/agent niche ([rust-llm-stack](https://github.com/MukundaKatta/rust-llm-stack))
-- `2026-04-28` · [`@mukundakatta/agentbudget`](https://www.npmjs.com/package/@mukundakatta/agentbudget) `v0.1.0` · npm
-- `2026-04-28` · [`@mukundakatta/openai-responses-testkit`](https://www.npmjs.com/package/@mukundakatta/openai-responses-testkit) `v0.1.0` · npm
-- `2026-04-27` · [`llm-response-schema-lite-py`](https://pypi.org/project/llm-response-schema-lite-py/) `v0.1.0` · PyPI
+- `2026-05-09` · [`@mukundakatta/ragdrift-mcp`](https://www.npmjs.com/package/@mukundakatta/ragdrift-mcp) `v0.1.0` · npm
+- `2026-05-09` · [`@mukundakatta/ragmetric-mcp`](https://www.npmjs.com/package/@mukundakatta/ragmetric-mcp) `v0.1.0` · npm
+- `2026-05-09` · [`@mukundakatta/citecite-mcp`](https://www.npmjs.com/package/@mukundakatta/citecite-mcp) `v0.1.0` · npm
 
 **Recently merged PRs**
 
@@ -872,12 +868,12 @@ The five `rust-llm-stack` crates are also available together as one workspace: [
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>106</strong><br/>
+      <strong>118</strong><br/>
       <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>53 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 14 HF Datasets +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
-      <strong>236</strong><br/>
+      <strong>287</strong><br/>
       <sub>original public repos<br/>maintained on GitHub</sub>
     </td>
     <td align="center" width="25%">
