@@ -239,21 +239,92 @@ def _pypi_downloads_last_month(name: str) -> int:
         return 0
 
 
+def fetch_crates_packages() -> list[str]:
+    """List crates owned by ``GH_USER`` on crates.io.
+
+    Resolves username → user_id, then pages through their owned crates.
+    """
+    try:
+        with urlopen(
+            f"https://crates.io/api/v1/users/{GH_USER}", timeout=15
+        ) as response:  # noqa: S310
+            user = json.loads(response.read().decode("utf-8")).get("user") or {}
+    except (HTTPError, URLError):
+        return []
+    user_id = user.get("id")
+    if not user_id:
+        return []
+    crates: list[str] = []
+    page = 1
+    while True:
+        url = (
+            f"https://crates.io/api/v1/crates?user_id={user_id}"
+            f"&per_page=100&page={page}"
+        )
+        try:
+            with urlopen(url, timeout=30) as response:  # noqa: S310
+                data = json.loads(response.read().decode("utf-8"))
+        except (HTTPError, URLError):
+            break
+        items = data.get("crates", [])
+        if not items:
+            break
+        crates.extend(c["name"] for c in items if c.get("name"))
+        if len(items) < 100:
+            break
+        page += 1
+    return crates
+
+
+def _crates_downloads_last_month(name: str) -> int:
+    """Sum the last 30 days of downloads for one crate.
+
+    crates.io returns per-version daily counts plus an ``extra_downloads``
+    bucket for downloads that don't pin a specific version; both contribute
+    to the human-visible total.
+    """
+    from datetime import timedelta
+    from urllib.parse import quote
+
+    enc = quote(name, safe="")
+    try:
+        with urlopen(
+            f"https://crates.io/api/v1/crates/{enc}/downloads", timeout=15
+        ) as response:  # noqa: S310
+            data = json.loads(response.read().decode("utf-8"))
+    except (HTTPError, URLError):
+        return 0
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=30)).date().isoformat()
+    total = 0
+    for item in data.get("version_downloads", []) or []:
+        if (item.get("date") or "") >= cutoff:
+            total += int(item.get("downloads", 0) or 0)
+    for item in (data.get("meta") or {}).get("extra_downloads", []) or []:
+        if (item.get("date") or "") >= cutoff:
+            total += int(item.get("downloads", 0) or 0)
+    return total
+
+
 def fetch_total_downloads() -> dict[str, int]:
-    """Sum last-month downloads across npm and PyPI.
+    """Sum last-month downloads across npm, PyPI, and crates.io.
 
     npm has tight per-IP rate limits on /downloads, so we throttle with a small
-    pool. PyPI's pypistats.org is more generous but still benefits from a pool.
+    pool. PyPI's pypistats.org and crates.io's API are more generous but still
+    benefit from a pool.
     """
     npm_packages = fetch_npm_packages()
+    crates_packages = fetch_crates_packages()
     with ThreadPoolExecutor(max_workers=4) as pool:
         npm_total = sum(pool.map(_npm_downloads_last_month, npm_packages))
     with ThreadPoolExecutor(max_workers=8) as pool:
         pypi_total = sum(pool.map(_pypi_downloads_last_month, PYPI_PACKAGES))
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        crates_total = sum(pool.map(_crates_downloads_last_month, crates_packages))
     return {
         "npm": npm_total,
         "pypi": pypi_total,
-        "combined": npm_total + pypi_total,
+        "crates": crates_total,
+        "combined": npm_total + pypi_total + crates_total,
     }
 
 
@@ -421,6 +492,9 @@ def main() -> None:
     write_shield_endpoint(
         "pypi/mo", downloads["pypi"], "3776AB", ROOT / ".stats" / "pypi.json"
     )
+    write_shield_endpoint(
+        "crates/mo", downloads["crates"], "DEA584", ROOT / ".stats" / "crates.json"
+    )
 
     updates = [
         ("PUBLIC REPOS", repos["public_repos"]),
@@ -456,6 +530,7 @@ def main() -> None:
         "RECENT_PRS": len(prs),
         "DOWNLOADS_NPM": downloads["npm"],
         "DOWNLOADS_PYPI": downloads["pypi"],
+        "DOWNLOADS_CRATES": downloads["crates"],
         "DOWNLOADS_COMBINED": downloads["combined"],
     }
     print(json.dumps(summary, indent=2))

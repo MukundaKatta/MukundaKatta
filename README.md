@@ -1169,6 +1169,7 @@ If you follow my work here, you’ll mostly see:
 ![Downloads/mo combined](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMukundaKatta%2FMukundaKatta%2Fmain%2F.stats%2Fdownloads.json)
 ![npm downloads/mo](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMukundaKatta%2FMukundaKatta%2Fmain%2F.stats%2Fnpm.json)
 ![pypi downloads/mo](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMukundaKatta%2FMukundaKatta%2Fmain%2F.stats%2Fpypi.json)
+![crates downloads/mo](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMukundaKatta%2FMukundaKatta%2Fmain%2F.stats%2Fcrates.json)
 
 ![ai-eval-forge npm](https://img.shields.io/npm/v/%40mukundakatta%2Fai-eval-forge?style=flat-square&logo=npm&label=ai-eval-forge&color=D4A853&labelColor=1a1a1a)
 ![agent-regression-lens npm](https://img.shields.io/npm/v/%40mukundakatta%2Fagent-regression-lens?style=flat-square&logo=npm&label=agent-regression-lens&color=D4A853&labelColor=1a1a1a)
