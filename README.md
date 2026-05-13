@@ -70,23 +70,23 @@
   <tr>
     <td align="center" width="20%">
       <sub>PUBLIC REPOS</sub><br/>
-      <strong>736</strong>
+      <strong>777</strong>
     </td>
     <td align="center" width="20%">
       <sub>ORIGINALS</sub><br/>
-      <strong>287</strong>
+      <strong>322</strong>
     </td>
     <td align="center" width="20%">
       <sub>ACTIVE PROJECTS</sub><br/>
-      <strong>249</strong>
+      <strong>284</strong>
     </td>
     <td align="center" width="20%">
       <sub>FORKS</sub><br/>
-      <strong>449</strong>
+      <strong>455</strong>
     </td>
     <td align="center" width="20%">
       <sub>ARCHIVED</sub><br/>
-      <strong>317</strong>
+      <strong>316</strong>
     </td>
   </tr>
 </table>
@@ -330,17 +330,17 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-05-10 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-05-13 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
-- `2026-05-09` · [`@mukundakatta/ragdrift-mcp`](https://www.npmjs.com/package/@mukundakatta/ragdrift-mcp) `v0.1.0` · npm
-- `2026-05-09` · [`@mukundakatta/ragmetric-mcp`](https://www.npmjs.com/package/@mukundakatta/ragmetric-mcp) `v0.1.0` · npm
-- `2026-05-09` · [`@mukundakatta/citecite-mcp`](https://www.npmjs.com/package/@mukundakatta/citecite-mcp) `v0.1.0` · npm
+- `2026-05-11` · [`@mukundakatta/lorem-mcp`](https://www.npmjs.com/package/@mukundakatta/lorem-mcp) `v0.1.0` · npm
+- `2026-05-11` · [`@mukundakatta/color-mcp`](https://www.npmjs.com/package/@mukundakatta/color-mcp) `v0.1.0` · npm
+- `2026-05-11` · [`@mukundakatta/mime-mcp`](https://www.npmjs.com/package/@mukundakatta/mime-mcp) `v0.1.0` · npm
 
 **Recently merged PRs**
 
-- `2026-04-15` · [vercel/next.js #92809](https://github.com/vercel/next.js/pull/92809) — docs: add documentation for no-typos ESLint rule
+- `2026-05-12` · [freeCodeCamp/freeCodeCamp #67330](https://github.com/freeCodeCamp/freeCodeCamp/pull/67330) — fix(curriculum): clarify DOM element node wording
 - `2026-05-04` · [PrefectHQ/fastmcp #4069](https://github.com/PrefectHQ/fastmcp/pull/4069) — Fix #4056: keep blank query values, add token bucket regression test
 - `2026-05-04` · [PrefectHQ/fastmcp #4076](https://github.com/PrefectHQ/fastmcp/pull/4076) — fix(openapi): keep blank values in parse_qs (refs #4056)
 - `2026-05-04` · [PrefectHQ/fastmcp #4070](https://github.com/PrefectHQ/fastmcp/pull/4070) — docs(integrations): add Pydantic AI FastMCP toolset guide
@@ -926,17 +926,17 @@ Total: **31 published crates** under [`MukundaKatta`](https://crates.io/users/Mu
   <tr>
     <td align="center" width="25%">
       <sub>UPSTREAM</sub><br/>
-      <strong>137</strong><br/>
+      <strong>139</strong><br/>
       <sub>merged PRs<br/>in external public repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>118</strong><br/>
+      <strong>147</strong><br/>
       <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>53 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 14 HF Datasets +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
-      <strong>287</strong><br/>
+      <strong>322</strong><br/>
       <sub>original public repos<br/>maintained on GitHub</sub>
     </td>
     <td align="center" width="25%">
