@@ -55,7 +55,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of 5 small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **14 MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers, 3 GitHub Actions on the Marketplace, **52 PyPI packages**, and 40+ open PRs across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK.
+**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of 5 small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **14 MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **53 PyPI packages**, and **320+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (140 already merged upstream).
 <!-- now:end -->
 
 </div>
@@ -70,7 +70,7 @@
   <tr>
     <td align="center" width="20%">
       <sub>PUBLIC REPOS</sub><br/>
-      <strong>777</strong>
+      <strong>797</strong>
     </td>
     <td align="center" width="20%">
       <sub>ORIGINALS</sub><br/>
@@ -82,11 +82,11 @@
     </td>
     <td align="center" width="20%">
       <sub>FORKS</sub><br/>
-      <strong>455</strong>
+      <strong>475</strong>
     </td>
     <td align="center" width="20%">
       <sub>ARCHIVED</sub><br/>
-      <strong>316</strong>
+      <strong>308</strong>
     </td>
   </tr>
 </table>
@@ -462,11 +462,11 @@ Flagship packages:
 </table>
 
 <details>
-<summary><strong>More npm packages (43)</strong> - grouped by area</summary>
+<summary><strong>More npm packages (90)</strong> - grouped by area</summary>
 
 <br/>
 
-**MCP servers (20)** - callable directly from Claude Desktop, Cursor, Cline, Windsurf, Zed via stdio. The 14 in [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) plus the 6 in [`@mukundakatta/agent*`](https://www.npmjs.com/~mukundakatta) and `streamparse-mcp`. All listed in the [official MCP Registry](https://registry.modelcontextprotocol.io):
+**MCP servers (20)** - callable directly from Claude Desktop, Cursor, Cline, Windsurf, Zed via stdio. The 14 in [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) plus the 5 in [`@mukundakatta/agent*`](https://www.npmjs.com/~mukundakatta) and `streamparse-mcp`. All 20 listed in the [official MCP Registry](https://registry.modelcontextprotocol.io):
 
 | Package | What it does |
 |---|---|
@@ -879,9 +879,9 @@ Total: **31 published crates** under [`MukundaKatta`](https://crates.io/users/Mu
 | [`fit-strategies-explained`](https://huggingface.co/spaces/mukunda1729/fit-strategies-explained) | Visual explainer: drop-oldest vs drop-middle vs priority. |
 | [`trace-format-reference`](https://huggingface.co/spaces/mukunda1729/trace-format-reference) | Field-by-field reference for the agentsnap trace JSON schema. |
 | [`prompt-injection-taxonomy`](https://huggingface.co/spaces/mukunda1729/prompt-injection-taxonomy) | 10-category taxonomy with examples + the cheap defense for each. |
-| [`dataset-cards-index`](https://huggingface.co/spaces/mukunda1729/dataset-cards-index) | One-page index of all 13 datasets below. |
+| [`dataset-cards-index`](https://huggingface.co/spaces/mukunda1729/dataset-cards-index) | One-page index of the 16 datasets below. |
 
-**📊 Datasets** (13) - all MIT, all `datasets.load_dataset("mukunda1729/<name>")` ready:
+**📊 Datasets** (16) - all MIT, all `datasets.load_dataset("mukunda1729/<name>")` ready:
 
 | Dataset | Rows | Purpose |
 |---|---:|---|
@@ -989,8 +989,8 @@ Total: **31 published crates** under [`MukundaKatta`](https://crates.io/users/Mu
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>147</strong><br/>
-      <sub>54 npm (incl. 6 MCP servers, agentkit) +<br/>53 PyPI + 6 in the official MCP Registry +<br/>7 GitHub Marketplace Actions +<br/>14 HF Spaces + 14 HF Datasets +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
+      <strong>200+</strong><br/>
+      <sub>95 npm (47 *-mcp servers + 48 libs) +<br/>53 PyPI + 20 in the official MCP Registry +<br/>31 crates.io Rust crates +<br/>7 GitHub Marketplace Actions +<br/>17 HF Spaces + 16 HF Datasets +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
