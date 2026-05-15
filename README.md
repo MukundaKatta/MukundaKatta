@@ -308,6 +308,64 @@ Recent contribution areas (merged upstream):
 
 I keep a public log of selected OSS work in **[oss-contributions](https://github.com/MukundaKatta/oss-contributions)**.
 
+#### External PR Footprint
+
+<sub>Across <strong>~425 unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed 2026-05-14.</sub>
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <sub>MERGED</sub><br/>
+      <strong>140</strong><br/>
+      <sub>across 106 external repos</sub>
+    </td>
+    <td align="center" width="25%">
+      <sub>OPEN</sub><br/>
+      <strong>320</strong><br/>
+      <sub>awaiting review / response</sub>
+    </td>
+    <td align="center" width="25%">
+      <sub>CLOSED</sub><br/>
+      <strong>325</strong><br/>
+      <sub>not merged</sub>
+    </td>
+    <td align="center" width="25%">
+      <sub>TOTAL EXTERNAL</sub><br/>
+      <strong>785</strong><br/>
+      <sub>PRs authored upstream</sub>
+    </td>
+  </tr>
+</table>
+
+**Top external repos by merged PRs**
+
+| Rank | Repository | Merged |
+| ---: | --- | ---: |
+| 1 | [microsoft/agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit/pulls?q=is%3Apr+author%3AMukundaKatta+is%3Amerged) | 19 |
+| 2 | [microsoft/physical-ai-toolchain](https://github.com/microsoft/physical-ai-toolchain/pulls?q=is%3Apr+author%3AMukundaKatta+is%3Amerged) | 5 |
+| 3 | [microsoft/hve-core](https://github.com/microsoft/hve-core/pulls?q=is%3Apr+author%3AMukundaKatta+is%3Amerged) | 4 |
+| 3 | [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp/pulls?q=is%3Apr+author%3AMukundaKatta+is%3Amerged) | 4 |
+| 5 | [Cacti/plugin_mactrack](https://github.com/Cacti/plugin_mactrack/pulls?q=is%3Apr+author%3AMukundaKatta+is%3Amerged) | 3 |
+| 6 | [meilisearch/heed](https://github.com/meilisearch/heed/pulls?q=is%3Apr+author%3AMukundaKatta+is%3Amerged) | 2 |
+| 6 | [apache/pulsar-site](https://github.com/apache/pulsar-site/pulls?q=is%3Apr+author%3AMukundaKatta+is%3Amerged) | 2 |
+| 6 | [momenbasel/PureMac](https://github.com/momenbasel/PureMac/pulls?q=is%3Apr+author%3AMukundaKatta+is%3Amerged) | 2 |
+| 6 | [DiogoRibeiro7/pyseas](https://github.com/DiogoRibeiro7/pyseas/pulls?q=is%3Apr+author%3AMukundaKatta+is%3Amerged) | 2 |
+
+**Top external repos by total PR volume** (merged + open + closed)
+
+| Rank | Repository | PRs |
+| ---: | --- | ---: |
+| 1 | [microsoft/agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit/pulls?q=is%3Apr+author%3AMukundaKatta) | 21 |
+| 2 | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph/pulls?q=is%3Apr+author%3AMukundaKatta) | 17 |
+| 3 | [googleapis/python-genai](https://github.com/googleapis/python-genai/pulls?q=is%3Apr+author%3AMukundaKatta) | 15 |
+| 4 | [openai/openai-node](https://github.com/openai/openai-node/pulls?q=is%3Apr+author%3AMukundaKatta) | 12 |
+| 5 | [anthropics/claude-agent-sdk-python](https://github.com/anthropics/claude-agent-sdk-python/pulls?q=is%3Apr+author%3AMukundaKatta) | 11 |
+| 6 | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp/pulls?q=is%3Apr+author%3AMukundaKatta) | 10 |
+| 6 | [modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk/pulls?q=is%3Apr+author%3AMukundaKatta) | 10 |
+| 6 | [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp/pulls?q=is%3Apr+author%3AMukundaKatta) | 10 |
+| 9 | [google/magika](https://github.com/google/magika/pulls?q=is%3Apr+author%3AMukundaKatta) | 9 |
+| 9 | [anthropics/anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python/pulls?q=is%3Apr+author%3AMukundaKatta) | 9 |
+
 **Distribution pattern.** Each flagship ships as a complete unit, not a single npm package:
 
 ```
@@ -926,8 +984,8 @@ Total: **31 published crates** under [`MukundaKatta`](https://crates.io/users/Mu
   <tr>
     <td align="center" width="25%">
       <sub>UPSTREAM</sub><br/>
-      <strong>139</strong><br/>
-      <sub>merged PRs<br/>in external public repos</sub>
+      <strong>140</strong><br/>
+      <sub>merged PRs across 106<br/>external public repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
