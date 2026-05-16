@@ -1,0 +1,37 @@
+name: Profile Checks
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  profile:
+    name: README and script checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Compile automation scripts
+        run: python -m compileall -q scripts
+
+      - name: Verify managed README markers
+        run: |
+          grep -q "<!-- now:start -->" README.md
+          grep -q "<!-- now:end -->" README.md
+          grep -q "<!-- oss-highlights:start -->" README.md
+          grep -q "<!-- oss-highlights:end -->" README.md
+          test -s .stats/downloads.json
+          test -s .stats/npm.json
+          test -s .stats/pypi.json
