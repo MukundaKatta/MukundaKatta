@@ -809,7 +809,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 The five `rust-llm-stack` crates are also available together as one workspace: [`MukundaKatta/rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack). Each crate is independently versioned and published.
 
 <details>
-<summary><strong>More crates (24)</strong> - grouped by area</summary>
+<summary><strong>More crates (33)</strong> - grouped by area</summary>
 
 <br/>
 
@@ -828,13 +828,23 @@ The five `rust-llm-stack` crates are also available together as one workspace: [
 | [`agenttap`](https://crates.io/crates/agenttap) | Wire-level prompt introspection; credentials redacted by default. |
 | [`llmfleet`](https://crates.io/crates/llmfleet) | Fleet-level batch dispatcher; pool requests across tasks for 50% off via Batch APIs. |
 
-**Anthropic-specific (3)** - small focused primitives that don't depend on any official SDK:
+**Cross-provider primitives (2)** - small focused primitives that don't depend on any official SDK:
+
+| Crate | Purpose |
+|---|---|
+| [`claude-stream`](https://crates.io/crates/claude-stream) | Incremental SSE event-stream parser → typed `Event` enum. |
+| [`llm-json-repair`](https://crates.io/crates/llm-json-repair) | Three-pass JSON repair (fences, balanced extraction, trailing commas) for messy LLM output. |
+
+**Cost & budget (6)** - per-provider cost calculators plus the aggregator and the concurrency cap:
 
 | Crate | Purpose |
 |---|---|
 | [`claude-cost`](https://crates.io/crates/claude-cost) | Cache-aware cost calculator for Anthropic API + Bedrock model IDs. |
-| [`claude-stream`](https://crates.io/crates/claude-stream) | Incremental SSE event-stream parser → typed `Event` enum. |
-| [`llm-json-repair`](https://crates.io/crates/llm-json-repair) | Three-pass JSON repair (fences, balanced extraction, trailing commas) for messy LLM output. |
+| [`openai-cost`](https://crates.io/crates/openai-cost) | Cache-aware OpenAI cost from a usage block; supports `prompt_tokens_details.cached_tokens`. |
+| [`gemini-cost`](https://crates.io/crates/gemini-cost) | Cache-aware Google Gemini cost from a usage block; Gemini 2.5 family. |
+| [`bedrock-cost`](https://crates.io/crates/bedrock-cost) | Cross-vendor Bedrock pricing (Anthropic, Llama, Mistral, Cohere, Titan, AI21); inference-profile aware across regions. |
+| [`cost-meter`](https://crates.io/crates/cost-meter) | Provider-agnostic aggregator: total LLM cost across providers, models, and time windows. |
+| [`token-budget-pool`](https://crates.io/crates/token-budget-pool) | Shared token + dollar cap across concurrent LLM tasks; thread-safe; `BudgetExceeded` on push past cap. |
 
 **Observability & tracing (2)**
 
@@ -843,7 +853,7 @@ The five `rust-llm-stack` crates are also available together as one workspace: [
 | [`cachebench`](https://crates.io/crates/cachebench) | Prompt-cache observability: per-call hit ratio, cost saved, regression alerts, miss-aware retry. |
 | [`otel-genai-bridge`](https://crates.io/crates/otel-genai-bridge) | Translate LLM telemetry attributes between OpenInference and OTel GenAI semantic conventions. |
 
-**Pure-Rust utility cores (9)** - small, allocation-disciplined building blocks:
+**Pure-Rust utility cores (13)** - small, allocation-disciplined building blocks:
 
 | Crate | Purpose |
 |---|---|
@@ -856,10 +866,14 @@ The five `rust-llm-stack` crates are also available together as one workspace: [
 | [`embedcache-core`](https://crates.io/crates/embedcache-core) | Content-addressed embedding cache. |
 | [`textsanity-core`](https://crates.io/crates/textsanity-core) | Unicode / whitespace / encoding cleanup. |
 | [`secretsniff-core`](https://crates.io/crates/secretsniff-core) | Source-code secret scanner. |
+| [`llm-error-class`](https://crates.io/crates/llm-error-class) | Classify LLM provider error responses (rate-limit, auth, server, context-window, content-policy). |
+| [`char-token-est`](https://crates.io/crates/char-token-est) | Tokenless byte/char-based token-count estimator; per-model-family calibrated. |
+| [`tiktoken-stream`](https://crates.io/crates/tiktoken-stream) | Streaming token counter for partial LLM responses; accumulates across chunks without re-tokenizing. |
+| [`lru-tokens`](https://crates.io/crates/lru-tokens) | LRU cache weighted by token count, not entry count; bound a prompt cache by token budget. |
 
 </details>
 
-Total: **31 published crates** under [`MukundaKatta`](https://crates.io/users/MukundaKatta) on crates.io.
+Total: **40 published crates** under [`MukundaKatta`](https://crates.io/users/MukundaKatta) on crates.io.
 
 **🤗 HuggingFace** - [`mukunda1729`](https://huggingface.co/mukunda1729) - **14 Spaces · 13 Datasets**:
 
