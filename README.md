@@ -97,6 +97,12 @@ Every repo is indexed in **[claude-workspace](https://github.com/MukundaKatta/cl
 
 ---
 
+### Profile Maintenance
+
+The profile README is partly managed by scheduled automation. Pull requests run
+profile checks that compile the Python refresh scripts and verify the managed
+README markers plus the cached stats files before changes merge.
+
 ### Latest Drop · The Agent Reliability Stack
 
 > 🌐 **Live at [mukundakatta.github.io/agent-stack](https://mukundakatta.github.io/agent-stack/)** - single landing page for the whole 119-package ecosystem (npm + PyPI + MCP Registry + GitHub Marketplace).
