@@ -1311,15 +1311,15 @@ If you follow my work here, you’ll mostly see:
 </details>
 
 <details>
-<summary><strong>NVIDIA, Duke, Johns Hopkins, CalArts (7)</strong> — LLMOps, Raspberry Pi, UI design, AI infra</summary>
+<summary><strong>NVIDIA, Duke, Johns Hopkins, CalArts (7)</strong> — AI Infra, Rust LLMOps, Edge AI on Pi, UI for AI surfaces</summary>
 
 ![NVIDIA AI Infra](https://img.shields.io/badge/AI_Infrastructure_&_Operations_Fundamentals-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![Duke LLMOps](https://img.shields.io/badge/Rust_for_LLMOps-003087?style=flat-square&logo=duke&logoColor=white)
+![Duke LLMOps](https://img.shields.io/badge/Rust_for_LLMOps-003087?style=flat-square&logo=rust&logoColor=white)
 ![JHU Raspberry Pi Projects](https://img.shields.io/badge/Raspberry_Pi_Projects-002D72?style=flat-square&logo=raspberrypi&logoColor=white)
 ![JHU Sensors](https://img.shields.io/badge/Raspberry_Pi_Sensors-002D72?style=flat-square&logo=raspberrypi&logoColor=white)
 ![JHU Comms](https://img.shields.io/badge/Raspberry_Pi_Comms_&_Signals-002D72?style=flat-square&logo=raspberrypi&logoColor=white)
 ![JHU Custom Projects](https://img.shields.io/badge/Beginning_Custom_Pi_Projects-002D72?style=flat-square&logo=raspberrypi&logoColor=white)
-![CalArts UI](https://img.shields.io/badge/Visual_Elements_of_UI_Design-F58025?style=flat-square&logo=adobe&logoColor=white)
+![CalArts UI](https://img.shields.io/badge/Visual_Elements_of_UI_Design-F58025?style=flat-square&logo=figma&logoColor=white)
 
 </details>
 
@@ -1394,10 +1394,10 @@ If you follow my work here, you’ll mostly see:
 <details>
 <summary><strong>Other Universities (4)</strong> — UC Davis, UNT, Michigan State, Berklee</summary>
 
-![UC Davis SQL](https://img.shields.io/badge/SQL_for_Data_Science-002855?style=flat-square&logo=university&logoColor=white) — UC Davis
-![UNT Fraud](https://img.shields.io/badge/Credit_Card_Fraud_with_R-00853E?style=flat-square&logo=university&logoColor=white) — University of North Texas
-![MSU Photography](https://img.shields.io/badge/Cameras_&_Photography-18453B?style=flat-square&logo=university&logoColor=white) — Michigan State University
-![Berklee Guitar](https://img.shields.io/badge/Guitar_for_Beginners-ED1B23?style=flat-square&logo=berklee&logoColor=white) — Berklee College of Music
+![UC Davis SQL](https://img.shields.io/badge/SQL_for_Data_Science-002855?style=flat-square&logo=postgresql&logoColor=white) — UC Davis
+![UNT Fraud](https://img.shields.io/badge/Credit_Card_Fraud_with_R-00853E?style=flat-square&logo=r&logoColor=white) — University of North Texas
+![MSU Photography](https://img.shields.io/badge/Cameras_&_Photography-18453B?style=flat-square&logo=adobe&logoColor=white) — Michigan State University
+![Berklee Guitar](https://img.shields.io/badge/Guitar_for_Beginners-ED1B23?style=flat-square&logo=googleassistant&logoColor=white) — Berklee College of Music
 
 </details>
 
