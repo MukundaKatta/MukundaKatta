@@ -1232,53 +1232,174 @@ If you follow my work here, you’ll mostly see:
 
 <div align="center">
 
-**Anthropic**
-
-![MCP Advanced](https://img.shields.io/badge/MCP_Advanced_Topics-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
-![Claude with Bedrock](https://img.shields.io/badge/Claude_with_Amazon_Bedrock-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
-![Claude with Vertex AI](https://img.shields.io/badge/Claude_with_Vertex_AI-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
-![Intro to MCP](https://img.shields.io/badge/Intro_to_MCP-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
-![Claude Code](https://img.shields.io/badge/Claude_Code_in_Action-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
-![Building Claude API](https://img.shields.io/badge/Building_with_Claude_API-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
-![Agent Skills](https://img.shields.io/badge/Intro_to_Agent_Skills-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
-![Subagents](https://img.shields.io/badge/Intro_to_Subagents-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
-![AI Fluency](https://img.shields.io/badge/AI_Fluency:_Framework_&_Foundations-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
-![Claude 101](https://img.shields.io/badge/Claude_101-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
-
-**AWS**
-
-![AWS GenAI Apps](https://img.shields.io/badge/AWS_Generative_AI_Applications-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![AWS AI Solutions](https://img.shields.io/badge/AWS_Services_for_AI_Solutions-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![AWS AI Fundamentals](https://img.shields.io/badge/AI_Fundamentals_&_the_Cloud-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![Amazon Q](https://img.shields.io/badge/Amazon_Q_for_Software_Dev-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-
-**Cloud & Infrastructure**
-
-![Terraform GCP](https://img.shields.io/badge/Advanced_Terraform_with_GCP-4285F4?style=flat-square&logo=terraform&logoColor=white)
-![Vertex AI Agent](https://img.shields.io/badge/Build_&_Deploy_Agent_with_Reasoning_Engine-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-
-**Stanford / Wharton**
-
-![ML](https://img.shields.io/badge/Machine_Learning-8C1515?style=flat-square&logo=stanford&logoColor=white)
-![Stats](https://img.shields.io/badge/Introduction_to_Statistics-8C1515?style=flat-square&logo=stanford&logoColor=white)
-![Business Analytics](https://img.shields.io/badge/Business_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
-![Customer Analytics](https://img.shields.io/badge/Customer_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
-![People Analytics](https://img.shields.io/badge/People_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
-
-**Microsoft**
-
-![GenAI for Devs](https://img.shields.io/badge/Generative_AI_for_Software_Devs-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot_Productivity-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-![Copilot PM](https://img.shields.io/badge/Copilot_for_Project_Management-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-
-**LinkedIn Learning**
-
-![Deep Learning](https://img.shields.io/badge/Deep_Learning:_Image_Recognition-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/Deep_Learning_with_TensorFlow-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
-![NLP Python](https://img.shields.io/badge/NLP_with_Python_for_ML-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
-![Apache Spark](https://img.shields.io/badge/Apache_Spark_Essential-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+<strong>109+ professional certifications</strong> across AI, ML, cloud, data, and developer tooling — full list verified on [LinkedIn](https://www.linkedin.com/in/mukunda-katta-728155220/details/certifications/).
 
 </div>
+
+<details>
+<summary><strong>Anthropic (12)</strong> — agent skills, MCP, Claude Code, Bedrock, Vertex AI, AI Fluency</summary>
+
+![Subagents](https://img.shields.io/badge/Introduction_to_Subagents-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Agent Skills](https://img.shields.io/badge/Introduction_to_Agent_Skills-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Claude with Vertex AI](https://img.shields.io/badge/Claude_with_Vertex_AI-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Claude with Bedrock](https://img.shields.io/badge/Claude_with_Amazon_Bedrock-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![MCP Advanced](https://img.shields.io/badge/MCP_Advanced_Topics-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Intro to MCP](https://img.shields.io/badge/Intro_to_MCP-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Claude Code](https://img.shields.io/badge/Claude_Code_in_Action-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Claude API](https://img.shields.io/badge/Building_with_Claude_API-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![AI Fluency Framework](https://img.shields.io/badge/AI_Fluency:_Framework_&_Foundations-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![AI Fluency Educators](https://img.shields.io/badge/AI_Fluency_for_Educators-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![AI Fluency Students](https://img.shields.io/badge/AI_Fluency_for_Students-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+![Claude 101](https://img.shields.io/badge/Claude_101-1a1a1a?style=flat-square&logo=anthropic&logoColor=D4A853)
+
+</details>
+
+<details>
+<summary><strong>Amazon Web Services (16)</strong> — GenAI, ML, fundamentals, DevOps, security</summary>
+
+![Bringing Ideas to Life](https://img.shields.io/badge/Bringing_Ideas_to_Life_Using_AI-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS GenAI Apps](https://img.shields.io/badge/AWS_Generative_AI_Applications-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AWS AI Solutions](https://img.shields.io/badge/AWS_Services_for_AI_Solutions-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![AI Fundamentals](https://img.shields.io/badge/AI_Fundamentals_&_the_Cloud-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Cloud-Native](https://img.shields.io/badge/Going_Cloud--Native-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Serverless](https://img.shields.io/badge/Building_Serverless_Applications-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Migrating](https://img.shields.io/badge/Migrating_to_the_Cloud-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Security Risk](https://img.shields.io/badge/Addressing_Security_Risk-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Cloud Essentials](https://img.shields.io/badge/Cloud_Technical_Essentials-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Release Deploy](https://img.shields.io/badge/DevOps:_Release_&_Deploy-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Operate Monitor](https://img.shields.io/badge/DevOps:_Operate_&_Monitor-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Code Build Test](https://img.shields.io/badge/DevOps:_Code,_Build,_Test-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Containers](https://img.shields.io/badge/Containerized_Applications-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Getting Started ML](https://img.shields.io/badge/Getting_Started_with_AWS_ML-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Academy Cloud](https://img.shields.io/badge/AWS_Academy_Cloud_Foundations-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![Academy Data](https://img.shields.io/badge/AWS_Academy_Data_Analytics-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+
+</details>
+
+<details>
+<summary><strong>A Cloud Guru | Pluralsight (17)</strong> — AWS Pro/Associate, Azure, GCP, Terraform</summary>
+
+![SA Pro](https://img.shields.io/badge/AWS_Solutions_Architect_Pro-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![SA Associate](https://img.shields.io/badge/AWS_Solutions_Architect_Associate-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![DevOps Pro](https://img.shields.io/badge/AWS_DevOps_Engineer_Pro-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![ML Specialty](https://img.shields.io/badge/AWS_ML_Specialty-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![Cloud Practitioner](https://img.shields.io/badge/AWS_Cloud_Practitioner-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![IAM Deep Dive](https://img.shields.io/badge/AWS_IAM_Deep_Dive-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![Dev Tools](https://img.shields.io/badge/AWS_Developer_Tools_Deep_Dive-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![Intro AWS](https://img.shields.io/badge/Introduction_to_AWS-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![ML on AWS](https://img.shields.io/badge/ML_on_AWS-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![Full Stack Serverless](https://img.shields.io/badge/Full--Stack_Serverless-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![Azure Data Engineer](https://img.shields.io/badge/Azure_Data_Engineer_Associate-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![Azure Fundamentals](https://img.shields.io/badge/Azure_Fundamentals-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![GCP Architect](https://img.shields.io/badge/GCP_Professional_Cloud_Architect-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![Terraform GCP](https://img.shields.io/badge/Advanced_Terraform_with_GCP-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![Cloud Computing](https://img.shields.io/badge/Intro_to_Cloud_Computing-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![Python Programmer](https://img.shields.io/badge/Entry--Level_Python_Programmer-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+![Data Science](https://img.shields.io/badge/Data_Science:_The_Big_Picture-F0353F?style=flat-square&logo=pluralsight&logoColor=white)
+
+</details>
+
+<details>
+<summary><strong>Microsoft (5)</strong> — GitHub Copilot, GenAI for developers</summary>
+
+![GenAI Devs](https://img.shields.io/badge/Generative_AI_for_Software_Developers-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Intro GenAI](https://img.shields.io/badge/Intro_to_GenAI_for_Developers-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Copilot Workflow](https://img.shields.io/badge/Optimizing_Workflow_with_Copilot-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Copilot Productivity](https://img.shields.io/badge/Boost_Productivity_with_Copilot-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Copilot PM](https://img.shields.io/badge/Copilot_for_Project_Management-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+
+</details>
+
+<details>
+<summary><strong>NVIDIA, Duke, Johns Hopkins, CalArts (7)</strong> — LLMOps, Raspberry Pi, UI design, AI infra</summary>
+
+![NVIDIA AI Infra](https://img.shields.io/badge/AI_Infrastructure_&_Operations_Fundamentals-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![Duke LLMOps](https://img.shields.io/badge/Rust_for_LLMOps-003087?style=flat-square&logo=duke&logoColor=white)
+![JHU Raspberry Pi Projects](https://img.shields.io/badge/Raspberry_Pi_Projects-002D72?style=flat-square&logo=raspberrypi&logoColor=white)
+![JHU Sensors](https://img.shields.io/badge/Raspberry_Pi_Sensors-002D72?style=flat-square&logo=raspberrypi&logoColor=white)
+![JHU Comms](https://img.shields.io/badge/Raspberry_Pi_Comms_&_Signals-002D72?style=flat-square&logo=raspberrypi&logoColor=white)
+![JHU Custom Projects](https://img.shields.io/badge/Beginning_Custom_Pi_Projects-002D72?style=flat-square&logo=raspberrypi&logoColor=white)
+![CalArts UI](https://img.shields.io/badge/Visual_Elements_of_UI_Design-F58025?style=flat-square&logo=adobe&logoColor=white)
+
+</details>
+
+<details>
+<summary><strong>Wharton — University of Pennsylvania (4)</strong> — business analytics</summary>
+
+![Customer Analytics](https://img.shields.io/badge/Customer_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+![People Analytics](https://img.shields.io/badge/People_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+![Accounting Analytics](https://img.shields.io/badge/Accounting_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+![Operations Analytics](https://img.shields.io/badge/Operations_Analytics-011F5B?style=flat-square&logo=coursera&logoColor=white)
+
+</details>
+
+<details>
+<summary><strong>LinkedIn Learning (11)</strong> — deep learning, TensorFlow, Keras, NLP, ECS, Spark</summary>
+
+![Deep Learning Image](https://img.shields.io/badge/Deep_Learning:_Image_Recognition-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![DL TensorFlow](https://img.shields.io/badge/Deep_Learning_with_TensorFlow-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![DL Keras](https://img.shields.io/badge/Deep_Learning_with_Keras_2.0-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![Training NN](https://img.shields.io/badge/Training_Neural_Networks_in_Python-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![NLP Python](https://img.shields.io/badge/NLP_with_Python_for_ML-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![TF JavaScript](https://img.shields.io/badge/TensorFlow_with_JavaScript-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache_Spark_Essential-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![SQL Server ML](https://img.shields.io/badge/SQL_Server_ML_Services:_Python-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![Decision Trees SPSS](https://img.shields.io/badge/Advanced_Decision_Trees_with_SPSS-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![AI Foundations](https://img.shields.io/badge/AI_Foundations:_Machine_Learning-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![ECS](https://img.shields.io/badge/Getting_Started_with_ECS-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+
+</details>
+
+<details>
+<summary><strong>Coursera Project-Based (33)</strong> — hands-on ML, DL, RAG, time-series, computer vision</summary>
+
+| Project | Tooling |
+|---|---|
+| Amazon Q for Beginners: GenAI Software Development | Amazon Q |
+| Python for Data Analysis: Pandas & NumPy | Pandas, NumPy |
+| Life Expectancy Prediction | Regression, ML |
+| Build a Full Website using WordPress | WordPress |
+| NLP: Twitter Sentiment Analysis | NLP, Python |
+| Object Detection with Amazon SageMaker | SageMaker |
+| XG-Boost 101: Used Cars Price Prediction | XGBoost |
+| Facial Expression Recognition with Keras | Keras |
+| Build ML Web App with Streamlit and Python | Streamlit |
+| Titanic Survival Prediction | sklearn |
+| Diabetes Prediction with PySpark MLLIB | PySpark MLLIB |
+| Breast Cancer Prediction | sklearn |
+| Image Classification with Amazon SageMaker | SageMaker |
+| Recognizing Facials and Objects with Amazon Rekognition | Rekognition |
+| Data Analysis Using PySpark | PySpark |
+| Music Recommender System Using PySpark | PySpark |
+| Predict Future Product Prices Using Facebook Prophet | Prophet |
+| Image Data Augmentation with Keras | Keras |
+| AutoML for Computer Vision with Microsoft Custom Vision | Azure Custom Vision |
+| Malaria Parasite Detection (Ensemble Learning) | Keras |
+| Python OCR Using PyTorch | PyTorch |
+| Building Recommendation System Using MXNET on SageMaker | MXNET, SageMaker |
+| Bitcoin Price Prediction Using Facebook Prophet | Prophet |
+| TensorFlow Serving with Docker | TensorFlow, Docker |
+| Tesla Stock Price Prediction Using Facebook Prophet | Prophet |
+| Building ML Pipelines in PySpark MLlib | PySpark MLlib |
+| Decision Tree and Random Forest Classification using Julia | Julia |
+| Predictive Modelling with Azure ML Studio | Azure ML |
+| Terraform for Absolute Beginners | Terraform |
+| Start Your API Testing Journey With Postman | Postman |
+| Image Processing with Python | OpenCV, Python |
+| Unsupervised ML for Customer Market Segmentation | sklearn |
+| Cleaning and Exploring Big Data using PySpark | PySpark |
+
+</details>
+
+<details>
+<summary><strong>Other Universities (4)</strong> — UC Davis, UNT, Michigan State, Berklee</summary>
+
+![UC Davis SQL](https://img.shields.io/badge/SQL_for_Data_Science-002855?style=flat-square&logo=university&logoColor=white) — UC Davis
+![UNT Fraud](https://img.shields.io/badge/Credit_Card_Fraud_with_R-00853E?style=flat-square&logo=university&logoColor=white) — University of North Texas
+![MSU Photography](https://img.shields.io/badge/Cameras_&_Photography-18453B?style=flat-square&logo=university&logoColor=white) — Michigan State University
+![Berklee Guitar](https://img.shields.io/badge/Guitar_for_Beginners-ED1B23?style=flat-square&logo=berklee&logoColor=white) — Berklee College of Music
+
+</details>
 
 ---
 
