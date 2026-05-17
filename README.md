@@ -809,7 +809,7 @@ Each ships a CLI, a programmatic API, and (for the linters) a composite GitHub A
 The five `rust-llm-stack` crates are also available together as one workspace: [`MukundaKatta/rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack). Each crate is independently versioned and published.
 
 <details>
-<summary><strong>More crates (33)</strong> - grouped by area</summary>
+<summary><strong>More crates (78)</strong> - grouped by area</summary>
 
 <br/>
 
@@ -853,6 +853,106 @@ The five `rust-llm-stack` crates are also available together as one workspace: [
 | [`cachebench`](https://crates.io/crates/cachebench) | Prompt-cache observability: per-call hit ratio, cost saved, regression alerts, miss-aware retry. |
 | [`otel-genai-bridge`](https://crates.io/crates/otel-genai-bridge) | Translate LLM telemetry attributes between OpenInference and OTel GenAI semantic conventions. |
 
+**Agent runtime primitives (11)** - small pieces every long-running agent loop needs:
+
+| Crate | Purpose |
+|---|---|
+| [`agent-event-emit`](https://crates.io/crates/agent-event-emit) | Structured event emitter for agent runs; append-only, JSON-line serializable. |
+| [`step-id`](https://crates.io/crates/step-id) | Stable, deterministic IDs for agent steps (hash of run_id + step_index + kind). |
+| [`trace-diff`](https://crates.io/crates/trace-diff) | Diff two agent traces semantically; align by event type + key, ignore timestamps. |
+| [`trace-redact`](https://crates.io/crates/trace-redact) | Redact API keys, tokens, emails, phone numbers from agent traces before persist. |
+| [`tool-arg-coerce`](https://crates.io/crates/tool-arg-coerce) | Fix common type slips in LLM-generated tool arguments (string→int/float/bool). |
+| [`tool-loop-break`](https://crates.io/crates/tool-loop-break) | Detect repeated tool invocations and break runaway loops. |
+| [`tool-output-truncate`](https://crates.io/crates/tool-output-truncate) | Truncate tool output (file reads, command runs) before adding to context. |
+| [`tool-retry-policy`](https://crates.io/crates/tool-retry-policy) | Declarative retry policy for LLM tool calls; per-tool max-attempts and backoff. |
+| [`llm-circuit-breaker`](https://crates.io/crates/llm-circuit-breaker) | Tiny circuit breaker for LLM API calls; Closed/Open/HalfOpen. |
+| [`llm-retry`](https://crates.io/crates/llm-retry) | Runtime-agnostic full-jitter exponential backoff with built-in retryable-code lists per provider. |
+| [`llm-message-hash`](https://crates.io/crates/llm-message-hash) | Stable canonical hash of LLM request/message structures; recursive key-sort. |
+
+**LLM streaming + output cleanup (14)** - the boring data-massaging that ships agents:
+
+| Crate | Purpose |
+|---|---|
+| [`chunk-flush`](https://crates.io/crates/chunk-flush) | Flush-on-newline buffer for streaming LLM output. |
+| [`lineify`](https://crates.io/crates/lineify) | Turn a token-by-token stream into stable line events. |
+| [`sse-frame`](https://crates.io/crates/sse-frame) | Streaming parser for Server-Sent Events frames used by LLM APIs (OpenAI, Anthropic, Gemini). |
+| [`stream-chunkrec`](https://crates.io/crates/stream-chunkrec) | Recombine LLM streaming token deltas into stable text; buffers partial words. |
+| [`json-streamparse-rs`](https://crates.io/crates/json-streamparse-rs) | Streaming JSON balance detector; feed bytes incrementally. |
+| [`prompt-fence-strip`](https://crates.io/crates/prompt-fence-strip) | Strip ` ```code fences``` `, leading prose, and trailing chatter from LLM output. |
+| [`markdown-strip`](https://crates.io/crates/markdown-strip) | Strip Markdown formatting (headers, bold, italic, links, code, blockquotes). |
+| [`html-entity-fix`](https://crates.io/crates/html-entity-fix) | Decode HTML entities (`&amp; &lt; &#39;` etc) that LLMs sometimes emit by accident. |
+| [`bom-strip`](https://crates.io/crates/bom-strip) | Strip UTF-8/16/32 BOM bytes and stray U+FEFF code points. |
+| [`emoji-sanitize`](https://crates.io/crates/emoji-sanitize) | Normalize or strip emoji-related Unicode (presentation selectors, variation selectors). |
+| [`toml-repair`](https://crates.io/crates/toml-repair) | Repair messy TOML emitted by LLMs (fences, line endings). |
+| [`yaml-repair`](https://crates.io/crates/yaml-repair) | Repair messy YAML emitted by LLMs (fences, tabs→spaces, dedent). |
+| [`schema-coerce`](https://crates.io/crates/schema-coerce) | Coerce LLM JSON values to a simple field-schema (string→int, bool, float). |
+| [`json-pluck`](https://crates.io/crates/json-pluck) | Pluck a single value out of a `serde_json::Value` by dotted path or JSON pointer. |
+
+**Cross-provider primitives (2)** - small focused primitives that don't depend on any official SDK:
+
+| Crate | Purpose |
+|---|---|
+| [`claude-stream`](https://crates.io/crates/claude-stream) | Incremental SSE event-stream parser → typed `Event` enum. |
+| [`llm-json-repair`](https://crates.io/crates/llm-json-repair) | Three-pass JSON repair (fences, balanced extraction, trailing commas) for messy LLM output. |
+
+**Cost & budget (6)** - per-provider cost calculators plus the aggregator and the concurrency cap:
+
+| Crate | Purpose |
+|---|---|
+| [`claude-cost`](https://crates.io/crates/claude-cost) | Cache-aware cost calculator for Anthropic API + Bedrock model IDs. |
+| [`openai-cost`](https://crates.io/crates/openai-cost) | Cache-aware OpenAI cost from a usage block; supports `prompt_tokens_details.cached_tokens`. |
+| [`gemini-cost`](https://crates.io/crates/gemini-cost) | Cache-aware Google Gemini cost from a usage block; Gemini 2.5 family. |
+| [`bedrock-cost`](https://crates.io/crates/bedrock-cost) | Cross-vendor Bedrock pricing (Anthropic, Llama, Mistral, Cohere, Titan, AI21); inference-profile aware across regions. |
+| [`cost-meter`](https://crates.io/crates/cost-meter) | Provider-agnostic aggregator: total LLM cost across providers, models, and time windows. |
+| [`token-budget-pool`](https://crates.io/crates/token-budget-pool) | Shared token + dollar cap across concurrent LLM tasks; thread-safe; `BudgetExceeded` on push past cap. |
+
+**Observability & tracing (2)**
+
+| Crate | Purpose |
+|---|---|
+| [`cachebench`](https://crates.io/crates/cachebench) | Prompt-cache observability: per-call hit ratio, cost saved, regression alerts, miss-aware retry. |
+| [`otel-genai-bridge`](https://crates.io/crates/otel-genai-bridge) | Translate LLM telemetry attributes between OpenInference and OTel GenAI semantic conventions. |
+
+**Eval & introspection (3)**
+
+| Crate | Purpose |
+|---|---|
+| [`eval-flake-rs`](https://crates.io/crates/eval-flake-rs) | Detect flaky LLM eval cases by tracking pass/fail across repeated runs. |
+| [`gold-cmp`](https://crates.io/crates/gold-cmp) | Pairwise comparison runner for gold-set LLM evals: A vs B winner counting. |
+| [`latency-buckets`](https://crates.io/crates/latency-buckets) | Streaming histogram + percentile estimator for LLM call latencies. |
+
+**Prompt + input safety (7)** - input-side hardening before content reaches the model:
+
+| Crate | Purpose |
+|---|---|
+| [`prompt-inj-rs`](https://crates.io/crates/prompt-inj-rs) | Prompt-injection risk scanner; Rust port of `@mukundakatta/prompt-injection-shield`. |
+| [`regex-pii-rs`](https://crates.io/crates/regex-pii-rs) | Regex-only PII detector for emails, phones, SSNs, credit cards. |
+| [`secret-mask`](https://crates.io/crates/secret-mask) | Mask known secret patterns (API keys, JWTs, AWS access keys, GitHub tokens). |
+| [`output-sanitize-rs`](https://crates.io/crates/output-sanitize-rs) | Strip dangerous HTML/SQL/shell snippets from LLM output before render or query. |
+| [`homoglyph-detect`](https://crates.io/crates/homoglyph-detect) | Detect Cyrillic/Greek lookalike chars masquerading as ASCII (prompt-injection defense). |
+| [`zero-width-strip`](https://crates.io/crates/zero-width-strip) | Strip zero-width and bidi-control Unicode characters from text. |
+| [`rtl-flip-detect`](https://crates.io/crates/rtl-flip-detect) | Detect right-to-left override (U+202E) and other bidi-control characters. |
+
+**RAG infrastructure (7)** - retrieval-side primitives below the flagship `ragdrift` / `embedrank` line:
+
+| Crate | Purpose |
+|---|---|
+| [`bm25-rerank`](https://crates.io/crates/bm25-rerank) | BM25 reranker for RAG; in-memory term-frequency reranking against a small candidate set. |
+| [`mmr-rerank`](https://crates.io/crates/mmr-rerank) | Maximal Marginal Relevance reranker; diversify a set of retrieved docs. |
+| [`rerank-blend`](https://crates.io/crates/rerank-blend) | Blend N reranker score streams (dense, BM25, cross-encoder) with configurable weights. |
+| [`code-chunk`](https://crates.io/crates/code-chunk) | Split source code into RAG-friendly chunks that respect function and class boundaries. |
+| [`markdown-chunk`](https://crates.io/crates/markdown-chunk) | Split Markdown into RAG-friendly chunks that respect heading hierarchy. |
+| [`cosine-fast`](https://crates.io/crates/cosine-fast) | Hot-loop cosine similarity for f32 slices; auto-vectorized scalar core. |
+| [`embed-key`](https://crates.io/crates/embed-key) | Deterministic cache key for an embedding request; hash text + mix in provider/model. |
+
+**Caching + hashing primitives (3)**
+
+| Crate | Purpose |
+|---|---|
+| [`content-cas`](https://crates.io/crates/content-cas) | Content-addressed cache primitive: store bytes under their SHA-256 hex. |
+| [`prompt-hash`](https://crates.io/crates/prompt-hash) | Deterministic cache key for an LLM prompt; normalize whitespace, hash messages. |
+| [`promptver`](https://crates.io/crates/promptver) | Hash and version prompt templates so eval results, cache keys, and audit logs stay aligned. |
+
 **Pure-Rust utility cores (13)** - small, allocation-disciplined building blocks:
 
 | Crate | Purpose |
@@ -873,7 +973,7 @@ The five `rust-llm-stack` crates are also available together as one workspace: [
 
 </details>
 
-Total: **40 published crates** under [`MukundaKatta`](https://crates.io/users/MukundaKatta) on crates.io.
+Total: **85 published crates** under [`MukundaKatta`](https://crates.io/users/MukundaKatta) on crates.io.
 
 **🤗 HuggingFace** - [`mukunda1729`](https://huggingface.co/mukunda1729) - **14 Spaces · 13 Datasets**:
 
