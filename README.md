@@ -1232,9 +1232,17 @@ If you follow my work here, you’ll mostly see:
 
 <div align="center">
 
-<strong>109+ professional certifications</strong> across AI, ML, cloud, data, and developer tooling — full list verified on [LinkedIn](https://www.linkedin.com/in/mukunda-katta-728155220/details/certifications/).
+<strong>111+ professional certifications</strong> across AI, ML, cloud, data, and developer tooling — full list verified on [LinkedIn](https://www.linkedin.com/in/mukunda-katta-728155220/details/certifications/).
 
 </div>
+
+<details open>
+<summary><strong>Stanford University (2)</strong> — foundational ML &amp; Statistics (Andrew Ng)</summary>
+
+![Stanford ML](https://img.shields.io/badge/Machine_Learning-8C1515?style=flat-square&logo=stanford&logoColor=white)
+![Stanford Stats](https://img.shields.io/badge/Introduction_to_Statistics-8C1515?style=flat-square&logo=stanford&logoColor=white)
+
+</details>
 
 <details>
 <summary><strong>Anthropic (12)</strong> — agent skills, MCP, Claude Code, Bedrock, Vertex AI, AI Fluency</summary>
