@@ -117,7 +117,7 @@ README markers plus the cached stats files before changes merge.
 
 ### Hackathon Submissions
 
-> Eleven public-track entries shipped end-to-end inside one push: original
+> Twelve public-track entries shipped end-to-end inside one push: original
 > repos, live demos on Cloud Run / HF Spaces, narrated demo videos, Apache
 > 2.0. Each entry targets a different partner's MCP server + a different
 > agent problem.
@@ -126,6 +126,7 @@ README markers plus the cached stats files before changes merge.
 
 | Project | Hackathon · Track | What it does | Live |
 | --- | --- | --- | --- |
+| [`gemini-splunk-security-agent`](https://github.com/MukundaKatta/gemini-splunk-security-agent) | **Splunk Agentic Ops** · Security + Splunk MCP Server bonus | Splunk ES + SOAR triage agent on the Splunk MCP — visibly self-corrects from "TRUE POSITIVE" to "FALSE POSITIVE — sanctioned admin activity" when the threat-intel feed, asset owner, change window, and running SOAR playbook all overturn the surface SIEM signal. | [Cloud Run](https://gemini-splunk-security-agent-1029931682737.us-central1.run.app) · [Demo](https://youtu.be/6Zn_H5NYipw) |
 | [`gemini-splunk-agent`](https://github.com/MukundaKatta/gemini-splunk-agent) | **Splunk Agentic Ops** · Observability + Splunk MCP Server bonus | Production observability agent on the Splunk MCP — walks `list_alerts` / `get_detector` / `run_search` / `run_observability_query` to diagnose a firing alert end-to-end, quoting alert IDs, detector rules, and SPL output verbatim. | [Cloud Run](https://gemini-splunk-agent-1029931682737.us-central1.run.app) · [Demo](https://youtu.be/1deJ5gtt3uU) |
 | [`briefing-32`](https://github.com/MukundaKatta/briefing-32) | **Build Small** · Backyard AI | 32B-class AI-news briefing — Qwen3-32B + Gradio. Down-port of an every-2hr cron from Groq Llama-3.3-70B onto an open-weight model on a laptop. | [HF Space](https://huggingface.co/spaces/build-small-hackathon/briefing-32) · [Demo](https://youtu.be/7VQf_6mSDCw) |
 | [`protocol-sift-agent`](https://github.com/MukundaKatta/protocol-sift-agent) | **FIND EVIL** · SANS SIFT | Forensic incident-response agent that visibly self-corrects from "MALWARE CONFIRMED" to "FALSE POSITIVE — sanctioned admin activity" when deeper evidence overturns surface indicators. | [Cloud Run](https://protocol-sift-agent-1029931682737.us-central1.run.app) · [Devpost](https://devpost.com/software/protocol-sift-agent) |
@@ -140,7 +141,7 @@ README markers plus the cached stats files before changes merge.
 
 </div>
 
-> All eleven were built standalone during the contest period. Each one uses
+> All twelve were built standalone during the contest period. Each one uses
 > a different partner's MCP server, a different domain problem, and a
 > different verdict shape. Apache 2.0 across the board.
 
