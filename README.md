@@ -115,6 +115,35 @@ README markers plus the cached stats files before changes merge.
 
 ---
 
+### Hackathon Submissions · May 2026
+
+> Ten public-track entries shipped end-to-end inside one push: original repos,
+> live demos on Cloud Run / HF Spaces, narrated demo videos, Apache 2.0. Each
+> entry targets a different partner's MCP server + a different agent problem.
+
+<div align="center">
+
+| Project | Hackathon · Track | What it does | Live |
+| --- | --- | --- | --- |
+| [`briefing-32`](https://github.com/MukundaKatta/briefing-32) | **Build Small** · Backyard AI | 32B-class AI-news briefing — Qwen3-32B + Gradio. Down-port of an every-2hr cron from Groq Llama-3.3-70B onto an open-weight model on a laptop. | [HF Space](https://huggingface.co/spaces/build-small-hackathon/briefing-32) · [Demo](https://youtu.be/7VQf_6mSDCw) |
+| [`protocol-sift-agent`](https://github.com/MukundaKatta/protocol-sift-agent) | **FIND EVIL** · SANS SIFT | Forensic incident-response agent that visibly self-corrects from "MALWARE CONFIRMED" to "FALSE POSITIVE — sanctioned admin activity" when deeper evidence overturns surface indicators. | [Cloud Run](https://protocol-sift-agent-1029931682737.us-central1.run.app) · [Devpost](https://devpost.com/software/protocol-sift-agent) |
+| [`agent-stack`](https://github.com/MukundaKatta/agent-stack) | **DevNetwork [AI+ML] 2026** · TrueFoundry: Resilient Agents | Six MCP-agent reliability primitives (`fit · guard · snap · vet · cast · budget`) for healthcare AI agents. | [Devpost](https://devpost.com/software/agent-stack-six-mcp-agent-reliability-primitives) |
+| [`gemini-connector-agent`](https://github.com/MukundaKatta/gemini-connector-agent) | **Google Cloud Rapid Agent** · Fivetran | Triages connector health on the Fivetran MCP — picks the broken connector by name + quotes the verbatim error. | [Cloud Run](https://gemini-connector-agent-1029931682737.us-central1.run.app) |
+| [`gemini-pipeline-agent`](https://github.com/MukundaKatta/gemini-pipeline-agent) | **Google Cloud Rapid Agent** · GitLab | Walks down from a failed GitLab pipeline to the failing job + stage + log excerpt with a one-shot remediation. | [Cloud Run](https://gemini-pipeline-agent-1029931682737.us-central1.run.app) |
+| [`gemini-search-agent`](https://github.com/MukundaKatta/gemini-search-agent) | **Google Cloud Rapid Agent** · Elastic | Turns plain-English log/product questions into Elasticsearch queries via the Elastic MCP, answers with counts copied verbatim. | [Cloud Run](https://gemini-search-agent-1029931682737.us-central1.run.app) |
+| [`gemini-data-agent`](https://github.com/MukundaKatta/gemini-data-agent) | **Google Cloud Rapid Agent** · MongoDB | NL-to-MongoDB query agent — discovers collections, reads schema, runs aggregations, copies counts verbatim. | [Cloud Run](https://gemini-data-agent-1029931682737.us-central1.run.app) |
+| [`gemini-eval-agent`](https://github.com/MukundaKatta/gemini-eval-agent) | **Google Cloud Rapid Agent** · Arize | LLM-evaluation auditor over the Arize Phoenix MCP — picks the worst-performing model + cites the metric and number. |  |
+| [`gemini-ops-agent`](https://github.com/MukundaKatta/gemini-ops-agent) | **Google Cloud Rapid Agent** · Dynatrace | Production incident investigator on the Dynatrace MCP — answers "what's broken right now" with a structured triage. |  |
+| [`ragvitals`](https://github.com/MukundaKatta/ragvitals) | **DevNetwork [AI+ML] 2026** · TrueFoundry | RAG drift detector — composable detectors for embedding / retrieval / response / latency drift into one DriftReport. |  |
+
+</div>
+
+> All ten were built standalone during the May 2026 contest period. Each one
+> uses a different partner's MCP server, a different domain problem, and a
+> different verdict shape. Apache 2.0 across the board.
+
+---
+
 ### Fresh Contributions
 
 <div align="center">
