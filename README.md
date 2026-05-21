@@ -117,34 +117,100 @@ README markers plus the cached stats files before changes merge.
 
 ### Hackathon Submissions
 
-> Thirteen public-track entries shipped end-to-end inside one push:
-> original repos, live demos on Cloud Run / HF Spaces, narrated demo
-> videos, Apache 2.0. Each entry targets a different partner's MCP server
-> + a different agent problem.
+> **30+ entries across 18 events** shipped end-to-end during contest
+> periods: original repos, live demos on Cloud Run / HF Spaces / dev.to,
+> narrated demo videos, Apache 2.0. Each entry targets a different
+> partner MCP, a different domain problem, or a different writing-contest
+> angle. Click the dropdown for the full list.
+
+<details>
+<summary><strong>📋 Full hackathon participation list — click to expand</strong></summary>
+
+<br/>
 
 <div align="center">
+
+#### Google Cloud Agent Builder (ADK) + Gemini 2.5 agents
 
 | Project | Hackathon · Track | What it does | Live |
 | --- | --- | --- | --- |
 | [`gemini-splunk-devx-agent`](https://github.com/MukundaKatta/gemini-splunk-devx-agent) | **Splunk Agentic Ops** · Platform & Developer Experience + Splunk MCP Server bonus | Splunk admin copilot on the Splunk MCP — walks `list_apps` / `list_savedsearches` / `get_savedsearch` / `list_kvstore_collections` / `audit_knowledge_objects` and emits a ranked cleanup punch-list for an inherited Splunk Cloud tenant. | [Cloud Run](https://gemini-splunk-devx-agent-1029931682737.us-central1.run.app) · [Demo](https://youtu.be/VGgwAex8Kr4) |
 | [`gemini-splunk-security-agent`](https://github.com/MukundaKatta/gemini-splunk-security-agent) | **Splunk Agentic Ops** · Security + Splunk MCP Server bonus | Splunk ES + SOAR triage agent on the Splunk MCP — visibly self-corrects from "TRUE POSITIVE" to "FALSE POSITIVE — sanctioned admin activity" when the threat-intel feed, asset owner, change window, and running SOAR playbook all overturn the surface SIEM signal. | [Cloud Run](https://gemini-splunk-security-agent-1029931682737.us-central1.run.app) · [Demo](https://youtu.be/6Zn_H5NYipw) |
 | [`gemini-splunk-agent`](https://github.com/MukundaKatta/gemini-splunk-agent) | **Splunk Agentic Ops** · Observability + Splunk MCP Server bonus | Production observability agent on the Splunk MCP — walks `list_alerts` / `get_detector` / `run_search` / `run_observability_query` to diagnose a firing alert end-to-end, quoting alert IDs, detector rules, and SPL output verbatim. | [Cloud Run](https://gemini-splunk-agent-1029931682737.us-central1.run.app) · [Demo](https://youtu.be/1deJ5gtt3uU) |
-| [`briefing-32`](https://github.com/MukundaKatta/briefing-32) | **Build Small** · Backyard AI | 32B-class AI-news briefing — Qwen3-32B + Gradio. Down-port of an every-2hr cron from Groq Llama-3.3-70B onto an open-weight model on a laptop. | [HF Space](https://huggingface.co/spaces/build-small-hackathon/briefing-32) · [Demo](https://youtu.be/7VQf_6mSDCw) |
 | [`protocol-sift-agent`](https://github.com/MukundaKatta/protocol-sift-agent) | **FIND EVIL** · SANS SIFT | Forensic incident-response agent that visibly self-corrects from "MALWARE CONFIRMED" to "FALSE POSITIVE — sanctioned admin activity" when deeper evidence overturns surface indicators. | [Cloud Run](https://protocol-sift-agent-1029931682737.us-central1.run.app) · [Devpost](https://devpost.com/software/protocol-sift-agent) |
-| [`agent-stack`](https://github.com/MukundaKatta/agent-stack) | **DevNetwork [AI+ML] 2026** · TrueFoundry: Resilient Agents | Six MCP-agent reliability primitives (`fit · guard · snap · vet · cast · budget`) for healthcare AI agents. | [Devpost](https://devpost.com/software/agent-stack-six-mcp-agent-reliability-primitives) |
 | [`gemini-connector-agent`](https://github.com/MukundaKatta/gemini-connector-agent) | **Google Cloud Rapid Agent** · Fivetran | Triages connector health on the Fivetran MCP — picks the broken connector by name + quotes the verbatim error. | [Cloud Run](https://gemini-connector-agent-1029931682737.us-central1.run.app) |
 | [`gemini-pipeline-agent`](https://github.com/MukundaKatta/gemini-pipeline-agent) | **Google Cloud Rapid Agent** · GitLab | Walks down from a failed GitLab pipeline to the failing job + stage + log excerpt with a one-shot remediation. | [Cloud Run](https://gemini-pipeline-agent-1029931682737.us-central1.run.app) |
 | [`gemini-search-agent`](https://github.com/MukundaKatta/gemini-search-agent) | **Google Cloud Rapid Agent** · Elastic | Turns plain-English log/product questions into Elasticsearch queries via the Elastic MCP, answers with counts copied verbatim. | [Cloud Run](https://gemini-search-agent-1029931682737.us-central1.run.app) |
 | [`gemini-data-agent`](https://github.com/MukundaKatta/gemini-data-agent) | **Google Cloud Rapid Agent** · MongoDB | NL-to-MongoDB query agent — discovers collections, reads schema, runs aggregations, copies counts verbatim. | [Cloud Run](https://gemini-data-agent-1029931682737.us-central1.run.app) |
 | [`gemini-eval-agent`](https://github.com/MukundaKatta/gemini-eval-agent) | **Google Cloud Rapid Agent** · Arize | LLM-evaluation auditor over the Arize Phoenix MCP — picks the worst-performing model + cites the metric and number. |  |
 | [`gemini-ops-agent`](https://github.com/MukundaKatta/gemini-ops-agent) | **Google Cloud Rapid Agent** · Dynatrace | Production incident investigator on the Dynatrace MCP — answers "what's broken right now" with a structured triage. |  |
+| [`gemini-bright-agent`](https://github.com/MukundaKatta/gemini-bright-agent) | **Bright Data Web Data UNLOCKED** (lablab.ai) | Research analyst that walks Bright Data MCP — SERP search → Web Unlocker scrape → structured-dataset lookup — with byte-for-byte verbatim citations from the unlocked pages. | [Cloud Run](https://gemini-bright-agent-1029931682737.us-central1.run.app) · [Demo](https://youtu.be/OjcFb89eloY) |
+| [`gemini-rpa-agent`](https://github.com/MukundaKatta/gemini-rpa-agent) | **UiPath AgentHack 2026** · workflow-automation theme | RPA workflow-diagnosis agent on an n8n-style MCP — pins the failing step in a workflow run, quotes the verbatim error payload, emits the canonical retry. | [Cloud Run](https://gemini-rpa-agent-1029931682737.us-central1.run.app) · [Demo](https://youtu.be/UjJBbJgmZN0) |
+| [`gemini-mantle-agent`](https://github.com/MukundaKatta/gemini-mantle-agent) | **DoraHacks Mantle Turing Test 2026** ($100K) | On-chain query agent on Mantle MCP — block height, contract reads, TVL, tx receipts, all verbatim from chain state. | [Cloud Run](https://gemini-mantle-agent-1029931682737.us-central1.run.app) |
+
+#### Web3 + on-chain agents
+
+| Project | Hackathon · Track | What it does | Live |
+| --- | --- | --- | --- |
+| [`mantle-agent-attest`](https://github.com/MukundaKatta/mantle-agent-attest) | **DoraHacks Mantle Turing Test 2026** ($100K) | Verifiable AI-agent-run attestations on Mantle EVM L2 — Merkle-root the JSONL audit log, sign with the agent's EVM key, post (runId, root, sig) on-chain. | [DoraHacks BUIDL](https://dorahacks.io/buidl/43947) |
+
+#### Open-weight + edge AI
+
+| Project | Hackathon · Track | What it does | Live |
+| --- | --- | --- | --- |
+| [`briefing-32`](https://github.com/MukundaKatta/briefing-32) | **Build Small** · Backyard AI | 32B-class AI-news briefing — Qwen3-32B + Gradio. Down-port of an every-2hr cron from Groq Llama-3.3-70B onto an open-weight model on a laptop. | [HF Space](https://huggingface.co/spaces/build-small-hackathon/briefing-32) · [Demo](https://youtu.be/7VQf_6mSDCw) |
+| [`gemma4-safe-agent`](https://github.com/MukundaKatta/gemma4-safe-agent) | **Gemma 4 Challenge** · Build track | Tool-using research agent on Gemma 4 via e2b sandbox — five-piece safety stack on top of the open-weight model. | GitHub |
+
+#### MCP-agent reliability primitives
+
+| Project | Hackathon · Track | What it does | Live |
+| --- | --- | --- | --- |
+| [`agent-stack`](https://github.com/MukundaKatta/agent-stack) | **DevNetwork [AI+ML] 2026** · TrueFoundry: Resilient Agents | Six MCP-agent reliability primitives (`fit · guard · snap · vet · cast · budget`) for healthcare AI agents. | [Devpost](https://devpost.com/software/agent-stack-six-mcp-agent-reliability-primitives) |
 | [`ragvitals`](https://github.com/MukundaKatta/ragvitals) | **DevNetwork [AI+ML] 2026** · TrueFoundry | RAG drift detector — composable detectors for embedding / retrieval / response / latency drift into one DriftReport. |  |
+| [`geminilens`](https://github.com/MukundaKatta/geminilens) | **DevNetwork [AI+ML] 2026** · TrueFoundry observability | Local-first observability for Vertex AI Gemini agents — per-call USD cost, drift detection, tool egress audit. | [Devpost](https://devpost.com/software/geminilens-m4tj6a) |
+
+#### HackerNoon Proof of Usefulness ($150K pool)
+
+| Project | Score | What it does |
+| --- | --- | --- |
+| [`agentsnap`](https://github.com/MukundaKatta/agentsnap) | **61.33** | Jest-style snapshot tests for AI agent tool-call traces. |
+| [`agentguard`](https://github.com/MukundaKatta/agentguard) | **60.66** | Declarative network egress firewall for AI agents. |
+| [`agentcast`](https://github.com/MukundaKatta/agentcast) | **53.76** | Validate-and-retry loop for LLM JSON output. BYO-LLM/validator. |
+| [`driftvane`](https://github.com/MukundaKatta/driftvane) | **53.19** | Composable RAG and agent drift detectors. |
+| [`agentvet`](https://github.com/MukundaKatta/agentvet) | **49.23** | Tool-arg validator with LLM-friendly retry hints. |
+| [`bedrock-kit`](https://github.com/MukundaKatta/bedrock-kit) | **49** | Opinionated AWS Bedrock wrapper — throttle, cost, JSON repair. |
+| [`agentmemory`](https://github.com/MukundaKatta/agentmemory) | **48** | Pull-model episodic memory for AI agents. |
+| [`agenttrace`](https://github.com/MukundaKatta/agenttrace) | **45** | Cost + latency tracking for agent runs. |
+| [`cachebench`](https://github.com/MukundaKatta/cachebench) | **38** | Prompt-cache observability for Anthropic, OpenAI, Bedrock. |
+
+#### Writing-track contests
+
+| Article | Contest |
+| --- | --- |
+| ["What ADK 2.0 means for the eight Gemini agents I shipped on ADK 1 last week"](https://dev.to/mukundakatta) | **Google I/O 2026 Writing Challenge** (dev.to) |
+| ["What I shipped during I/O 2026 week: Gemma 4 on Ollama with a five-piece safety stack"](https://dev.to/mukundakatta) | **Google I/O 2026 Writing** · cross-listed Gemma 4 |
+| ["Five failure modes for long-running agents like Hermes Agent"](https://dev.to/mukundakatta) | **Hermes Agent Challenge** (dev.to) |
+| ["hermes-safety-rig: a drop-in reliability layer for Hermes Agent"](https://dev.to/mukundakatta) | **Hermes Agent Challenge** (dev.to) |
+| ["How to measure prompt cache hit ratio in your Hermes Agent"](https://dev.to/mukundakatta) | **Hermes Agent Challenge** (dev.to) |
+
+#### Earlier event entries
+
+| Project / entry | Hackathon | Status |
+| --- | --- | --- |
+| Agentic Workflows registration | **AI Agent Olympics @ Milan AI Week 2026** (lablab.ai) | Approved 2026-05-08, build phase May 13-19 |
+| Devpost submission | **Build with MeDo Hackathon** (Baidu) | Submitted |
+| Devpost draft | **Agents Assemble — Healthcare AI Endgame** | Draft |
+| Devpost submission | **IBM x UNSA Hackathon** | Submitted |
+| Devpost submission | **Hack Days Ankara** | Submitted |
 
 </div>
 
-> All thirteen were built standalone during the contest period. Each one
-> uses a different partner's MCP server, a different domain problem, and a
-> different verdict shape. Apache 2.0 across the board.
+</details>
+
+> All entries were built standalone during the contest period. Each one
+> uses a different partner's MCP server, a different domain problem, a
+> different verdict shape, or a different writing angle. Apache 2.0 across
+> the board.
 
 ---
 
