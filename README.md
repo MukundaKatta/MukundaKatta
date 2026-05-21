@@ -10,7 +10,7 @@
 <br/>
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-1a1a1a?style=for-the-badge&logo=vercel&logoColor=D4A853)](https://mukunda-ai.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-1a1a1a?style=for-the-badge&logo=vercel&logoColor=D4A853)](https://mukundakatta.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-1a1a1a?style=for-the-badge&logo=linkedin&logoColor=D4A853)](https://www.linkedin.com/in/mukunda-katta-728155220/)
 [![GitLab](https://img.shields.io/badge/GitLab-1a1a1a?style=for-the-badge&logo=gitlab&logoColor=D4A853)](https://gitlab.com/mukunda.vjcs6)
 [![Bitbucket](https://img.shields.io/badge/Bitbucket-1a1a1a?style=for-the-badge&logo=bitbucket&logoColor=D4A853)](https://bitbucket.org/personal-agent-harness/bitbucket-profile-readme)
@@ -1600,6 +1600,6 @@ If you follow my work here, you’ll mostly see:
 
 **Open to opportunities** - Senior AI/ML Engineer &bull; GenAI Platform Engineer &bull; Software Engineer
 
-[mukunda-ai.vercel.app](https://mukunda-ai.vercel.app) &bull; Las Vegas, NV
+[mukundakatta.dev](https://mukundakatta.dev) &bull; Las Vegas, NV
 
 </div>

@@ -72,6 +72,6 @@ Be specific. One real mistake > five vague ones.
 - [ ] Draft written in your voice
 - [ ] No em dashes
 - [ ] One screenshot
-- [ ] Canonical URL pointed at your own blog (mukunda-ai.vercel.app) if you post to dev.to, Hashnode, Medium
+- [ ] Canonical URL pointed at your own blog (mukundakatta.dev) if you post to dev.to, Hashnode, Medium
 - [ ] Schedule for a weekday morning US time if you want the US dev audience; weekday evening India time for the India audience
 - [ ] Don't post to 5 places in 10 minutes. Post to one. Watch for 48 hours. Then syndicate.
