@@ -197,7 +197,7 @@ README markers plus the cached stats files before changes merge.
 
 | Project / entry | Hackathon | Status |
 | --- | --- | --- |
-| Agentic Workflows registration | **AI Agent Olympics @ Milan AI Week 2026** (lablab.ai) | Approved 2026-05-08, build phase May 13-19 |
+| GeminiLens submission | **AI Agent Olympics @ Milan AI Week 2026** (lablab.ai) | Submitted + [Certificate of Completion](https://lablab.ai/u/@mukunda_rao_katta664/ai-hackathons/milan-ai-week-hackathon/certificate) (cert ID `CMPFK6S4O0O9NS601IGFQKLR7`) |
 | Devpost submission | **Build with MeDo Hackathon** (Baidu) | Submitted |
 | Devpost draft | **Agents Assemble — Healthcare AI Endgame** | Draft |
 | Devpost submission | **IBM x UNSA Hackathon** | Submitted |
