@@ -1072,9 +1072,9 @@ The five `rust-llm-stack` crates are also available together as one workspace: [
 
 </details>
 
-Total: **176 published crates** under [`MukundaKatta`](https://crates.io/users/MukundaKatta) on crates.io.
+Total: **<!-- crates-count -->176<!-- /crates-count --> published crates** under [`MukundaKatta`](https://crates.io/users/MukundaKatta) on crates.io.
 
-**🤗 HuggingFace** - [`mukunda1729`](https://huggingface.co/mukunda1729) - **20 Spaces · 16 Datasets · 1 Model**:
+**🤗 HuggingFace** - [`mukunda1729`](https://huggingface.co/mukunda1729) - **<!-- hf-spaces-count -->20<!-- /hf-spaces-count --> Spaces · <!-- hf-datasets-count -->16<!-- /hf-datasets-count --> Datasets · <!-- hf-models-count -->1<!-- /hf-models-count --> Model**:
 
 **🚀 Live Gradio playgrounds** (6):
 
@@ -1209,7 +1209,7 @@ Total: **176 published crates** under [`MukundaKatta`](https://crates.io/users/M
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
       <strong>196+</strong><br/>
-      <sub>144 npm + 52 PyPI +<br/>21 in the official MCP Registry +<br/>176 crates.io Rust crates +<br/>7 GitHub Marketplace Actions +<br/>20 HF Spaces + 16 HF Datasets + 1 HF Model +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
+      <sub><!-- npm-count -->144<!-- /npm-count --> npm + <!-- pypi-count -->52<!-- /pypi-count --> PyPI +<br/><!-- mcp-registry-count -->20<!-- /mcp-registry-count --> in the official MCP Registry +<br/><!-- crates-count -->176<!-- /crates-count --> crates.io Rust crates +<br/>7 GitHub Marketplace Actions +<br/><!-- hf-spaces-count -->20<!-- /hf-spaces-count --> HF Spaces + <!-- hf-datasets-count -->16<!-- /hf-datasets-count --> HF Datasets + <!-- hf-models-count -->1<!-- /hf-models-count --> HF Model +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
