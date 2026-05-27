@@ -291,6 +291,67 @@ def fetch_hf_count(kind: str) -> int:
     return len(data) if isinstance(data, list) else 0
 
 
+def fetch_external_pr_stats() -> dict[str, int]:
+    """Counts of PRs authored upstream (excluding own repos) by state, plus
+    unique-repo counts for merged and total. Uses the GitHub search API for
+    state aggregates and paginates merged/total repo URLs for distinct counts."""
+
+    def total_count(query: str) -> int:
+        data = gh_graphql(
+            "{ search(query: " + json.dumps(query) + ', type: ISSUE) { issueCount } }'
+        )
+        return data["search"]["issueCount"]
+
+    base = f"is:pr author:{GH_USER} -user:{GH_USER}"
+    merged_total = total_count(f"{base} is:merged")
+    open_total = total_count(f"{base} is:open")
+    closed_total = total_count(f"{base} is:closed is:unmerged")
+    total = total_count(base)
+
+    def distinct_repos(query: str) -> int:
+        # The search REST API caps at 1000 results across pagination — fine for
+        # our scale today (964 total). Each item carries a repository_url we
+        # can dedupe on.
+        seen: set[str] = set()
+        page = 1
+        while True:
+            url = (
+                "https://api.github.com/search/issues"
+                f"?q={query.replace(' ', '+')}&per_page=100&page={page}"
+            )
+            req = Request(url, headers={
+                "Authorization": f"bearer {GH_TOKEN}",
+                "Accept": "application/vnd.github+json",
+                "User-Agent": "MukundaKatta-profile-refresh",
+            })
+            try:
+                with urlopen(req, timeout=30) as response:  # noqa: S310
+                    data = json.loads(response.read().decode("utf-8"))
+            except (HTTPError, URLError):
+                break
+            items = data.get("items", [])
+            if not items:
+                break
+            for item in items:
+                if (u := item.get("repository_url")):
+                    seen.add(u)
+            if len(items) < 100:
+                break
+            page += 1
+            if page > 10:  # 1000-item cap
+                break
+        return len(seen)
+
+    return {
+        "merged": merged_total,
+        "open": open_total,
+        "closed": closed_total,
+        "total": total,
+        "unique_repos": distinct_repos(base),
+        "merged_repos": distinct_repos(f"{base} is:merged"),
+    }
+
+
 def fetch_mcp_registry_count() -> int:
     """Count MCP servers in the official registry under ``io.github.<GH_USER>``."""
     prefix = f"io.github.{GH_USER}".lower()
@@ -505,19 +566,21 @@ def replace_after_label(text: str, label: str, value: int) -> tuple[str, bool]:
     return new_text, count > 0
 
 
-def replace_marker(text: str, marker: str, value: int) -> tuple[str, bool]:
-    """Replace the digits between ``<!-- {marker} -->`` ... ``<!-- /{marker} -->``.
+def replace_marker(text: str, marker: str, value: object) -> tuple[str, bool]:
+    """Replace the body between ``<!-- {marker} -->`` ... ``<!-- /{marker} -->``.
 
     Lets the prose between the markers stay editorial (units, asides, " + "
-    separators) while the number itself self-updates each refresh. Replaces
-    every occurrence so the same metric can appear in more than one section
-    without falling out of sync.
+    separators) while the value itself self-updates each refresh. Accepts any
+    stringifiable value (ints for counts, ISO dates, etc.) and replaces every
+    occurrence so the same metric can appear in more than one section without
+    falling out of sync.
     """
     pattern = re.compile(
-        r"(<!-- " + re.escape(marker) + r" -->)\s*(\d+)\s*(<!-- /" + re.escape(marker) + r" -->)"
+        r"(<!-- " + re.escape(marker) + r" -->).*?(<!-- /" + re.escape(marker) + r" -->)",
+        re.DOTALL,
     )
     new_text, count = pattern.subn(
-        lambda m: f"{m.group(1)}{value}{m.group(3)}", text
+        lambda m: f"{m.group(1)}{value}{m.group(2)}", text
     )
     return new_text, count > 0
 
@@ -545,11 +608,13 @@ def main() -> None:
     hf_spaces = fetch_hf_count("spaces")
     hf_datasets = fetch_hf_count("datasets")
     hf_models = fetch_hf_count("models")
+    external = fetch_external_pr_stats()
     packages = npm + pypi
     total_stars = fetch_total_stars()
     releases = fetch_recent_releases(limit=3)
     prs = fetch_recent_prs(limit=5)
     downloads = fetch_total_downloads()
+    today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     write_shield_endpoint(
         "downloads/mo", downloads["combined"], "D4A853", ROOT / ".stats" / "downloads.json"
     )
@@ -584,7 +649,7 @@ def main() -> None:
     # `<!-- npm-count -->NNN<!-- /npm-count -->`; if a marker is absent the
     # README hasn't opted in to auto-refresh for that number and we skip
     # silently — keeps the editorial-only refresh path unchanged.
-    marker_values = [
+    marker_values: list[tuple[str, object]] = [
         ("npm-count", npm),
         ("pypi-count", pypi),
         ("crates-count", crates),
@@ -592,6 +657,13 @@ def main() -> None:
         ("hf-spaces-count", hf_spaces),
         ("hf-datasets-count", hf_datasets),
         ("hf-models-count", hf_models),
+        ("ext-merged", external["merged"]),
+        ("ext-open", external["open"]),
+        ("ext-closed", external["closed"]),
+        ("ext-total", external["total"]),
+        ("ext-unique-repos", external["unique_repos"]),
+        ("ext-merged-repos", external["merged_repos"]),
+        ("ext-refresh-date", today_iso),
     ]
     for marker, value in marker_values:
         text, _ = replace_marker(text, marker, value)
@@ -614,6 +686,12 @@ def main() -> None:
         "HF_SPACES": hf_spaces,
         "HF_DATASETS": hf_datasets,
         "HF_MODELS": hf_models,
+        "EXT_MERGED": external["merged"],
+        "EXT_OPEN": external["open"],
+        "EXT_CLOSED": external["closed"],
+        "EXT_TOTAL": external["total"],
+        "EXT_UNIQUE_REPOS": external["unique_repos"],
+        "EXT_MERGED_REPOS": external["merged_repos"],
         "STARS": total_stars,
         "RECENT_RELEASES": len(releases),
         "RECENT_PRS": len(prs),
