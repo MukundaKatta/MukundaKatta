@@ -55,7 +55,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of 5 small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **14 MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **53 PyPI packages**, and **320+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (140 already merged upstream).
+**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of 5 small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **14 MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **53 PyPI packages**, and **360+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (165+ already merged upstream).
 <!-- now:end -->
 
 </div>
@@ -1209,7 +1209,7 @@ Total: **85 published crates** under [`MukundaKatta`](https://crates.io/users/Mu
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
       <strong>196+</strong><br/>
-      <sub>95 npm (47 *-mcp servers + 48 libs) +<br/>53 PyPI + 20 in the official MCP Registry +<br/>31 crates.io Rust crates +<br/>7 GitHub Marketplace Actions +<br/>17 HF Spaces + 16 HF Datasets +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
+      <sub>95 npm (47 *-mcp servers + 48 libs) +<br/>53 PyPI + 21 in the official MCP Registry +<br/>31 crates.io Rust crates +<br/>7 GitHub Marketplace Actions +<br/>17 HF Spaces + 16 HF Datasets +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
