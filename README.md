@@ -55,7 +55,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of 5 small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **14 MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **<!-- pypi-count -->52<!-- /pypi-count --> PyPI packages**, and **<!-- ext-open -->360<!-- /ext-open -->+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (<!-- ext-merged -->166<!-- /ext-merged -->+ already merged upstream).
+**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of <!-- rust-llm-stack-count -->5<!-- /rust-llm-stack-count --> small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **<!-- mcp-stack-count -->14<!-- /mcp-stack-count --> MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **<!-- pypi-count -->52<!-- /pypi-count --> PyPI packages**, and **<!-- ext-open -->360<!-- /ext-open -->+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (<!-- ext-merged -->166<!-- /ext-merged -->+ already merged upstream).
 <!-- now:end -->
 
 </div>
@@ -117,7 +117,7 @@ README markers plus the cached stats files before changes merge.
 
 ### Hackathon Submissions
 
-> **30+ entries across 18 events** shipped end-to-end during contest
+> **<!-- hackathon-entries -->33<!-- /hackathon-entries -->+ entries across <!-- hackathon-events -->17<!-- /hackathon-events --> events** shipped end-to-end during contest
 > periods: original repos, live demos on Cloud Run / HF Spaces / dev.to,
 > narrated demo videos, Apache 2.0. Each entry targets a different
 > partner MCP, a different domain problem, or a different writing-contest
@@ -1204,7 +1204,7 @@ Total: **<!-- crates-count -->176<!-- /crates-count --> published crates** under
     <td align="center" width="25%">
       <sub>UPSTREAM</sub><br/>
       <strong>166</strong><br/>
-      <sub>merged PRs across 106<br/>external public repos</sub>
+      <sub>merged PRs across <!-- ext-merged-repos -->125<!-- /ext-merged-repos --><br/>external public repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
@@ -1331,7 +1331,7 @@ If you follow my work here, you’ll mostly see:
 
 <div align="center">
 
-<strong>111+ professional certifications</strong> across AI, ML, cloud, data, and developer tooling — full list verified on [LinkedIn](https://www.linkedin.com/in/mukunda-katta-728155220/details/certifications/).
+<strong>111+ professional certifications</strong> across AI, ML, cloud, data, and developer tooling — <!-- cert-badges-shown -->78<!-- /cert-badges-shown --> shown below; full list verified on [LinkedIn](https://www.linkedin.com/in/mukunda-katta-728155220/details/certifications/).
 
 </div>
 
