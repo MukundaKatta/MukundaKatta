@@ -16,6 +16,8 @@ README_FILE = ROOT / "README.md"
 
 GH_USER = "MukundaKatta"
 NPM_USER = "mukundakatta"
+HF_USER = "mukunda1729"
+MCP_REGISTRY = "https://registry.modelcontextprotocol.io/v0/servers"
 
 # Mirrors the PyPI table in README.md. PyPI's user page sits behind a JS
 # challenge, so we verify each package via the JSON API instead of scraping.
@@ -276,6 +278,45 @@ def fetch_crates_packages() -> list[str]:
     return crates
 
 
+def fetch_hf_count(kind: str) -> int:
+    """Count HuggingFace items (`spaces`, `datasets`, or `models`) owned by HF_USER."""
+    try:
+        with urlopen(
+            f"https://huggingface.co/api/{kind}?author={HF_USER}&limit=200",
+            timeout=30,
+        ) as response:  # noqa: S310
+            data = json.loads(response.read().decode("utf-8"))
+    except (HTTPError, URLError):
+        return 0
+    return len(data) if isinstance(data, list) else 0
+
+
+def fetch_mcp_registry_count() -> int:
+    """Count MCP servers in the official registry under ``io.github.<GH_USER>``."""
+    prefix = f"io.github.{GH_USER}".lower()
+    seen: set[str] = set()
+    cursor = ""
+    for _ in range(20):  # safety cap on pagination
+        url = f"{MCP_REGISTRY}?search={GH_USER}&limit=100"
+        if cursor:
+            url += f"&cursor={cursor}"
+        try:
+            with urlopen(url, timeout=30) as response:  # noqa: S310
+                data = json.loads(response.read().decode("utf-8"))
+        except (HTTPError, URLError):
+            break
+        # Entries wrap their payload under "server": {"name": "io.github.<user>/..."}
+        for entry in data.get("servers", []):
+            srv = entry.get("server") if isinstance(entry, dict) else None
+            name = ((srv or entry).get("name") or "").lower()
+            if name.startswith(prefix):
+                seen.add(name)
+        cursor = (data.get("metadata") or {}).get("next_cursor") or ""
+        if not cursor:
+            break
+    return len(seen)
+
+
 def _crates_downloads_last_month(name: str) -> int:
     """Sum the last 30 days of downloads for one crate.
 
@@ -464,6 +505,23 @@ def replace_after_label(text: str, label: str, value: int) -> tuple[str, bool]:
     return new_text, count > 0
 
 
+def replace_marker(text: str, marker: str, value: int) -> tuple[str, bool]:
+    """Replace the digits between ``<!-- {marker} -->`` ... ``<!-- /{marker} -->``.
+
+    Lets the prose between the markers stay editorial (units, asides, " + "
+    separators) while the number itself self-updates each refresh. Replaces
+    every occurrence so the same metric can appear in more than one section
+    without falling out of sync.
+    """
+    pattern = re.compile(
+        r"(<!-- " + re.escape(marker) + r" -->)\s*(\d+)\s*(<!-- /" + re.escape(marker) + r" -->)"
+    )
+    new_text, count = pattern.subn(
+        lambda m: f"{m.group(1)}{value}{m.group(3)}", text
+    )
+    return new_text, count > 0
+
+
 STARS_BADGE_PATTERN = re.compile(
     r"(\!\[GitHub Stars\]\()https://img\.shields\.io/[^)]+(\))"
 )
@@ -480,7 +538,14 @@ def replace_stars_badge(text: str, total_stars: int) -> tuple[str, bool]:
 
 def main() -> None:
     repos = fetch_repo_counts()
-    packages = fetch_npm_count() + fetch_pypi_count()
+    npm = fetch_npm_count()
+    pypi = fetch_pypi_count()
+    crates = len(fetch_crates_packages())
+    mcp_registry = fetch_mcp_registry_count()
+    hf_spaces = fetch_hf_count("spaces")
+    hf_datasets = fetch_hf_count("datasets")
+    hf_models = fetch_hf_count("models")
+    packages = npm + pypi
     total_stars = fetch_total_stars()
     releases = fetch_recent_releases(limit=3)
     prs = fetch_recent_prs(limit=5)
@@ -515,6 +580,21 @@ def main() -> None:
         text, ok = replace_after_label(text, label, value)
         if not ok:
             missing.append(label)
+    # Optional marker-tagged numbers in the breakdown text. Markers are
+    # `<!-- npm-count -->NNN<!-- /npm-count -->`; if a marker is absent the
+    # README hasn't opted in to auto-refresh for that number and we skip
+    # silently — keeps the editorial-only refresh path unchanged.
+    marker_values = [
+        ("npm-count", npm),
+        ("pypi-count", pypi),
+        ("crates-count", crates),
+        ("mcp-registry-count", mcp_registry),
+        ("hf-spaces-count", hf_spaces),
+        ("hf-datasets-count", hf_datasets),
+        ("hf-models-count", hf_models),
+    ]
+    for marker, value in marker_values:
+        text, _ = replace_marker(text, marker, value)
     text, stars_ok = replace_stars_badge(text, total_stars)
     if not stars_ok:
         missing.append("GitHub Stars badge")
@@ -527,6 +607,13 @@ def main() -> None:
     README_FILE.write_text(text, encoding="utf-8")
     summary = {
         **dict(updates),
+        "NPM": npm,
+        "PYPI": pypi,
+        "CRATES_IO": crates,
+        "MCP_REGISTRY": mcp_registry,
+        "HF_SPACES": hf_spaces,
+        "HF_DATASETS": hf_datasets,
+        "HF_MODELS": hf_models,
         "STARS": total_stars,
         "RECENT_RELEASES": len(releases),
         "RECENT_PRS": len(prs),
