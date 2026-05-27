@@ -291,6 +291,61 @@ def fetch_hf_count(kind: str) -> int:
     return len(data) if isinstance(data, list) else 0
 
 
+def fetch_repo_directory_count(repo: str, path: str) -> int:
+    """Count entries inside a directory of a repo. Used to size meta-repos like
+    ``mcp-stack/packages`` and ``rust-llm-stack/crates`` so the now: prose
+    self-updates as the stack grows."""
+    url = f"https://api.github.com/repos/{repo}/contents/{path}"
+    req = Request(url, headers={
+        "Authorization": f"bearer {GH_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "MukundaKatta-profile-refresh",
+    })
+    try:
+        with urlopen(req, timeout=15) as response:  # noqa: S310
+            entries = json.loads(response.read().decode("utf-8"))
+    except (HTTPError, URLError):
+        return 0
+    if not isinstance(entries, list):
+        return 0
+    return sum(1 for e in entries if e.get("type") in {"dir", "file"})
+
+
+def count_section_entries(text: str, header_pattern: str, row_prefix: str) -> int:
+    """Count table rows under a section header, stopping at the next ``---``."""
+    section = re.search(
+        rf"{header_pattern}.*?(?:\n---\n|\Z)", text, flags=re.DOTALL | re.MULTILINE,
+    )
+    if not section:
+        return 0
+    return sum(
+        1 for line in section.group(0).splitlines() if line.startswith(row_prefix)
+    )
+
+
+def count_distinct_bolded(text: str, header_pattern: str) -> int:
+    """Count distinct ``**Bold Name**`` markers under a section header. Filters
+    out numeric-only bolds (scores like ``**53.19**``) so only event-style names
+    are counted."""
+    section = re.search(
+        rf"{header_pattern}.*?(?:\n---\n|\Z)", text, flags=re.DOTALL | re.MULTILINE,
+    )
+    if not section:
+        return 0
+    bolds = re.findall(r"\*\*([A-Z][^*]+)\*\*", section.group(0))
+    return len({b.strip() for b in bolds})
+
+
+def count_badge_images(text: str, header_pattern: str) -> int:
+    """Count ``![alt](badge-url)`` images under a section header."""
+    section = re.search(
+        rf"{header_pattern}.*?(?:\n---\n|\Z)", text, flags=re.DOTALL | re.MULTILINE,
+    )
+    if not section:
+        return 0
+    return len(re.findall(r"^!\[", section.group(0), flags=re.MULTILINE))
+
+
 def fetch_external_pr_stats() -> dict[str, int]:
     """Counts of PRs authored upstream (excluding own repos) by state, plus
     unique-repo counts for merged and total. Uses the GitHub search API for
@@ -609,6 +664,8 @@ def main() -> None:
     hf_datasets = fetch_hf_count("datasets")
     hf_models = fetch_hf_count("models")
     external = fetch_external_pr_stats()
+    mcp_stack = fetch_repo_directory_count(f"{GH_USER}/mcp-stack", "packages")
+    rust_llm_stack = fetch_repo_directory_count(f"{GH_USER}/rust-llm-stack", "crates")
     packages = npm + pypi
     total_stars = fetch_total_stars()
     releases = fetch_recent_releases(limit=3)
@@ -640,6 +697,14 @@ def main() -> None:
     ]
 
     text = README_FILE.read_text(encoding="utf-8")
+    # Counts derived from the README itself (pre-refresh snapshot).
+    hackathon_entries = count_section_entries(
+        text, r"^### Hackathon Submissions", "| ["
+    )
+    hackathon_events = count_distinct_bolded(
+        text, r"^### Hackathon Submissions"
+    )
+    cert_badges_shown = count_badge_images(text, r"^### Certifications")
     missing: list[str] = []
     for label, value in updates:
         text, ok = replace_after_label(text, label, value)
@@ -664,6 +729,11 @@ def main() -> None:
         ("ext-unique-repos", external["unique_repos"]),
         ("ext-merged-repos", external["merged_repos"]),
         ("ext-refresh-date", today_iso),
+        ("mcp-stack-count", mcp_stack),
+        ("rust-llm-stack-count", rust_llm_stack),
+        ("hackathon-entries", hackathon_entries),
+        ("hackathon-events", hackathon_events),
+        ("cert-badges-shown", cert_badges_shown),
     ]
     for marker, value in marker_values:
         text, _ = replace_marker(text, marker, value)
@@ -692,6 +762,11 @@ def main() -> None:
         "EXT_TOTAL": external["total"],
         "EXT_UNIQUE_REPOS": external["unique_repos"],
         "EXT_MERGED_REPOS": external["merged_repos"],
+        "MCP_STACK": mcp_stack,
+        "RUST_LLM_STACK": rust_llm_stack,
+        "HACKATHON_ENTRIES": hackathon_entries,
+        "HACKATHON_EVENTS": hackathon_events,
+        "CERT_BADGES_SHOWN": cert_badges_shown,
         "STARS": total_stars,
         "RECENT_RELEASES": len(releases),
         "RECENT_PRS": len(prs),
