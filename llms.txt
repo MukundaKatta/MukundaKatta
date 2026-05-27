@@ -26,7 +26,7 @@ This is a [llms.txt](https://llmstxt.org) file: a curated, machine-readable inde
 - [ragdrift](https://github.com/MukundaKatta/ragdrift): five-dimensional RAG drift detection (crates.io + PyPI)
 - [rust-llm-stack](https://github.com/MukundaKatta/rust-llm-stack): 5 composable Rust crates for LLM applications
 - [mcp-stack](https://github.com/MukundaKatta/mcp-stack): 14 MCP servers (4 RAG/agent helpers + 10 reliable transforms LLMs reach for instead of guessing)
-- [agent-stack (npm)](https://github.com/MukundaKatta/agent-stack): agentfit/agentguard/agentsnap/agentvet/agentcast — composable agent reliability primitives, zero runtime deps
+- [agent-stack](https://github.com/MukundaKatta/agent-stack): six single-concern reliability primitives for LLM agents — agentfit, agentguard, agentsnap, agentvet, agentcast, agentbudget. Each ships in three forms (TypeScript on npm, Python on PyPI, MCP-server variant). Zero runtime deps
 - [Karna](https://github.com/MukundaKatta/karna): multi-channel self-hosted AI assistant (Telegram, Slack, Discord, WhatsApp, SMS, iMessage, Web)
 - [Chetana](https://github.com/MukundaKatta/chetana): AI consciousness research platform (14 indicators from 6 scientific theories)
 - [agent-eval-lab](https://huggingface.co/spaces/mukunda1729/agent-eval-lab): live evaluation harness for tool-using agents
