@@ -70,23 +70,23 @@
   <tr>
     <td align="center" width="20%">
       <sub>PUBLIC REPOS</sub><br/>
-      <strong>797</strong>
+      <strong>1377</strong>
     </td>
     <td align="center" width="20%">
       <sub>ORIGINALS</sub><br/>
-      <strong>322</strong>
+      <strong>858</strong>
     </td>
     <td align="center" width="20%">
       <sub>ACTIVE PROJECTS</sub><br/>
-      <strong>284</strong>
+      <strong>818</strong>
     </td>
     <td align="center" width="20%">
       <sub>FORKS</sub><br/>
-      <strong>475</strong>
+      <strong>519</strong>
     </td>
     <td align="center" width="20%">
       <sub>ARCHIVED</sub><br/>
-      <strong>308</strong>
+      <strong>307</strong>
     </td>
   </tr>
 </table>
@@ -493,21 +493,21 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-05-13 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-05-27 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
-- `2026-05-11` · [`@mukundakatta/lorem-mcp`](https://www.npmjs.com/package/@mukundakatta/lorem-mcp) `v0.1.0` · npm
-- `2026-05-11` · [`@mukundakatta/color-mcp`](https://www.npmjs.com/package/@mukundakatta/color-mcp) `v0.1.0` · npm
-- `2026-05-11` · [`@mukundakatta/mime-mcp`](https://www.npmjs.com/package/@mukundakatta/mime-mcp) `v0.1.0` · npm
+- `2026-05-16` · [`@mukundakatta/jsonpath-mcp`](https://www.npmjs.com/package/@mukundakatta/jsonpath-mcp) `v0.1.1` · npm
+- `2026-05-16` · [`@mukundakatta/shlex-mcp`](https://www.npmjs.com/package/@mukundakatta/shlex-mcp) `v0.1.0` · npm
+- `2026-05-16` · [`@mukundakatta/soundex-mcp`](https://www.npmjs.com/package/@mukundakatta/soundex-mcp) `v0.1.0` · npm
 
 **Recently merged PRs**
 
-- `2026-05-12` · [freeCodeCamp/freeCodeCamp #67330](https://github.com/freeCodeCamp/freeCodeCamp/pull/67330) — fix(curriculum): clarify DOM element node wording
-- `2026-05-04` · [PrefectHQ/fastmcp #4069](https://github.com/PrefectHQ/fastmcp/pull/4069) — Fix #4056: keep blank query values, add token bucket regression test
-- `2026-05-04` · [PrefectHQ/fastmcp #4076](https://github.com/PrefectHQ/fastmcp/pull/4076) — fix(openapi): keep blank values in parse_qs (refs #4056)
-- `2026-05-04` · [PrefectHQ/fastmcp #4070](https://github.com/PrefectHQ/fastmcp/pull/4070) — docs(integrations): add Pydantic AI FastMCP toolset guide
-- `2026-05-07` · [elastic/beats #50281](https://github.com/elastic/beats/pull/50281) — docs: fix 'ElasticSearch' casing and 'a SSL' -> 'an SSL' across reference docs
+- `2026-05-22` · [storybookjs/storybook #34809](https://github.com/storybookjs/storybook/pull/34809) — UI: Allow manager-head favicon override
+- `2026-05-19` · [storybookjs/storybook #34806](https://github.com/storybookjs/storybook/pull/34806) — Core: Ignore story-like directories in indexer
+- `2026-05-18` · [sveltejs/svelte #18226](https://github.com/sveltejs/svelte/pull/18226) — docs: clarify context state getter pattern
+- `2026-05-18` · [ChromeDevTools/chrome-devtools-mcp #2062](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/2062) — docs: explain concurrent session options
+- `2026-05-18` · [agno-agi/agno #7607](https://github.com/agno-agi/agno/pull/7607) — fix(gemini): preserve generic error context
 
 <!-- recently-shipped:end -->
 
@@ -1203,17 +1203,17 @@ Total: **85 published crates** under [`MukundaKatta`](https://crates.io/users/Mu
   <tr>
     <td align="center" width="25%">
       <sub>UPSTREAM</sub><br/>
-      <strong>140</strong><br/>
+      <strong>166</strong><br/>
       <sub>merged PRs across 106<br/>external public repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
-      <strong>200+</strong><br/>
+      <strong>196+</strong><br/>
       <sub>95 npm (47 *-mcp servers + 48 libs) +<br/>53 PyPI + 20 in the official MCP Registry +<br/>31 crates.io Rust crates +<br/>7 GitHub Marketplace Actions +<br/>17 HF Spaces + 16 HF Datasets +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
-      <strong>322</strong><br/>
+      <strong>858</strong><br/>
       <sub>original public repos<br/>maintained on GitHub</sub>
     </td>
     <td align="center" width="25%">
@@ -1580,7 +1580,7 @@ If you follow my work here, you’ll mostly see:
 
 ![Profile Views](https://komarev.com/ghpvc/?username=MukundaKatta&color=D4A853&style=for-the-badge&label=PROFILE+VIEWS)
 ![GitHub Followers](https://img.shields.io/github/followers/MukundaKatta?style=for-the-badge&logo=github&label=FOLLOWERS&color=D4A853&labelColor=1a1a1a)
-![GitHub Stars](https://img.shields.io/badge/STARS-1231-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
+![GitHub Stars](https://img.shields.io/badge/STARS-1228-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
 
 ![Downloads/mo combined](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMukundaKatta%2FMukundaKatta%2Fmain%2F.stats%2Fdownloads.json)
 ![npm downloads/mo](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMukundaKatta%2FMukundaKatta%2Fmain%2F.stats%2Fnpm.json)
