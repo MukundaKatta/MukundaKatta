@@ -55,7 +55,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of 5 small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **14 MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **53 PyPI packages**, and **360+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (165+ already merged upstream).
+**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of 5 small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **14 MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **<!-- pypi-count -->52<!-- /pypi-count --> PyPI packages**, and **<!-- ext-open -->360<!-- /ext-open -->+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (<!-- ext-merged -->166<!-- /ext-merged -->+ already merged upstream).
 <!-- now:end -->
 
 </div>
@@ -415,28 +415,28 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 
 #### External PR Footprint
 
-<sub>Across <strong>~425 unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed 2026-05-14.</sub>
+<sub>Across <strong><!-- ext-unique-repos -->492<!-- /ext-unique-repos --> unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed <!-- ext-refresh-date -->2026-05-27<!-- /ext-refresh-date -->.</sub>
 
 <table>
   <tr>
     <td align="center" width="25%">
       <sub>MERGED</sub><br/>
-      <strong>140</strong><br/>
-      <sub>across 106 external repos</sub>
+      <strong><!-- ext-merged -->166<!-- /ext-merged --></strong><br/>
+      <sub>across <!-- ext-merged-repos -->125<!-- /ext-merged-repos --> external repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>OPEN</sub><br/>
-      <strong>320</strong><br/>
+      <strong><!-- ext-open -->360<!-- /ext-open --></strong><br/>
       <sub>awaiting review / response</sub>
     </td>
     <td align="center" width="25%">
       <sub>CLOSED</sub><br/>
-      <strong>325</strong><br/>
+      <strong><!-- ext-closed -->438<!-- /ext-closed --></strong><br/>
       <sub>not merged</sub>
     </td>
     <td align="center" width="25%">
       <sub>TOTAL EXTERNAL</sub><br/>
-      <strong>785</strong><br/>
+      <strong><!-- ext-total -->964<!-- /ext-total --></strong><br/>
       <sub>PRs authored upstream</sub>
     </td>
   </tr>
