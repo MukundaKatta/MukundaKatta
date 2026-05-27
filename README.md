@@ -55,7 +55,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of <!-- rust-llm-stack-count -->5<!-- /rust-llm-stack-count --> small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **<!-- mcp-stack-count -->14<!-- /mcp-stack-count --> MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **<!-- pypi-count -->52<!-- /pypi-count --> PyPI packages**, and **<!-- ext-open -->359<!-- /ext-open -->+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (<!-- ext-merged -->167<!-- /ext-merged -->+ already merged upstream).
+**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of <!-- rust-llm-stack-count -->5<!-- /rust-llm-stack-count --> small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **<!-- mcp-stack-count -->14<!-- /mcp-stack-count --> MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast → budget), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **<!-- pypi-count -->52<!-- /pypi-count --> PyPI packages**, and **<!-- ext-open -->359<!-- /ext-open -->+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (<!-- ext-merged -->167<!-- /ext-merged -->+ already merged upstream).
 <!-- now:end -->
 
 </div>
@@ -109,9 +109,9 @@ README markers plus the cached stats files before changes merge.
 >
 > 🤗 **Try it live** on the [HuggingFace Space](https://huggingface.co/spaces/mukunda1729/agent-stack-demo) · jailbreak fixtures on the [HF Dataset](https://huggingface.co/datasets/mukunda1729/jailbreak-corpus-mini).
 
-> Five small, focused npm packages that fix the boring problems every long-running agent eventually hits.
+> Six small, focused npm packages that fix the boring problems every long-running agent eventually hits.
 > Pure ESM JavaScript, zero runtime deps, TypeScript types in the box. Designed to compose into a pipeline:
-> **`fit → guard → snap → vet → cast`**.
+> **`fit → guard → snap → vet → cast → budget`**.
 
 ---
 
