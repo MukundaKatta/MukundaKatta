@@ -453,11 +453,13 @@ def replace_recently_shipped(text: str, replacement: str) -> tuple[str, bool]:
 
 
 def replace_after_label(text: str, label: str, value: int) -> tuple[str, bool]:
+    # Preserve an optional trailing "+" if the README uses it as an approximation marker
+    # (e.g. "<strong>200+</strong>"); the new value keeps the same suffix.
     pattern = re.compile(
-        r"(<sub>" + re.escape(label) + r"</sub><br/>\s*<strong>)(\d+)(</strong>)"
+        r"(<sub>" + re.escape(label) + r"</sub><br/>\s*<strong>)(\d+)(\+?)(</strong>)"
     )
     new_text, count = pattern.subn(
-        lambda m: f"{m.group(1)}{value}{m.group(3)}", text, count=1
+        lambda m: f"{m.group(1)}{value}{m.group(3)}{m.group(4)}", text, count=1
     )
     return new_text, count > 0
 
