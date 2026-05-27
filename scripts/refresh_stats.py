@@ -227,18 +227,35 @@ def _npm_downloads_last_month(name: str) -> int:
 
 
 def _pypi_downloads_last_month(name: str) -> int:
-    try:
-        with urlopen(
-            f"https://pypistats.org/api/packages/{name}/recent", timeout=15
-        ) as response:  # noqa: S310
-            data = json.loads(response.read().decode("utf-8"))
-        return int((data.get("data") or {}).get("last_month", 0) or 0)
-    except HTTPError as err:
-        if err.code == 404:
-            return 0
-        return 0
-    except URLError:
-        return 0
+    """Last-month downloads from pypistats.org with retry on rate limit/timeout.
+
+    pypistats trips on ~3+ concurrent connections, returning 429 or timing out
+    silently. Without retry, each failed package became a silent 0, swinging
+    the sum by several thousand between runs. Retry with backoff and treat
+    only real 404s as zero — a network error returns -1 so the caller can
+    skip the package instead of treating absence as zero.
+    """
+    import time
+
+    for attempt in range(3):
+        try:
+            with urlopen(
+                f"https://pypistats.org/api/packages/{name}/recent", timeout=20
+            ) as response:  # noqa: S310
+                data = json.loads(response.read().decode("utf-8"))
+            return int((data.get("data") or {}).get("last_month", 0) or 0)
+        except HTTPError as err:
+            if err.code == 404:
+                return 0
+            if err.code == 429 and attempt < 2:
+                time.sleep(2 * (attempt + 1))
+                continue
+            return -1  # signal: skip this package, do not zero-pollute the sum
+        except (URLError, TimeoutError):
+            if attempt < 2:
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            return -1
 
 
 def fetch_crates_packages() -> list[str]:
@@ -462,19 +479,55 @@ def _crates_downloads_last_month(name: str) -> int:
     return total
 
 
+PYPI_CACHE = ROOT / ".stats" / "pypi_per_package.json"
+
+
+def _load_pypi_cache() -> dict[str, int]:
+    if PYPI_CACHE.exists():
+        try:
+            return json.loads(PYPI_CACHE.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            return {}
+    return {}
+
+
+def _save_pypi_cache(cache: dict[str, int]) -> None:
+    PYPI_CACHE.parent.mkdir(parents=True, exist_ok=True)
+    PYPI_CACHE.write_text(json.dumps(cache, indent=2, sort_keys=True) + "\n")
+
+
 def fetch_total_downloads() -> dict[str, int]:
     """Sum last-month downloads across npm, PyPI, and crates.io.
 
-    npm has tight per-IP rate limits on /downloads, so we throttle with a small
-    pool. PyPI's pypistats.org and crates.io's API are more generous but still
-    benefit from a pool.
+    npm has tight per-IP rate limits on /downloads, so we throttle with a
+    small pool. pypistats.org trips above ~2 concurrent connections and
+    returns 429s that previously poisoned the sum with silent zeros; we keep
+    PyPI sequential, retry transient failures, and back the per-package
+    counts with a JSON cache so a flaky run preserves the prior value for
+    any package that couldn't be re-fetched. crates.io is more generous.
     """
     npm_packages = fetch_npm_packages()
     crates_packages = fetch_crates_packages()
     with ThreadPoolExecutor(max_workers=4) as pool:
         npm_total = sum(pool.map(_npm_downloads_last_month, npm_packages))
-    with ThreadPoolExecutor(max_workers=8) as pool:
-        pypi_total = sum(pool.map(_pypi_downloads_last_month, PYPI_PACKAGES))
+
+    cache = _load_pypi_cache()
+    skipped: list[str] = []
+    for name in PYPI_PACKAGES:
+        v = _pypi_downloads_last_month(name)
+        if v < 0:
+            skipped.append(name)
+        else:
+            cache[name] = v
+    _save_pypi_cache(cache)
+    pypi_total = sum(cache.get(name, 0) for name in PYPI_PACKAGES)
+    if skipped:
+        print(
+            f"warning: {len(skipped)} PyPI package(s) used cached value after"
+            f" retries failed: {', '.join(sorted(skipped)[:5])}"
+            + ("..." if len(skipped) > 5 else "")
+        )
+
     with ThreadPoolExecutor(max_workers=4) as pool:
         crates_total = sum(pool.map(_crates_downloads_last_month, crates_packages))
     return {
