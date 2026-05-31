@@ -55,7 +55,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of <!-- rust-llm-stack-count -->5<!-- /rust-llm-stack-count --> small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **<!-- mcp-stack-count -->14<!-- /mcp-stack-count --> MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast → budget), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **<!-- pypi-count -->52<!-- /pypi-count --> PyPI packages**, and **<!-- ext-open -->356<!-- /ext-open -->+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (<!-- ext-merged -->168<!-- /ext-merged -->+ already merged upstream).
+**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of <!-- rust-llm-stack-count -->5<!-- /rust-llm-stack-count --> small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **<!-- mcp-stack-count -->14<!-- /mcp-stack-count --> MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast → budget), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **<!-- pypi-count -->52<!-- /pypi-count --> PyPI packages**, and **<!-- ext-open -->369<!-- /ext-open -->+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (<!-- ext-merged -->168<!-- /ext-merged -->+ already merged upstream).
 <!-- now:end -->
 
 </div>
@@ -70,23 +70,23 @@
   <tr>
     <td align="center" width="20%">
       <sub>PUBLIC REPOS</sub><br/>
-      <strong>1377</strong>
+      <strong>1396</strong>
     </td>
     <td align="center" width="20%">
       <sub>ORIGINALS</sub><br/>
-      <strong>858</strong>
+      <strong>871</strong>
     </td>
     <td align="center" width="20%">
       <sub>ACTIVE PROJECTS</sub><br/>
-      <strong>818</strong>
+      <strong>834</strong>
     </td>
     <td align="center" width="20%">
       <sub>FORKS</sub><br/>
-      <strong>519</strong>
+      <strong>525</strong>
     </td>
     <td align="center" width="20%">
       <sub>ARCHIVED</sub><br/>
-      <strong>307</strong>
+      <strong>304</strong>
     </td>
   </tr>
 </table>
@@ -415,7 +415,7 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 
 #### External PR Footprint
 
-<sub>Across <strong><!-- ext-unique-repos -->492<!-- /ext-unique-repos --> unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed <!-- ext-refresh-date -->2026-05-28<!-- /ext-refresh-date -->.</sub>
+<sub>Across <strong><!-- ext-unique-repos -->497<!-- /ext-unique-repos --> unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed <!-- ext-refresh-date -->2026-05-31<!-- /ext-refresh-date -->.</sub>
 
 <table>
   <tr>
@@ -426,17 +426,17 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
     </td>
     <td align="center" width="25%">
       <sub>OPEN</sub><br/>
-      <strong><!-- ext-open -->356<!-- /ext-open --></strong><br/>
+      <strong><!-- ext-open -->369<!-- /ext-open --></strong><br/>
       <sub>awaiting review / response</sub>
     </td>
     <td align="center" width="25%">
       <sub>CLOSED</sub><br/>
-      <strong><!-- ext-closed -->440<!-- /ext-closed --></strong><br/>
+      <strong><!-- ext-closed -->444<!-- /ext-closed --></strong><br/>
       <sub>not merged</sub>
     </td>
     <td align="center" width="25%">
       <sub>TOTAL EXTERNAL</sub><br/>
-      <strong><!-- ext-total -->964<!-- /ext-total --></strong><br/>
+      <strong><!-- ext-total -->981<!-- /ext-total --></strong><br/>
       <sub>PRs authored upstream</sub>
     </td>
   </tr>
@@ -493,7 +493,7 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-05-28 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-05-31 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
@@ -1074,7 +1074,7 @@ The five `rust-llm-stack` crates are also available together as one workspace: [
 
 Total: **<!-- crates-count -->176<!-- /crates-count --> published crates** under [`MukundaKatta`](https://crates.io/users/MukundaKatta) on crates.io.
 
-**🤗 HuggingFace** - [`mukunda1729`](https://huggingface.co/mukunda1729) - **<!-- hf-spaces-count -->20<!-- /hf-spaces-count --> Spaces · <!-- hf-datasets-count -->16<!-- /hf-datasets-count --> Datasets · <!-- hf-models-count -->1<!-- /hf-models-count --> Model**:
+**🤗 HuggingFace** - [`mukunda1729`](https://huggingface.co/mukunda1729) - **<!-- hf-spaces-count -->21<!-- /hf-spaces-count --> Spaces · <!-- hf-datasets-count -->16<!-- /hf-datasets-count --> Datasets · <!-- hf-models-count -->1<!-- /hf-models-count --> Model**:
 
 **🚀 Live Gradio playgrounds** (6):
 
@@ -1209,11 +1209,11 @@ Total: **<!-- crates-count -->176<!-- /crates-count --> published crates** under
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
       <strong>196+</strong><br/>
-      <sub><!-- npm-count -->144<!-- /npm-count --> npm + <!-- pypi-count -->52<!-- /pypi-count --> PyPI +<br/><!-- mcp-registry-count -->20<!-- /mcp-registry-count --> in the official MCP Registry +<br/><!-- crates-count -->176<!-- /crates-count --> crates.io Rust crates +<br/>7 GitHub Marketplace Actions +<br/><!-- hf-spaces-count -->20<!-- /hf-spaces-count --> HF Spaces + <!-- hf-datasets-count -->16<!-- /hf-datasets-count --> HF Datasets + <!-- hf-models-count -->1<!-- /hf-models-count --> HF Model +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
+      <sub><!-- npm-count -->144<!-- /npm-count --> npm + <!-- pypi-count -->52<!-- /pypi-count --> PyPI +<br/><!-- mcp-registry-count -->20<!-- /mcp-registry-count --> in the official MCP Registry +<br/><!-- crates-count -->176<!-- /crates-count --> crates.io Rust crates +<br/>7 GitHub Marketplace Actions +<br/><!-- hf-spaces-count -->21<!-- /hf-spaces-count --> HF Spaces + <!-- hf-datasets-count -->16<!-- /hf-datasets-count --> HF Datasets + <!-- hf-models-count -->1<!-- /hf-models-count --> HF Model +<br/>1 Kaggle Dataset + 1 Homebrew tap +<br/>1 GHCR image + 1 OSF project +<br/>4 Codeberg mirrors + 4 GitLab mirrors</sub>
     </td>
     <td align="center" width="25%">
       <sub>ORIGINAL WORK</sub><br/>
-      <strong>858</strong><br/>
+      <strong>871</strong><br/>
       <sub>original public repos<br/>maintained on GitHub</sub>
     </td>
     <td align="center" width="25%">
