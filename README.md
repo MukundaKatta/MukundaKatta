@@ -105,7 +105,7 @@ README markers plus the cached stats files before changes merge.
 
 ### Latest Drop · The Agent Reliability Stack
 
-> 🌐 **Live at [mukundakatta.github.io/agent-stack](https://mukundakatta.github.io/agent-stack/)** - single landing page for the whole 119-package ecosystem (npm + PyPI + MCP Registry + GitHub Marketplace).
+> 🌐 **Live at [mukundakatta.github.io/agent-stack](https://mukundakatta.github.io/agent-stack/)** - single landing page for the whole 196+ package ecosystem (npm + PyPI + MCP Registry + GitHub Marketplace).
 >
 > 🤗 **Try it live** on the [HuggingFace Space](https://huggingface.co/spaces/mukunda1729/agent-stack-demo) · jailbreak fixtures on the [HF Dataset](https://huggingface.co/datasets/mukunda1729/jailbreak-corpus-mini).
 
@@ -986,31 +986,6 @@ The five `rust-llm-stack` crates are also available together as one workspace: [
 | [`yaml-repair`](https://crates.io/crates/yaml-repair) | Repair messy YAML emitted by LLMs (fences, tabs→spaces, dedent). |
 | [`schema-coerce`](https://crates.io/crates/schema-coerce) | Coerce LLM JSON values to a simple field-schema (string→int, bool, float). |
 | [`json-pluck`](https://crates.io/crates/json-pluck) | Pluck a single value out of a `serde_json::Value` by dotted path or JSON pointer. |
-
-**Cross-provider primitives (2)** - small focused primitives that don't depend on any official SDK:
-
-| Crate | Purpose |
-|---|---|
-| [`claude-stream`](https://crates.io/crates/claude-stream) | Incremental SSE event-stream parser → typed `Event` enum. |
-| [`llm-json-repair`](https://crates.io/crates/llm-json-repair) | Three-pass JSON repair (fences, balanced extraction, trailing commas) for messy LLM output. |
-
-**Cost & budget (6)** - per-provider cost calculators plus the aggregator and the concurrency cap:
-
-| Crate | Purpose |
-|---|---|
-| [`claude-cost`](https://crates.io/crates/claude-cost) | Cache-aware cost calculator for Anthropic API + Bedrock model IDs. |
-| [`openai-cost`](https://crates.io/crates/openai-cost) | Cache-aware OpenAI cost from a usage block; supports `prompt_tokens_details.cached_tokens`. |
-| [`gemini-cost`](https://crates.io/crates/gemini-cost) | Cache-aware Google Gemini cost from a usage block; Gemini 2.5 family. |
-| [`bedrock-cost`](https://crates.io/crates/bedrock-cost) | Cross-vendor Bedrock pricing (Anthropic, Llama, Mistral, Cohere, Titan, AI21); inference-profile aware across regions. |
-| [`cost-meter`](https://crates.io/crates/cost-meter) | Provider-agnostic aggregator: total LLM cost across providers, models, and time windows. |
-| [`token-budget-pool`](https://crates.io/crates/token-budget-pool) | Shared token + dollar cap across concurrent LLM tasks; thread-safe; `BudgetExceeded` on push past cap. |
-
-**Observability & tracing (2)**
-
-| Crate | Purpose |
-|---|---|
-| [`cachebench`](https://crates.io/crates/cachebench) | Prompt-cache observability: per-call hit ratio, cost saved, regression alerts, miss-aware retry. |
-| [`otel-genai-bridge`](https://crates.io/crates/otel-genai-bridge) | Translate LLM telemetry attributes between OpenInference and OTel GenAI semantic conventions. |
 
 **Eval & introspection (3)**
 
