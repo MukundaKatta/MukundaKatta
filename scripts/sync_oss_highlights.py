@@ -31,7 +31,9 @@ def render_highlights(highlights: list[dict]) -> str:
 def replace_section(readme_text: str, replacement: str) -> str:
     start = readme_text.index(START_MARKER)
     end = readme_text.index(END_MARKER) + len(END_MARKER)
-    return readme_text[:start].rstrip() + "\n" + replacement.rstrip() + readme_text[end:]
+    return (
+        readme_text[:start].rstrip() + "\n" + replacement.rstrip() + readme_text[end:]
+    )
 
 
 def main() -> None:

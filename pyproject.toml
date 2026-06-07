@@ -1,0 +1,16 @@
+[project]
+name = "mukundakatta-profile"
+version = "0.0.0"
+description = "Automation scripts that keep the GitHub profile README and stats badges in sync."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"

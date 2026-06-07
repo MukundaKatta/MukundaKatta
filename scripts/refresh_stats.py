@@ -207,7 +207,11 @@ def _fetch_pypi_release(name: str) -> tuple[str, str, str] | None:
     releases = data.get("releases", {}).get(version, [])
     if not releases:
         return None
-    upload_times = [entry.get("upload_time_iso_8601") for entry in releases if entry.get("upload_time_iso_8601")]
+    upload_times = [
+        entry.get("upload_time_iso_8601")
+        for entry in releases
+        if entry.get("upload_time_iso_8601")
+    ]
     if not upload_times:
         return None
     return (max(upload_times), name, version)
@@ -221,7 +225,9 @@ def _npm_downloads_last_month(name: str) -> int:
         with urlopen(
             f"https://api.npmjs.org/downloads/point/last-month/{enc}", timeout=15
         ) as response:  # noqa: S310
-            return int(json.loads(response.read().decode("utf-8")).get("downloads", 0) or 0)
+            return int(
+                json.loads(response.read().decode("utf-8")).get("downloads", 0) or 0
+            )
     except (HTTPError, URLError):
         return 0
 
@@ -313,11 +319,14 @@ def fetch_repo_directory_count(repo: str, path: str) -> int:
     ``mcp-stack/packages`` and ``rust-llm-stack/crates`` so the now: prose
     self-updates as the stack grows."""
     url = f"https://api.github.com/repos/{repo}/contents/{path}"
-    req = Request(url, headers={
-        "Authorization": f"bearer {GH_TOKEN}",
-        "Accept": "application/vnd.github+json",
-        "User-Agent": "MukundaKatta-profile-refresh",
-    })
+    req = Request(
+        url,
+        headers={
+            "Authorization": f"bearer {GH_TOKEN}",
+            "Accept": "application/vnd.github+json",
+            "User-Agent": "MukundaKatta-profile-refresh",
+        },
+    )
     try:
         with urlopen(req, timeout=15) as response:  # noqa: S310
             entries = json.loads(response.read().decode("utf-8"))
@@ -331,7 +340,9 @@ def fetch_repo_directory_count(repo: str, path: str) -> int:
 def count_section_entries(text: str, header_pattern: str, row_prefix: str) -> int:
     """Count table rows under a section header, stopping at the next ``---``."""
     section = re.search(
-        rf"{header_pattern}.*?(?:\n---\n|\Z)", text, flags=re.DOTALL | re.MULTILINE,
+        rf"{header_pattern}.*?(?:\n---\n|\Z)",
+        text,
+        flags=re.DOTALL | re.MULTILINE,
     )
     if not section:
         return 0
@@ -345,7 +356,9 @@ def count_distinct_bolded(text: str, header_pattern: str) -> int:
     out numeric-only bolds (scores like ``**53.19**``) so only event-style names
     are counted."""
     section = re.search(
-        rf"{header_pattern}.*?(?:\n---\n|\Z)", text, flags=re.DOTALL | re.MULTILINE,
+        rf"{header_pattern}.*?(?:\n---\n|\Z)",
+        text,
+        flags=re.DOTALL | re.MULTILINE,
     )
     if not section:
         return 0
@@ -356,7 +369,9 @@ def count_distinct_bolded(text: str, header_pattern: str) -> int:
 def count_badge_images(text: str, header_pattern: str) -> int:
     """Count ``![alt](badge-url)`` images under a section header."""
     section = re.search(
-        rf"{header_pattern}.*?(?:\n---\n|\Z)", text, flags=re.DOTALL | re.MULTILINE,
+        rf"{header_pattern}.*?(?:\n---\n|\Z)",
+        text,
+        flags=re.DOTALL | re.MULTILINE,
     )
     if not section:
         return 0
@@ -370,7 +385,7 @@ def fetch_external_pr_stats() -> dict[str, int]:
 
     def total_count(query: str) -> int:
         data = gh_graphql(
-            "{ search(query: " + json.dumps(query) + ', type: ISSUE) { issueCount } }'
+            "{ search(query: " + json.dumps(query) + ", type: ISSUE) { issueCount } }"
         )
         return data["search"]["issueCount"]
 
@@ -391,11 +406,14 @@ def fetch_external_pr_stats() -> dict[str, int]:
                 "https://api.github.com/search/issues"
                 f"?q={query.replace(' ', '+')}&per_page=100&page={page}"
             )
-            req = Request(url, headers={
-                "Authorization": f"bearer {GH_TOKEN}",
-                "Accept": "application/vnd.github+json",
-                "User-Agent": "MukundaKatta-profile-refresh",
-            })
+            req = Request(
+                url,
+                headers={
+                    "Authorization": f"bearer {GH_TOKEN}",
+                    "Accept": "application/vnd.github+json",
+                    "User-Agent": "MukundaKatta-profile-refresh",
+                },
+            )
             try:
                 with urlopen(req, timeout=30) as response:  # noqa: S310
                     data = json.loads(response.read().decode("utf-8"))
@@ -405,7 +423,7 @@ def fetch_external_pr_stats() -> dict[str, int]:
             if not items:
                 break
             for item in items:
-                if (u := item.get("repository_url")):
+                if u := item.get("repository_url"):
                     seen.add(u)
             if len(items) < 100:
                 break
@@ -581,7 +599,16 @@ def fetch_recent_releases(limit: int = 3) -> list[dict]:
         else:
             url = f"https://pypi.org/project/{name}/"
             display = f"`{name}`"
-        output.append({"date": date, "name": name, "version": version, "registry": registry, "url": url, "display": display})
+        output.append(
+            {
+                "date": date,
+                "name": name,
+                "version": version,
+                "registry": registry,
+                "url": url,
+                "display": display,
+            }
+        )
     return output
 
 
@@ -640,13 +667,17 @@ def render_recently_shipped(releases: list[dict], prs: list[dict]) -> str:
     if releases:
         for r in releases:
             registry_tag = "npm" if r["registry"] == "npm" else "PyPI"
-            lines.append(f"- `{r['date']}` · [{r['display']}]({r['url']}) `v{r['version']}` · {registry_tag}")
+            lines.append(
+                f"- `{r['date']}` · [{r['display']}]({r['url']}) `v{r['version']}` · {registry_tag}"
+            )
     else:
         lines.append("- _no releases discovered_")
     lines.extend(["", "**Recently merged PRs**", ""])
     if prs:
         for p in prs:
-            lines.append(f"- `{p['date']}` · [{p['repo']} #{p['number']}]({p['url']}) — {p['title']}")
+            lines.append(
+                f"- `{p['date']}` · [{p['repo']} #{p['number']}]({p['url']}) — {p['title']}"
+            )
     else:
         lines.append("- _no merged PRs discovered_")
     lines.extend(["", "<!-- recently-shipped:end -->"])
@@ -684,12 +715,14 @@ def replace_marker(text: str, marker: str, value: object) -> tuple[str, bool]:
     falling out of sync.
     """
     pattern = re.compile(
-        r"(<!-- " + re.escape(marker) + r" -->).*?(<!-- /" + re.escape(marker) + r" -->)",
+        r"(<!-- "
+        + re.escape(marker)
+        + r" -->).*?(<!-- /"
+        + re.escape(marker)
+        + r" -->)",
         re.DOTALL,
     )
-    new_text, count = pattern.subn(
-        lambda m: f"{m.group(1)}{value}{m.group(2)}", text
-    )
+    new_text, count = pattern.subn(lambda m: f"{m.group(1)}{value}{m.group(2)}", text)
     return new_text, count > 0
 
 
@@ -726,7 +759,10 @@ def main() -> None:
     downloads = fetch_total_downloads()
     today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     write_shield_endpoint(
-        "downloads/mo", downloads["combined"], "D4A853", ROOT / ".stats" / "downloads.json"
+        "downloads/mo",
+        downloads["combined"],
+        "D4A853",
+        ROOT / ".stats" / "downloads.json",
     )
     write_shield_endpoint(
         "npm/mo", downloads["npm"], "CB3837", ROOT / ".stats" / "npm.json"
@@ -754,9 +790,7 @@ def main() -> None:
     hackathon_entries = count_section_entries(
         text, r"^### Hackathon Submissions", "| ["
     )
-    hackathon_events = count_distinct_bolded(
-        text, r"^### Hackathon Submissions"
-    )
+    hackathon_events = count_distinct_bolded(text, r"^### Hackathon Submissions")
     cert_badges_shown = count_badge_images(text, r"^### Certifications")
     missing: list[str] = []
     for label, value in updates:
@@ -793,7 +827,9 @@ def main() -> None:
     text, stars_ok = replace_stars_badge(text, total_stars)
     if not stars_ok:
         missing.append("GitHub Stars badge")
-    text, shipped_ok = replace_recently_shipped(text, render_recently_shipped(releases, prs))
+    text, shipped_ok = replace_recently_shipped(
+        text, render_recently_shipped(releases, prs)
+    )
     if not shipped_ok:
         missing.append("recently-shipped section")
     if missing:
