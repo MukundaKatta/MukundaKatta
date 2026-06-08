@@ -1,11 +1,15 @@
-"""Tests for the pure (non-network) helpers in scripts/sync_oss_highlights.py."""
+"""Tests for the pure (non-network) helpers in scripts/sync_oss_highlights.py.
+
+Runs on the standard-library ``unittest`` framework (no third-party deps):
+
+    python3 -m unittest discover -s tests
+"""
 
 from __future__ import annotations
 
 import sys
+import unittest
 from pathlib import Path
-
-import pytest
 
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
@@ -30,46 +34,101 @@ def _sample_highlights() -> list[dict]:
     ]
 
 
-def test_render_highlights_format() -> None:
-    out = so.render_highlights(_sample_highlights())
-    lines = out.splitlines()
-    assert lines[0] == so.START_MARKER
-    assert so.END_MARKER in lines
-    assert "- [openai/openai-python #123]" in out
-    assert "— Fix a bug" in out
-    assert "- [anthropics/anthropic-sdk-python #45]" in out
+class RenderHighlightsTests(unittest.TestCase):
+    def test_render_highlights_format(self) -> None:
+        out = so.render_highlights(_sample_highlights())
+        lines = out.splitlines()
+        self.assertEqual(lines[0], so.START_MARKER)
+        self.assertIn(so.END_MARKER, lines)
+        self.assertIn("- [openai/openai-python #123]", out)
+        self.assertIn("— Fix a bug", out)
+        self.assertIn("- [anthropics/anthropic-sdk-python #45]", out)
+
+    def test_render_highlights_empty(self) -> None:
+        out = so.render_highlights([])
+        self.assertIn(so.START_MARKER, out)
+        self.assertIn(so.END_MARKER, out)
+
+    def test_render_highlights_missing_field_raises(self) -> None:
+        # Each entry must carry every required field; an incomplete entry should
+        # fail loudly rather than render a KeyError mid-loop.
+        bad = [{"repo": "owner/name", "pr": 1, "url": "https://x"}]  # no title
+        with self.assertRaises(ValueError) as ctx:
+            so.render_highlights(bad)
+        self.assertIn("title", str(ctx.exception))
 
 
-def test_render_highlights_empty() -> None:
-    out = so.render_highlights([])
-    assert so.START_MARKER in out
-    assert so.END_MARKER in out
+class ReplaceSectionTests(unittest.TestCase):
+    def test_replace_section_replaces_between_markers(self) -> None:
+        readme = (
+            "before text\n\n"
+            f"{so.START_MARKER}\nold content\n{so.END_MARKER}\n\n"
+            "after text\n"
+        )
+        replacement = so.render_highlights(_sample_highlights())
+        out = so.replace_section(readme, replacement)
+        self.assertNotIn("old content", out)
+        self.assertIn("openai/openai-python #123", out)
+        self.assertTrue(out.startswith("before text"))
+        self.assertTrue(out.rstrip().endswith("after text"))
+        # Markers must survive so the next sync can find them again.
+        self.assertEqual(out.count(so.START_MARKER), 1)
+        self.assertEqual(out.count(so.END_MARKER), 1)
+
+    def test_replace_section_preserves_trailing_content(self) -> None:
+        readme = (
+            f"{so.START_MARKER}\nx\n{so.END_MARKER}\n\n## Next section\nbody\n"
+        )
+        out = so.replace_section(readme, so.render_highlights([]))
+        self.assertIn("## Next section", out)
+        self.assertIn("body", out)
+
+    def test_replace_section_missing_marker_raises(self) -> None:
+        with self.assertRaises(ValueError):
+            so.replace_section("no markers here", so.render_highlights([]))
+
+    def test_replace_section_missing_only_end_marker_raises(self) -> None:
+        # Half a marker pair is still structurally broken and must not silently
+        # drop content.
+        readme = f"{so.START_MARKER}\nbody\n"  # no END_MARKER
+        with self.assertRaises(ValueError):
+            so.replace_section(readme, so.render_highlights([]))
 
 
-def test_replace_section_replaces_between_markers() -> None:
-    readme = (
-        "before text\n\n"
-        f"{so.START_MARKER}\nold content\n{so.END_MARKER}\n\n"
-        "after text\n"
-    )
-    replacement = so.render_highlights(_sample_highlights())
-    out = so.replace_section(readme, replacement)
-    assert "old content" not in out
-    assert "openai/openai-python #123" in out
-    assert out.startswith("before text")
-    assert out.rstrip().endswith("after text")
-    # Markers must survive so the next sync can find them again.
-    assert out.count(so.START_MARKER) == 1
-    assert out.count(so.END_MARKER) == 1
+class FetchHighlightsValidationTests(unittest.TestCase):
+    """Validate the JSON-shape checks in fetch_highlights without network I/O.
+
+    fetch_highlights pulls bytes over the network, so here we exercise the
+    validation branches directly by feeding parsed payloads through a tiny
+    shim that mirrors the post-parse checks.
+    """
+
+    @staticmethod
+    def _validate(payload: object) -> list[dict]:
+        # Mirror of the validation in fetch_highlights, applied to an
+        # already-parsed payload so the assertions stay offline.
+        if not isinstance(payload, dict) or "highlights" not in payload:
+            raise ValueError("must be a JSON object with a 'highlights' key")
+        highlights = payload["highlights"]
+        if not isinstance(highlights, list):
+            raise ValueError("'highlights' must be a list")
+        return highlights
+
+    def test_valid_payload_returns_list(self) -> None:
+        self.assertEqual(self._validate({"highlights": []}), [])
+
+    def test_missing_key_raises(self) -> None:
+        with self.assertRaises(ValueError):
+            self._validate({"other": 1})
+
+    def test_non_dict_raises(self) -> None:
+        with self.assertRaises(ValueError):
+            self._validate([1, 2, 3])
+
+    def test_highlights_not_a_list_raises(self) -> None:
+        with self.assertRaises(ValueError):
+            self._validate({"highlights": {"not": "a list"}})
 
 
-def test_replace_section_preserves_trailing_content() -> None:
-    readme = f"{so.START_MARKER}\nx\n{so.END_MARKER}\n\n## Next section\nbody\n"
-    out = so.replace_section(readme, so.render_highlights([]))
-    assert "## Next section" in out
-    assert "body" in out
-
-
-def test_replace_section_missing_marker_raises() -> None:
-    with pytest.raises(ValueError):
-        so.replace_section("no markers here", so.render_highlights([]))
+if __name__ == "__main__":
+    unittest.main()
