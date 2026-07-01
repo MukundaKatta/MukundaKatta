@@ -55,7 +55,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of <!-- rust-llm-stack-count -->5<!-- /rust-llm-stack-count --> small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **<!-- mcp-stack-count -->14<!-- /mcp-stack-count --> MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast → budget), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **<!-- pypi-count -->52<!-- /pypi-count --> PyPI packages**, and **<!-- ext-open -->334<!-- /ext-open -->+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (<!-- ext-merged -->182<!-- /ext-merged -->+ already merged upstream).
+**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of <!-- rust-llm-stack-count -->5<!-- /rust-llm-stack-count --> small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **<!-- mcp-stack-count -->14<!-- /mcp-stack-count --> MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast → budget), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **<!-- pypi-count -->52<!-- /pypi-count --> PyPI packages**, and **<!-- ext-open -->325<!-- /ext-open -->+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (<!-- ext-merged -->184<!-- /ext-merged -->+ already merged upstream).
 <!-- now:end -->
 
 </div>
@@ -415,23 +415,23 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 
 #### External PR Footprint
 
-<sub>Across <strong><!-- ext-unique-repos -->497<!-- /ext-unique-repos --> unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed <!-- ext-refresh-date -->2026-06-28<!-- /ext-refresh-date -->.</sub>
+<sub>Across <strong><!-- ext-unique-repos -->497<!-- /ext-unique-repos --> unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed <!-- ext-refresh-date -->2026-07-01<!-- /ext-refresh-date -->.</sub>
 
 <table>
   <tr>
     <td align="center" width="25%">
       <sub>MERGED</sub><br/>
-      <strong><!-- ext-merged -->182<!-- /ext-merged --></strong><br/>
-      <sub>across <!-- ext-merged-repos -->135<!-- /ext-merged-repos --> external repos</sub>
+      <strong><!-- ext-merged -->184<!-- /ext-merged --></strong><br/>
+      <sub>across <!-- ext-merged-repos -->136<!-- /ext-merged-repos --> external repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>OPEN</sub><br/>
-      <strong><!-- ext-open -->334<!-- /ext-open --></strong><br/>
+      <strong><!-- ext-open -->325<!-- /ext-open --></strong><br/>
       <sub>awaiting review / response</sub>
     </td>
     <td align="center" width="25%">
       <sub>CLOSED</sub><br/>
-      <strong><!-- ext-closed -->465<!-- /ext-closed --></strong><br/>
+      <strong><!-- ext-closed -->472<!-- /ext-closed --></strong><br/>
       <sub>not merged</sub>
     </td>
     <td align="center" width="25%">
@@ -493,7 +493,7 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-06-28 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-07-01 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
@@ -1178,8 +1178,8 @@ Total: **<!-- crates-count -->176<!-- /crates-count --> published crates** under
   <tr>
     <td align="center" width="25%">
       <sub>UPSTREAM</sub><br/>
-      <strong>182</strong><br/>
-      <sub>merged PRs across <!-- ext-merged-repos -->135<!-- /ext-merged-repos --><br/>external public repos</sub>
+      <strong>184</strong><br/>
+      <sub>merged PRs across <!-- ext-merged-repos -->136<!-- /ext-merged-repos --><br/>external public repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
