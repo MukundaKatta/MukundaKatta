@@ -4,13 +4,11 @@ version = "0.0.0"
 description = "Automation scripts that keep the GitHub profile README and stats badges in sync."
 readme = "README.md"
 requires-python = ">=3.11"
+# The automation scripts and their test suite use only the Python standard
+# library, so there are no runtime or test dependencies to install. Run the
+# tests with:
+#   python3 -m unittest discover -s tests
 dependencies = []
-
-[project.optional-dependencies]
-dev = ["pytest>=7"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
 
 [tool.ruff]
 target-version = "py311"
