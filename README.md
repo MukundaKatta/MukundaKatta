@@ -415,7 +415,7 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 
 #### External PR Footprint
 
-<sub>Across <strong><!-- ext-unique-repos -->494<!-- /ext-unique-repos --> unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed <!-- ext-refresh-date -->2026-08-31<!-- /ext-refresh-date -->.</sub>
+<sub>Across <strong><!-- ext-unique-repos -->494<!-- /ext-unique-repos --> unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed <!-- ext-refresh-date -->2026-09-01<!-- /ext-refresh-date -->.</sub>
 
 <table>
   <tr>
@@ -493,7 +493,7 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-08-31 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-09-01 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
