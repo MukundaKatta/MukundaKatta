@@ -557,9 +557,17 @@ def fetch_total_downloads() -> dict[str, int]:
 
 
 def _human(n: int) -> str:
-    if n >= 1_000_000:
+    """Format a count for a shields.io badge (e.g. 23_400 -> "23.4k").
+
+    Rounding is applied *before* the magnitude check so a value that rounds up
+    to the next unit carries over instead of overflowing its own unit. Without
+    this, 999_999 rendered as the nonsensical "1000.0k" on the public badge
+    rather than "1.0M".
+    """
+    # 999_950 rounds to 1000.0 thousands == 1.0M; 999.5 rounds to 1.0k.
+    if n >= 999_950:
         return f"{n / 1_000_000:.1f}M"
-    if n >= 1_000:
+    if n >= 999.5:
         return f"{n / 1_000:.1f}k"
     return str(n)
 
