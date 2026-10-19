@@ -415,7 +415,7 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 
 #### External PR Footprint
 
-<sub>Across <strong><!-- ext-unique-repos -->491<!-- /ext-unique-repos --> unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed <!-- ext-refresh-date -->2026-10-16<!-- /ext-refresh-date -->.</sub>
+<sub>Across <strong><!-- ext-unique-repos -->491<!-- /ext-unique-repos --> unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed <!-- ext-refresh-date -->2026-10-19<!-- /ext-refresh-date -->.</sub>
 
 <table>
   <tr>
@@ -493,7 +493,7 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-10-16 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-10-19 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
@@ -1555,7 +1555,7 @@ If you follow my work here, you’ll mostly see:
 
 ![Profile Views](https://komarev.com/ghpvc/?username=MukundaKatta&color=D4A853&style=for-the-badge&label=PROFILE+VIEWS)
 ![GitHub Followers](https://img.shields.io/github/followers/MukundaKatta?style=for-the-badge&logo=github&label=FOLLOWERS&color=D4A853&labelColor=1a1a1a)
-![GitHub Stars](https://img.shields.io/badge/STARS-1227-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
+![GitHub Stars](https://img.shields.io/badge/STARS-1228-D4A853?style=for-the-badge&logo=github&labelColor=1a1a1a)
 
 ![Downloads/mo combined](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMukundaKatta%2FMukundaKatta%2Fmain%2F.stats%2Fdownloads.json)
 ![npm downloads/mo](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMukundaKatta%2FMukundaKatta%2Fmain%2F.stats%2Fnpm.json)
