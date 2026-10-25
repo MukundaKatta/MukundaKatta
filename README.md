@@ -55,7 +55,7 @@
 ```
 
 <!-- now:start -->
-**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of <!-- rust-llm-stack-count -->5<!-- /rust-llm-stack-count --> small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **<!-- mcp-stack-count -->14<!-- /mcp-stack-count --> MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast → budget), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **<!-- pypi-count -->52<!-- /pypi-count --> PyPI packages**, and **<!-- ext-open -->207<!-- /ext-open -->+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (<!-- ext-merged -->192<!-- /ext-merged -->+ already merged upstream).
+**Now:** shipped [`ragdrift`](https://github.com/MukundaKatta/ragdrift) (five-dimensional RAG drift detection on crates.io + PyPI), the [`rust-llm-stack`](https://github.com/MukundaKatta/rust-llm-stack) of <!-- rust-llm-stack-count -->5<!-- /rust-llm-stack-count --> small Rust crates, and the [`mcp-stack`](https://github.com/MukundaKatta/mcp-stack) of **<!-- mcp-stack-count -->14<!-- /mcp-stack-count --> MCP servers** in the official [MCP Registry](https://registry.modelcontextprotocol.io) — 4 RAG/agent helpers + 10 reliable transforms LLMs reach for tools instead of imagining (CSV, regex, JMESPath, diff, SQL formatting, shell escaping, JSON5, TOML/YAML/JSON, IANA timezones, HTML→Markdown). Plus the `@mukundakatta/agent*` reliability stack (fit → guard → snap → vet → cast → budget), 6 earlier MCP servers (also in the Registry), GitHub Actions on the Marketplace, **<!-- pypi-count -->52<!-- /pypi-count --> PyPI packages**, and **<!-- ext-open -->206<!-- /ext-open -->+ open PRs** across MCP SDKs, FastMCP, claude-code-action, and Anthropic's agent SDK (<!-- ext-merged -->192<!-- /ext-merged -->+ already merged upstream).
 <!-- now:end -->
 
 </div>
@@ -415,23 +415,23 @@ I keep a public log of selected OSS work in **[oss-contributions](https://github
 
 #### External PR Footprint
 
-<sub>Across <strong><!-- ext-unique-repos -->34<!-- /ext-unique-repos --> unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed <!-- ext-refresh-date -->2026-10-22<!-- /ext-refresh-date -->.</sub>
+<sub>Across <strong><!-- ext-unique-repos -->490<!-- /ext-unique-repos --> unique external repos</strong> (excluding my own). Source: GitHub search API, <code>author:MukundaKatta is:pr -user:MukundaKatta</code>. Last refreshed <!-- ext-refresh-date -->2026-10-25<!-- /ext-refresh-date -->.</sub>
 
 <table>
   <tr>
     <td align="center" width="25%">
       <sub>MERGED</sub><br/>
       <strong><!-- ext-merged -->192<!-- /ext-merged --></strong><br/>
-      <sub>across <!-- ext-merged-repos -->58<!-- /ext-merged-repos --> external repos</sub>
+      <sub>across <!-- ext-merged-repos -->140<!-- /ext-merged-repos --> external repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>OPEN</sub><br/>
-      <strong><!-- ext-open -->207<!-- /ext-open --></strong><br/>
+      <strong><!-- ext-open -->206<!-- /ext-open --></strong><br/>
       <sub>awaiting review / response</sub>
     </td>
     <td align="center" width="25%">
       <sub>CLOSED</sub><br/>
-      <strong><!-- ext-closed -->552<!-- /ext-closed --></strong><br/>
+      <strong><!-- ext-closed -->575<!-- /ext-closed --></strong><br/>
       <sub>not merged</sub>
     </td>
     <td align="center" width="25%">
@@ -493,7 +493,7 @@ So the same problem (`mcpcheck`, `skillint`, `streamparse`) is solvable from any
 ### Recently Shipped
 <!-- recently-shipped:start -->
 
-_Last refreshed 2026-10-22 from npm, PyPI, and the GitHub API._
+_Last refreshed 2026-10-25 from npm, PyPI, and the GitHub API._
 
 **Latest releases**
 
@@ -504,10 +504,10 @@ _Last refreshed 2026-10-22 from npm, PyPI, and the GitHub API._
 **Recently merged PRs**
 
 - `2026-06-05` · [public-apis/public-apis #6087](https://github.com/public-apis/public-apis/pull/6087) — Remove defunct API entries
-- `2026-09-18` · [openai/openai-python #3088](https://github.com/openai/openai-python/pull/3088) — fix(parsing): drop TextFormatT parameterization in parse_response to fix memory leak (#3084)
-- `2026-04-15` · [dapr/dapr #9798](https://github.com/dapr/dapr/pull/9798) — Fix 'sucessful' typo in scheduler.proto comment
-- `2026-05-18` · [vitest-dev/vitest #10358](https://github.com/vitest-dev/vitest/pull/10358) — docs: mention xvfb for headful WebdriverIO Chrome
-- `2026-04-15` · [apache/pulsar #25524](https://github.com/apache/pulsar/pull/25524) — [fix] Fix typo 'seperated' in broker comments
+- `2026-07-06` · [openclaw/openclaw #87937](https://github.com/openclaw/openclaw/pull/87937) — fix(browser): read Windows Chrome version from build dir in doctor
+- `2026-06-07` · [openclaw/openclaw #87933](https://github.com/openclaw/openclaw/pull/87933) — fix(agents): suppress DeepSeek thinking for Foundry aliases
+- `2026-06-04` · [openclaw/openclaw #87965](https://github.com/openclaw/openclaw/pull/87965) — fix(whatsapp): restart channel when a per-account config field changes so disabled accounts are torn down
+- `2026-09-03` · [microsoft/markitdown #1882](https://github.com/microsoft/markitdown/pull/1882) — Support short YouTube URLs
 
 <!-- recently-shipped:end -->
 
@@ -1179,7 +1179,7 @@ Total: **<!-- crates-count -->176<!-- /crates-count --> published crates** under
     <td align="center" width="25%">
       <sub>UPSTREAM</sub><br/>
       <strong>192</strong><br/>
-      <sub>merged PRs across <!-- ext-merged-repos -->58<!-- /ext-merged-repos --><br/>external public repos</sub>
+      <sub>merged PRs across <!-- ext-merged-repos -->140<!-- /ext-merged-repos --><br/>external public repos</sub>
     </td>
     <td align="center" width="25%">
       <sub>PACKAGES</sub><br/>
